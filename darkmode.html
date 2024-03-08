@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Mode Example</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link your stylesheet -->
+</head>
+<body>
+    <style>
+        /* styles.css */
+
+body {
+    background-color: #f0f0f0; /* Default light mode background color */
+    color: #333; /* Default light mode text color */
+}
+
+body.dark-mode {
+    background-color: #333; /* Dark mode background color */
+    color: #fff; /* Dark mode text color */
+}
+
+    </style>
+    <div id="content">
+        <!-- Your webpage content goes here -->
+        <h1>Welcome to My Website</h1>
+        <p>This is some sample content.</p>
+    </div>
+    <button id="toggleDarkMode">Toggle Dark Mode</button>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script>
+        // script.js
+
+$(document).ready(function () {
+    // Check if user preference for dark mode is stored in local storage
+    const isDarkMode = localStorage.getItem('darkMode') === 'enabled';
+
+    // Apply dark mode if user preference is enabled
+    if (isDarkMode) {
+        $('body').addClass('dark-mode');
+    }
+
+    // Toggle dark mode on button click
+    $('#toggleDarkMode').on('click', function () {
+        $('body').toggleClass('dark-mode');
+        const isDarkModeEnabled = $('body').hasClass('dark-mode');
+
+        // Store user preference in local storage
+        localStorage.setItem('darkMode', isDarkModeEnabled ? 'enabled' : 'disabled');
+    });
+});
+
+    </script>
+</body>
+</html>

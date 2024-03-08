@@ -3,87 +3,67 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css'>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <link rel="stylesheet" href="styles.css">
+  <title>Page Preloader</title>
   <style>
-    @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
-
-    * {
-      box-sizing: border-box;
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
     }
 
-    .counter-container {
+    #preloader {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #fff;
       display: flex;
-      flex-direction: column;
+      align-items: center;
       justify-content: center;
-      text-align: center;
-      margin: 30px 50px;
+      z-index: 9999;
     }
 
-    .counter {
-      font-size: 60px;
-      margin-top: 10px;
+    #loader {
+      border: 8px solid #3498db;
+      border-top: 8px solid #ecf0f1;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      animation: spin 1s linear infinite;
     }
 
-    @media (max-width: 580px) {
-      body {
-        flex-direction: column;
-      }
+    .content {
+      display: none; /* Initially hide content */
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
     }
   </style>
 </head>
 <body>
-  <div class="counter-container">
-    <i class="fab fa-instagram fa-3x"></i>
-    <div class="counter" data-target="12000"></div>
-    <span>Instagram Followers</span>
-  </div>
-  <div class="counter-container">
-    <i class="fab fa-youtube fa-3x"></i>
-    <div class="counter" data-target="5000"></div>
-    <span>YouTube Subscribers</span>
-  </div>
-  <div class="counter-container">
-    <i class="fab fa-facebook fa-3x"></i>
-    <div class="counter" data-target="7500"></div>
-    <span>Facebook Fans</span>
+
+  <div id="preloader">
+    <div id="loader"></div>
   </div>
 
+  <div class="content">
+    <!-- Your page content goes here -->
+    <h1>Welcome to Armely's Page</h1>
+    <p>This is the content of your page.</p>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
   <script>
-    function isElementInViewport(el) {
-      const rect = el.getBoundingClientRect();
-      return (
-        rect.top >= 0 &&
-        rect.left >= 0 &&
-        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-      );
-    }
-
-    $(document).ready(function () {
-      $(window).on("scroll", function () {
-        $(".counter").each(function () {
-          if (isElementInViewport(this)) {
-            $(this).prop("Counter", 0).animate(
-              {
-                Counter: $(this).attr("data-target")
-              },
-              {
-                duration: 2000,
-                easing: "linear",
-                step: function (now) {
-                  $(this).text(Math.ceil(now));
-                }
-              }
-            );
-          }
-        });
+    $(window).on('load', function() {
+      // Hide preloader and show content when all contents are loaded
+      $('#preloader').fadeOut('slow', function() {
+        $('.content').fadeIn('slow');
       });
-
-      // Initial check for counters on page load
-      $(window).trigger("scroll");
     });
   </script>
+
 </body>
 </html>
