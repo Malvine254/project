@@ -1,0 +1,38 @@
+.menu-item-color{
+    color: black !important;
+    font-size: 18px;
+    font-weight: 400 !important;
+}
+.nav{
+	padding: 26px !important; 
+}
+.floating-btn {
+    position: fixed;
+    bottom: 20px; /* Adjust the distance from the bottom */
+    right: 20px; /* Adjust the distance from the left */
+    z-index: 1000; /* Set the z-index to ensure the button appears above other elements */
+  }
+  @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+
+    * {
+      box-sizing: border-box;
+    }
+
+    .counter-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      margin: 30px 50px;
+    }
+
+    .counter {
+      font-size: 60px;
+      margin-top: 10px;
+    }
+
+    @media (max-width: 580px) {
+      body {
+        flex-direction: column;
+      }
+    }

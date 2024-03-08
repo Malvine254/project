@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Responsive Menu and Footer</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- main csss -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- font awesome  -->
+  <link rel="stylesheet" href="vendor/font-awesome/css/all.css">    
+  <style>
+    /* Add your custom styles here */
+    body {
+      padding-top: 56px; /* Adjust based on the height of your fixed navbar */
+    }
+
+    footer {
+      background-color: #f8f9fa;
+      padding: 20px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-light fixed-top pt-3 pb-3">
+   
+    <a class="navbar-brand" href="#"><img src="images/logo/logo1.png" alt="" height="27px"></a>
+    <button style="background-color:rgb(47,85,151)" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a  class="nav-link menu-item-color" href="#">SERVICES <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link menu-item-color" href="#">CUSTOMER STORIES</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link menu-item-color" href="#">COMPANY</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link menu-item-color" href="#">CONTACT US</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link menu-item-color" href="#">CAREERS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link menu-item-color" href="#">BLOGS</a>
+        </li>
+  
+      </ul>
+      <!-- Search Bar -->
+      <form class="form-inline my-2 my-lg-0">
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="Search" aria-label="Search" aria-describedby="searchIcon">
+          <div class="input-group-append">
+            <span class="input-group-text" id="searchIcon"><i class="fas fa-search"></i></span>
+          </div>
+        </div>
+      </form>
+      <a class="nav-link menu-item-color" href="#"><i class="fa fa-moon"></i></a>
+      <a class="nav-link menu-item-color" href="#"><i class="fa fa-sun  "></i></a>
+    </div>
+  </nav>
+
+  <!-- Content -->
+  <div class="container mt-5 mb-5">
+    <!-- title text -->
+    <h1 class="text-center">Your Trusted Source
+      For Digital Excellence</h1>
+      <div class="mt-3">
+        <h6 class="text-center">BRINGING YOUR VISION TO LIFE <i class="fa fa-angle-right text-light" style="background-color: rgb(47,85,151); padding: 5px;"></i></h6>
+      </div>
+    <!-- playing video at the hompage here -->
+    <video src="https://res.cloudinary.com/timothymugo2323/video/upload/f_auto:video,q_auto/v1/armely/mrngrcv3n9yeloisubz7" preload="auto" autoplay loop muted style="width: 100%; height: 100%;"></video>  
+  
+  </div>
+  <!-- counter section -->
+  <div class="counter-container">
+    <i class="fab fa-instagram fa-3x"></i>
+    <div class="counter" data-target="12000"></div>
+    <span>Instagram Followers</span>
+  </div>
+  <div class="counter-container">
+    <i class="fab fa-youtube fa-3x"></i>
+    <div class="counter" data-target="5000"></div>
+    <span>YouTube Subscribers</span>
+  </div>
+  <div class="counter-container">
+    <i class="fab fa-facebook fa-3x"></i>
+    <div class="counter" data-target="7500"></div>
+    <span>Facebook Fans</span>
+  </div>
+
+   <!-- Floating Action Button -->
+   <div class="floating-btn">
+    <button style="border-radius: 50%; height: 70px; width: 70px; background-color: rgb(47,85,151);"  type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#chatbotModal">
+      <i class="fas fa-comments"></i>
+    </button>
+  </div>
+  <!-- Footer -->
+  <footer class="text-center">
+    <p>&copy; 2024 Your Company. All rights reserved.</p>
+  </footer>
+
+  <!-- Bootstrap and jQuery Scripts -->
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+</body>
+</html>
