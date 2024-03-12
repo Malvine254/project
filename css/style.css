@@ -136,6 +136,13 @@
   right: 0;
   transform: translate(0, -50%);
 }
+/* modal position */
+.modal-right {
+  position: absolute;
+  top: 50% ;
+  left: 0 ;
+  transform: translate(0, -50%) ;
+}
 
 /* The Close Button */
 .close {
