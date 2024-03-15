@@ -59,14 +59,22 @@ window.onclick = function(event) {
  if (isDarkMode) {
      $('body').addClass('dark-mode');
      $('.icon').removeClass('fa fa-moon')
-      $('.icon').addClass('fa fa-sun')
-      $('a').css({"color":"white"})
-    
+     $('.icon').addClass('fa fa-sun')
+     $('nav').removeClass("bg-light")
+     $('nav').css({"background-color":"#121212"})
+     $(".link").removeClass('text-dark')
+     $(".link").addClass("text-light")
+        
     
  }else{
     $('.icon').removeClass('fa fa-sun')
     $('.icon').addClass('fa fa-moon')
-    $('a').css({"color":"rgb(47,85,151)"})
+    $('footer').css({"background":"rgb(47,85,151)"})
+    $('nav').css({"background-color":"white"})
+    $(".link").removeClass('text-light')
+    $(".link").addClass("text-dark")
+    
+    
  }
 
  // Toggle dark mode on button click
@@ -77,14 +85,27 @@ window.onclick = function(event) {
      if (isDarkModeEnabled) {
         $('body').addClass('dark-mode');
         $('.icon').removeClass('fa fa-moon')
-         $('.icon').addClass('fa fa-sun')
-         $('a').css({"color":"rgb(47,85,151)"})
+        $('.icon').addClass('fa fa-sun')
+        $('footer').css({"background":""})
+        $('nav').removeClass("bg-light")
+        $('nav').css({"background-color":"#121212"})
+        $(".link").removeClass('text-dark')
+        $(".link").addClass("text-light")
+        
+         
+         
        
        
     }else{
        $('.icon').removeClass('fa fa-sun')
        $('.icon').addClass('fa fa-moon')
-       $('a').css({"color":"white"})
+       $('footer').css({"background":"rgb(47,85,151)"})
+       $('nav').css({"background-color":"white"})
+       $(".link").removeClass('text-light')
+       $(".link").addClass("text-dark")
+       
+      
+       
     }
      
      

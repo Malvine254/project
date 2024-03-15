@@ -5,6 +5,7 @@
 }
 .nav{
 	padding: 26px !important; 
+  background: white !important;
 }
 .floating-btn {
     position: fixed;
@@ -62,6 +63,9 @@
 }
 .defaut-color{
   color: rgb(47,85,151);
+}
+.defaut-background{
+  background: rgb(47,85,151);
 }
 
 /* counter styling */
@@ -162,13 +166,16 @@
 
 body {
   background-color: #fff; /* Default light mode background color */
-  color: black; /* Default light mode text color */
+  color: black !important; /* Default light mode text color */
+ 
 }
 
-body.dark-mode,nav {
-  background-color: #121212; /* Dark mode background color */
+body.dark-mode {
+  background-color: #121212 !important; /* Dark mode background color */
   color: #fff !important; /* Dark mode text color */
+  
 }
+
 
 /* armely default logo font  */
 @font-face {
@@ -209,4 +216,21 @@ body.dark-mode,nav {
 @keyframes spin {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
+}
+
+/* create a round div in the contact page */
+.round-div{
+  height: 180px; 
+  width: 180px; 
+  border-radius: 50%; /* Make it round */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white; /* Text color */
+  background-color: rgb(47,85,151);
+}
+.round-div:hover{
+  background-color: white;
+  color: #000;
+  text-decoration: none;
 }

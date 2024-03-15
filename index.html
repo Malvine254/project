@@ -30,31 +30,31 @@
     <div id="loader"></div>
   </div>
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-light fixed-top pt-3 pb-3">
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top pt-3 pb-3">
    
-    <a class="navbar-brand" href="#"><h2 class="armely-logo-font defaut-color"><strong>armely</strong></h1></a>
+    <a class="navbar-brand link" href="#"><h2 class="armely-logo-font defaut-color"><strong>armely</strong></h1></a>
     <button style="background-color:rgb(47,85,151)" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
-          <a  class="nav-link menu-item-color" href="#">SERVICES <span class="sr-only">(current)</span></a>
+          <a  class="nav-link text-dark h5 link" href="#">SERVICES <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link menu-item-color" href="#">CUSTOMER STORIES</a>
+          <a class="nav-link text-dark h5 link" href="#">CUSTOMER STORIES</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link menu-item-color" href="#">COMPANY</a>
+          <a class="nav-link text-dark h5 link" href="#">COMPANY</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link menu-item-color" href="#">CONTACT US</a>
+          <a class="nav-link text-dark h5 link" href="#">CONTACT US</a>
         </li>
          <li class="nav-item">
-          <a class="nav-link menu-item-color" href="#">CAREERS</a>
+          <a class="nav-link text-dark h5 link" href="#">CAREERS</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link menu-item-color" href="#">BLOGS</a>
+          <a class="nav-link text-dark h5 link" href="#">BLOGS</a>
         </li>
   
       </ul>
@@ -67,7 +67,7 @@
           </div>
         </div>
       </form>
-      <a id="toggleDarkMode" class="nav-link menu-item-color modes" ><i class="icon fa fa-moon icon"></i></a>
+      <a id="toggleDarkMode" class="nav-link link" ><i class="icon fa fa-moon icon"></i></a>
     </div>
   </nav>
   <!-- Content -->
@@ -99,7 +99,7 @@
 
             <div class="col-lg-4 col-md-4 col-sm-3 col-xs-12">
                 <div class="customer">
-                    <p ><span class="counter-count">99</span><b>%</b></p>
+                    <p ><p class="counter-count">99</p><b>%</b></p>
                     <p class="customer-p">Customer Satisfaction</p>
                 </div>
             </div>
@@ -163,9 +163,9 @@
               </div>
               
             </div>
-            <div class="carousel-item">
+            <div class="carousel-item text-dark">
               <div class="row">
-                <div class="col-sm-12 col-md-4">
+                <div class="col-sm-12 col-md-4 ">
                   <div class="card" style="width: auto;">
                     <img src="images/services/service3.jpg" loading="lazy" class="card-img-top" alt="Sample Image">
                     <div class="card-body">
@@ -301,7 +301,17 @@
         </div>
     </div>
   </div>
-  
+
+ <center>
+    <div class="container mt-5 ">
+      <h2 >Have a Project in Mind?</h2>
+      <a href="#">
+      <div class="round-div" >
+        <h2>Contact Us</h2>
+      </div>
+      </a>
+    </div>
+ </center>
 
    <!-- Floating Action Button -->
    <div class="floating-btn">
@@ -314,7 +324,7 @@
     <i style="font-size: 2em;" class="fa-solid fa-arrow-up"></i>
 </button>
   <!-- Footer -->
-  <footer style="background-color: rgb(47,85,151);" class="text-center col-md-12">
+  <footer id="footer" class="text-center col-md-12">
     <div class=" mt-5">
       <div class="row text-light ">
         <div class="col-md-2">
@@ -352,10 +362,11 @@
               <a href=""><i class="fab fa-x-twitter text-light h3"></i></a>
               <a href=""><i class="fab fa-github text-light h3"></i></a>
               <a href=""><i class="fab fa-youtube text-light h3"></i></a>
-            </div>
-        
-        
+            </div>     
         </div>
+      </div>
+      <div class="col mb-3 text-light">
+        <p class="h5"> &copy; 2023 <a href="armely.com">Armely LLC</a>. All rights reserved.</p><br>
       </div>
     </div>
    
@@ -387,7 +398,13 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
-
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var currentYear = new Date().getFullYear();
+      var copyrightElement = document.getElementById('copyright');
+      copyrightElement.innerHTML = '&copy; ' + currentYear + ' Your Company Name. All rights reserved.';
+    });
+  </script>
   <script src="js/main3.js"></script>
 
 
