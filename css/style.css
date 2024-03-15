@@ -19,24 +19,24 @@
       box-sizing: border-box;
     }
 
-    .counter-container {
+    /* .counter-container {
       display: flex;
       flex-direction: column;
       justify-content: center;
       text-align: center;
       margin: 30px 50px;
     }
-
+*/
     .counter {
-      font-size: 60px;
+      font-size: 50px;
       margin-top: 10px;
+      font-weight: bold;
+    }
+    .counter-span{
+      font-size: 19px;
     }
 
-    @media (max-width: 580px) {
-      body {
-        flex-direction: column;
-      }
-    }
+  
 
     /* courosel next and previous bitton color */
     .carousel-control-prev:hover,
@@ -235,5 +235,65 @@ body.dark-mode {
   text-decoration: none;
 }
 .logo-size{
-  font-size: 59px;
+  font-size: 55px;
+  word-spacing: 13px !important;
+}
+
+
+/* animate the home text  */
+
+ /* Style for cursor blinking animation */
+ @keyframes blink {
+  0% { opacity: 0; }
+  50% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.typing-text::after {
+  content: ".";
+  display: inline-block;
+  animation: blink 1s none;
+}
+
+/* Adjust animation speed to your preference */
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+.typing-text {
+  overflow: hidden; /* Ensures text doesn't overflow container */
+  white-space: nowrap; /* Prevents wrapping */
+  opacity: 0; /* Initially hide the text */
+  font-size: 48px; /* Default font size */
+}
+
+/* Media query for larger screens */
+@media (min-width: 768px) {
+  .typing-text {
+    font-size: 72px; /* Adjust font size for larger screens */
+  }
+}
+
+/* Media query for extra-large screens */
+@media (min-width: 1200px) {
+  .typing-text {
+    font-size: 100px; /* Adjust font size for extra-large screens */
+  }
+}
+
+/* adding the % and + signs */
+.plus::after {
+  content: "+";
+  margin-left: 5px; /* Adjust spacing between counter and percentage icon */
+}
+.percent::after {
+  content: "%";
+  margin-left: 5px; /* Adjust spacing between counter and percentage icon */
 }
