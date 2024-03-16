@@ -297,3 +297,52 @@ body.dark-mode {
   content: "%";
   margin-left: 5px; /* Adjust spacing between counter and percentage icon */
 }
+
+
+.transparent-card {
+  background-color: transparent !important;
+  box-shadow: none;
+  min-height: 200px;
+  border: solid transparent !important;
+ 
+}
+
+.slider-container {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.slider-image {
+  display: inline-block;
+  animation: slide 10s linear infinite;
+}
+
+@keyframes slide {
+  0% {
+      transform: translateX(0);
+  }
+  100% {
+      transform: translateX(-100%);
+  }
+}
+
+    .card-back{
+      background-color: transparent !important;
+  
+    }
+    .edit-input{
+      height: 56px;
+      background-color: transparent !important;
+    }
+    .edit-input-valid{
+      border-color: rgb(47,85,151) !important;
+    }
+    .edit-textarea{
+      background-color: transparent !important;
+    }
+    .blog-hover-effect:hover{
+      
+  
+    }
+  

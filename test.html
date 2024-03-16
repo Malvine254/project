@@ -1,74 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bootstrap Slider</title>
-  <!-- Bootstrap CSS -->
-  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Custom CSS -->
-  <style>
-    /* Customize the slider */
-    .carousel-item {
-      transition: transform 0.6s ease;
-    }
-    /* Center the images */
-    .carousel-item img {
-      margin: auto;
-      width: 100%;
-    }
-    /* Set transparent background */
-    .carousel-inner {
-      background-color: transparent;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Image Gallery</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <style>
+        /* Adjust image size */
+        .img-medium {
+            max-width: 150px; /* Set maximum width */
+            height: auto; /* Allow the height to adjust proportionally */
+        }
+    </style>
 </head>
 <body>
 
-<div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="false">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <div class="row">
-        <div class="col-md-4">
-          <img src="images/services/service1.jpg" class="d-block w-100" alt="Service 1">
+<div class="container mt-5">
+    <div class="row">
+        <!-- First Row -->
+        <div class="col-md-4 mb-4">
+            <img src="images/services/service1.jpg" class="img-fluid img-medium" alt="Image 1">
         </div>
-        <div class="col-md-4">
-          <img src="images/services/service2.jpg" class="d-block w-100" alt="Service 2">
+        <div class="col-md-4 mb-4">
+            <img src="images/services/service2.jpg" class="img-fluid img-medium" alt="Image 2">
         </div>
-        <div class="col-md-4">
-          <img src="images/services/service3.jpg" class="d-block w-100" alt="Service 3">
+        <div class="col-md-4 mb-4">
+            <img src="images/services/service3.jpg" class="img-fluid img-medium" alt="Image 3">
         </div>
-      </div>
+        <!-- Second Row -->
+        <div class="col-md-4 mb-4">
+            <img src="images/services/service4.jpg" class="img-fluid img-medium" alt="Image 4">
+        </div>
+        <div class="col-md-4 mb-4">
+            <img src="images/services/service5.jpg" class="img-fluid img-medium" alt="Image 5">
+        </div>
+        <div class="col-md-4 mb-4">
+            <img src="images/services/service6.jpg" class="img-fluid img-medium" alt="Image 6">
+        </div>
+        <!-- Add more images as needed -->
     </div>
-    <!-- Add more carousel-items here if needed -->
-  </div>
-  <!-- Previous and Next buttons -->
-  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
 </div>
 
-<!-- Bootstrap and jQuery JavaScript -->
+<!-- Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-<script>
-  // Handle next button click
-  $('.carousel-control-next').click(function() {
-    $('#carouselExampleControls .carousel-inner').animate({
-      marginLeft: "-33.33%" // Move three items to the left
-    }, 600, function(){
-      $(this).find('.carousel-item').eq(0).appendTo(this); // Move the first item to the end
-      $(this).css('margin-left', ''); // Reset margin
-    });
-  });
-</script>
 
 </body>
 </html>
