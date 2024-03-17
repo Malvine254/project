@@ -341,8 +341,14 @@ body.dark-mode {
     .edit-textarea{
       background-color: transparent !important;
     }
-    .blog-hover-effect:hover{
-      
-  
+    .blog-hover-effect:hover .card-body {
+      background-color: red; /* Change background color on hover */
     }
   
+    /* contact page */
+    .big-font{
+      font-size: 103px;
+    }
+    .subtitle-font{
+      font-size: 24px;
+    }
