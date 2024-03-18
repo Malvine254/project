@@ -5,6 +5,7 @@
 }
 .nav{
 	padding: 26px !important; 
+  background: white !important;
 }
 .floating-btn {
     position: fixed;
@@ -18,24 +19,24 @@
       box-sizing: border-box;
     }
 
-    .counter-container {
+    /* .counter-container {
       display: flex;
       flex-direction: column;
       justify-content: center;
       text-align: center;
       margin: 30px 50px;
     }
-
+*/
     .counter {
-      font-size: 60px;
+      font-size: 50px;
       margin-top: 10px;
+      font-weight: bold;
+    }
+    .counter-span{
+      font-size: 19px;
     }
 
-    @media (max-width: 580px) {
-      body {
-        flex-direction: column;
-      }
-    }
+  
 
     /* courosel next and previous bitton color */
     .carousel-control-prev:hover,
@@ -62,6 +63,9 @@
 }
 .defaut-color{
   color: rgb(47,85,151);
+}
+.defaut-background{
+  background: rgb(47,85,151);
 }
 
 /* counter styling */
@@ -136,6 +140,13 @@
   right: 0;
   transform: translate(0, -50%);
 }
+/* modal position */
+.modal-right {
+  position: absolute;
+  top: 50% ;
+  left: 0 ;
+  transform: translate(0, -50%) ;
+}
 
 /* The Close Button */
 .close {
@@ -155,13 +166,16 @@
 
 body {
   background-color: #fff; /* Default light mode background color */
-  color: black; /* Default light mode text color */
+  color: black !important; /* Default light mode text color */
+ 
 }
 
-body.dark-mode,nav {
-  background-color: #121212; /* Dark mode background color */
+body.dark-mode {
+  background-color: #121212 !important; /* Dark mode background color */
   color: #fff !important; /* Dark mode text color */
+  
 }
+
 
 /* armely default logo font  */
 @font-face {
@@ -203,3 +217,138 @@ body.dark-mode,nav {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
 }
+
+/* create a round div in the contact page */
+.round-div{
+  height: 180px; 
+  width: 180px; 
+  border-radius: 50%; /* Make it round */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white; /* Text color */
+  background-color: rgb(47,85,151);
+}
+.round-div:hover{
+  background-color: white;
+  color: #000;
+  text-decoration: none;
+}
+.logo-size{
+  font-size: 55px;
+  word-spacing: 13px !important;
+}
+
+
+/* animate the home text  */
+
+ /* Style for cursor blinking animation */
+ @keyframes blink {
+  0% { opacity: 0; }
+  50% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.typing-text::after {
+  content: ".";
+  display: inline-block;
+  animation: blink 1s none;
+}
+
+/* Adjust animation speed to your preference */
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+.typing-text {
+  overflow: hidden; /* Ensures text doesn't overflow container */
+  white-space: nowrap; /* Prevents wrapping */
+  opacity: 0; /* Initially hide the text */
+  font-size: 48px; /* Default font size */
+}
+
+/* Media query for larger screens */
+@media (min-width: 768px) {
+  .typing-text {
+    font-size: 72px; /* Adjust font size for larger screens */
+  }
+}
+
+/* Media query for extra-large screens */
+@media (min-width: 1200px) {
+  .typing-text {
+    font-size: 100px; /* Adjust font size for extra-large screens */
+  }
+}
+
+/* adding the % and + signs */
+.plus::after {
+  content: "+";
+  margin-left: 5px; /* Adjust spacing between counter and percentage icon */
+}
+.percent::after {
+  content: "%";
+  margin-left: 5px; /* Adjust spacing between counter and percentage icon */
+}
+
+
+.transparent-card {
+  background-color: transparent !important;
+  box-shadow: none;
+  min-height: 200px;
+  border: solid transparent !important;
+ 
+}
+
+.slider-container {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.slider-image {
+  display: inline-block;
+  animation: slide 10s linear infinite;
+}
+
+@keyframes slide {
+  0% {
+      transform: translateX(0);
+  }
+  100% {
+      transform: translateX(-100%);
+  }
+}
+
+    .card-back{
+      background-color: transparent !important;
+  
+    }
+    .edit-input{
+      height: 56px;
+      background-color: transparent !important;
+    }
+    .edit-input-valid{
+      border-color: rgb(47,85,151) !important;
+    }
+    .edit-textarea{
+      background-color: transparent !important;
+    }
+    .blog-hover-effect:hover .card-body {
+      background-color: red; /* Change background color on hover */
+    }
+  
+    /* contact page */
+    .big-font{
+      font-size: 103px;
+    }
+    .subtitle-font{
+      font-size: 24px;
+    }

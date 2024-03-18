@@ -1,69 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <title>Page Preloader</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Arial', sans-serif;
-    }
-
-    #preloader {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: #fff;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      z-index: 9999;
-    }
-
-    #loader {
-      border: 8px solid #3498db;
-      border-top: 8px solid #ecf0f1;
-      border-radius: 50%;
-      width: 50px;
-      height: 50px;
-      animation: spin 1s linear infinite;
-    }
-
-    .content {
-      display: none; /* Initially hide content */
-    }
-
-    @keyframes spin {
-      0% { transform: rotate(0deg); }
-      100% { transform: rotate(360deg); }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Image Gallery</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <style>
+        /* Adjust image size */
+        .img-medium {
+            max-width: 150px; /* Set maximum width */
+            height: auto; /* Allow the height to adjust proportionally */
+        }
+    </style>
 </head>
 <body>
 
-  <div id="preloader">
-    <div id="loader"></div>
-  </div>
+<div class="container mt-5">
+    <div class="row">
+        <!-- First Row -->
+        <div class="col-md-4 mb-4">
+            <img src="images/services/service1.jpg" class="img-fluid img-medium" alt="Image 1">
+        </div>
+        <div class="col-md-4 mb-4">
+            <img src="images/services/service2.jpg" class="img-fluid img-medium" alt="Image 2">
+        </div>
+        <div class="col-md-4 mb-4">
+            <img src="images/services/service3.jpg" class="img-fluid img-medium" alt="Image 3">
+        </div>
+        <!-- Second Row -->
+        <div class="col-md-4 mb-4">
+            <img src="images/services/service4.jpg" class="img-fluid img-medium" alt="Image 4">
+        </div>
+        <div class="col-md-4 mb-4">
+            <img src="images/services/service5.jpg" class="img-fluid img-medium" alt="Image 5">
+        </div>
+        <div class="col-md-4 mb-4">
+            <img src="images/services/service6.jpg" class="img-fluid img-medium" alt="Image 6">
+        </div>
+        <!-- Add more images as needed -->
+    </div>
+</div>
 
-  <div class="content">
-    <!-- Your page content goes here -->
-    <h1>Welcome to Armely's Page</h1>
-    <p>This is the content of your page.</p>
-  </div>
-
-  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-  <script>
-    $(window).on('load', function() {
-      // Hide preloader and show content when all contents are loaded
-      $('#preloader').fadeOut('slow', function() {
-        $('.content').fadeIn('slow');
-      });
-    });
-  </script>
+<!-- Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 </body>
 </html>
