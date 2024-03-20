@@ -352,3 +352,19 @@ body.dark-mode {
     .subtitle-font{
       font-size: 24px;
     }
+
+    /* company page div 2 */
+  
+  .three-column-section {
+      background-color: #000;
+      color: #fff;
+      padding: 50px 20px;
+      width: 100%;
+  }
+  .column {
+      text-align: center;
+  }
+  .symbol {
+      font-size: 48px;
+      margin-bottom: 20px;
+  }
