@@ -78,99 +78,43 @@
   </nav><br><br>
   <!-- counter section -->
 <div class="container mt-3 mb-4">
-    <h1 class="big-font">Inquiries</h1>
-    <h5 class="subtitle-font">For specific questions complete the form below.</h5>
-  <div class="row mb-3">
-    <div class="col-md-6">
-        <form>
-            <div class="form-row">
-              <div class="col-md-6 mb-1">
-                <label for="validationServer01">Name</label>
-                <input type="text" class="form-control  is-valid edit-input  edit-input-valid" id="validationServer01" placeholder="First name" value="Mark" required>
-                <div class="valid-feedback">
-                  Looks good!
-                </div>
-              </div>
-              <div class="col-md-6 mb-1">
-                <label for="validationServer02">Email</label>
-                <input type="email" class="form-control is-valid edit-input  edit-input-valid" id="validationServer02" placeholder="Email" value="Otto@gmail.com" required>
-                <div class="valid-feedback">
-                  Looks good!
-                </div>
-              </div>
-            </div>
-            <div class="form-row">
-              <div class="col-md-6 mb-3">
-                <label for="validationServer03">Organization Name</label>
-                <input type="text" class="form-control is-invalid edit-input" id="validationServer03" placeholder="Organization Name" required>
-                <div class="invalid-feedback">
-                  Please provide a valid Organization Name.
-                </div>
-              </div>
-              <div class="col-md-6 mb-1">
-                <label for="validationServer04">Phone Number</label>
-                <input type="text" class="form-control is-invalid edit-input" id="validationServer04" placeholder="Phone Number" required>
-                <div class="invalid-feedback">
-                  Please provide a valid Phone Number.
-                </div>
-              </div>
-              <div class="col-md-12 mb-3">
-                <label for="validationServer05">Message</label>
-                <textarea rows="5" type="text" class="form-control is-invalid edit-textarea" id="validationServer05" placeholder="Message..." required></textarea>
-                <div class="invalid-feedback">
-                  Please provide a valid Message.
-                </div>
-              </div>
-            </div>
-            <button class="btn btn-primary default-button-color" type="submit">Send Message</button>
-          </form>  
-    </div>
-    <div class="col-md-6" style="border: 8px; opacity: 23px; border-radius: 8px;">
-        <h5> Our Location</h5>
-        <iframe class="col-md-12" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3339.393990831668!2d-96.88709372452247!3d33.177533073498864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864c39992307da29%3A0x2c2a76b897ebb224!2s2831%20Eldorado%20Pkwy%20103%20128%2C%20Frisco%2C%20TX%2075033%2C%20USA!5e0!3m2!1sen!2ske!4v1710673206549!5m2!1sen!2ske"
-          height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <div class="row">
+        <div class="col-md-5">
+            <h1 class="mt-5">
+                <strong>Hear it straight from our thrilled clients</strong>
+            </h1>
+            <p class="mt-3 ">Our success stories are a testament to our dedication 
+                to delivering the highest quality solutions, getting 
+                it right on the first try.
+            </p>
 
-    </div>
-    
-  </div>
-</div>
-<div class="container-fluid p-5"  style="background-color: #121212;">
-    <section>
-        <div class="container">
-            <div class="row text-light">
-                <div class="col-md-4">
-                    <h1 class="">Contact Us</h1>
-
-                   <a  class="text-light" href="">
-                        <i class="fa fa-phone text-light"></i>
-                        +1 800 123 4567
-                    </a>
-                </div>
-                <div class="col-md-4">
-                   
-                    <h1>Email Us</h1>
-                   <a class="text-light" href="">
-                    <i class="fa fa-envelope "></i>
-                        info@armely.com
-                       
-                    </a>
-                </div>
-                <div class="col-md-4">
-                    <h1 class="text-light">Find Us</h1>
-                    <span class="text-light">
-                        2831 Eldorado Pkwy Suite <br>103-128
-                        Friso TX 75033
-                    </span>
-                </div>
-    
-            </div>
         </div>
-    </section>
+        <div class="col-md-7">
+           <img src="images/customer-stories/customer_stories.jpg" class="img-fluid" alt=""> 
+        </div>
+    </div>
 </div>
 
+<div class="container">
+    <h3>Our Impressive Customer Stories</h3>
+    <div class="row">
+      <div class="col-md-4">
+        <img src="images/customer-stories/customer_stories.jpg" class="img-fluid shake" alt="Image 1">
+        <div class="">
+            <h5> Advisory Services</h5>
+            <p>Get expert guidance in planning, development, marketing, finance, and risk management for sustainable growth</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <img src="images/customer-stories/customer_stories.jpg" class="img-fluid shake" alt="Image 2">
+      </div>
+      <div class="col-md-4">
+        <img src="images/customer-stories/customer_stories.jpg" class="img-fluid shake" alt="Image 3">
+      </div>
+    </div>
+   
+  </div>
 
-  
-  
 
    <!-- Floating Action Button -->
    <div class="floating-btn">
@@ -266,16 +210,12 @@
   </script>
   <script src="js/main3.js"></script>
   <script>
-    window.addEventListener('load', function() {
-        // Get the element to animate
-        var typingText = document.querySelector('.typing-text');
-        // Set the opacity to 1 to reveal the text
-        typingText.style.opacity = 1;
-        // Start the typing animation
-        typingText.style.animation = 'typing 5s steps(50, end) forwards, fadeIn 2s ease-in-out';
-        
+    $(document).ready(function(){
+      $(window).scroll(function(){
+        $('.shake').toggleClass('shake', $(this).scrollTop() > 100);
+      });
     });
-</script>
+  </script>
 
 
 </body>

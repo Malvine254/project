@@ -48,8 +48,8 @@
   text-align: center;
 }
 .default-button-color{
-  background-color: rgb(47,85,151);
-  border: solid rgb(47,85,151);
+  background-color:#2f5597;
+  border: solid #2f5597;
   border-radius: 5px;
   margin: auto;
   padding: 8px;
@@ -62,7 +62,7 @@
   border: solid black;
 }
 .defaut-color{
-  color: rgb(47,85,151);
+  color: #2f5597;
 }
 .defaut-background{
   background: rgb(47,85,151);
@@ -184,6 +184,7 @@ body.dark-mode {
 }
 .armely-logo-font{
   font-family: myFirstFont;
+  letter-spacing: 8px;
 }
 
 /* preloader styling */
@@ -236,7 +237,7 @@ body.dark-mode {
 }
 .logo-size{
   font-size: 55px;
-  word-spacing: 13px !important;
+  letter-spacing: 3px;
 }
 
 

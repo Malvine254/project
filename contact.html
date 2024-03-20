@@ -222,7 +222,7 @@
   <!-- Modal content -->
   <div class="modal-content col-lg-4">
     <span class="close">&times;</span>
-    <iframe src="https://copilotstudio.microsoft.com/environments/Default-588cadf4-9902-4465-86c0-8bcf04f4f102/bots/crc65_armelyCom/webchat?__version__=2"
+    <iframe id="lazy-loaded-iframe" src="https://copilotstudio.microsoft.com/environments/Default-588cadf4-9902-4465-86c0-8bcf04f4f102/bots/crc65_armelyCom/webchat?__version__=2"
     frameborder="0" style="width: 100%; height: 100%;"></iframe>  
       </div>
 
@@ -237,6 +237,26 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
 
   <script src="js/main.js"></script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        var lazyIframe = document.getElementById('lazy-loaded-iframe');
+        if ('IntersectionObserver' in window) {
+            var lazyIframeObserver = new IntersectionObserver(function(entries, observer) {
+                entries.forEach(function(entry) {
+                    if (entry.isIntersecting) {
+                        lazyIframe.src = lazyIframe.dataset.src;
+                        lazyIframeObserver.unobserve(lazyIframe);
+                    }
+                });
+            });
+            lazyIframeObserver.observe(lazyIframe);
+        } else {
+            // Fallback for browsers that do not support IntersectionObserver
+            lazyIframe.src = lazyIframe.dataset.src;
+        }
+    });
+    </script>
 
 
 </body>

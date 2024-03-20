@@ -1,0 +1,24 @@
+# Disable directory browsing
+Options -Indexes
+
+# Rewrite rule to remove file extensions
+RewriteEngine On
+
+# Rewrite rule to internally rewrite requests without extensions to their corresponding .html files
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^([^\.]+)$ $1.html [NC,L]
+
+# Return 404 error if the extension is modified
+RewriteCond %{THE_REQUEST} \.html?\s [NC]
+RewriteRule ^ - [R=404,L]
+
+<IfModule mod_headers.c>
+    # Cache static resources for 1 year
+    <FilesMatch "\.(jpg|jpeg|png|gif|mp4|js|css|woff|woff2|svg|ico)$">
+        Header set Cache-Control "max-age=31536000, public"
+    </FilesMatch>
+</IfModule>
+
+
+

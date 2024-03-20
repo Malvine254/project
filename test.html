@@ -3,50 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bootstrap Image Gallery</title>
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <!-- Custom CSS -->
-    <style>
-        /* Adjust image size */
-        .img-medium {
-            max-width: 150px; /* Set maximum width */
-            height: auto; /* Allow the height to adjust proportionally */
-        }
-    </style>
+    <title>Document</title>
 </head>
 <body>
-
-<div class="container mt-5">
-    <div class="row">
-        <!-- First Row -->
-        <div class="col-md-4 mb-4">
-            <img src="images/services/service1.jpg" class="img-fluid img-medium" alt="Image 1">
-        </div>
-        <div class="col-md-4 mb-4">
-            <img src="images/services/service2.jpg" class="img-fluid img-medium" alt="Image 2">
-        </div>
-        <div class="col-md-4 mb-4">
-            <img src="images/services/service3.jpg" class="img-fluid img-medium" alt="Image 3">
-        </div>
-        <!-- Second Row -->
-        <div class="col-md-4 mb-4">
-            <img src="images/services/service4.jpg" class="img-fluid img-medium" alt="Image 4">
-        </div>
-        <div class="col-md-4 mb-4">
-            <img src="images/services/service5.jpg" class="img-fluid img-medium" alt="Image 5">
-        </div>
-        <div class="col-md-4 mb-4">
-            <img src="images/services/service6.jpg" class="img-fluid img-medium" alt="Image 6">
-        </div>
-        <!-- Add more images as needed -->
-    </div>
-</div>
-
-<!-- Bootstrap JS -->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
+    <div id="includedContent"></div>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+              <script> 
+          $(function(){
+            $("#includedContent").load("services"); 
+          });
+    </script> 
+    
 </body>
 </html>
