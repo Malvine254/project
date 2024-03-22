@@ -369,3 +369,13 @@ body.dark-mode {
       font-size: 48px;
       margin-bottom: 20px;
   }
+   .black-rectangle {
+        background-color: #000;
+        color: #fff;
+        padding: 50px 20px;
+        width: 100%;
+    }
+    .icon {
+        display: inline-block;
+        margin: 10px;
+    }
