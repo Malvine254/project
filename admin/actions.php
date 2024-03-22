@@ -17,54 +17,24 @@
 <body>
   
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top pt-3 pb-3">
-    <a class="navbar-brand link" href="index"><h1 class="armely-logo-font text-light  h1" ><strong>armely</strong></h1></a>
-    <button style="background-color:rgb(47,85,151)" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top pt-3 pb-3" style="padding: 0px !important;">
+    <a class="navbar-brand link" href="index"><h1 class="armely-logo-font text-light pl-2" ><strong>armely</strong></h1></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse justify-content-center text-center" id="navbarNav">
     <ul class="navbar-nav mx-auto">
     <li class="nav-item active">
-        <a class="nav-link text-light link" href="#"><i class="fa fa-dashboard"></i> DASHBOARD <span class="sr-only">(current)</span></a>
+        <a class="nav-link text-light link" href="dashboard.php"><i class="fa fa-dashboard"></i> DASHBOARD <span class="sr-only">(current)</span></a>
     </li>
-    <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle text-light link" href="action.php" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-             <i class="fa fa-list"></i> ACTIONS
-        </a>
-        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <li><a class="dropdown-item" href="action.php?name=Add New Blog">Add New Blog</a></li>
-          <li><a class="dropdown-item" href="action.php?name=Add New Services">Add New Services</a></li>
-          <li><a class="dropdown-item" href="action.php?name=Edit Career">Edit Career</a></li>
-          <li><a class="dropdown-item" href="action.php?name=Edit Footer">Edit Footer</a></li>
-          <li><a class="dropdown-item" href="action.php?name=Edit About Company">Edit About Company</a></li>
-          <li><a class="dropdown-item" href="action.php?name=Edit Customer Stories">Edit Customer Stories</a></li>
-          <li><a class="dropdown-item" href="action.php?name=Edit Index Page">Edit Index Page</a></li>
-        </ul>
+     <li class="nav-item">
+      <a class="nav-link text-light link" href="actions.php">  <i class="fa fa-list"></i> <u>ACTIONS</u></a>
     </li>
-    <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle text-light link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-             <i class="fa fa-table"></i> TABLES
-        </a>
-        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">Blogs Table</a></li>
-            <li><a class="dropdown-item" href="#">Services Table</a></li>
-            <li><a class="dropdown-item" href="#">Career Table</a></li>
-            <li><a class="dropdown-item" href="#">Footer Table</a></li>
-            <li><a class="dropdown-item" href="#">About Company Table</a></li>
-            <li><a class="dropdown-item" href="#">Customer Stories Table</a></li>
-            <li><a class="dropdown-item" href="#">Index Page Table</a></li>
-        </ul>
+    <li class="nav-item">
+      <a class="nav-link text-light link" href="tables.php"> <i class="fa fa-table"></i> TABLES</a>
     </li>
-    <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle text-light link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-             <i class="fa fa-book"></i> REPORTS
-        </a>
-        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">Weekly Report</a></li>
-            <li><a class="dropdown-item" href="#">Monthly Report</a></li>
-            <li><a class="dropdown-item" href="#">Annual Report</a></li>
-            <li><a class="dropdown-item" href="#">All Reports</a></li>
-        </ul>
+    <li class="nav-item">
+      <a class="nav-link text-light link" href="reports.php">   <i class="fa fa-book"></i> REPORTS</a>
     </li>
     <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle text-light link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -149,44 +119,40 @@
       <div class="col-md-12">
         <div class=" card-back">
           <div class="card-body">
-           <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+           <nav class="navbar navbar-expand-sm navbar-dark bg-dark shadow">
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav2" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="fas fa-ellipsis-v"></span>
               </button>
               <div class="collapse navbar-collapse mx-auto justify-content-center" id="navbarNav2">
                 <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link" href="action.php?name=Add New Blog">Add New Blog</a>
+                  <li class="nav-item form-link-one">
+                    <a class="nav-link" >Add New Blog</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link"href="action.php?name=Add New Services">Add New Services</a>
+                    <a class="nav-link  form-link-two">Add New Services</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="action.php?name=Edit Career">Edit Career</a>
+                    <a class="nav-link  form-link-three">Edit Career</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="action.php?name=Edit Footer">Edit Footer</a>
+                    <a class="nav-link  form-link-four">Edit Footer</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="action.php?name=Edit About Company">Edit About Company</a>
+                    <a class="nav-link  form-link-five">Edit About Company</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="action.php?name=Edit Customer Stories">Edit Customer Stories</a>
+                    <a class="nav-link  form-link-six">Edit Customer Stories</a>
                   </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="action.php?name=Edit Index Page">Edit Index Page</a>
+                   <li class="nav-item">
+                    <a class="nav-link  form-link-seven">Edit Index Page</a>
                   </li>
                 </ul>
               </div>
             </nav>
              <div class="card mt-3 p-4">
-             <h3 class="card-title text-center"><?php if (isset($_GET['name'])) {
-             echo $_GET['name'];
-            } ?></h3>
+             <h3 id="action-title" class="card-title text-center"></h3>
             <!-- start of blog form -->
-            <?php if (isset($_GET['name']) && $_GET['name']=="Add New Blog"): ?>
-
-               <form>
+               <form id="form-one" class="forms">
                 <div class="form-row">
                   <div class="col-md-6 mb-1">
                     <label for="validationServer01">Blog Tiltle</label>
@@ -222,13 +188,11 @@
                 </div>
                 <button class="btn btn-primary default-button-color" type="submit">Add Blog</button>
               </form>
-            <?php endif ?>
            
             <!-- end of blog form -->
 
             <!-- start of service form -->
-            <?php if (isset($_GET['name']) && $_GET['name']=="Add New Services"): ?>
-               <form>
+               <form id="form-two" class="forms">
                 <div class="form-row">
                   <div class="col-md-6 mb-1">
                     <label for="validationServer01">Service Tiltle</label>
@@ -256,13 +220,11 @@
                 </div>
                 <button class="btn btn-primary default-button-color" type="submit">Add Serive</button>
               </form>
-            <?php endif ?>
            
             <!-- end of service form -->
 
             <!-- start of career form -->
-            <?php if (isset($_GET['name']) && $_GET['name']=="Edit Career"): ?>
-               <form>
+               <form id="form-three" class="forms">
                 <div class="form-row">
                   <div class="col-md-6 mb-1">
                     <label for="validationServer01">Career Tiltle</label>
@@ -290,16 +252,13 @@
                 </div>
                 <button class="btn btn-primary default-button-color" type="submit">Edit Career</button>
               </form>
-            <?php endif ?>
-           
             <!-- end of career form -->
 
              <!-- start of footer form -->
-            <?php if (isset($_GET['name']) && $_GET['name']=="Edit Footer"): ?>
-               <form>
+               <form id="form-four" class="forms">
                 <div class="form-row">
                   <div class="col-md-12 mb-3">
-                    <label for="validationServer05">Career Body</label>
+                    <label for="validationServer05">Edit Footer</label>
                     <textarea rows="5" type="text" id="editor-two" class="form-control is-invalid edit-textarea" placeholder="Footer Contents here..." required></textarea>
                     <script>
                           // Initialize CKEditor
@@ -316,13 +275,11 @@
                 </div>
                 <button class="btn btn-primary default-button-color" type="submit">Edit Footer</button>
               </form>
-            <?php endif ?>
            
             <!-- end of footer form -->
 
              <!-- start of about form -->
-            <?php if (isset($_GET['name']) && $_GET['name']=="Edit About Company"): ?>
-               <form>
+               <form id="form-five" class="forms">
                 <div class="form-row">
                   <div class="col-md-12 mb-3">
                     <label for="validationServer05">Edit About</label>
@@ -342,13 +299,10 @@
                 </div>
                 <button class="btn btn-primary default-button-color" type="submit">Edit About</button>
               </form>
-            <?php endif ?>
-           
             <!-- end of customer Stories form -->
 
-            <!-- start of custmer stories form -->
-            <?php if (isset($_GET['name']) && $_GET['name']=="Edit Customer Stories"): ?>
-               <form>
+            <!-- start of custmer stories form -->               
+            <form id="form-six" class="forms">
                 <div class="form-row">
                   <div class="col-md-12 mb-3">
                     <label for="validationServer05">Customer Stories</label>
@@ -362,13 +316,11 @@
                 </div>
                 <button class="btn btn-primary default-button-color" type="submit">Edit Customer Stories</button>
               </form>
-            <?php endif ?>
            
             <!-- end of customer Stories form -->
 
             <!-- start of Edit Index Page form -->
-            <?php if (isset($_GET['name']) && $_GET['name']=="Edit Index Page"): ?>
-               <form>
+               <form id="form-seven" class="forms">
                 <div class="form-row">
                   <div class="col-md-12 mb-3">
                     <label for="validationServer05">Edit Index Page</label>
@@ -382,7 +334,6 @@
                 </div>
                 <button class="btn btn-primary default-button-color" type="submit">Edit Index Page</button>
               </form>
-            <?php endif ?>
            
             <!-- end of Edit Index Page form -->
 
@@ -393,11 +344,8 @@
       </div>
     </div>
   </div>
-
-        
-
-      </div>
-    </section>
+</div>
+</section>
 
   <!-- counter section -->
 
@@ -421,6 +369,7 @@
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
   <script src="../js/main3.js"></script>
+  <script src="js/main.js"></script>
 
 <script>
     // Initialize CKEditor

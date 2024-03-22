@@ -10,6 +10,8 @@
   <!-- font awesome  -->
   <link rel="stylesheet" href="vendor/font-awesome/css/all.css"> 
   <link rel="icon" href="images/logo/logo1.png" type="image/x-icon">
+  
+  <meta http-equiv="Content-Encoding" content="gzip">
 
 
   <style>
@@ -40,16 +42,16 @@
     <div class="collapse navbar-collapse justify-content-center text-center" id="navbarNav">
       <ul class="navbar-nav mx-auto ">
         <li class="nav-item active">
-          <a  class="nav-link text-dark h5 link" href="#">SERVICES <span class="sr-only">(current)</span></a>
+          <a  class="nav-link text-dark h5 link" href="services.html">SERVICES <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-dark h5 link" href="#">CUSTOMER STORIES</a>
+          <a class="nav-link text-dark h5 link" href="customer stories.html">CUSTOMER STORIES</a>
         </li>
         <li class="nav-item">
           <a class="nav-link text-dark h5 link" href="#">COMPANY</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-dark h5 link" href="contact-us">CONTACT US</a>
+          <a class="nav-link text-dark h5 link" href="contact-us" target="_parent" rel="noopener noreferrer">CONTACT US</a>
         </li>
          <li class="nav-item">
           <a class="nav-link text-dark h5 link" href="#">CAREERS</a>
@@ -76,47 +78,118 @@
       <a id="toggleDarkMode" class="nav-link link" ><i class="icon fa fa-moon icon"></i></a>
     </div>
   </nav><br><br>
-  <!-- counter section -->
-<div class="container mt-3 mb-4">
-    <div class="row">
-        <div class="col-md-5">
-            <h1 class="mt-5">
-                <strong>Hear it straight from our thrilled clients</strong>
-            </h1>
-            <p class="mt-3 ">Our success stories are a testament to our dedication 
-                to delivering the highest quality solutions, getting 
-                it right on the first try.
-            </p>
+  <!-- Content -->
+  <div class="container mt-3">
+      <div class="row">
+        <div class="col-md-8">
+          <img src="images/blog/blog1.jpg" class="img-fluid">
+          <div class="mt-3">
+          <h3>News Needs to Meet Its Audiences Where They Are</h3>
+        </div>
+         <div class="profile-card d-flex align-items-center">
+            <img width="45" height="45" src="images/blog/profile.jpg" class="rounded-circle img-fluid mr-3" alt="Profile Picture">
+            <div>
+              <p class="mt-0 text-muted"><strong>Dave Rogers in News</strong>
+                <br><span class="text-muted">Jun 14 • 3 min read</span>
+              </p>
+              
+            </div>
+          </div>
+          <div class="paragraph">
+              <p><strong class="h4">L</strong>orem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit officia neque beatae at inventore excepturi numquam sint commodi alias, quam consequuntur corporis ex, distinctio eaque sapiente pariatur iure ad necessitatibus in quod obcaecati natus consequatur. Sed dicta maiores, eos culpa.</p>
+              <p>
+                Voluptatum animi, voluptate sint aperiam facere a nam, ex reiciendis eum nemo ipsum nobis, rem illum cupiditate at quaerat amet qui recusandae hic, atque laboriosam perspiciatis? Esse quidem minima, voluptas necessitatibus, officia culpa quo nulla, cupiditate iste vel unde magni.
+              </p>
+              <p>Nulla nesciunt eligendi ratione, atque, hic, ullam suscipit quos enim vitae fugiat ducimus, dolore delectus iste id culpa. Ducimus, iste magnam sed reprehenderit architecto perferendis odio voluptas molestiae quidem ab numquam debitis, dolorem incidunt, tempore a quod qui nobis. Voluptates!</p>
+              <p>landitiis, ipsum sed odio reprehenderit sequi ut vitae, dolor minima ab! Architecto nesciunt nemo sint est aspernatur fugit consequatur, magnam suscipit asperiores illo eum repellendus officia dolorem, molestiae commodi nam voluptatem quis quia vel cumque quos, aliquam ex incidunt sapiente!</p>
 
+              <div class="row">
+                 <div class="col"> <i class="fa-regular fa-message"></i><span> 45 Comments</span></div>
+                 <div class="col"> <i class="fa-regular fa-thumbs-up"></i><span> 1k Likes</span></div>
+                 <div class="col"> <i class="fa-regular fa-share-from-square"></i><span> Share</span></div>
+              </div>
+          </div>
         </div>
-        <div class="col-md-7">
-           <img src="images/customer-stories/customer_stories.jpg" class="img-fluid" alt=""> 
+        <div class="col-md-4">
+          <h4 class="mb-3"><u>Popular Posts</u></h4>
+          <div class="row align-items-center">
+            <div class="col-2">
+            <h6 class="lead h1 text-muted text-center">01 </h6>
+          </div>
+          <div class="col-10">
+             <span class="text-muted"><strong>News Needs to Meet Its Audiences Where They Are</strong></span>
+           <div>
+              <p style="font-size: 14px;" class="mt-0 text-sm">Dave Rogers in News
+                <br><span class="text-muted">Jun 14 • 3 min read</span>
+              </p>
+          </div>
         </div>
+      </div>
+
+      <div class="row align-items-center">
+            <div class="col-2">
+            <h6 class="lead h1 text-muted text-center">02 </h6>
+          </div>
+          <div class="col-10">
+             <span class="text-muted"><strong>News Needs to Meet Its Audiences Where They Are</strong></span>
+           <div>
+              <p style="font-size: 14px;" class="mt-0 text-sm">Dave Rogers in News
+                <br><span class="text-muted">Jun 14 • 3 min read</span>
+              </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row align-items-center">
+            <div class="col-2">
+            <h6 class="lead h1 text-muted text-center">03 </h6>
+          </div>
+          <div class="col-10">
+             <span class="text-muted"><strong>News Needs to Meet Its Audiences Where They Are</strong></span>
+           <div>
+              <p style="font-size: 14px;" class="mt-0 text-sm">Dave Rogers in News
+                <br><span class="text-muted">Jun 14 • 3 min read</span>
+              </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row align-items-center">
+            <div class="col-2">
+            <h6 class="lead h1 text-muted text-center">04 </h6>
+          </div>
+          <div class="col-10">
+             <span class="text-muted"><strong>News Needs to Meet Its Audiences Where They Are</strong></span>
+           <div>
+              <p style="font-size: 14px;" class="mt-0 text-sm">Dave Rogers in News
+                <br><span class="text-muted">Jun 14 • 3 min read</span>
+              </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row align-items-center">
+            <div class="col-2">
+            <h6 class="lead h1 text-muted text-center">05 </h6>
+          </div>
+          <div class="col-10">
+             <span class="text-muted"><strong>News Needs to Meet Its Audiences Where They Are</strong></span>
+           <div>
+              <p style="font-size: 14px;" class="mt-0 text-sm">Dave Rogers in News
+                <br><span class="text-muted">Jun 14 • 3 min read</span>
+              </p>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <a href=""> SEE ALL POPULAR <i class="fa fa-angle-right"></i></a>
+      </div>
     </div>
+  </div>
 </div>
 
-<div class="container">
-    <h3>Our Impressive Customer Stories</h3>
-    <div class="row">
-      <div class="col-md-4">
-        <img src="images/customer-stories/customer_stories.jpg" class="img-fluid shake" alt="Image 1">
-        <div class="">
-            <h5> Advisory Services</h5>
-            <p>Get expert guidance in planning, development, marketing, finance, and risk management for sustainable growth</p>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <img src="images/customer-stories/customer_stories.jpg" class="img-fluid shake" alt="Image 2">
-      </div>
-      <div class="col-md-4">
-        <img src="images/customer-stories/customer_stories.jpg" class="img-fluid shake" alt="Image 3">
-      </div>
-    </div>
-   
-  </div>
-
-
-   <!-- Floating Action Button -->
+<!-- Floating Action Button -->
    <div class="floating-btn">
     <button id="myBtn"  style="border-radius: 50%; height: 70px; width: 70px; background-color: rgb(47,85,151);"  type="button" class="btn btn-primary btn-lg">
       <i class="fas fa-comments"></i>
@@ -160,7 +233,7 @@
         <div class="col-md-2">
           <h5 class="mt-3">FOLLOW US</h5>
            <div style="align-items: start;" class="pt-3">
-              <a href=""><i class="fab fa-facebook text-light h3"></i></a>
+              <a class="p-3" href=""><i class="fab fa-facebook text-light h3 p-2"></i></a>
               <a href=""><i class="fab fa-linkedin text-light h3"></i></a>
               <a href=""><i class="fab fa-x-twitter text-light h3"></i></a>
               <a href=""><i class="fab fa-github text-light h3"></i></a>
@@ -210,13 +283,16 @@
   </script>
   <script src="js/main3.js"></script>
   <script>
-    $(document).ready(function(){
-      $(window).scroll(function(){
-        $('.shake').toggleClass('shake', $(this).scrollTop() > 100);
-      });
+    window.addEventListener('load', function() {
+        // Get the element to animate
+        var typingText = document.querySelector('.typing-text');
+        // Set the opacity to 1 to reveal the text
+        typingText.style.opacity = 1;
+        // Start the typing animation
+        typingText.style.animation = 'typing 5s steps(50, end) forwards, fadeIn 2s ease-in-out';
+        
     });
-  </script>
-
+</script>
 
 </body>
 </html>
