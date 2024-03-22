@@ -83,7 +83,7 @@
     <!-- title text -->
     <h1 class="text-center typing-text">Your Trusted Source<br>
       For Digital Excellence</h1>
-      <div class="mt-3">
+      <div class="mt-5">
         <h6 class="text-center">BRINGING YOUR VISION TO LIFE 
           <i class="fa fa-angle-right text-light" style="background-color:
            rgb(47,85,151); padding: 5px;"></i></h6>

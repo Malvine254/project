@@ -1,6 +1,6 @@
 .menu-item-color{
     color: black !important;
-    font-size: 15px !important;
+    font-size: 18px !important;
 }
 .nav{
 	padding: 26px !important; 
@@ -255,15 +255,16 @@ body.dark-mode {
 
 .typing-text::after {
   content: ".";
+  padding-bottom: 8px;
   display: inline-block;
   animation: blink 1s none;
 }
-
-/* Adjust animation speed to your preference */
-@keyframes typing {
-  from { width: 0; }
-  to { width: 100%; }
+@media screen and (max-width: 576px) {
+    .typing-text {
+  font-size: 25px;
 }
+}
+
 
 .typing-text {
   overflow: hidden; /* Ensures text doesn't overflow container */
@@ -278,11 +279,15 @@ body.dark-mode {
     font-size: 72px; /* Adjust font size for larger screens */
   }
 }
-
+@media (min-width: 576px) {
+  .typing-text {
+    font-size: 32px; /* Adjust font size for larger screens */
+  }
+}
 /* Media query for extra-large screens */
 @media (min-width: 1200px) {
   .typing-text {
-    font-size: 100px; /* Adjust font size for extra-large screens */
+    font-size: 100px !important; /* Adjust font size for extra-large screens */
   }
 }
 
@@ -365,4 +370,8 @@ body.dark-mode {
   .symbol {
       font-size: 48px;
       margin-bottom: 20px;
+  }
+  .nav-link:hover{
+    text-decoration: underline !important;
+
   }
