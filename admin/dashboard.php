@@ -15,74 +15,89 @@
 <body>
   
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light fixed-top pt-3 pb-3" style="background-color: #2f5597;">
-    <a class="navbar-brand link" href="index"><h1 class="armely-logo-font text-light  h1" ><strong>armely</strong></h1></a>
-    <button style="background-color:rgb(47,85,151)" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top pt-3 pb-3" style="padding: 0px !important;">
+    <a class="navbar-brand link" href="index"><h1 class="armely-logo-font text-light pl-2" ><strong>armely</strong></h1></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse justify-content-center text-center" id="navbarNav">
     <ul class="navbar-nav mx-auto">
     <li class="nav-item active">
-        <a class="nav-link text-light h5 link" href="#"><i class="fa fa-dashboard"></i> <u>DASHBOARD</u> <span class="sr-only">(current)</span></a>
+        <a class="nav-link text-light link" href="dashboard.php"><i class="fa fa-dashboard"></i> <u>DASHBOARD</u> <span class="sr-only">(current)</span></a>
+    </li>
+     <li class="nav-item">
+      <a class="nav-link text-light link" href="actions.php">  <i class="fa fa-list"></i> ACTIONS</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link text-light link" href="actions.php"> <i class="fa fa-table"></i> TABLES</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link text-light link" href="actions.php">   <i class="fa fa-book"></i> REPORTS</a>
     </li>
     <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle text-light h5 link" href="action.php" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-             <i class="fa fa-list"></i> ACTIONS
+        <a class="nav-link dropdown-toggle text-light link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <i class="fa fa-message"></i>
+           <sup>  <span class="badge bg-danger badge-number">4</span></sup>
+            MESSAGES 
         </a>
         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="action.php?name=Add New Blog">Add New Blog</a></li>
-            <li><a class="dropdown-item" href="action.php?name=Add New Services">Add New Services</a></li>
-            <li><a class="dropdown-item" href="action.php?name=Edit Career">Edit Career</a></li>
-            <li><a class="dropdown-item" href="action.php?name=Edit Footer">Edit Footer</a></li>
-            <li><a class="dropdown-item" href="action.php?name=Edit About Company">Edit About Company</a></li>
-            <li><a class="dropdown-item" href="action.php?name=>Edit Customer Stories">Edit Customer Stories</a></li>
-            <li><a class="dropdown-item" href="action.php?name=Edit Index Page">Edit Index Page</a></li>
+          <li><a class="dropdown-item" href="#">
+             You have 3 messages <span class="btn btn-primary btn-sm">View All</span>
+              </a>
+            </li>
+            <hr>
+            <li><a class="dropdown-item" href="#">
+              <div class="col">
+                <i>
+                  <h5>Malvine Owuor</h5>
+                  Lorem ipsum dolor sit ipsum <br>
+                    <span class="text-primary">4 hours ago</span>
+                 </i>
+                </div>
+                <hr>
+              </a>
+            </li>
+            <li><a class="dropdown-item" href="#">
+              <div class="col">
+                <i>
+                  <h5>John Doe</h5>
+                  Lorem ipsum dolor sit ipsum <br>
+                    <span class="text-primary">2 days ago</span>
+                 </i>
+                </div>
+                <hr>
+              </a>
+            </li>
+            <li><a class="dropdown-item" href="#">
+              <div class="col">
+                <i>
+                  <h5>Anderw Johns</h5>
+                  Lorem ipsum dolor sit ipsum <br>
+                    <span class="text-primary">2 Minutes ago</span>
+                 </i>
+                </div>
+                <hr>
+              </a>
+            </li>
+            
         </ul>
     </li>
     <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle text-light h5 link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-             <i class="fa fa-table"></i> TABLES
+        <a class="nav-link dropdown-toggle text-light link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <i class="fa fa-user"></i>
+            USER 
         </a>
         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">Blogs Table</a></li>
-            <li><a class="dropdown-item" href="#">Services Table</a></li>
-            <li><a class="dropdown-item" href="#">Career Table</a></li>
-            <li><a class="dropdown-item" href="#">Footer Table</a></li>
-            <li><a class="dropdown-item" href="#">About Company Table</a></li>
-            <li><a class="dropdown-item" href="#">Customer Stories Table</a></li>
-            <li><a class="dropdown-item" href="#">Index Page Table</a></li>
-        </ul>
-    </li>
-    <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle text-light h5 link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-             <i class="fa fa-book"></i> REPORTS
-        </a>
-        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">Weekly Report</a></li>
-            <li><a class="dropdown-item" href="#">Monthly Report</a></li>
-            <li><a class="dropdown-item" href="#">Annual Report</a></li>
-            <li><a class="dropdown-item" href="#">All Reports</a></li>
-        </ul>
-    </li>
-    <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle text-light h5 link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            MESSAGES <i class="fa fa-message"></i>
-            <sup>  <span class="badge bg-danger badge-number">4</span></sup>
-        </a>
-        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">Notification 1</a></li>
-            <li><a class="dropdown-item" href="#">Notification 2</a></li>
-            <li><a class="dropdown-item" href="#">Notification 3</a></li>
-        </ul>
-    </li>
-    <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle text-light h5 link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            USER <i class="fa fa-user"></i>
-        </a>
-        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <li class="justify-content-center text-center"><a class="dropdown-item" href="#"></i> <h4>Kevin Anderson</h4>
+            <p>System Admin</p>
+          </a>
+            <hr>
+            </li>
            <li><a class="dropdown-item" href="#"><i class="fa fa-right-from-bracket"></i> LogOut</a>
             </li>
+             <hr>
             <li><a class="dropdown-item" href="#"><i class="fa fa-cog"></i> Settings</a></li>
+            <hr>
             <li><a class="dropdown-item" href="#"><i class="fa fa-user"></i> My Account</a></li>
         </ul>
     </li>

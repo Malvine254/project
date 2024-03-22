@@ -42,22 +42,22 @@
     <div class="collapse navbar-collapse justify-content-center text-center" id="navbarNav">
       <ul class="navbar-nav mx-auto ">
         <li class="nav-item active">
-          <a  class="nav-link text-dark h5 link" href="services.html">SERVICES <span class="sr-only">(current)</span></a>
+          <a  class="nav-link text-dark h5 link" href="services">SERVICES <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-dark h5 link" href="customer stories.html">CUSTOMER STORIES</a>
+          <a class="nav-link text-dark h5 link" href="customer-stories">CUSTOMER STORIES</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-dark h5 link" href="#">COMPANY</a>
+          <a class="nav-link text-dark h5 link" href="company">COMPANY</a>
         </li>
         <li class="nav-item">
           <a class="nav-link text-dark h5 link" href="contact-us" target="_parent" rel="noopener noreferrer">CONTACT US</a>
         </li>
          <li class="nav-item">
-          <a class="nav-link text-dark h5 link" href="#">CAREERS</a>
+          <a class="nav-link text-dark h5 link" href="career">CAREERS</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-dark h5 link" href="#">BLOGS</a>
+          <a class="nav-link text-dark h5 link" href="blog">BLOGS</a>
         </li>
   
       </ul>
@@ -233,43 +233,47 @@
   <div class="container"><br>
     <h3 class="mb-2">Our recent blog posts</h3>
   
-    <div class="row slider-container mx-auto">
+    <div class="row">
       <div class="col-md-4">
         <div class="card bg-primary mb-3 transparent-card  ">
           <img class="card-img-top" src="images/services/service1.jpg" alt="Card image cap">
           <div class="card-body">
-              <h5 class="card-title">Power Automate Basics</h5>
-              <p class="card-text "><span class="fa fa-clock"></span> 7 <sup>th</sup> January</p>
-              <p class="card-text">Some quick example text to build on the 
-              </p><a href="" class="btn btn-outline-primary">Read more</a>
-             
+              <span class="h6"><strong>News Needs to Meet Its Audiences Where They Are</strong></span>
+             <p style="font-size: 14px;" class="mt-0 text-sm">Dave Rogers in News
+                <br><span class="text-muted">Jun 14 • 3 min read</span>
+              </p>
+             <a href="" class="btn btn-outline-primary">Read more</a>
           </div>
       </div>
       
       </div>
+
       <div class="col-md-4">
-        <div class="card bg-primary mb-3 transparent-card ">
-          <img class="card-img-top blog-hover-effec" src="images/services/service5.jpg" alt="Card image cap">
+        <div class="card bg-primary mb-3 transparent-card  ">
+          <img class="card-img-top" src="images/services/service1.jpg" alt="Card image cap">
           <div class="card-body">
-              <h5 class="card-title">Azure Cognitive Services</h5>
-              <p class="card-text "><span class="fa fa-clock"></span> 7 <sup>th</sup> January</p>
-              <p class="card-text">Some quick example text to build on the 
-              </p><a href="" class="btn btn-outline-primary">Read more</a>
-             
+              <span class="h6"><strong>News Needs to Meet Its Audiences Where They Are</strong></span>
+             <p style="font-size: 14px;" class="mt-0 text-sm">Dave Rogers in News
+                <br><span class="text-muted">Jun 14 • 3 min read</span>
+              </p>
+             <a href="" class="btn btn-outline-primary">Read more</a>
           </div>
       </div>
+      
       </div>
-      <div class="col-md-4 ">
-        <div class="card bg-primary mb-3 transparent-card">
-          <img class="card-img-top" src="images/services/service3.jpg" alt="Card image cap">
+
+      <div class="col-md-4">
+        <div class="card bg-primary mb-3 transparent-card  ">
+          <img class="card-img-top" src="images/services/service1.jpg" alt="Card image cap">
           <div class="card-body">
-              <h5 class="card-title">Power Automate Basics</h5>
-              <p class="card-text "><span class="fa fa-clock"></span> 7 <sup>th</sup> January</p>
-              <p class="card-text">Some quick example text to build on the 
-              </p><a href="" class="btn btn-outline-primary">Read more</a>
-             
+              <span class="h6"><strong>News Needs to Meet Its Audiences Where They Are</strong></span>
+             <p style="font-size: 14px;" class="mt-0 text-sm">Dave Rogers in News
+                <br><span class="text-muted">Jun 14 • 3 min read</span>
+              </p>
+             <a href="" class="btn btn-outline-primary">Read more</a>
           </div>
       </div>
+      
       </div>
       </div>
     </div>

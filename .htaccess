@@ -9,8 +9,17 @@ RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}.html -f
 RewriteRule ^([^\.]+)$ $1.html [NC,L]
 
-# Return 404 error if the extension is modified
+# Rewrite rule to internally rewrite requests without extensions to their corresponding .php files
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^([^\.]+)$ $1.php [NC,L]
+
+# Return 404 error if the extension is modified (for .html files)
 RewriteCond %{THE_REQUEST} \.html?\s [NC]
+RewriteRule ^ - [R=404,L]
+
+# Return 404 error if the extension is modified (for .php files)
+RewriteCond %{THE_REQUEST} \.php\s [NC]
 RewriteRule ^ - [R=404,L]
 
 <IfModule mod_headers.c>
@@ -19,6 +28,3 @@ RewriteRule ^ - [R=404,L]
         Header set Cache-Control "max-age=31536000, public"
     </FilesMatch>
 </IfModule>
-
-
-

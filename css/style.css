@@ -184,7 +184,7 @@ body.dark-mode {
 }
 .armely-logo-font{
   font-family: myFirstFont;
-  letter-spacing: 8px;
+  letter-spacing: 1px;
 }
 
 /* preloader styling */
