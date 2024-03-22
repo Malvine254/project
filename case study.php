@@ -31,54 +31,51 @@
     <div id="loader"></div>
   </div>
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-light fixed-top pt-3 pb-3">
+   <nav class="navbar navbar-expand-lg navbar-dark fixed-top pt-3 pb-3 ">
    
-    <a class="navbar-brand" href="#"><img src="images/logo/logo1.png" alt="" height="27px" loading="lazy"></a>
+    <a class="navbar-brand link" href="index"><h1 class="armely-logo-font defaut-color logo-size h1"><strong>armely</strong></h1></a>
     <button style="background-color:rgb(47,85,151)" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav mr-auto">
+    <div class="collapse navbar-collapse justify-content-center text-center" id="navbarNav">
+      <ul class="navbar-nav mx-auto ">
         <li class="nav-item active">
-          <a  class="nav-link menu-item-color" href="#">SERVICES <span class="sr-only">(current)</span></a>
+          <a  class="nav-link text-dark h5 link" href="services">SERVICES <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link menu-item-color" href="#">CUSTOMER STORIES</a>
+          <a class="nav-link text-dark h5 link" href="customer-stories">CUSTOMER STORIES</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link menu-item-color" href="#">COMPANY</a>
+          <a class="nav-link text-dark h5 link" href="company">COMPANY</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link menu-item-color" href="#">CONTACT US</a>
+          <a class="nav-link text-dark h5 link" href="contact-us" target="_parent" rel="noopener noreferrer">CONTACT US</a>
         </li>
          <li class="nav-item">
-          <a class="nav-link menu-item-color" href="#">CAREERS</a>
+          <a class="nav-link text-dark h5 link" href="career">CAREERS</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link menu-item-color" href="#">BLOGS</a>
+          <a class="nav-link text-dark h5 link" href="blog">BLOGS</a>
         </li>
   
       </ul>
       <!-- Search Bar -->
+     
       <form class="form-inline my-2 my-lg-0">
-        <div class="input-group">
-          <input type="text" class="form-control" placeholder="Search" aria-label="Search" aria-describedby="searchIcon">
-          <div class="input-group-append">
-            <span class="input-group-text" id="searchIcon"><i class="fas fa-search"></i></span>
-          </div>
+        <div class="input-group" style="width: 350px;">
+            <input class="form-control py-2 border-right-0 border col-md-12 bg-transparent" type="search" placeholder="Search..." id="example-search-input" style="outline: none;">
+            <span class="input-group-append">
+                <button class="btn btn-outline-secondary border-left-0 border" type="button" style="outline: none;">
+                    <i class="fa fa-search"></i>
+                </button>
+            </span>
         </div>
-      </form>
-      <a id="toggleDarkMode" class="nav-link menu-item-color modes" ><i class="icon fa fa-moon icon"></i></a>
+    </form>
+    
+    
+      <a id="toggleDarkMode" class="nav-link link" ><i class="icon fa fa-moon icon"></i></a>
     </div>
-  </nav>
-  <!-- Content -->
-
-
-  
-
-  
-  
-  
+  </nav><br><br>
 
    <!-- Floating Action Button -->
    <div class="floating-btn">

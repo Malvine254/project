@@ -31,31 +31,31 @@
     <div id="loader"></div>
   </div>
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark fixed-top pt-3 pb-3 ">
+   <nav class="navbar navbar-expand-lg navbar-dark fixed-top pt-3 pb-3 ">
    
-    <a class="navbar-brand link" href="index.html"><h1 class="armely-logo-font defaut-color logo-size h1"><strong>armely</strong></h1></a>
+    <a class="navbar-brand link" href="index"><h1 class="armely-logo-font defaut-color logo-size h1"><strong>armely</strong></h1></a>
     <button style="background-color:rgb(47,85,151)" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse justify-content-center text-center" id="navbarNav">
       <ul class="navbar-nav mx-auto ">
         <li class="nav-item active">
-          <a  class="nav-link text-dark h5 link" href="services.html">SERVICES <span class="sr-only">(current)</span></a>
+          <a  class="nav-link text-dark h5 link" href="services">SERVICES <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-dark h5 link" href="customer stories.html">CUSTOMER STORIES</a>
+          <a class="nav-link text-dark h5 link" href="customer-stories">CUSTOMER STORIES</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-dark h5 link" href="#">COMPANY</a>
+          <a class="nav-link text-dark h5 link" href="company">COMPANY</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-dark h5 link" href="contact-us.html">CONTACT US</a>
+          <a class="nav-link text-dark h5 link" href="contact-us" target="_parent" rel="noopener noreferrer">CONTACT US</a>
         </li>
          <li class="nav-item">
-          <a class="nav-link text-dark h5 link" href="#">CAREERS</a>
+          <a class="nav-link text-dark h5 link" href="career">CAREERS</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-dark h5 link" href="#">BLOGS</a>
+          <a class="nav-link text-dark h5 link" href="blog">BLOGS</a>
         </li>
   
       </ul>

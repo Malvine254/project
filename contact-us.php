@@ -40,22 +40,22 @@
     <div class="collapse navbar-collapse justify-content-center text-center" id="navbarNav">
       <ul class="navbar-nav mx-auto ">
         <li class="nav-item active">
-          <a  class="nav-link text-dark h5 link" href="#">SERVICES <span class="sr-only">(current)</span></a>
+          <a  class="nav-link text-dark h5 link" href="services">SERVICES <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-dark h5 link" href="#">CUSTOMER STORIES</a>
+          <a class="nav-link text-dark h5 link" href="customer-stories">CUSTOMER STORIES</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-dark h5 link" href="#">COMPANY</a>
+          <a class="nav-link text-dark h5 link" href="company">COMPANY</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-dark h5 link" href="contact-us">CONTACT US</a>
+          <a class="nav-link text-dark h5 link" href="contact-us" target="_parent" rel="noopener noreferrer">CONTACT US</a>
         </li>
          <li class="nav-item">
-          <a class="nav-link text-dark h5 link" href="#">CAREERS</a>
+          <a class="nav-link text-dark h5 link" href="career">CAREERS</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-dark h5 link" href="#">BLOGS</a>
+          <a class="nav-link text-dark h5 link" href="blog">BLOGS</a>
         </li>
   
       </ul>
