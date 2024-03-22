@@ -85,7 +85,7 @@
               <p>Our success stories are a testament to our dedication to delivering the highest quality solutions, getting it right on the first try.</p>
           </div>
           <div class="col-md-6">
-              <img src="images/services/services_main.png" alt="" class="img-fluid">
+              <img src="images/company/jtucrutuvii.png" alt="" class="img-fluid">
           </div>
       </div>
   </div>
