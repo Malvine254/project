@@ -38,24 +38,24 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse justify-content-center text-center" id="navbarNav">
-      <ul class="navbar-nav mx-auto ">
+       <ul class="navbar-nav mx-auto ">
         <li class="nav-item active">
-          <a  class="nav-link text-dark h5 link" href="services">SERVICES <span class="sr-only">(current)</span></a>
+          <a  class="nav-link text-dark link" href="services">SERVICES <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-dark h5 link" href="customer-stories">CUSTOMER STORIES</a>
+          <a class="nav-link text-dark link" href="customer-stories">CUSTOMER STORIES</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-dark h5 link" href="company">COMPANY</a>
+          <a class="nav-link text-dark link" href="company">COMPANY</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-dark h5 link" href="contact-us" target="_parent" rel="noopener noreferrer">CONTACT US</a>
+          <a class="nav-link text-dark link" href="contact-us" target="_parent" rel="noopener noreferrer">CONTACT US</a>
         </li>
          <li class="nav-item">
-          <a class="nav-link text-dark h5 link" href="career">CAREERS</a>
+          <a class="nav-link text-dark link" href="career">CAREERS</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-dark h5 link" href="blog">BLOGS</a>
+          <a class="nav-link text-dark link" href="blog">BLOGS</a>
         </li>
   
       </ul>
@@ -77,7 +77,7 @@
     </div>
   </nav><br><br>
   <!-- Content -->
-  <div class="container container-fluid content-container mt-5">
+  <div class="container col-md-10 container-fluid content-container mt-5">
     <div class="row">
         <div class="col-md-6">
             <div class="text-left">
@@ -92,30 +92,37 @@
     </div>
 </div>
 <div class=" container-fluid three-column-section mt-5 mb-5 h-100">
-    <div class="container">
-        <div class="row " >
-            <div class="col-md-4 column">
-                <h5>WE STRIVE TO IMPROVE YOUR COMPANY & HELP YOUR BUSINESS GROW</h5>
-            </div>
-            <div class="col-md-4 column">
-                <div class="symbol">
-                   <img src="images/company/graph.svg" alt="">
-                </div>
+    <div class="container col-md-10">
+    <div class="row p-5">
+        <div class="col-md-4">
+         <div class="pt-5 mb-5 column">
+            <p class="text-left text-large"> <strong>WE STRIVE</strong>- TO IMPROVE YOUR COMPANY & HELP YOUR BUSINESS GROW</p>
+           
+         </div>
+        </div>
+        <div class="col-md-4">
+           <div class="pt-1 mb-5 column">
+              <img src="images/company/graph.svg" alt="" class="img-fluid">
                 <p>Tech excellence redefined tailored for you.</p>
-            </div>
-            <div class="col-md-4 column">
-                <h3 class="counter" data-target="99">99%</h3>
+           </div>
+        </div>
+        <div class="col-md-4">
+           <div class="pt-5 mb-5 column">
+              <h3 class="counter percent" data-target="99">99</h3>
                 <p>Our Performance is the next level</p>
-            </div>
+           </div>
+           
         </div>
     </div>
+</div>
+
 </div>
 
 <!-- our values section -->
 <div>
     <h1 class="text-center mt-4 mb-4">Our Values</h1>
 </div>
-<div class="container">
+<div class="container col-md-10">
     <div class="row">
         <div class="col-md-4 column" >
             <img src="images/company/hands_care_black.png" alt="" class="img-fluid rounded-circle  bg-light p-1 mt-4 mb-1 p-4">
@@ -159,7 +166,7 @@
 </div>
 <!-- another div -->
 
-<div class="container">
+<div class="container mt-4 col-md-10">
     <div class="row">
         <div class="col-md-6">
             <img src="images/company/Comp.svg" alt="" class="img-fluid">
@@ -183,7 +190,7 @@
     <i style="font-size: 2em;" class="fa-solid fa-arrow-up"></i>
 </button>
   <!-- Footer -->
-  <footer id="footer" class="text-center col-md-12">
+  <footer id="footer" class="col-md-12">
     <div class=" mt-5">
       <div class="row text-light ">
         <div class="col-md-2">
@@ -195,37 +202,36 @@
           <p>Case studies</p>
           <p>Job Board</p>
         </div>
-        <div class="col-md-3">
-          <h5 class="mt-3">SERVICES</h5>
-          <p >Advisory Services <br>Business intelligence <br>Data Services
-          <br>Managed Services <br>
-           Application Development <br>
-           Mentoring</p>
-        </div>
+      <div class="col-md-3">
+          <h5 class="mt-3 text-white">SERVICES</h5>
+          <div><a class="text-light text-right" href="#">Data Services</a></div>
+          <div><a class="text-light text-right" href="#">Advisory Services</a></div>
+          <div><a class="text-light" href="#">Managed Services</a></div>
+         <div> <a class="text-light" href="#">Business intelligence</a></div>
+         <div> <a class="text-light" href="#">Application Development Mentoring</a></div>
+      </div>
+
         <div class="col-md-2">
           <h5 class="mt-3">CONTACT US</h5>
-          <a href="" class="text-light">
-            <p>+1 972 460 0643</p>
-            </a>
-          <h6>ADDRESS</h6>
-          <p>2831 Eldorado
-            <br>Pkwy Suite 103-128
-            <br>Friso TX 75033</p>
-        </div>
+           <div> <a class="text-white" href="tel:+1 972 460 0643"><i class="fa fa-phone"></i> +1 972 460 0643</a></div>
+            <div><h6>ADDRESS</h6></div>
+            <div><p>2831 Eldorado Pkwy Suite 103-128 Friso TX 75033</p></div>
+          </div>
 
         <div class="col-md-2">
           <h5 class="mt-3">FOLLOW US</h5>
            <div style="align-items: start;" class="pt-3">
               <a href=""><i class="fab fa-facebook text-light h3"></i></a>
-              <a href=""><i class="fab fa-linkedin text-light h3"></i></a>
-              <a href=""><i class="fab fa-x-twitter text-light h3"></i></a>
-              <a href=""><i class="fab fa-github text-light h3"></i></a>
-              <a href=""><i class="fab fa-youtube text-light h3"></i></a>
+              <a href=""><i class="fab fa-linkedin text-light h3 pl-3"></i></a>
+              <a href=""><i class="fab fa-x-twitter text-light h3 pl-3"></i></a>
+              <a href=""><i class="fab fa-github text-light h3 pl-3"></i></a>
+              <a href=""><i class="fab fa-youtube text-light h3 pl-3"></i></a>
             </div>     
         </div>
       </div>
-      <div class="col mb-3 text-light">
-        <p class="h5"> &copy; 2023 <a href="armely.com">Armely LLC</a>. All rights reserved.</p><br>
+      <hr class="bg-light">
+      <div class="text-center col mb-3 text-light text-small">
+        <p> &copy; 2024 Armely LLC || All rights reserved.</p><br>
       </div>
     </div>
    

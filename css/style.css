@@ -1,11 +1,10 @@
 .menu-item-color{
     color: black !important;
-    font-size: 18px;
-    font-weight: 400 !important;
+    font-size: 15px !important;
 }
 .nav{
 	padding: 26px !important; 
-  background: white !important;
+  background: white !important; 
 }
 .floating-btn {
     position: fixed;
@@ -183,8 +182,7 @@ body.dark-mode {
   src: url(../logo-font/font.ttf);
 }
 .armely-logo-font{
-  font-family: myFirstFont;
-  letter-spacing: 1px;
+  font-family: myFirstFont !important;
 }
 
 /* preloader styling */
@@ -237,7 +235,6 @@ body.dark-mode {
 }
 .logo-size{
   font-size: 55px;
-  letter-spacing: 3px;
 }
 
 
@@ -369,3 +366,14 @@ body.dark-mode {
       font-size: 48px;
       margin-bottom: 20px;
   }
+/*  underline menu on hover*/
+  .nav-link:hover {
+      text-decoration: underline;
+    }
+ p,a,h2,input,textarea,label,h2{
+    font-family: "Inter", system-ui, sans-serif;
+ }   
+
+ *{
+  scroll-behavior: smooth;
+ }
