@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Floating Item</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<style>
+    .floating-item {
+        position: absolute;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        padding: 10px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        display: none;
+        width: 90vw;
+    }
+</style>
+</head>
+<body>
+
+<button id="myButton" type="button" class="btn btn-primary">Click Me</button>
+<div class="container">
+  <div  id="floatingItem" class="floating-item  col-md-10">This is a floating item</div>
+</div>
+<div class="container">
+  <p>This command will make the necessary adjustments to your code to work with the new version of the OpenAI library.
+
+Alternatively, if you prefer to stick with the older version temporarily, you can pin your installation to the last supported version (0.28) by running:
+
+bash
+</p>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+   $("#myButton").click(()=>{
+            $(".floating-item").css({"display":"block"})
+           })
+</script>
+
+</body>
+</html>

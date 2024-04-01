@@ -130,6 +130,7 @@ This marks the start of Check if user preference for dark mode is stored in loca
      $('nav').css({"background-color":"#121212"})
      $(".link").removeClass('text-dark')
      $(".link").addClass("text-light")
+     $("#floatingItem").css({"background":"#121212"})
         
     
  }else{
@@ -139,6 +140,7 @@ This marks the start of Check if user preference for dark mode is stored in loca
     $('nav').css({"background-color":"white"})
     $(".link").removeClass('text-light')
     $(".link").addClass("text-dark")
+    $("#floatingItem").css({"background":"#fff"})
     
     
  }
@@ -157,6 +159,7 @@ This marks the start of Check if user preference for dark mode is stored in loca
         $('nav').css({"background-color":"#121212"})
         $(".link").removeClass('text-dark')
         $(".link").addClass("text-light")
+        $("#floatingItem").css({"background":"#121212"})
            
     }else{
        $('.icon').removeClass('fa fa-sun')
@@ -164,7 +167,8 @@ This marks the start of Check if user preference for dark mode is stored in loca
        $('footer').css({"background":"rgb(47,85,151)"})
        $('nav').css({"background-color":"white"})
        $(".link").removeClass('text-light')
-       $(".link").addClass("text-dark")   
+       $(".link").addClass("text-dark") 
+       $("#floatingItem").css({"background":"#fff"})  
     }
    
      // Store user preference in local storage
@@ -189,6 +193,40 @@ This marks the start of preloader
   });
   /*
 =============================================================================================================================================
-This marks the start of preloader
+This marks the end of preloader
 =============================================================================================================================================
-*/ 
+*/
+/*
+
+=============================================================================================================================================
+This marks the start of floating service and company pages
+=============================================================================================================================================
+*/  
+
+ $("#myButton").click(() => {
+    $("#floatingItemTwo").css({"display":"none"});
+      var buttonPosition = $("#myButton").position(); // Get button position
+      var buttonHeight = $("#myButton").outerHeight(); // Get button height
+      var floatingItem = $("#floatingItem");
+      // Set floating item position to below the button
+      floatingItem.css({
+        "top": buttonPosition.top + buttonHeight + 30// Adjust as needed
+      });
+      floatingItem.toggle(); // Toggle display of floating item
+   });
+   $("#myButtonTwo").click(() => {
+      $("#floatingItem").css({"display":"none"});
+      var buttonPosition = $("#myButtonTwo").position(); // Get button position
+      var buttonHeight = $("#myButtonTwo").outerHeight(); // Get button height
+      var floatingItem = $("#floatingItemTwo");
+      // Set floating item position to below the button
+      floatingItem.css({
+        "top": buttonPosition.top + buttonHeight + 30// Adjust as needed
+      });
+      floatingItem.toggle(); // Toggle display of floating item
+   });
+   /*
+=============================================================================================================================================
+This marks the end of floating service and company pages
+=============================================================================================================================================
+*/  

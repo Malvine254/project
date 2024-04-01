@@ -40,22 +40,25 @@
     <div class="collapse navbar-collapse justify-content-center text-center" id="navbarNav">
       <ul class="navbar-nav mx-auto ">
         <li class="nav-item active">
-          <a  class="nav-link text-dark h5 link" href="services">SERVICES <span class="sr-only">(current)</span></a>
+          <a  class="nav-link text-dark link myButton" id="myButton" >SERVICES <span class="sr-only myButton">(current)</span></a>
+          <a  href="services" class="nav-link text-dark link myButtonTwo">SERVICES <span class="sr-only">(current)</span></a>
+
         </li>
         <li class="nav-item">
-          <a class="nav-link text-dark h5 link" href="customer-stories">CUSTOMER STORIES</a>
+          <a class="nav-link text-dark link" href="customer-stories">CUSTOMER STORIES</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-dark h5 link" href="company">COMPANY</a>
+          <a class="nav-link text-dark link myButton" id="myButtonTwo" >COMPANY</a>
+          <a class="nav-link text-dark link myButtonTwo" href="company">COMPANY</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-dark h5 link" href="contact-us" target="_parent" rel="noopener noreferrer">CONTACT US</a>
+          <a class="nav-link text-dark link" href="contact-us" target="_parent" rel="noopener noreferrer">CONTACT US</a>
         </li>
          <li class="nav-item">
-          <a class="nav-link text-dark h5 link" href="career">CAREERS</a>
+          <a class="nav-link text-dark link" href="career">CAREERS</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-dark h5 link" href="blog">BLOGS</a>
+          <a class="nav-link text-dark link" href="blog">BLOGS</a>
         </li>
   
       </ul>
@@ -63,7 +66,7 @@
      
       <form class="form-inline my-2 my-lg-0">
         <div class="input-group" style="width: 350px;">
-            <input class="form-control py-2 border-right-0 border col-md-12 bg-transparent" type="search" placeholder="Search..." id="example-search-input" style="outline: none;">
+            <input class="form-control py-2 border-right-0 border col-md-12 bg-transparent" type="search" placeholder="Search..." id="example-search-input">
             <span class="input-group-append">
                 <button class="btn btn-outline-secondary border-left-0 border" type="button" style="outline: none;">
                     <i class="fa fa-search"></i>
@@ -76,6 +79,10 @@
       <a id="toggleDarkMode" class="nav-link link" ><i class="icon fa fa-moon icon"></i></a>
     </div>
   </nav><br><br>
+  <!-- start of services floating screen and company floating screen -->
+   <?php include "display_services-company-floating-contents.php"; ?>
+
+  <!-- end of services floating screen and company floating screen -->
 
    <!-- Floating Action Button -->
    <div class="floating-btn">

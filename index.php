@@ -42,13 +42,16 @@
     <div class="collapse navbar-collapse justify-content-center text-center" id="navbarNav">
       <ul class="navbar-nav mx-auto ">
         <li class="nav-item active">
-          <a  class="nav-link text-dark link" href="services">SERVICES <span class="sr-only">(current)</span></a>
+          <a  class="nav-link text-dark link myButton" id="myButton" >SERVICES <span class="sr-only myButton">(current)</span></a>
+          <a  href="services" class="nav-link text-dark link myButtonTwo">SERVICES <span class="sr-only">(current)</span></a>
+
         </li>
         <li class="nav-item">
           <a class="nav-link text-dark link" href="customer-stories">CUSTOMER STORIES</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-dark link" href="company">COMPANY</a>
+          <a class="nav-link text-dark link myButton" id="myButtonTwo" >COMPANY</a>
+          <a class="nav-link text-dark link myButtonTwo" href="company">COMPANY</a>
         </li>
         <li class="nav-item">
           <a class="nav-link text-dark link" href="contact-us" target="_parent" rel="noopener noreferrer">CONTACT US</a>
@@ -65,7 +68,7 @@
      
       <form class="form-inline my-2 my-lg-0">
         <div class="input-group" style="width: 350px;">
-            <input class="form-control py-2 border-right-0 border col-md-12 bg-transparent" type="search" placeholder="Search..." id="example-search-input" style="outline: none;">
+            <input class="form-control py-2 border-right-0 border col-md-12 bg-transparent" type="search" placeholder="Search..." id="example-search-input">
             <span class="input-group-append">
                 <button class="btn btn-outline-secondary border-left-0 border" type="button" style="outline: none;">
                     <i class="fa fa-search"></i>
@@ -111,6 +114,10 @@
   </div>
 </div>
 
+<!-- start of services floating screen and company floating screen -->
+ <?php include "display_services-company-floating-contents.php"; ?>
+
+<!-- end of services floating screen and company floating screen -->
 
   <!-- see our works section -->
   <section>
@@ -229,13 +236,15 @@
     </div>
 </div>
 
+</div>
+
   <!-- connect with experts -->
   <div class="container"><br>
     <h3 class="mb-2">Our recent blog posts</h3>
   
     <div class="row">
       <div class="col-md-4">
-        <div class="card bg-primary mb-3 transparent-card  ">
+        <div class="card bg-primary mb-3 transparent-card">
           <img class="card-img-top" src="images/services/service1.jpg" alt="Card image cap">
           <div class="card-body">
               <span class="h6"><strong>News Needs to Meet Its Audiences Where They Are</strong></span>
@@ -436,6 +445,7 @@
         
     });
 </script>
+
 
 </body>
 </html>

@@ -33,22 +33,25 @@
     <div id="loader"></div>
   </div>
   <!-- Navbar -->
-   <nav class="navbar navbar-expand-lg navbar-dark fixed-top pt-3 pb-3 ">
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top pt-3 pb-3 ">
    
     <a class="navbar-brand link" href="index"><h1 class="armely-logo-font defaut-color logo-size h1"><strong>armely</strong></h1></a>
     <button style="background-color:rgb(47,85,151)" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse justify-content-center text-center" id="navbarNav">
-       <ul class="navbar-nav mx-auto ">
+      <ul class="navbar-nav mx-auto ">
         <li class="nav-item active">
-          <a  class="nav-link text-dark link" href="services">SERVICES <span class="sr-only">(current)</span></a>
+          <a  class="nav-link text-dark link myButton" id="myButton" >SERVICES <span class="sr-only myButton">(current)</span></a>
+          <a  href="services" class="nav-link text-dark link myButtonTwo">SERVICES <span class="sr-only">(current)</span></a>
+
         </li>
         <li class="nav-item">
           <a class="nav-link text-dark link" href="customer-stories">CUSTOMER STORIES</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-dark link" href="company">COMPANY</a>
+          <a class="nav-link text-dark link myButton" id="myButtonTwo" >COMPANY</a>
+          <a class="nav-link text-dark link myButtonTwo" href="company">COMPANY</a>
         </li>
         <li class="nav-item">
           <a class="nav-link text-dark link" href="contact-us" target="_parent" rel="noopener noreferrer">CONTACT US</a>
@@ -65,7 +68,7 @@
      
       <form class="form-inline my-2 my-lg-0">
         <div class="input-group" style="width: 350px;">
-            <input class="form-control py-2 border-right-0 border col-md-12 bg-transparent" type="search" placeholder="Search..." id="example-search-input" style="outline: none;">
+            <input class="form-control py-2 border-right-0 border col-md-12 bg-transparent" type="search" placeholder="Search..." id="example-search-input">
             <span class="input-group-append">
                 <button class="btn btn-outline-secondary border-left-0 border" type="button" style="outline: none;">
                     <i class="fa fa-search"></i>
@@ -78,6 +81,10 @@
       <a id="toggleDarkMode" class="nav-link link" ><i class="icon fa fa-moon icon"></i></a>
     </div>
   </nav><br><br>
+  <!-- start of services floating screen and company floating screen -->
+ <?php include "display_services-company-floating-contents.php"; ?>
+
+<!-- end of services floating screen and company floating screen -->
   <!-- Content -->
   <div class="container mt-3 col-md-10">
       <div class="row">
@@ -96,12 +103,12 @@
             </div>
           </div>
           <div class="paragraph">
-              <p><strong class="h4">L</strong>orem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit officia neque beatae at inventore excepturi numquam sint commodi alias, quam consequuntur corporis ex, distinctio eaque sapiente pariatur iure ad necessitatibus in quod obcaecati natus consequatur. Sed dicta maiores, eos culpa.</p>
-              <p>
-                Voluptatum animi, voluptate sint aperiam facere a nam, ex reiciendis eum nemo ipsum nobis, rem illum cupiditate at quaerat amet qui recusandae hic, atque laboriosam perspiciatis? Esse quidem minima, voluptas necessitatibus, officia culpa quo nulla, cupiditate iste vel unde magni.
-              </p>
-              <p>Nulla nesciunt eligendi ratione, atque, hic, ullam suscipit quos enim vitae fugiat ducimus, dolore delectus iste id culpa. Ducimus, iste magnam sed reprehenderit architecto perferendis odio voluptas molestiae quidem ab numquam debitis, dolorem incidunt, tempore a quod qui nobis. Voluptates!</p>
-              <p>landitiis, ipsum sed odio reprehenderit sequi ut vitae, dolor minima ab! Architecto nesciunt nemo sint est aspernatur fugit consequatur, magnam suscipit asperiores illo eum repellendus officia dolorem, molestiae commodi nam voluptatem quis quia vel cumque quos, aliquam ex incidunt sapiente!</p>
+            <p><strong class="h4">L</strong>orem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit officia neque beatae at inventore excepturi numquam sint commodi alias, quam consequuntur corporis ex, distinctio eaque sapiente pariatur iure ad necessitatibus in quod obcaecati natus consequatur. Sed dicta maiores, eos culpa.</p>
+            <p>
+              Voluptatum animi, voluptate sint aperiam facere a nam, ex reiciendis eum nemo ipsum nobis, rem illum cupiditate at quaerat amet qui recusandae hic, atque laboriosam perspiciatis? Esse quidem minima, voluptas necessitatibus, officia culpa quo nulla, cupiditate iste vel unde magni.
+            </p>
+            <p>Nulla nesciunt eligendi ratione, atque, hic, ullam suscipit quos enim vitae fugiat ducimus, dolore delectus iste id culpa. Ducimus, iste magnam sed reprehenderit architecto perferendis odio voluptas molestiae quidem ab numquam debitis, dolorem incidunt, tempore a quod qui nobis. Voluptates!</p>
+            <p>landitiis, ipsum sed odio reprehenderit sequi ut vitae, dolor minima ab! Architecto nesciunt nemo sint est aspernatur fugit consequatur, magnam suscipit asperiores illo eum repellendus officia dolorem, molestiae commodi nam voluptatem quis quia vel cumque quos, aliquam ex incidunt sapiente!</p>
 
               <div class="row">
                  <div class="col"> <i class="fa-regular fa-message"></i><span> 45 Comments</span></div>
