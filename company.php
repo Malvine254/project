@@ -33,8 +33,7 @@
   <!-- Navbar -->
   <?php include 'php/header.php'; ?>
   <!-- start of services floating screen and company floating screen -->
-     <?php include "display_services-company-floating-contents.php"; ?>
-
+ <!-- link to be returned -->
     <!-- end of services floating screen and company floating screen -->
   <!-- Content -->
   <div class="container col-md-10 container-fluid content-container mt-5">
