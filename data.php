@@ -32,70 +32,25 @@
   <div id="preloader">
     <div id="loader"></div>
   </div>
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark fixed-top pt-3 pb-3 ">
-   
-    <a class="navbar-brand link" href="index"><h1 class="armely-logo-font defaut-color logo-size h1"><strong>armely</strong></h1></a>
-    <button style="background-color:rgb(47,85,151)" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse justify-content-center text-center" id="navbarNav">
-      <ul class="navbar-nav mx-auto ">
-        <li class="nav-item active">
-          <a  class="nav-link text-dark link myButton" id="myButton" >SERVICES <span class="sr-only myButton">(current)</span></a>
-          <a  href="services" class="nav-link text-dark link myButtonTwo">SERVICES <span class="sr-only">(current)</span></a>
-
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-dark link" href="customer-stories">CUSTOMER STORIES</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-dark link myButton" id="myButtonTwo" >COMPANY</a>
-          <a class="nav-link text-dark link myButtonTwo" href="company">COMPANY</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-dark link" href="contact-us" target="_parent" rel="noopener noreferrer">CONTACT US</a>
-        </li>
-         <li class="nav-item">
-          <a class="nav-link text-dark link" href="career">CAREERS</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-dark link" href="blog">BLOGS</a>
-        </li>
   
-      </ul>
-      <!-- Search Bar -->
-     
-      <form class="form-inline my-2 my-lg-0">
-        <div class="input-group" style="width: 350px;">
-            <input class="form-control py-2 border-right-0 border col-md-12 bg-transparent" type="search" placeholder="Search..." id="example-search-input">
-            <span class="input-group-append">
-                <button class="btn btn-outline-secondary border-left-0 border" type="button" style="outline: none;">
-                    <i class="fa fa-search"></i>
-                </button>
-            </span>
-        </div>
-    </form>
-    
-    
-      <a id="toggleDarkMode" class="nav-link link" ><i class="icon fa fa-moon icon"></i></a>
-    </div>
-  </nav><br><br>
+   <!-- Navbar -->
+  <?php include 'php/header.php'; ?>
+  
   <!-- Content -->
   <div class="container-fluid content-container mt-3">
     <div class="row">
         <!-- Column One -->
         <div class="col-md-6 column">
-            <h2>Advisory Services</h2>
-            <p>Armely's Advisory Hub provides insightful guidance, industry expertise and a proven track record of success.</p>
+            <h2>Data Services</h2>
+            <p>Navigate the complex data landscape with confidence. Find clarity amidst the data noise. Establish a reputation built on data-driven decisions.</p>
         </div>
         <!-- Column Two -->
         <div class="col-md-6 column">
-            <p>At Armely, we understand that in today's rapidly evolving technological landscape, organizations must continually adapt and transform to stay competitive. We recognize the challenges that come with navigating these changes, and we stand ready to be your trusted and proficient partner in guiding you through this journey.</p>
+            <p>Armely's data services empower you to harness the full potential of your data. We offer tailored solutions, expert guidance and actionable insights to help you achieve your data objectives. Whether it's data architecture, data governance, data integration, data quality or data security, our services cover a spectrum of areas.</p>
             <br>
-            <p>Our advisory services are tailored to meet your needs. With our team of experts, we will collaborate with you to create, oversee, and implement enduring solutions. Drawing upon our extensive industry insights and professional expertise, we are committed to helping you chart a clear roadmap and effectively communicate every step of the way.</p>
+            <p>Collaborating closely with your management team, we develop and execute plans, analyze data, uncover opportunities and navigate the challenges of the data-driven world. Our ultimate aim is to empower your company by optimizing data value, streamlining data management processes, ensuring data security and accuracy, and fostering sustainable growth through data.</p>
             <br>
-            <a href="#" class="btn btn-primary btn-advisory">Advisory Services</a>
+            <a href="#" class="btn btn-primary btn-advisory">Data Services</a>
         </div>
     </div>
 </div>
@@ -107,46 +62,12 @@
         </div>
         <!-- Column Two -->
         <div class="col-md-6 column">
-            <h4>Do you find it challenging to navigate the complexities of technology transformation without a dependable advisory partner?</h4>
-            <p>With Armely as your trusted partner, you can rely on our expertise to help you make informed decisions and implement lasting solutions.</p>
-            <ul class="list-unstyled">
-                <li class="list-item">&#10004; Trustworthy team of experts</li>
-                <li class="list-item">&#10004; Experienced advisory team for expert guidance and support</li>
-                <li class="list-item">&#10004; Effective communication throughout the advisory process</li>
-                <li class="list-item">&#10004; Customized Solutions</li>
-            </ul>
+            <h4>A business partner that embraces data management from every angle</h4>
+            <p>We take pride in assembling a team of business intelligence experts at Armely. Whether it's Data Analysis, Strategy Formulation, Dashboard Development, or Data Visualization, your business intelligence project will benefit from a customized strategy rooted in thorough research.</p>
         </div>
     </div>
 </div>
-<div class="container-fluid content-container">
-    <!-- Row 1 -->
-    <div class="row row-spacing">
-        <!-- Column One -->
-        <div class="col-md-12 column">
-            <h2>Armely Advisory Services</h2>
-            <p>Our expert team offers four key services to simplify complex setups, craft cost-effective solutions, enhance operational flexibility and proactively optimize the ever-evolving technologies powering your business, ensuring peak performance.</p>
-        </div>
-    </div>
-    <!-- Row 2 -->
-    <div class="row row-spacing">
-        <!-- Column One -->
-        <div class="col-md-6 column">
-            <!-- Icon 1 -->
-            <div class="icon-label">
-                <img height="100" width="100" src="images/services/effective-communication.png" alt="Mentoring" class="img-fluid">
-                <p>Mentoring</p>
-            </div>
-        </div>
-        <!-- Column Two -->
-        <div class="col-md-6 column">
-            <!-- Icon 2 -->
-            <div class="icon-label">
-                <img height="100" width="100" src="images/services/effective-communication.png" alt="Advisory Services" class="img-fluid">
-                <p>Advisory Services</p>
-            </div>
-        </div>
-    </div>
-</div>
+
   <!-- form -->
   <div class="container container-fluid content-container col-md-10 mt-5">
     <div class="text-center">

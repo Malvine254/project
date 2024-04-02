@@ -12,11 +12,11 @@
         </div>
       <div class='col-md-3'>
           <h5 class='mt-3 text-white'>SERVICES</h5>
-          <div><a class='text-light text-right' href='#'>Data Services</a></div>
-          <div><a class='text-light text-right' href='#'>Advisory Services</a></div>
-          <div><a class='text-light' href='#'>Managed Services</a></div>
-         <div> <a class='text-light' href='#'>Business intelligence</a></div>
-         <div> <a class='text-light' href='#'>Application Development Mentoring</a></div>
+          <div><a class='text-light text-right' href='data'>Data Services</a></div>
+          <div><a class='text-light text-right' href='advisory-services'>Advisory Services</a></div>
+          <div><a class='text-light' href='managed-services'>Managed Services</a></div>
+         <div> <a class='text-light' href='ai'>Artificial intelligence</a></div>
+         <div> <a class='text-light' href='enterprise-applications'Enterprise Applications</a></div>
       </div>
 
         <div class='col-md-2'>
