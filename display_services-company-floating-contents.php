@@ -22,7 +22,7 @@
               <div class=''>
                 <i class='fas fa-users-line fa-3x'></i>
               </div>
-                <h5 class='card-title mt-4'>Advisory Services</h5>
+                <h5 class='card-title mt-2'>Advisory Services</h5>
                 <p class='card-text'>Explore a range of career opportunities.</p>
             </div>
           </div>
@@ -46,17 +46,24 @@
 </div>
 
 
- <div class='d-flex justify-content-center'>
+ <div class='d-flex justify-content-center shadow'>
   <div  id='floatingItemTwo' class='floating-item container col-md-10'>
     <div class='m-0'>
       <div class='row'>
       <div class='col-md-4'>
-         <h1 class='mt-5'>Find Your Future Here!</h1>
-          <p style='font-size: 19px;'>We are always looking forward to having the right resources join our growing team, we offer competitive pay and benefits along with a great working environment. Our full-time positions offer employment benefits including paid holidays, paid vacations, annual performance bonuses and project driven bonuses.</p>
-          <a href='services' class='btn btn-outline-primary'>JOIN OUR TEAM</a> 
+         <h1 class='mt-5'>Get To Know Us</h1>
+          <p style='font-size: 19px;'>Your Trusted Partner in Systems Integration and Solutions. From our modest beginnings in 2016, we've evolved into a dynamic force, delivering top-quality solutions across various regions, all designed to meet your unique needs.</p>
+          <a href='career' class='btn btn-outline-primary'>EXPLORE ARMELY</a> 
       </div>
       <div class='col-md-8'>
-        <img src='images/services/career-float.jpg' class='img-fluid'>
+        <div class='row'>
+          <div class='col mt-5'>
+            <img  src='images/services/career-float.jpg' class='img-fluid mt-5'>
+          </div>
+          <div class='col mt-5'>
+            <img  src='images/services/career-float.jpg' class='img-fluid mt-5'>
+          </div>
+        </div>
       </div>
          
       </div>
