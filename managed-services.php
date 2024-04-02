@@ -32,70 +32,24 @@
   <div id="preloader">
     <div id="loader"></div>
   </div>
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark fixed-top pt-3 pb-3 ">
-   
-    <a class="navbar-brand link" href="index"><h1 class="armely-logo-font defaut-color logo-size h1"><strong>armely</strong></h1></a>
-    <button style="background-color:rgb(47,85,151)" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse justify-content-center text-center" id="navbarNav">
-      <ul class="navbar-nav mx-auto ">
-        <li class="nav-item active">
-          <a  class="nav-link text-dark link myButton" id="myButton" >SERVICES <span class="sr-only myButton">(current)</span></a>
-          <a  href="services" class="nav-link text-dark link myButtonTwo">SERVICES <span class="sr-only">(current)</span></a>
+   <!-- Navbar -->
+  <?php include 'php/header.php'; ?>
 
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-dark link" href="customer-stories">CUSTOMER STORIES</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-dark link myButton" id="myButtonTwo" >COMPANY</a>
-          <a class="nav-link text-dark link myButtonTwo" href="company">COMPANY</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-dark link" href="contact-us" target="_parent" rel="noopener noreferrer">CONTACT US</a>
-        </li>
-         <li class="nav-item">
-          <a class="nav-link text-dark link" href="career">CAREERS</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-dark link" href="blog">BLOGS</a>
-        </li>
-  
-      </ul>
-      <!-- Search Bar -->
-     
-      <form class="form-inline my-2 my-lg-0">
-        <div class="input-group" style="width: 350px;">
-            <input class="form-control py-2 border-right-0 border col-md-12 bg-transparent" type="search" placeholder="Search..." id="example-search-input">
-            <span class="input-group-append">
-                <button class="btn btn-outline-secondary border-left-0 border" type="button" style="outline: none;">
-                    <i class="fa fa-search"></i>
-                </button>
-            </span>
-        </div>
-    </form>
-    
-    
-      <a id="toggleDarkMode" class="nav-link link" ><i class="icon fa fa-moon icon"></i></a>
-    </div>
-  </nav><br><br>
   <!-- Content -->
-  <div class="container content-container mt-3">
+  <div class="container-fluid content-container mt-3">
     <div class="row">
         <!-- Column One -->
         <div class="col-md-6 column">
-            <h2>Advisory Services</h2>
-            <p>Armely's Advisory Hub provides insightful guidance, industry expertise and a proven track record of success.</p>
+            <h2>Managed Services</h2>
+            <p>At our core, we deliver the solutions and knowledge needed to effectively oversee essential IT services, freeing you to concentrate on strategic endeavors.</p>
         </div>
         <!-- Column Two -->
         <div class="col-md-6 column">
-            <p>At Armely, we understand that in today's rapidly evolving technological landscape, organizations must continually adapt and transform to stay competitive. We recognize the challenges that come with navigating these changes, and we stand ready to be your trusted and proficient partner in guiding you through this journey.</p>
+            <p>Whether your goals involve generating fresh revenue streams, optimizing work processes for greater efficiency, or revolutionizing customer interactions, we harness the power of managed services in collaboration with top technology providers.</p>
             <br>
-            <p>Our advisory services are tailored to meet your needs. With our team of experts, we will collaborate with you to create, oversee, and implement enduring solutions. Drawing upon our extensive industry insights and professional expertise, we are committed to helping you chart a clear roadmap and effectively communicate every step of the way.</p>
+            <p>Our approach is centered on comprehending your desired business objectives and accelerating your progress toward achieving them.</p>
             <br>
-            <a href="#" class="btn btn-primary btn-advisory">Advisory Services</a>
+            <a href="#" class="btn btn-primary btn-advisory">Managed Services</a>
         </div>
     </div>
 </div>
@@ -107,13 +61,15 @@
         </div>
         <!-- Column Two -->
         <div class="col-md-6 column">
-            <h4>Do you find it challenging to navigate the complexities of technology transformation without a dependable advisory partner?</h4>
-            <p>With Armely as your trusted partner, you can rely on our expertise to help you make informed decisions and implement lasting solutions.</p>
+            <h4>Empower your business with seamless connectivity and robust protection.</h4>
+            <p>With our support, your business stays connected and secure, enabling you to thrive in today's dynamic landscape</p>
             <ul class="list-unstyled">
-                <li class="list-item">&#10004; Trustworthy team of experts</li>
-                <li class="list-item">&#10004; Experienced advisory team for expert guidance and support</li>
-                <li class="list-item">&#10004; Effective communication throughout the advisory process</li>
-                <li class="list-item">&#10004; Customized Solutions</li>
+                <li class="list-item">&#10004; Ensure real-time service visibility and reduce downtime</li>
+                <li class="list-item">&#10004; Enhance your business's agility and resilience</li>
+                <li class="list-item">&#10004; Streamline operational processes for maximum efficiency</li>
+                <li class="list-item">&#10004; Safeguard access to applications from any location.</li>
+                <li class="list-item">&#10004; Boost stability, mitigate risks, and control operational costs</li>
+                <li class="list-item">&#10004; Elevate employee productivity and foster engagement.</li>
             </ul>
         </div>
     </div>
@@ -123,7 +79,7 @@
     <div class="row row-spacing">
         <!-- Column One -->
         <div class="col-md-12 column">
-            <h2>Armely Advisory Services</h2>
+            <h2>Armely Managed Services</h2>
             <p>Our expert team offers four key services to simplify complex setups, craft cost-effective solutions, enhance operational flexibility and proactively optimize the ever-evolving technologies powering your business, ensuring peak performance.</p>
         </div>
     </div>
@@ -231,53 +187,11 @@
   <button  id="scrollToTopBtn" class="btn btn-primary rounded-circle" style="display:none; background: rgb(47,85,151);">
     <i style="font-size: 2em;" class="fa-solid fa-arrow-up"></i>
 </button>
-  <!-- Footer -->
- <footer id="footer" class="col-md-12">
-    <div class=" mt-5">
-      <div class="row text-light ">
-        <div class="col-md-2">
-          <h1 class="mt-3 armely-logo-font">armely</h1>
-         
-        </div>
-        <div class="col-md-2">
-          <h5 class="mt-3">ABOUT</h5>
-          <p>Case studies</p>
-          <p>Job Board</p>
-        </div>
-      <div class="col-md-3">
-          <h5 class="mt-3 text-white">SERVICES</h5>
-          <div><a class="text-light text-right" href="#">Data Services</a></div>
-          <div><a class="text-light text-right" href="#">Advisory Services</a></div>
-          <div><a class="text-light" href="#">Managed Services</a></div>
-         <div> <a class="text-light" href="#">Business intelligence</a></div>
-         <div> <a class="text-light" href="#">Application Development Mentoring</a></div>
-      </div>
+ 
+ <!-- start of Footer -->
+  <?php include 'php/footer.php'; ?>
+<!-- end of Footer -->
 
-        <div class="col-md-2">
-          <h5 class="mt-3">CONTACT US</h5>
-           <div> <a class="text-white" href="tel:+1 972 460 0643"><i class="fa fa-phone"></i> +1 972 460 0643</a></div>
-            <div><h6>ADDRESS</h6></div>
-            <div><p>2831 Eldorado Pkwy Suite 103-128 Friso TX 75033</p></div>
-          </div>
-
-        <div class="col-md-2">
-          <h5 class="mt-3">FOLLOW US</h5>
-           <div style="align-items: start;" class="pt-3">
-              <a href=""><i class="fab fa-facebook text-light h3"></i></a>
-              <a href=""><i class="fab fa-linkedin text-light h3 pl-3"></i></a>
-              <a href=""><i class="fab fa-x-twitter text-light h3 pl-3"></i></a>
-              <a href=""><i class="fab fa-github text-light h3 pl-3"></i></a>
-              <a href=""><i class="fab fa-youtube text-light h3 pl-3"></i></a>
-            </div>     
-        </div>
-      </div>
-      <hr class="bg-light">
-      <div class="text-center col mb-3 text-light text-small">
-        <p> &copy; 2024 Armely LLC || All rights reserved.</p><br>
-      </div>
-    </div>
-   
-  </footer>
 <style>
   .modal-right {
   position: absolute;

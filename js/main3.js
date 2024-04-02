@@ -131,6 +131,7 @@ This marks the start of Check if user preference for dark mode is stored in loca
      $(".link").removeClass('text-dark')
      $(".link").addClass("text-light")
      $("#floatingItem").css({"background":"#121212"})
+     $("#floatingItemTwo").css({"background":"#121212"})
         
     
  }else{
@@ -141,6 +142,7 @@ This marks the start of Check if user preference for dark mode is stored in loca
     $(".link").removeClass('text-light')
     $(".link").addClass("text-dark")
     $("#floatingItem").css({"background":"#fff"})
+    $("#floatingItemTwo").css({"background":"#fff"})
     
     
  }
@@ -160,6 +162,7 @@ This marks the start of Check if user preference for dark mode is stored in loca
         $(".link").removeClass('text-dark')
         $(".link").addClass("text-light")
         $("#floatingItem").css({"background":"#121212"})
+        $("#floatingItemTwo").css({"background":"#121212"})
            
     }else{
        $('.icon').removeClass('fa fa-sun')
@@ -169,6 +172,7 @@ This marks the start of Check if user preference for dark mode is stored in loca
        $(".link").removeClass('text-light')
        $(".link").addClass("text-dark") 
        $("#floatingItem").css({"background":"#fff"})  
+       $("#floatingItemTwo").css({"background":"#fff"})
     }
    
      // Store user preference in local storage

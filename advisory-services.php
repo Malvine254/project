@@ -32,68 +32,22 @@
   <div id="preloader">
     <div id="loader"></div>
   </div>
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark fixed-top pt-3 pb-3 ">
-   
-    <a class="navbar-brand link" href="index"><h1 class="armely-logo-font defaut-color logo-size h1"><strong>armely</strong></h1></a>
-    <button style="background-color:rgb(47,85,151)" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse justify-content-center text-center" id="navbarNav">
-      <ul class="navbar-nav mx-auto ">
-        <li class="nav-item active">
-          <a  class="nav-link text-dark link myButton" id="myButton" >SERVICES <span class="sr-only myButton">(current)</span></a>
-          <a  href="services" class="nav-link text-dark link myButtonTwo">SERVICES <span class="sr-only">(current)</span></a>
-
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-dark link" href="customer-stories">CUSTOMER STORIES</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-dark link myButton" id="myButtonTwo" >COMPANY</a>
-          <a class="nav-link text-dark link myButtonTwo" href="company">COMPANY</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-dark link" href="contact-us" target="_parent" rel="noopener noreferrer">CONTACT US</a>
-        </li>
-         <li class="nav-item">
-          <a class="nav-link text-dark link" href="career">CAREERS</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-dark link" href="blog">BLOGS</a>
-        </li>
+   <!-- Navbar -->
+  <?php include 'php/header.php'; ?>
   
-      </ul>
-      <!-- Search Bar -->
-     
-      <form class="form-inline my-2 my-lg-0">
-        <div class="input-group" style="width: 350px;">
-            <input class="form-control py-2 border-right-0 border col-md-12 bg-transparent" type="search" placeholder="Search..." id="example-search-input">
-            <span class="input-group-append">
-                <button class="btn btn-outline-secondary border-left-0 border" type="button" style="outline: none;">
-                    <i class="fa fa-search"></i>
-                </button>
-            </span>
-        </div>
-    </form>
-    
-    
-      <a id="toggleDarkMode" class="nav-link link" ><i class="icon fa fa-moon icon"></i></a>
-    </div>
-  </nav><br><br>
   <!-- Content -->
   <div class="container content-container mt-3">
     <div class="row">
         <!-- Column One -->
         <div class="col-md-6 column">
-            <h2>Artificial Intelligence</h2>
-            <p>Harness the potential of AI to automate processes, enhance productivity, and uncover patterns that drive innovation and efficiency.</p>
+            <h2>Advisory Services</h2>
+            <p>Armely's Advisory Hub provides insightful guidance, industry expertise and a proven track record of success.</p>
         </div>
         <!-- Column Two -->
         <div class="col-md-6 column">
-            <p>At Armely.com, we are at the forefront of leveraging artificial intelligence to revolutionize the way businesses engage with their customers and optimize their operations. Our suite of AI solutions includes state-of-the-art chatbots, virtual copilots, and speech assistants designed to enhance customer interactions and streamline processes.</p>
+            <p>At Armely, we understand that in today's rapidly evolving technological landscape, organizations must continually adapt and transform to stay competitive. We recognize the challenges that come with navigating these changes, and we stand ready to be your trusted and proficient partner in guiding you through this journey.</p>
             <br>
-            <p>With our chatbot solutions, businesses can provide instant and personalized support to their customers, improving satisfaction and reducing response times. Our virtual copilots leverage AI algorithms to assist employees in navigating complex workflows, boosting productivity and efficiency. Our speech assistants enable hands-free interactions, empowering users to access information and perform tasks with ease. </p>
+            <p>Our advisory services are tailored to meet your needs. With our team of experts, we will collaborate with you to create, oversee, and implement enduring solutions. Drawing upon our extensive industry insights and professional expertise, we are committed to helping you chart a clear roadmap and effectively communicate every step of the way.</p>
             <br>
             <a href="#" class="btn btn-primary btn-advisory">Advisory Services</a>
         </div>
@@ -107,8 +61,14 @@
         </div>
         <!-- Column Two -->
         <div class="col-md-6 column">
-            <h4>Ready to transform your business with AI magic?</h4>
-            <p>Discover how Armely.com's AI solutions can supercharge your operations, delight your customers, and propel your business into the future. Get in touch today and unlock the power of artificial intelligence!</p>
+            <h4>Do you find it challenging to navigate the complexities of technology transformation without a dependable advisory partner?</h4>
+            <p>With Armely as your trusted partner, you can rely on our expertise to help you make informed decisions and implement lasting solutions.</p>
+            <ul class="list-unstyled">
+                <li class="list-item">&#10004; Trustworthy team of experts</li>
+                <li class="list-item">&#10004; Experienced advisory team for expert guidance and support</li>
+                <li class="list-item">&#10004; Effective communication throughout the advisory process</li>
+                <li class="list-item">&#10004; Customized Solutions</li>
+            </ul>
         </div>
     </div>
 </div>

@@ -2,6 +2,9 @@
   color: black !important;
   font-size: 18px !important;
 }
+h1,h2,h3,h4,h5,h6,p,strong,link,input,textarea{
+  font-family:__Inter_83848e,__Inter_Fallback_83848e,system-ui,sans-serif !important;
+}
 .nav{
 padding: 26px !important; 
 background: white !important; 
@@ -61,7 +64,7 @@ background-color:  black;
 border: solid black;
 }
 .defaut-color{
-color: #2f5597;
+ color: #2f5597;
 }
 .defaut-background{
 background: rgb(47,85,151);
@@ -217,24 +220,15 @@ display: none; /* Initially hide content */
 100% { transform: rotate(360deg); }
 }
 
-/* create a round div in the contact page */
-.round-div{
-height: 180px; 
-width: 180px; 
-border-radius: 50%; /* Make it round */
-display: flex;
-align-items: center;
-justify-content: center;
-color: white; /* Text color */
-background-color: rgb(47,85,151);
-}
+
 .round-div:hover{
 background-color: white;
 color: #000;
 text-decoration: none;
 }
 .logo-size{
-font-size: 55px;
+font-size: 48px;
+margin-top: 0px !important;
 }
 
 
@@ -379,7 +373,6 @@ animation: slide 10s linear infinite;
 /*  service hover page on large screen styles*/
 .floating-item {
 position: fixed;
-background-color: #fff;
 padding: 10px;
 display: none;
 width: 100vw !important;

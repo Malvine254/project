@@ -31,54 +31,8 @@
     <div id="loader"></div>
   </div>
   <!-- Navbar -->
-   <nav class="navbar navbar-expand-lg navbar-dark fixed-top pt-3 pb-3 ">
-   
-    <a class="navbar-brand link" href="index"><h1 class="armely-logo-font defaut-color logo-size h1"><strong>armely</strong></h1></a>
-    <button style="background-color:rgb(47,85,151)" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse justify-content-center text-center" id="navbarNav">
-      <ul class="navbar-nav mx-auto ">
-        <li class="nav-item active">
-          <a  class="nav-link text-dark link myButton" id="myButton" >SERVICES <span class="sr-only myButton">(current)</span></a>
-          <a  href="services" class="nav-link text-dark link myButtonTwo">SERVICES <span class="sr-only">(current)</span></a>
+  <?php include 'php/header.php'; ?>
 
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-dark link" href="customer-stories">CUSTOMER STORIES</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-dark link myButton" id="myButtonTwo" >COMPANY</a>
-          <a class="nav-link text-dark link myButtonTwo" href="company">COMPANY</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-dark link" href="contact-us" target="_parent" rel="noopener noreferrer">CONTACT US</a>
-        </li>
-         <li class="nav-item">
-          <a class="nav-link text-dark link" href="career">CAREERS</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-dark link" href="blog">BLOGS</a>
-        </li>
-  
-      </ul>
-      <!-- Search Bar -->
-     
-      <form class="form-inline my-2 my-lg-0">
-        <div class="input-group" style="width: 350px;">
-            <input class="form-control py-2 border-right-0 border col-md-12 bg-transparent" type="search" placeholder="Search..." id="example-search-input">
-            <span class="input-group-append">
-                <button class="btn btn-outline-secondary border-left-0 border" type="button" style="outline: none;">
-                    <i class="fa fa-search"></i>
-                </button>
-            </span>
-        </div>
-    </form>
-    
-    
-      <a id="toggleDarkMode" class="nav-link link" ><i class="icon fa fa-moon icon"></i></a>
-    </div>
-  </nav><br><br>
   <!-- start of services floating screen and company floating screen -->
    <?php include "display_services-company-floating-contents.php"; ?>
 
@@ -242,53 +196,13 @@
   <button  id="scrollToTopBtn" class="btn btn-primary rounded-circle" style="display:none; background: rgb(47,85,151);">
     <i style="font-size: 2em;" class="fa-solid fa-arrow-up"></i>
 </button>
-  <!-- Footer -->
- <footer id="footer" class="col-md-12">
-    <div class=" mt-5">
-      <div class="row text-light ">
-        <div class="col-md-2">
-          <h1 class="mt-3 armely-logo-font">armely</h1>
-         
-        </div>
-        <div class="col-md-2">
-          <h5 class="mt-3">ABOUT</h5>
-          <p>Case studies</p>
-          <p>Job Board</p>
-        </div>
-      <div class="col-md-3">
-          <h5 class="mt-3 text-white">SERVICES</h5>
-          <div><a class="text-light text-right" href="#">Data Services</a></div>
-          <div><a class="text-light text-right" href="#">Advisory Services</a></div>
-          <div><a class="text-light" href="#">Managed Services</a></div>
-         <div> <a class="text-light" href="#">Business intelligence</a></div>
-         <div> <a class="text-light" href="#">Application Development Mentoring</a></div>
-      </div>
+ 
+ <!-- start of Footer -->
+  <?php include 'php/footer.php'; ?>
+<!-- end of Footer -->
 
-        <div class="col-md-2">
-          <h5 class="mt-3">CONTACT US</h5>
-           <div> <a class="text-white" href="tel:+1 972 460 0643"><i class="fa fa-phone"></i> +1 972 460 0643</a></div>
-            <div><h6>ADDRESS</h6></div>
-            <div><p>2831 Eldorado Pkwy Suite 103-128 Friso TX 75033</p></div>
-          </div>
 
-        <div class="col-md-2">
-          <h5 class="mt-3">FOLLOW US</h5>
-           <div style="align-items: start;" class="pt-3">
-              <a href=""><i class="fab fa-facebook text-light h3"></i></a>
-              <a href=""><i class="fab fa-linkedin text-light h3 pl-3"></i></a>
-              <a href=""><i class="fab fa-x-twitter text-light h3 pl-3"></i></a>
-              <a href=""><i class="fab fa-github text-light h3 pl-3"></i></a>
-              <a href=""><i class="fab fa-youtube text-light h3 pl-3"></i></a>
-            </div>     
-        </div>
-      </div>
-      <hr class="bg-light">
-      <div class="text-center col mb-3 text-light text-small">
-        <p> &copy; 2024 Armely LLC || All rights reserved.</p><br>
-      </div>
-    </div>
-   
-  </footer>
+
 <style>
   .modal-right {
   position: absolute;

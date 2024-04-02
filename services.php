@@ -30,55 +30,9 @@
   <div id="preloader">
     <div id="loader"></div>
   </div>
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark fixed-top pt-3 pb-3 ">
-   
-    <a class="navbar-brand link" href="index"><h1 class="armely-logo-font defaut-color logo-size h1"><strong>armely</strong></h1></a>
-    <button style="background-color:rgb(47,85,151)" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse justify-content-center text-center" id="navbarNav">
-      <ul class="navbar-nav mx-auto ">
-        <li class="nav-item active">
-          <a  class="nav-link text-dark link myButton" id="myButton" >SERVICES <span class="sr-only myButton">(current)</span></a>
-          <a  href="services" class="nav-link text-dark link myButtonTwo">SERVICES <span class="sr-only">(current)</span></a>
+   <!-- Navbar -->
+  <?php include 'php/header.php'; ?>
 
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-dark link" href="customer-stories">CUSTOMER STORIES</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-dark link myButton" id="myButtonTwo" >COMPANY</a>
-          <a class="nav-link text-dark link myButtonTwo" href="company">COMPANY</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-dark link" href="contact-us" target="_parent" rel="noopener noreferrer">CONTACT US</a>
-        </li>
-         <li class="nav-item">
-          <a class="nav-link text-dark link" href="career">CAREERS</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-dark link" href="blog">BLOGS</a>
-        </li>
-  
-      </ul>
-      <!-- Search Bar -->
-     
-      <form class="form-inline my-2 my-lg-0">
-        <div class="input-group" style="width: 350px;">
-            <input class="form-control py-2 border-right-0 border col-md-12 bg-transparent" type="search" placeholder="Search..." id="example-search-input">
-            <span class="input-group-append">
-                <button class="btn btn-outline-secondary border-left-0 border" type="button" style="outline: none;">
-                    <i class="fa fa-search"></i>
-                </button>
-            </span>
-        </div>
-    </form>
-    
-    
-      <a id="toggleDarkMode" class="nav-link link" ><i class="icon fa fa-moon icon"></i></a>
-    </div>
-  </nav><br><br>
   <!-- start of services floating screen and company floating screen -->
  <?php include "display_services-company-floating-contents.php"; ?>
 
@@ -87,7 +41,7 @@
   <div class="container mt-5 col-md-10">
     <div class="content-container">
       <div class="row">
-          <div class="col-md-5">
+          <div class="col-md-5 text-muted">
               <h1 class="mt-5">Empowering Your Tech Journey</h1>
               <p>Our experts provide tailored guidance in areas such as business planning, product development, marketing, financial management, and risk management, ensuring your company's competitiveness and sustainable growth.</p>
           </div>
@@ -102,25 +56,31 @@
     <h2 >Our Services Lead the Way</h2>
     <div class="row">
         <div class="col-md-4">
-            <div class="service-card">
+           <a href="advisory-services">
+              <div class="service-card text-muted">
                 <img src="images/services/advisory_services.png" alt="" class="img-fluid">
                 <h5 class="m-1">Advisory Services</h5>
                 <p>Get expert guidance in planning, development, marketing, finance, and risk management for sustainable growth.</p>
             </div>
+           </a>
         </div>
         <div class="col-md-4">
-            <div class="service-card">
-                <img src="images/services/business_intelligence.png" alt="" class="img-fluid">
-                <h5 class="m-1">Data</h5>
-                <p>Harness the power of data with performance management, data analysis, modeling, storage, and visualization services.</p>
-            </div>
+         <a href="data">
+            <div class="service-card text-muted">
+              <img src="images/services/business_intelligence.png" alt="" class="img-fluid">
+              <h5 class="m-1">Data</h5>
+              <p>Harness the power of data with performance management, data analysis, modeling, storage, and visualization services.</p>
+          </div>
+         </a>
         </div>
         <div class="col-md-4">
-            <div class="service-card">
+           <a href="ai">
+              <div class="service-card text-muted">
                 <img src="images/services/data_services.png" alt="" class="img-fluid">
                 <h5 class="m-1">Artificial Intelligence</h5>
                 <p>Harness the potential of AI to automate processes, enhance productivity, and uncover patterns that drive innovation and efficiency.</p>
             </div>
+           </a>
         </div>
     </div>
   <!-- second row -->
@@ -128,25 +88,31 @@
     <!-- <h2 class="text-center mb-4">Our Services</h2> -->
     <div class="row mt-5">
         <div class="col-md-4">
-            <div class="service-card">
+           <a href="managed-services">
+              <div class="service-card text-muted">
                 <img src="images/services/managed_services.png" alt="" class="img-fluid">
                 <h5 class="m-1">Managed Services</h5>
                 <p>Enhance your technology infrastructure with supportability reviews, root cause analysis, coordinated service delivery and technology.</p>
             </div>
+           </a>
         </div>
         <div class="col-md-4">
-            <div class="service-card">
+           <a href="">
+              <div class="service-card text-muted">
                 <img src="images/services/web_development.png" alt="" class="img-fluid">
                 <h5 class="m-1">Enterprise Applications</h5>
                 <p>Implement customized software solutions tailored to your business requirements, optimizing workflows and driving productivity across your organization.</p>
             </div>
+           </a>
         </div>
         <div class="col-md-4">
-            <div class="service-card">
+            <a href="cloud">
+              <div class="service-card text-muted">
                 <img src="images/services/mentoring.png" alt="" class="img-fluid">
                 <h5 class="m-1">Cloud</h5>
                 <p>Embrace the scalability, flexibility, and cost-efficiency of cloud computing, empowering your business to innovate and grow without infrastructure constraints.</p>
             </div>
+            </a>
         </div>
     </div>
 </div>
@@ -160,53 +126,13 @@
   <button  id="scrollToTopBtn" class="btn btn-primary rounded-circle" style="display:none; background: rgb(47,85,151);">
     <i style="font-size: 2em;" class="fa-solid fa-arrow-up"></i>
 </button>
-  <!-- Footer -->
-  <footer id="footer" class="col-md-12">
-    <div class=" mt-5">
-      <div class="row text-light ">
-        <div class="col-md-2">
-          <h1 class="mt-3 armely-logo-font">armely</h1>
-         
-        </div>
-        <div class="col-md-2">
-          <h5 class="mt-3">ABOUT</h5>
-          <p>Case studies</p>
-          <p>Job Board</p>
-        </div>
-      <div class="col-md-3">
-          <h5 class="mt-3 text-white">SERVICES</h5>
-          <div><a class="text-light text-right" href="#">Data Services</a></div>
-          <div><a class="text-light text-right" href="#">Advisory Services</a></div>
-          <div><a class="text-light" href="#">Managed Services</a></div>
-         <div> <a class="text-light" href="#">Business intelligence</a></div>
-         <div> <a class="text-light" href="#">Application Development Mentoring</a></div>
-      </div>
+  
+  <!-- start of Footer -->
+  <?php include 'php/footer.php'; ?>
+<!-- end of Footer -->
 
-        <div class="col-md-2">
-          <h5 class="mt-3">CONTACT US</h5>
-           <div> <a class="text-white" href="tel:+1 972 460 0643"><i class="fa fa-phone"></i> +1 972 460 0643</a></div>
-            <div><h6>ADDRESS</h6></div>
-            <div><p>2831 Eldorado Pkwy Suite 103-128 Friso TX 75033</p></div>
-          </div>
 
-        <div class="col-md-2">
-          <h5 class="mt-3">FOLLOW US</h5>
-           <div style="align-items: start;" class="pt-3">
-              <a href=""><i class="fab fa-facebook text-light h3"></i></a>
-              <a href=""><i class="fab fa-linkedin text-light h3 pl-3"></i></a>
-              <a href=""><i class="fab fa-x-twitter text-light h3 pl-3"></i></a>
-              <a href=""><i class="fab fa-github text-light h3 pl-3"></i></a>
-              <a href=""><i class="fab fa-youtube text-light h3 pl-3"></i></a>
-            </div>     
-        </div>
-      </div>
-      <hr class="bg-light">
-      <div class="text-center col mb-3 text-light text-small">
-        <p> &copy; 2024 Armely LLC || All rights reserved.</p><br>
-      </div>
-    </div>
-   
-  </footer>
+
 <style>
   .modal-right {
   position: absolute;
