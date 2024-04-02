@@ -80,7 +80,7 @@
     </div>
   </nav><br><br>
   <!-- start of services floating screen and company floating screen -->
- <!-- link to be returned -->
+  <?php include "display_services-company-floating-contents.php"; ?>
     <!-- end of services floating screen and company floating screen -->
   <!-- Content -->
   <div class="container col-md-10 container-fluid content-container mt-5">
