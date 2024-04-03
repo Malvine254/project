@@ -54,7 +54,7 @@
         </div>
     </div>
 </div>
-<div class="container-fluid content-container">
+<div class="container content-container">
     <div class="row">
         <!-- Column One -->
         <div class="col-md-6 column">

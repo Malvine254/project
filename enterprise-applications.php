@@ -40,20 +40,20 @@
     <div class="row">
         <!-- Column One -->
         <div class="col-md-6 column">
-            <h2>Artificial Intelligence</h2>
-            <p>Harness the potential of AI to automate processes, enhance productivity, and uncover patterns that drive innovation and efficiency.</p>
+            <h2>Advisory Services</h2>
+            <p>Armely's Advisory Hub provides insightful guidance, industry expertise and a proven track record of success.</p>
         </div>
         <!-- Column Two -->
         <div class="col-md-6 column">
-            <p>At Armely.com, we are at the forefront of leveraging artificial intelligence to revolutionize the way businesses engage with their customers and optimize their operations. Our suite of AI solutions includes state-of-the-art chatbots, virtual copilots, and speech assistants designed to enhance customer interactions and streamline processes.</p>
+            <p>At Armely, we understand that in today's rapidly evolving technological landscape, organizations must continually adapt and transform to stay competitive. We recognize the challenges that come with navigating these changes, and we stand ready to be your trusted and proficient partner in guiding you through this journey.</p>
             <br>
-            <p>With our chatbot solutions, businesses can provide instant and personalized support to their customers, improving satisfaction and reducing response times. Our virtual copilots leverage AI algorithms to assist employees in navigating complex workflows, boosting productivity and efficiency. Our speech assistants enable hands-free interactions, empowering users to access information and perform tasks with ease. </p>
+            <p>Our advisory services are tailored to meet your needs. With our team of experts, we will collaborate with you to create, oversee, and implement enduring solutions. Drawing upon our extensive industry insights and professional expertise, we are committed to helping you chart a clear roadmap and effectively communicate every step of the way.</p>
             <br>
             <a href="#" class="btn btn-primary btn-advisory">Advisory Services</a>
         </div>
     </div>
 </div>
-<div class="container-fluid content-container">
+<div class="container content-container">
     <div class="row">
         <!-- Column One -->
         <div class="col-md-6 column">
@@ -61,12 +61,18 @@
         </div>
         <!-- Column Two -->
         <div class="col-md-6 column">
-            <h4>Ready to transform your business with AI magic?</h4>
-            <p>Discover how Armely.com's AI solutions can supercharge your operations, delight your customers, and propel your business into the future. Get in touch today and unlock the power of artificial intelligence!</p>
+            <h4>Do you find it challenging to navigate the complexities of technology transformation without a dependable advisory partner?</h4>
+            <p>With Armely as your trusted partner, you can rely on our expertise to help you make informed decisions and implement lasting solutions.</p>
+            <ul class="list-unstyled">
+                <li class="list-item">&#10004; Trustworthy team of experts</li>
+                <li class="list-item">&#10004; Experienced advisory team for expert guidance and support</li>
+                <li class="list-item">&#10004; Effective communication throughout the advisory process</li>
+                <li class="list-item">&#10004; Customized Solutions</li>
+            </ul>
         </div>
     </div>
 </div>
-<div class="container-fluid content-container">
+<div class="container content-container">
     <!-- Row 1 -->
     <div class="row row-spacing">
         <!-- Column One -->

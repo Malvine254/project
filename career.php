@@ -44,10 +44,10 @@
         <div class="col-md-6">
             <h2>Find Your Future Here!</h2>
             <p class="mt-3">We are always looking forward to having the right resources join our growing team. We offer competitive pay and benefits along with a great working environment. Our full-time positions offer employment benefits including paid holidays, paid vacations, annual performance bonuses, and project-driven bonuses.</p>
-            <button class="btn btn-primary">JOIN OUR TEAM</button>
+            <button class="btn default-button-color btn-primary">JOIN OUR TEAM</button>
         </div>
         <div class="col-md-6">
-          <img src="images/Careers/careers.png" alt="" class="img-fluid">
+          <img src="images/Careers/careers.png" alt="" class="img-fluid" loading="lazy">
         </div>
     </div>
 </div>
@@ -119,24 +119,24 @@
   <div class="row">
       <!-- First Column -->
       <div class="col-md-6 column">
-          <img src="images/Careers/software_engineer.png" alt="" class="img-fluid">
+          <img src="images/Careers/software_engineer.png" alt="" class="img-fluid" loading="lazy">
           <h4 class="mt-3">Software Engineer</h4>
-          <p>Fuel Innovation in Web and Mobile App Development. Be part of our dynamic team, crafting the digital future one line of code at a time.</p>
+          <p text-left>Fuel Innovation in Web and Mobile App Development. Be part of our dynamic team, crafting the digital future one line of code at a time.</p>
       </div>
       <!-- Second Column -->
       <div class="col-md-6 column">
-          <img src="images/Careers/software_engineer.png" alt="" class="img-fluid">
+          <img src="images/Careers/software_engineer.png" alt="" class="img-fluid" loading="lazy">
           <h4 class="mt-3">Data Scientist</h4>
-          <p>Transform information into insights, and shape the future through data-driven decisions. Make your mark on the world of analytics with us.</p>
+          <p text-left>Transform information into insights, and shape the future through data-driven decisions. Make your mark on the world of analytics with us.</p>
       </div>
   </div>
 </div>
 <div class="row">
   <!-- Centered Column -->
   <div style="padding-left: 400px; padding-right: 400px;" class="text-center" class="col-md-12 center-column">
-      <img src="images/Careers/software_engineer.png" alt="" class="img-fluid">
+      <img src="images/Careers/software_engineer.png" alt="" class="img-fluid" loading="lazy">
       <h4>Data Engineer</h4>
-      <p>Be the backbone of our data ecosystem, architecting solutions that power innovation and decision-making.</p>
+      <p class="text-left ml-5">Be the backbone of our data ecosystem, architecting solutions that power innovation and decision-making.</p>
   </div>
 </div>
 

@@ -7,8 +7,8 @@
         </div>
         <div class='col-md-2'>
           <h5 class='mt-3'>ABOUT</h5>
-          <p>Case studies</p>
-          <p>Job Board</p>
+          <div><a class='text-light text-right' href='case study'>Case studies</a></div>
+          <div><a class='text-light text-right' href=''>Job Board</a></div>
         </div>
       <div class='col-md-3'>
           <h5 class='mt-3 text-white'>SERVICES</h5>
@@ -29,11 +29,11 @@
         <div class='col-md-2'>
           <h5 class='mt-3'>FOLLOW US</h5>
            <div style='align-items: start;' class='pt-3'>
-              <a href=''><i class='fab fa-facebook text-light h3'></i></a>
-              <a href=''><i class='fab fa-linkedin text-light h3 pl-3'></i></a>
-              <a href=''><i class='fab fa-x-twitter text-light h3 pl-3'></i></a>
-              <a href=''><i class='fab fa-github text-light h3 pl-3'></i></a>
-              <a href=''><i class='fab fa-youtube text-light h3 pl-3'></i></a>
+              <a href='https://www.instagram.com/armelydata?igsh=MWJjbGJjcWF6NTl6Zg=='><i class='fab fa-instagram text-light h3'></i></a>
+              <a href='https://www.linkedin.com/company/armely/mycompany/'><i class='fab fa-linkedin text-light h3 pl-3'></i></a>
+              <a href='https://twitter.com/armelyData'><i class='fab fa-x-twitter text-light h3 pl-3'></i></a>
+              <a href='https://github.com/armely'><i class='fab fa-github text-light h3 pl-3'></i></a>
+              <a href='https://www.youtube.com/channel/UCcSuw012w_eheyVdIgp9mgA'><i class='fab fa-youtube text-light h3 pl-3'></i></a>
             </div>     
         </div>
       </div>

@@ -46,7 +46,7 @@
            rgb(47,85,151); padding: 5px;"></i></h6>
       </div>
     <!-- playing video at the hompage here -->
-    <video src="https://res.cloudinary.com/timothymugo2323/video/upload/f_auto:video,q_auto/v1/armely/mrngrcv3n9yeloisubz7" 
+    <video src="videos/video1.mp4" 
     preload="auto" autoplay loop muted style="width: 100%; height: 100%;"></video>  
   
   </div>

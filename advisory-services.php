@@ -53,7 +53,7 @@
         </div>
     </div>
 </div>
-<div class="container-fluid content-container">
+<div class="container content-container">
     <div class="row">
         <!-- Column One -->
         <div class="col-md-6 column">
@@ -61,9 +61,9 @@
         </div>
         <!-- Column Two -->
         <div class="col-md-6 column">
-            <h4>Do you find it challenging to navigate the complexities of technology transformation without a dependable advisory partner?</h4>
+            <h4 class="text-left">Do you find it challenging to navigate the complexities of technology transformation without a dependable advisory partner?</h4>
             <p>With Armely as your trusted partner, you can rely on our expertise to help you make informed decisions and implement lasting solutions.</p>
-            <ul class="list-unstyled">
+            <ul class="list-unstyled text-left">
                 <li class="list-item">&#10004; Trustworthy team of experts</li>
                 <li class="list-item">&#10004; Experienced advisory team for expert guidance and support</li>
                 <li class="list-item">&#10004; Effective communication throughout the advisory process</li>
@@ -72,7 +72,7 @@
         </div>
     </div>
 </div>
-<div class="container-fluid content-container">
+<div class="container content-container">
     <!-- Row 1 -->
     <div class="row row-spacing">
         <!-- Column One -->

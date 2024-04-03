@@ -36,7 +36,7 @@
   <?php include 'php/header.php'; ?>
 
   <!-- Content -->
-  <div class="container-fluid content-container mt-3">
+  <div class="container content-container mt-3">
     <div class="row">
         <!-- Column One -->
         <div class="col-md-6 column">
@@ -53,7 +53,7 @@
         </div>
     </div>
 </div>
-<div class="container-fluid content-container">
+<div class="container content-container">
     <div class="row">
         <!-- Column One -->
         <div class="col-md-6 column">
@@ -72,7 +72,7 @@
         </div>
     </div>
 </div>
-<div class="container-fluid content-container">
+<div class="container content-container">
     <!-- Row 1 -->
     <div class="row row-spacing">
         <!-- Column One -->

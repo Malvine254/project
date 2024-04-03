@@ -33,48 +33,21 @@
   <!-- Navbar -->
   <?php include 'php/header.php'; ?>
   <!-- start of services floating screen and company floating screen -->
-  <?php include "display_services-company-floating-contents.php"; ?>
+ <!-- link to be returned -->
     <!-- end of services floating screen and company floating screen -->
   <!-- Content -->
   <div class="container col-md-10 container-fluid content-container mt-5">
     <div class="row">
         <div class="col-md-6">
             <div class="text-left">
-                <h1>Your Partner in all things data and collaboration</h1>
-                <p>We pride ourselves for delivering the highest quality solutions and doing it right the first time.</p>
+                <h1>Turn your data into insightful business solutions</h1>
+                <p>Intuition or gut feeling business decisions don’t work anymore. In an era where consumer preferences constantly evolve and market dynamics shift rapidly, relying solely on intuition can lead to missed opportunities and costly missteps. We help your organization leverage data to make insightful decisions becomes paramount.</p>
             </div>
         </div>
         <div class="col-md-6 mt-5">
-            <p>Founded in 2016, Armely was born out of a passion to offer affordable and effective systems integration solutions. We've since thrived in the Southwest, Midwest and Rocky Mountains regions, helping clients create sustainable solutions.</p>
-            <p>Our journey began with supporting DFW customers in Microsoft Data solutions, working from a home office. Over time, our commitment to meeting client needs with integrity has drawn more customers, transforming us from a small consulting shop into a powerhouse handling extensive multi-year projects across various domains.</p>
+            <p>Our proven end-to-end track record of data management positions us as your strategic partner. By handling data at every stage of its lifecycle, from collection and storage to analysis and utilization, we ensure that our clients have the insights they need to make informed decisions and drive their business forward. Our expertise in data management not only enhances operational efficiency but also enables us to provide tailored solutions that align with our clients' objectives. With a focus on accuracy, security, and compliance, we establish trust and reliability in our partnerships. As a result, our clients view us not just as service providers, but as indispensable collaborators who contribute to their long-term success.</p>
         </div>
     </div>
-</div>
-<div class=" container-fluid three-column-section mt-5 mb-5 h-100">
-    <div class="container col-md-10">
-    <div class="row p-5">
-        <div class="col-md-4">
-         <div class="pt-5 mb-5 column">
-            <p class="text-left text-large"> <strong>WE STRIVE</strong>- TO IMPROVE YOUR COMPANY & HELP YOUR BUSINESS GROW</p>
-           
-         </div>
-        </div>
-        <div class="col-md-4">
-           <div class="pt-1 mb-5 column">
-              <img src="images/company/graph.svg" alt="" class="img-fluid">
-                <p>Tech excellence redefined tailored for you.</p>
-           </div>
-        </div>
-        <div class="col-md-4">
-           <div class="pt-5 mb-5 column">
-              <h3 class="counter percent" data-target="99">99</h3>
-                <p>Our Performance is the next level</p>
-           </div>
-           
-        </div>
-    </div>
-</div>
-
 </div>
 
 <!-- our values section -->
@@ -110,7 +83,7 @@
             
         </div>
         <div class="col-md-4 column" >
-            <img src="images/company/hands_care_black.png" alt="" class="img-fluid rounded-circle  bg-light p-1 mt-4 mb-1 p-4">
+            <img src="images/company/hands_care_black.png" alt="" class="img-fluid rounded-circle  bg-light p-1 mt-4 mb-1 p-4" >
             <h5>Do Right</h5>
             <p>Lorem ipsum dolor sit amet consectetur. Sit libero ipsum proin nibh pulvinar in. Augue facilisis in ac turpis lorem porttito.</p>
             
@@ -133,7 +106,7 @@
         <div class="col-md-6 mt-5">
             <h1>Let's collaborate and achieve greatness together</h1>
             <p class="mt-5 mb-5">Whether you're launching a new venture or managing an established brand.</p>
-            <button class="btn btn-primary">Contact Us</button>
+            <button class="btn default-button-color btn-primary">Contact Us</button>
         </div>
     </div>
 </div>

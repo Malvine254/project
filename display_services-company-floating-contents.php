@@ -53,7 +53,7 @@
       <div class='col-md-4'>
          <h1 class='mt-5'>Get To Know Us</h1>
           <p style='font-size: 19px;'>Your Trusted Partner in Systems Integration and Solutions. From our modest beginnings in 2016, we've evolved into a dynamic force, delivering top-quality solutions across various regions, all designed to meet your unique needs.</p>
-          <a href='company' class='btn btn-outline-primary'>EXPLORE ARMELY</a> 
+          <a href='company' class='btn default-button-color btn-outline-primary'>EXPLORE ARMELY</a> 
       </div>
       <div class='col-md-8'>
         <div class='row'>
