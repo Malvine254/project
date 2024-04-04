@@ -40,7 +40,7 @@
     <div class="row">
         <!-- Column One -->
         <div class="col-md-6 column">
-            <h2>Advisory Services</h2>
+            <h2>Artificial Intelligence</h2>
             <p>Armely's Advisory Hub provides insightful guidance, industry expertise and a proven track record of success.</p>
         </div>
         <!-- Column Two -->
