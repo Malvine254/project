@@ -3,41 +3,137 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Floating Item</title>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<title>Form Validation</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+$(document).ready(function() {
+    $('form').submit(function(event) {
+        // Prevent form submission
+        event.preventDefault();
+        
+        // Reset previous validation classes
+        $('.form-control').removeClass('is-invalid');
+        $('.form-control').removeClass('is-valid');
+        $('.invalid-feedback').hide();
+        
+        // Validate each form field
+        var isValid = true;
+        
+        // Validate Name field
+        var name = $('#validationServer01').val();
+        if (name == '') {
+            $('#validationServer01').addClass('is-invalid');
+            $('#validationServer01').next('.invalid-feedback').show();
+            isValid = false;
+        } else {
+            $('#validationServer01').addClass('is-valid');
+        }
+        
+        // Validate Email field
+        var email = $('#validationServer02').val();
+        var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(email)) {
+            $('#validationServer02').addClass('is-invalid');
+            $('#validationServer02').next('.invalid-feedback').show();
+            isValid = false;
+        } else {
+            $('#validationServer02').addClass('is-valid');
+        }
+        
+        // Validate Organization Name field
+        var orgName = $('#validationServer03').val();
+        if (orgName == '') {
+            $('#validationServer03').addClass('is-invalid');
+            $('#validationServer03').next('.invalid-feedback').show();
+            isValid = false;
+        } else {
+            $('#validationServer03').addClass('is-valid');
+        }
+        
+        // Validate Phone Number field
+        var phoneNumber = $('#validationServer04').val();
+        if (phoneNumber == '') {
+            $('#validationServer04').addClass('is-invalid');
+            $('#validationServer04').next('.invalid-feedback').show();
+            isValid = false;
+        } else {
+            $('#validationServer04').addClass('is-valid');
+        }
+        
+        // Validate Message field
+        var message = $('#validationServer05').val();
+        if (message == '') {
+            $('#validationServer05').addClass('is-invalid');
+            $('#validationServer05').next('.invalid-feedback').show();
+            isValid = false;
+        } else {
+            $('#validationServer05').addClass('is-valid');
+        }
+        
+        // If form is valid, submit it
+        if (isValid) {
+            this.submit();
+        }
+    });
+});
+</script>
 <style>
-    .floating-item {
-        position: absolute;
-        background-color: #fff;
-        border: 1px solid #ccc;
-        padding: 10px;
-        box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    .invalid-feedback {
         display: none;
-        width: 90vw;
     }
 </style>
 </head>
 <body>
 
-<button id="myButton" type="button" class="btn btn-primary">Click Me</button>
-<div class="container">
-  <div  id="floatingItem" class="floating-item  col-md-10">This is a floating item</div>
-</div>
-<div class="container">
-  <p>This command will make the necessary adjustments to your code to work with the new version of the OpenAI library.
-
-Alternatively, if you prefer to stick with the older version temporarily, you can pin your installation to the last supported version (0.28) by running:
-
-bash
-</p>
-</div>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script>
-   $("#myButton").click(()=>{
-            $(".floating-item").css({"display":"block"})
-           })
-</script>
+<form>
+    <div class="form-row">
+        <div class="col-md-6 mb-1">
+            <label for="validationServer01">Name</label>
+            <input type="text" class="form-control is-valid edit-input edit-input-valid" id="validationServer01" placeholder="First name" value="Mark" required>
+            <div class="valid-feedback">
+                Looks good!
+            </div>
+            <div class="invalid-feedback">
+                Please provide a valid Name.
+            </div>
+        </div>
+        <div class="col-md-6 mb-1">
+            <label for="validationServer02">Email</label>
+            <input type="email" class="form-control is-valid edit-input edit-input-valid" id="validationServer02" placeholder="Email" value="Otto@gmail.com" required>
+            <div class="valid-feedback">
+                Looks good!
+            </div>
+            <div class="invalid-feedback">
+                Please provide a valid Email.
+            </div>
+        </div>
+    </div>
+    <div class="form-row">
+        <div class="col-md-6 mb-3">
+            <label for="validationServer03">Organization Name</label>
+            <input type="text" class="form-control is-invalid edit-input" id="validationServer03" placeholder="Organization Name" required>
+            <div class="invalid-feedback">
+                Please provide a valid Organization Name.
+            </div>
+        </div>
+        <div class="col-md-6 mb-1">
+            <label for="validationServer04">Phone Number</label>
+            <input type="text" class="form-control is-invalid edit-input" id="validationServer04" placeholder="Phone Number" required>
+            <div class="invalid-feedback">
+                Please provide a valid Phone Number.
+            </div>
+        </div>
+        <div class="col-md-12 mb-3">
+            <label for="validationServer05">Message</label>
+            <textarea rows="5" type="text" class="form-control is-invalid edit-textarea" id="validationServer05" placeholder="Message..." required></textarea>
+            <div class="invalid-feedback">
+                Please provide a valid Message.
+            </div>
+        </div>
+    </div>
+    <button class="btn btn-primary default-button-color" type="button">Send Message</button>
+</form>
 
 </body>
 </html>

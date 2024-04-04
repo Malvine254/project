@@ -2,7 +2,7 @@
     <div class=' mt-5'>
       <div class='row text-light '>
         <div class='col-md-2'>
-          <h1 class='mt-3 armely-logo-font'>armely</h1>
+          <h1 class='mt-3 armely-logo-font logo-size'>armely</h1>
          
         </div>
         <div class='col-md-2'>
