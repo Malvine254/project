@@ -1,3 +1,4 @@
+<?php include 'php/actions.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -247,47 +248,33 @@
         <div class=" card-back">
           <div class="card-body">
             <h3 class="card-title text-center mb-4">Connect with our experts?</h3>
-            <form>
+            <form method="post">
               <div class="form-row">
                 <div class="col-md-6 mb-1">
                   <label for="validationServer01">Name</label>
-                  <input type="text" class="form-control  is-valid edit-input  edit-input-valid" id="validationServer01" placeholder="First name" value="Mark" required>
-                  <div class="valid-feedback">
-                    Looks good!
-                  </div>
+                  <input type="text" class="form-control edit-input " id="validationServer01" placeholder="First name" name="name" required>
+                  
                 </div>
                 <div class="col-md-6 mb-1">
                   <label for="validationServer02">Email</label>
-                  <input type="email" class="form-control is-valid edit-input  edit-input-valid" id="validationServer02" placeholder="Email" value="Otto@gmail.com" required>
-                  <div class="valid-feedback">
-                    Looks good!
-                  </div>
+                  <input type="email" class="form-control edit-input" id="validationServer02" placeholder="Email" required name="email">
                 </div>
               </div>
               <div class="form-row">
                 <div class="col-md-6 mb-3">
                   <label for="validationServer03">Organization Name</label>
-                  <input type="text" class="form-control is-invalid edit-input" id="validationServer03" placeholder="Organization Name" required>
-                  <div class="invalid-feedback">
-                    Please provide a valid Organization Name.
-                  </div>
+                  <input type="text" class="form-control edit-input" id="validationServer03" placeholder="Organization Name" required name="organization">
                 </div>
                 <div class="col-md-6 mb-1">
                   <label for="validationServer04">Phone Number</label>
-                  <input type="text" class="form-control is-invalid edit-input" id="validationServer04" placeholder="Phone Number" required>
-                  <div class="invalid-feedback">
-                    Please provide a valid Phone Number.
-                  </div>
+                  <input type="text" class="form-control edit-input" id="validationServer04" placeholder="Phone Number" required name="phone">
                 </div>
                 <div class="col-md-12 mb-3">
                   <label for="validationServer05">Message</label>
-                  <textarea rows="5" type="text" class="form-control is-invalid edit-textarea" id="validationServer05" placeholder="Message..." required></textarea>
-                  <div class="invalid-feedback">
-                    Please provide a valid Message.
-                  </div>
+                  <textarea rows="5" type="text" class="form-control edit-textarea" id="validationServer05" placeholder="Message..." required name="message"></textarea>
                 </div>
               </div>
-              <button class="btn btn-primary default-button-color" type="submit">Send Message</button>
+              <button name="submit_form" class="btn btn-primary default-button-color" type="submit">Send Message</button>
             </form>
           </div>
         </div>
@@ -357,6 +344,10 @@
     });
 </script>
 
+
+<script>
+  
+</script>
 
 </body>
 </html>

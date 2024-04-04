@@ -1,4 +1,4 @@
-<?php echo " <div class='d-flex justify-content-center'>
+<?php echo "<div class='d-flex justify-content-center'>
   <div  id='floatingItem' class='floating-item container col-md-10'>
     <div class='m-5'>
       <div class=''>  
@@ -46,7 +46,7 @@
 </div>
 
 
- <div class='d-flex justify-content-center shadow'>
+ <div class='d-flex justify-content-center'>
   <div  id='floatingItemTwo' class='floating-item container col-md-10'>
     <div class='m-0'>
       <div class='row'>

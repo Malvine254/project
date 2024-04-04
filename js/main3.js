@@ -217,6 +217,7 @@ This marks the start of floating service and company pages
         "top": buttonPosition.top + buttonHeight + 30// Adjust as needed
       });
       floatingItem.toggle(); // Toggle display of floating item
+      $("#footer").toggle();
    });
    $("#myButtonTwo").click(() => {
       $("#floatingItem").css({"display":"none"});
@@ -228,6 +229,7 @@ This marks the start of floating service and company pages
         "top": buttonPosition.top + buttonHeight + 30// Adjust as needed
       });
       floatingItem.toggle(); // Toggle display of floating item
+      $("#footer").toggle();
    });
    /*
 =============================================================================================================================================
