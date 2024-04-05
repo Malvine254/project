@@ -10,6 +10,8 @@
   <!-- font awesome  -->
   <link rel="stylesheet" href="vendor/font-awesome/css/all.css"> 
   <link rel="icon" href="images/logo/logo1.png" type="image/x-icon">
+  
+  <meta http-equiv="Content-Encoding" content="gzip">
 
 
   <style>
@@ -30,17 +32,77 @@
   <div id="preloader">
     <div id="loader"></div>
   </div>
-  <!-- Navbar -->
+   <!-- Navbar -->
   <?php include 'php/header.php'; ?>
 
-  <!-- start of services floating screen and company floating screen -->
-   <?php include "display_services-company-floating-contents.php"; ?>
-
-  <!-- end of services floating screen and company floating screen -->
   <!-- Content -->
-  
-<!-- start of    form -->
-<div class="container container-fluid content-container col-md-10">
+  <div class="container content-container mt-3">
+    <div class="row">
+        <!-- Column One -->
+        <div class="col-md-6 column">
+            <h2>Cloud Services</h2>
+            <p>Businesses today recognize the immense benefits of migrating their on-premise data infrastructure to the cloud.</p>
+        </div>
+        <!-- Column Two -->
+        <div class="col-md-6 column">
+          <h2>On-Premise to Cloud Data Migrations: Seamless Transition to the Cloud</h2>
+            <p>At Armely, we specialize in facilitating on-premise to cloud data migrations, enabling organizations to harness the full potential of cloud computing while minimizing disruption to their operations.</p>
+            <br>
+            <a href="#" class="btn btn-primary btn-advisory">Advisory Services</a>
+        </div>
+    </div>
+</div>
+<div class="container content-container">
+    <div class="row">
+        <!-- Column One -->
+        <div class="col-md-6 column">
+            <img src="images/services/mentoring.png" alt="" class="img-fluid">
+        </div>
+        <!-- Column Two -->
+        <div class="col-md-6 column">
+            <h4>Our Approach to On-Premise to Cloud Data Migrations</h4>
+            <ul class="list-unstyled">
+                <li class="list-item">&#10004; Assessment and Planning</li>
+                <li class="list-item">&#10004; Data Preparation and Cleansing</li>
+                <li class="list-item">&#10004; Selection of Cloud Services</li>
+                <li class="list-item">&#10004; Migration Execution</li>
+                <li class="list-item">&#10004; Testing and Validation</li>
+                <li class="list-item">&#10004; Optimization and Continuous Improvement</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="container content-container">
+    <!-- Row 1 -->
+    <div class="row row-spacing">
+        <!-- Column One -->
+        <div class="col-md-12 column">
+            <h2>Armely Advisory Services</h2>
+            <p>Our expert team offers four key services to simplify complex setups, craft cost-effective solutions, enhance operational flexibility and proactively optimize the ever-evolving technologies powering your business, ensuring peak performance.</p>
+        </div>
+    </div>
+    <!-- Row 2 -->
+    <div class="row row-spacing">
+        <!-- Column One -->
+        <div class="col-md-6 column">
+            <!-- Icon 1 -->
+            <div class="icon-label">
+                <img height="100" width="100" src="images/services/effective-communication.png" alt="Mentoring" class="img-fluid">
+                <p>Mentoring</p>
+            </div>
+        </div>
+        <!-- Column Two -->
+        <div class="col-md-6 column">
+            <!-- Icon 2 -->
+            <div class="icon-label">
+                <img height="100" width="100" src="images/services/effective-communication.png" alt="Advisory Services" class="img-fluid">
+                <p>Advisory Services</p>
+            </div>
+        </div>
+    </div>
+</div>
+  <!-- form -->
+  <div class="container container-fluid content-container col-md-10 mt-5">
     <div class="text-center">
         <h2>Optimize Your Business with Armely Services</h2>
         <p class="mt-2">Maximize your business potential with Armely's range of industry-leading solutions. Whether it's Data Services, Web Development, Business Intelligence, Managed Services, or Advisory Services, we provide the utmost value to your operations and applications.</p>
@@ -113,9 +175,6 @@
 </div>
 </div>
 
-<!-- end of    form -->
-
-
    <!-- Floating Action Button -->
    <div class="floating-btn">
     <button id="myBtn"  style="border-radius: 50%; height: 70px; width: 70px; background-color: rgb(47,85,151);"  type="button" class="btn btn-primary btn-lg">
@@ -126,13 +185,12 @@
   <button  id="scrollToTopBtn" class="btn btn-primary rounded-circle" style="display:none; background: rgb(47,85,151);">
     <i style="font-size: 2em;" class="fa-solid fa-arrow-up"></i>
 </button>
- 
- <!-- start of Footer -->
+  
+<!-- start of Footer -->
   <?php include 'php/footer.php'; ?>
 <!-- end of Footer -->
 
-
-
+  
 <style>
   .modal-right {
   position: absolute;
