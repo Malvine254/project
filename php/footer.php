@@ -8,7 +8,11 @@
         <div class='col-md-2'>
           <h5 class='mt-3'>ABOUT</h5>
           <div><a class='text-light text-right' href='case study'>Case studies</a></div>
+<<<<<<< HEAD
           <div><a class='text-light text-right' href='career'>Job Board</a></div>
+=======
+          <div><a class='text-light text-right' href=''>Job Board</a></div>
+>>>>>>> 08cb6bd748b01a9b5d60c749cf1dbd996506eb0e
         </div>
       <div class='col-md-3'>
           <h5 class='mt-3 text-white'>SERVICES</h5>

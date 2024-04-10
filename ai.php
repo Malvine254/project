@@ -46,6 +46,17 @@
           <h2>Azure Cognitive Services Development</h2>
             <p>As a Microsoft Azure partner, we specialize in leveraging Azure Cognitive Services to build intelligent applications that can perceive, interpret, and interact with the world just like humans do. Whether you need to incorporate natural language processing, computer vision, or speech recognition into your applications, our team of experts can develop custom solutions tailored to your unique requirements.</p>
             <br>
+<<<<<<< HEAD
+=======
+            <h2>Retrieval-Augmented Generation</h2>
+            <p>One of the cutting-edge techniques we employ is retrieval-augmented generation, a hybrid approach that combines the strengths of information retrieval and natural language generation. By retrieving relevant information from large datasets and using it to generate contextually relevant responses or content, we enable more accurate and personalized interactions with your customers, employees, and stakeholders.</p>
+            <br>
+            <h2>Generative AI and Machine Learning</h2>
+            <p>Our expertise in generative AI and machine learning allows us to create intelligent systems that can generate new content, designs, or solutions autonomously. Whether it's generating realistic images, text, or even entire software code, our advanced algorithms can fuel creativity and innovation within your organization.
+
+From predictive analytics and recommendation engines to anomaly detection and process optimization, we leverage machine learning to extract valuable insights from your data and drive business growth.</p>
+            <br>
+>>>>>>> 08cb6bd748b01a9b5d60c749cf1dbd996506eb0e
             <a href="#" class="btn default-button-color btn-primary btn-advisory">Artificial Intelligence</a>
         </div>
     </div>
@@ -75,7 +86,11 @@
             <p>Our expert team offers four key services to simplify complex setups, craft cost-effective solutions, enhance operational flexibility and proactively optimize the ever-evolving technologies powering your business, ensuring peak performance.</p>
         </div>
     </div>
+<<<<<<< HEAD
 </div>    
+=======
+    
+>>>>>>> 08cb6bd748b01a9b5d60c749cf1dbd996506eb0e
   <!-- form -->
   <div class="container container-fluid content-container col-md-10 mt-5">
     <div class="text-center">

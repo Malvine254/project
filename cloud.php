@@ -36,15 +36,35 @@
         <div class="col-md-6 column">
             <h2>Cloud Services</h2>
             <p>Businesses today recognize the immense benefits of migrating their on-premise data infrastructure to the cloud.</p>
+<<<<<<< HEAD
             <img src="images/services/cloud.png" alt="" class="img-fluid">
+=======
+>>>>>>> 08cb6bd748b01a9b5d60c749cf1dbd996506eb0e
         </div>
         <!-- Column Two -->
         <div class="col-md-6 column">
           <h2>On-Premise to Cloud Data Migrations: Seamless Transition to the Cloud</h2>
             <p>At Armely, we specialize in facilitating on-premise to cloud data migrations, enabling organizations to harness the full potential of cloud computing while minimizing disruption to their operations.</p>
             <br>
+<<<<<<< HEAD
              <h4>Our Approach to On-Premise to Cloud Data Migrations</h4>
             <ul class="list-unstyled text-left mt-3">
+=======
+            <a href="#" class="btn default-button-color btn-primary btn-advisory">Cloud Services</a>
+        </div>
+    </div>
+</div>
+<div class="container content-container">
+    <div class="row">
+        <!-- Column One -->
+        <div class="col-md-6 column">
+            <img src="images/services/mentoring.png" alt="" class="img-fluid">
+        </div>
+        <!-- Column Two -->
+        <div class="col-md-6 column">
+            <h4>Our Approach to On-Premise to Cloud Data Migrations</h4>
+            <ul class="list-unstyled">
+>>>>>>> 08cb6bd748b01a9b5d60c749cf1dbd996506eb0e
                 <li class="list-item">&#10004; Assessment and Planning</li>
                 <li class="list-item">&#10004; Data Preparation and Cleansing</li>
                 <li class="list-item">&#10004; Selection of Cloud Services</li>
@@ -56,7 +76,11 @@
         </div>
     </div>
 </div>
+<<<<<<< HEAD
 <div class="container content-container mt-3">
+=======
+<div class="container content-container">
+>>>>>>> 08cb6bd748b01a9b5d60c749cf1dbd996506eb0e
     <!-- Row 1 -->
     <div class="row row-spacing">
         <!-- Column One -->

@@ -45,7 +45,22 @@
             <br>
             <p>Our approach is centered on comprehending your desired business objectives and accelerating your progress toward achieving them.</p>
             <br>
+<<<<<<< HEAD
             
+=======
+            <a href="#" class="btn btn-primary btn-advisory">Managed Services</a>
+        </div>
+    </div>
+</div>
+<div class="container content-container">
+    <div class="row">
+        <!-- Column One -->
+        <div class="col-md-6 column">
+            <img src="images/services/mentoring.png" alt="" class="img-fluid">
+        </div>
+        <!-- Column Two -->
+        <div class="col-md-6 column">
+>>>>>>> 08cb6bd748b01a9b5d60c749cf1dbd996506eb0e
             <h4>Empower your business with seamless connectivity and robust protection.</h4>
             <p class="mt-3">With our support, your business stays connected and secure, enabling you to thrive in today's dynamic landscape</p>
             <ul class="list-unstyled text-left">

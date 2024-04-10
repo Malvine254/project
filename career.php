@@ -40,8 +40,12 @@
         <div class="col-md-6">
             <h2>Find Your Future Here!</h2>
             <p class="mt-3">We are always looking forward to having the right resources join our growing team. We offer competitive pay and benefits along with a great working environment. Our full-time positions offer employment benefits including paid holidays, paid vacations, annual performance bonuses, and project-driven bonuses.</p>
+<<<<<<< HEAD
             <a href="job-board" class="btn default-button-color btn-primary">JOIN OUR TEAM</a>
 
+=======
+            <button class="btn default-button-color btn-primary">JOIN OUR TEAM</button>
+>>>>>>> 08cb6bd748b01a9b5d60c749cf1dbd996506eb0e
         </div>
         <div class="col-md-6">
           <img src="images/Careers/careers.png" alt="" class="img-fluid" loading="lazy">
@@ -116,13 +120,21 @@
   <div class="row">
       <!-- First Column -->
       <div class="col-md-6 column">
+<<<<<<< HEAD
           <img src="images/Careers/software.png" alt="" class="img-fluid" loading="lazy">
+=======
+          <img src="images/Careers/software_engineer.png" alt="" class="img-fluid" loading="lazy">
+>>>>>>> 08cb6bd748b01a9b5d60c749cf1dbd996506eb0e
           <h4 class="mt-3">Software Engineer</h4>
           <p text-left>Fuel Innovation in Web and Mobile App Development. Be part of our dynamic team, crafting the digital future one line of code at a time.</p>
       </div>
       <!-- Second Column -->
       <div class="col-md-6 column">
+<<<<<<< HEAD
           <img src="images/Careers/datascientist.png" alt="" class="img-fluid" loading="lazy">
+=======
+          <img src="images/Careers/software_engineer.png" alt="" class="img-fluid" loading="lazy">
+>>>>>>> 08cb6bd748b01a9b5d60c749cf1dbd996506eb0e
           <h4 class="mt-3">Data Scientist</h4>
           <p text-left>Transform information into insights, and shape the future through data-driven decisions. Make your mark on the world of analytics with us.</p>
       </div>
@@ -131,7 +143,11 @@
 <div class="row">
   <!-- Centered Column -->
   <div style="padding-left: 400px; padding-right: 400px;" class="text-center" class="col-md-12 center-column">
+<<<<<<< HEAD
       <img src="images/Careers/data engineer.png" alt="" class="img-fluid" loading="lazy">
+=======
+      <img src="images/Careers/software_engineer.png" alt="" class="img-fluid" loading="lazy">
+>>>>>>> 08cb6bd748b01a9b5d60c749cf1dbd996506eb0e
       <h4>Data Engineer</h4>
       <p class="text-left ml-5">Be the backbone of our data ecosystem, architecting solutions that power innovation and decision-making.</p>
   </div>

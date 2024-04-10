@@ -23,6 +23,7 @@ function submitContactForm(){
 	$stmt->close();
 }
 
+<<<<<<< HEAD
 function scheduleConsultant(){
     global $conn;
 	$name = $_POST['name'];
@@ -53,4 +54,9 @@ if (isset($_POST['submit_form'])) {
 if (isset($_POST['consultation_btn'])) {
 	scheduleConsultant();
 }
+=======
+if (isset($_POST['submit_form'])) {
+	submitContactForm();
+}
+>>>>>>> 08cb6bd748b01a9b5d60c749cf1dbd996506eb0e
 ?>

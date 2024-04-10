@@ -1,3 +1,4 @@
+<?php include 'php/actions.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -49,7 +50,14 @@
           <i class="fa fa-angle-right text-light" style="background-color:
            rgb(47,85,151); padding: 5px;"></i></h6>
       </div>
+<<<<<<< HEAD
     <a href="services" class="custom-btn">LEARN MORE</a>
+=======
+    <!-- playing video at the hompage here -->
+    <video src="videos/video1.mp4" 
+    preload="auto" autoplay loop muted style="width: 100%; height: 100%;"></video>  
+  
+>>>>>>> 08cb6bd748b01a9b5d60c749cf1dbd996506eb0e
   </div>
 </div>
 
@@ -270,7 +278,11 @@
         <div class=" card-back">
           <div class="card-body">
             <h3 class="card-title text-center mb-4">Connect with our experts?</h3>
+<<<<<<< HEAD
             <form id="contact-form" method="post">
+=======
+            <form method="post">
+>>>>>>> 08cb6bd748b01a9b5d60c749cf1dbd996506eb0e
               <div class="form-row">
                 <div class="col-md-6 mb-1">
                   <label for="validationServer01">Name</label>
@@ -289,7 +301,11 @@
                 </div>
                 <div class="col-md-6 mb-1">
                   <label for="validationServer04">Phone Number</label>
+<<<<<<< HEAD
                   <input type="tel" class="form-control edit-input" id="validationServer04" placeholder="Phone Number" required name="phone">
+=======
+                  <input type="text" class="form-control edit-input" id="validationServer04" placeholder="Phone Number" required name="phone">
+>>>>>>> 08cb6bd748b01a9b5d60c749cf1dbd996506eb0e
                 </div>
                 <div class="col-md-12 mb-3">
                   <label for="validationServer05">Message</label>

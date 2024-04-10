@@ -34,7 +34,11 @@
   <?php include 'php/header.php'; ?>
   
   <!-- Content -->
+<<<<<<< HEAD
  <div class="container content-container mt-3">
+=======
+  <div class="container content-container mt-3">
+>>>>>>> 08cb6bd748b01a9b5d60c749cf1dbd996506eb0e
     <div class="row">
         <!-- Column One -->
         <div class="col-md-6 column">
@@ -50,7 +54,23 @@
             <br>
             <p>Our advisory services are tailored to meet your needs. With our team of experts, we will collaborate with you to create, oversee, and implement enduring solutions. Drawing upon our extensive industry insights and professional expertise, we are committed to helping you chart a clear roadmap and effectively communicate every step of the way.</p>
             <br>
+<<<<<<< HEAD
             <h4 class="text-left mt-3 mb-3">Do you find it challenging to navigate the complexities of technology transformation without a dependable advisory partner?</h4>
+=======
+            <a href="#" class="btn btn-primary btn-advisory">Advisory Services</a>
+        </div>
+    </div>
+</div>
+<div class="container content-container">
+    <div class="row">
+        <!-- Column One -->
+        <div class="col-md-6 column">
+            <img src="images/services/mentoring.png" alt="" class="img-fluid">
+        </div>
+        <!-- Column Two -->
+        <div class="col-md-6 column">
+            <h4 class="text-left">Do you find it challenging to navigate the complexities of technology transformation without a dependable advisory partner?</h4>
+>>>>>>> 08cb6bd748b01a9b5d60c749cf1dbd996506eb0e
             <p>With Armely as your trusted partner, you can rely on our expertise to help you make informed decisions and implement lasting solutions.</p>
             <ul class="list-unstyled text-left">
                 <li class="list-item">&#10004; Trustworthy team of experts</li>
@@ -62,8 +82,12 @@
         </div>
     </div>
 </div>
+<<<<<<< HEAD
 
 <div class="container content-container mt-3">
+=======
+<div class="container content-container">
+>>>>>>> 08cb6bd748b01a9b5d60c749cf1dbd996506eb0e
     <!-- Row 1 -->
     <div class="row row-spacing">
         <!-- Column One -->

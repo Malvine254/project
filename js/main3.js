@@ -217,7 +217,11 @@ This marks the start of floating service and company pages
         "top": buttonPosition.top + buttonHeight + 30// Adjust as needed
       });
       floatingItem.toggle(); // Toggle display of floating item
+<<<<<<< HEAD
       // $("#footer").toggle();
+=======
+      $("#footer").toggle();
+>>>>>>> 08cb6bd748b01a9b5d60c749cf1dbd996506eb0e
    });
    
 
@@ -249,8 +253,14 @@ $("#test-btn").click(()=>{
         text: 'Your operation was successful.',
         icon: 'success'
       });
+<<<<<<< HEAD
 })
    
+=======
+      floatingItem.toggle(); // Toggle display of floating item
+      $("#footer").toggle();
+   });
+>>>>>>> 08cb6bd748b01a9b5d60c749cf1dbd996506eb0e
    /*
 =============================================================================================================================================
 This marks the end of floating service and company pages

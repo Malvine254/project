@@ -36,6 +36,7 @@
         <!-- Column One -->
         <div class="col-md-6 column">
             <h2>Enterprise Applications</h2>
+<<<<<<< HEAD
             <p>In today's dynamic business landscape, having software solutions that fit seamlessly with your operations is paramount. At Armely, we specialize in crafting enterprise applications customized to meet the unique demands and objectives of your organization.</p>
             <img src="images/services/applications.png" alt="" class="img-fluid">
         </div>
@@ -48,6 +49,35 @@
                 <li class="list-item">&#10004; Streamlined Workflows</li>
                 <li class="list-item">&#10004; Scalable Solutions</li>
                 <li class="list-item">&#10004; Competitive Edge</li>
+=======
+            <p>Armely's Advisory Hub provides insightful guidance, industry expertise and a proven track record of success.</p>
+        </div>
+        <!-- Column Two -->
+        <div class="col-md-6 column">
+            <p>At Armely, we understand that in today's rapidly evolving technological landscape, organizations must continually adapt and transform to stay competitive. We recognize the challenges that come with navigating these changes, and we stand ready to be your trusted and proficient partner in guiding you through this journey.</p>
+            <br>
+            <p>Our advisory services are tailored to meet your needs. With our team of experts, we will collaborate with you to create, oversee, and implement enduring solutions. Drawing upon our extensive industry insights and professional expertise, we are committed to helping you chart a clear roadmap and effectively communicate every step of the way.</p>
+            <br>
+            <a href="#" class="btn btn-primary btn-advisory">Advisory Services</a>
+        </div>
+    </div>
+</div>
+<div class="container content-container">
+    <div class="row">
+        <!-- Column One -->
+        <div class="col-md-6 column">
+            <img src="images/services/mentoring.png" alt="" class="img-fluid">
+        </div>
+        <!-- Column Two -->
+        <div class="col-md-6 column">
+            <h4>Do you find it challenging to navigate the complexities of technology transformation without a dependable advisory partner?</h4>
+            <p>With Armely as your trusted partner, you can rely on our expertise to help you make informed decisions and implement lasting solutions.</p>
+            <ul class="list-unstyled">
+                <li class="list-item">&#10004; Trustworthy team of experts</li>
+                <li class="list-item">&#10004; Experienced advisory team for expert guidance and support</li>
+                <li class="list-item">&#10004; Effective communication throughout the advisory process</li>
+                <li class="list-item">&#10004; Customized Solutions</li>
+>>>>>>> 08cb6bd748b01a9b5d60c749cf1dbd996506eb0e
             </ul>
     <h4>Our Approach to Enterprise Application Development</h4>
             <ul class="list-unstyled text-left mt-3 mb-3">
@@ -61,8 +91,12 @@
         </div>
     </div>
 </div>
+<<<<<<< HEAD
 
 <div class="container content-container mt-5">
+=======
+<div class="container content-container">
+>>>>>>> 08cb6bd748b01a9b5d60c749cf1dbd996506eb0e
     <!-- Row 1 -->
     <div class="row row-spacing">
         <!-- Column One -->

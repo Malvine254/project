@@ -57,21 +57,33 @@
     <div class="row">
         <div class="col-md-4">
             <div class="service-card">
+<<<<<<< HEAD
                 <img src="images/services/advice 1.png" alt="" class="img-fluid" loading="lazy">
+=======
+                <img src="images/Customer stories/customer_services_1.png" alt="" class="img-fluid" loading="lazy">
+>>>>>>> 08cb6bd748b01a9b5d60c749cf1dbd996506eb0e
                 <h5>Advisory Services</h5>
                 <p>Get expert guidance in planning, development, marketing, finance, and risk management for sustainable growth.</p>
             </div>
         </div>
         <div class="col-md-4">
             <div class="service-card">
+<<<<<<< HEAD
                 <img src="images/services/datapic.png" alt="" class="img-fluid" loading="lazy">
+=======
+                <img src="images/Customer stories/customer_services_2.png" alt="" class="img-fluid" loading="lazy">
+>>>>>>> 08cb6bd748b01a9b5d60c749cf1dbd996506eb0e
                 <h5>Data</h5>
                 <p>Harness the power of data with performance management, data analysis, modeling, storage, and visualization services.</p>
             </div>
         </div>
         <div class="col-md-4">
             <div class="service-card">
+<<<<<<< HEAD
                 <img src="images/services/aipic.png" alt="" class="img-fluid" loading="lazy">
+=======
+                <img src="images/Customer stories/customer_services_3.png" alt="" class="img-fluid" loading="lazy">
+>>>>>>> 08cb6bd748b01a9b5d60c749cf1dbd996506eb0e
                 <h5>Artificial Intelligence</h5>
                 <p>Harness the potential of AI to automate processes, enhance productivity, and uncover patterns that drive innovation and efficiency.</p>
             </div>
@@ -84,21 +96,33 @@
     <div class="row">
         <div class="col-md-4">
             <div class="service-card">
+<<<<<<< HEAD
                 <img src="images/services/managed p.png" alt="" class="img-fluid" loading="lazy">
+=======
+                <img src="images/Customer stories/customer_services_4.png" alt="" class="img-fluid" loading="lazy">
+>>>>>>> 08cb6bd748b01a9b5d60c749cf1dbd996506eb0e
                 <h5>Managed Services</h5>
                 <p>Enhance your technology infrastructure with supportability reviews, root cause analysis, coordinated service delivery and technology.</p>
             </div>
         </div>
         <div class="col-md-4">
             <div class="service-card">
+<<<<<<< HEAD
                 <img src="images/services/appd.png" alt="" class="img-fluid" loading="lazy">
+=======
+                <img src="images/Customer stories/mentoringcustomer.png" alt="" class="img-fluid" loading="lazy">
+>>>>>>> 08cb6bd748b01a9b5d60c749cf1dbd996506eb0e
                 <h5>Enterprise Applications</h5>
                 <p>Implement customized software solutions tailored to your business requirements, optimizing workflows and driving productivity across your organization.</p>
             </div>
         </div>
         <div class="col-md-4">
             <div class="service-card">
+<<<<<<< HEAD
                 <img src="images/services/web.png" alt="" class="img-fluid" loading="lazy">
+=======
+                <img src="images/Customer stories/customer_services_6.png" alt="" class="img-fluid" loading="lazy">
+>>>>>>> 08cb6bd748b01a9b5d60c749cf1dbd996506eb0e
                 <h5>Cloud</h5>
                 <p>Embrace the scalability, flexibility, and cost-efficiency of cloud computing, empowering your business to innovate and grow without infrastructure constraints.</p>
             </div>

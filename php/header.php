@@ -20,7 +20,14 @@ echo "<nav class='navbar navbar-expand-lg navbar-dark fixed-top pt-3 pb-3 '>
         <li class='nav-item'>
           <a class='nav-link text-dark link' href='customer-stories'>CUSTOMER STORIES</a>
         </li>
+<<<<<<< HEAD
 
+=======
+        <li class='nav-item'>
+          <a class='nav-link text-dark link myButton' id='myButtonTwo' >WHY ARMELY</a>
+          <a class='nav-link text-dark link myButtonTwo' href='company'>WHY ARMELY</a>
+        </li>
+>>>>>>> 08cb6bd748b01a9b5d60c749cf1dbd996506eb0e
         <li class='nav-item'>
           <a class='nav-link text-dark link' href='contact-us' target='_parent' rel='noopener noreferrer'>CONTACT US</a>
         </li>

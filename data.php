@@ -46,6 +46,21 @@
             <br>
             <p>Collaborating closely with your management team, we develop and execute plans, analyze data, uncover opportunities and navigate the challenges of the data-driven world. Our ultimate aim is to empower your company by optimizing data value, streamlining data management processes, ensuring data security and accuracy, and fostering sustainable growth through data.</p>
             <br>
+<<<<<<< HEAD
+=======
+            <a href="#" class="btn btn-primary btn-advisory">Data Services</a>
+        </div>
+    </div>
+</div>
+<div class="container content-container">
+    <div class="row">
+        <!-- Column One -->
+        <div class="col-md-6 column">
+            <img src="images/services/mentoring.png" alt="" class="img-fluid">
+        </div>
+        <!-- Column Two -->
+        <div class="col-md-6 column">
+>>>>>>> 08cb6bd748b01a9b5d60c749cf1dbd996506eb0e
             <h4>A business partner that embraces data management from every angle</h4>
             <p>We take pride in assembling a team of business intelligence experts at Armely. Whether it's Data Analysis, Strategy Formulation, Dashboard Development, or Data Visualization, your business intelligence project will benefit from a customized strategy rooted in thorough research.</p>
             <a href="#" class="btn default-button-color btn-primary btn-advisory">Data Services</a>

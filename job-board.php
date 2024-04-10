@@ -28,11 +28,19 @@
   </style>
 </head>
 <body>
+<<<<<<< HEAD
   
+=======
+  <!-- preloader -->
+  <div id="preloader">
+    <div id="loader"></div>
+  </div>
+>>>>>>> 08cb6bd748b01a9b5d60c749cf1dbd996506eb0e
    <!-- Navbar -->
   <?php include 'php/header.php'; ?>
 
   <!-- Content -->
+<<<<<<< HEAD
 <div class="container mt-5">
     <h1>Job Board</h1>
     <h2>Complete the following form</h2>
@@ -94,6 +102,145 @@
         </div>
         <button type="submit" class="btn default-button-color btn-primary text-center">Submit Form</button>
     </form>
+=======
+  <div class="container content-container mt-3">
+    <div class="row">
+        <!-- Column One -->
+        <div class="col-md-6 column">
+            <h2>Cloud Services</h2>
+            <p>Businesses today recognize the immense benefits of migrating their on-premise data infrastructure to the cloud.</p>
+        </div>
+        <!-- Column Two -->
+        <div class="col-md-6 column">
+          <h2>On-Premise to Cloud Data Migrations: Seamless Transition to the Cloud</h2>
+            <p>At Armely, we specialize in facilitating on-premise to cloud data migrations, enabling organizations to harness the full potential of cloud computing while minimizing disruption to their operations.</p>
+            <br>
+            <a href="#" class="btn btn-primary btn-advisory">Advisory Services</a>
+        </div>
+    </div>
+</div>
+<div class="container content-container">
+    <div class="row">
+        <!-- Column One -->
+        <div class="col-md-6 column">
+            <img src="images/services/mentoring.png" alt="" class="img-fluid">
+        </div>
+        <!-- Column Two -->
+        <div class="col-md-6 column">
+            <h4>Our Approach to On-Premise to Cloud Data Migrations</h4>
+            <ul class="list-unstyled">
+                <li class="list-item">&#10004; Assessment and Planning</li>
+                <li class="list-item">&#10004; Data Preparation and Cleansing</li>
+                <li class="list-item">&#10004; Selection of Cloud Services</li>
+                <li class="list-item">&#10004; Migration Execution</li>
+                <li class="list-item">&#10004; Testing and Validation</li>
+                <li class="list-item">&#10004; Optimization and Continuous Improvement</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="container content-container">
+    <!-- Row 1 -->
+    <div class="row row-spacing">
+        <!-- Column One -->
+        <div class="col-md-12 column">
+            <h2>Armely Advisory Services</h2>
+            <p>Our expert team offers four key services to simplify complex setups, craft cost-effective solutions, enhance operational flexibility and proactively optimize the ever-evolving technologies powering your business, ensuring peak performance.</p>
+        </div>
+    </div>
+    <!-- Row 2 -->
+    <div class="row row-spacing">
+        <!-- Column One -->
+        <div class="col-md-6 column">
+            <!-- Icon 1 -->
+            <div class="icon-label">
+                <img height="100" width="100" src="images/services/effective-communication.png" alt="Mentoring" class="img-fluid">
+                <p>Mentoring</p>
+            </div>
+        </div>
+        <!-- Column Two -->
+        <div class="col-md-6 column">
+            <!-- Icon 2 -->
+            <div class="icon-label">
+                <img height="100" width="100" src="images/services/effective-communication.png" alt="Advisory Services" class="img-fluid">
+                <p>Advisory Services</p>
+            </div>
+        </div>
+    </div>
+</div>
+  <!-- form -->
+  <div class="container container-fluid content-container col-md-10 mt-5">
+    <div class="text-center">
+        <h2>Optimize Your Business with Armely Services</h2>
+        <p class="mt-2">Maximize your business potential with Armely's range of industry-leading solutions. Whether it's Data Services, Web Development, Business Intelligence, Managed Services, or Advisory Services, we provide the utmost value to your operations and applications.</p>
+    </div>
+    <div class="form-container">
+        <h3 class="text-center mb-4">SCHEDULE A CONSULTATION TODAY</h3>
+        <div class="row mb-3">
+            <div class="col-md-12">
+                <form>
+                    <div class="form-row">
+                      <div class="col-md-6 mb-1">
+                        <label for="validationServer01">Name</label>
+                        <input type="text" class="form-control  is-valid edit-input  edit-input-valid" id="validationServer01" placeholder="First name" value="Mark" required>
+                        <div class="valid-feedback">
+                          Looks good!
+                        </div>
+                      </div>
+                      <div class="col-md-6 mb-1">
+                        <label for="validationServer02">Email</label>
+                        <input type="email" class="form-control is-valid edit-input  edit-input-valid" id="validationServer02" placeholder="Email" value="Otto@gmail.com" required>
+                        <div class="valid-feedback">
+                          Looks good!
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-row">
+                      <div class="col-md-4 mb-3">
+                        <label for="validationServer03">Organization Name</label>
+                        <input type="text" class="form-control is-invalid edit-input" id="validationServer03" placeholder="Organization Name" required>
+                        <div class="invalid-feedback">
+                          Please provide a valid Organization Name.
+                        </div>
+                        
+                      </div>
+                      
+                      <div class="col-md-4 mb-1">
+                        <label for="validationServer04">Phone Number</label>
+                        <input type="text" class="form-control is-invalid edit-input" id="validationServer04" placeholder="Phone Number" required>
+                        <div class="invalid-feedback">
+                          Please provide a valid Phone Number.
+                        </div>
+                      </div>
+                      <div class="col-md-4 mb-3">
+                        <label for="validationServer03">Which service piques your interest?</label>
+                        <select type="text" class="form-control is-invalid edit-input" id="validationServer03" placeholder="Organization Name" required>
+                            <option value="" disabled selected>Select Service of Interest</option>
+                            <option value="Data Services">Data Services</option>
+                            <option value="Web Development">Web Development</option>
+                            <option value="Business Intelligence">Business Intelligence</option>
+                            <option value="Managed Services">Managed Services</option>
+                            <option value="Advisory Services">Advisory Services</option>
+                        </select>
+                        <div class="invalid-feedback">
+                          Please select an option to proceed.
+                        </div>
+                        
+                      </div>
+                      <div class="col-md-12 mb-3">
+                        <label for="validationServer05">Message</label>
+                        <textarea rows="5" type="text" class="form-control is-invalid edit-textarea" id="validationServer05" placeholder="Message..." required></textarea>
+                        <div class="invalid-feedback">
+                          Please provide a valid Message.
+                        </div>
+                      </div>
+                    </div>
+                    <button class="btn btn-primary default-button-color" type="submit">Send Message</button>
+                  </form>  
+            </div>
+    </div>
+</div>
+>>>>>>> 08cb6bd748b01a9b5d60c749cf1dbd996506eb0e
 </div>
 
    <!-- Floating Action Button -->
