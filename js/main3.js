@@ -208,7 +208,7 @@ This marks the start of floating service and company pages
 */  
 
  $("#myButton").click(() => {
-    $("#floatingItemTwo").css({"display":"none"});
+    // $("#floatingItemTwo").css({"display":"none"});
       var buttonPosition = $("#myButton").position(); // Get button position
       var buttonHeight = $("#myButton").outerHeight(); // Get button height
       var floatingItem = $("#floatingItem");
@@ -217,18 +217,40 @@ This marks the start of floating service and company pages
         "top": buttonPosition.top + buttonHeight + 30// Adjust as needed
       });
       floatingItem.toggle(); // Toggle display of floating item
+      // $("#footer").toggle();
    });
-   $("#myButtonTwo").click(() => {
-      $("#floatingItem").css({"display":"none"});
-      var buttonPosition = $("#myButtonTwo").position(); // Get button position
-      var buttonHeight = $("#myButtonTwo").outerHeight(); // Get button height
-      var floatingItem = $("#floatingItemTwo");
-      // Set floating item position to below the button
-      floatingItem.css({
-        "top": buttonPosition.top + buttonHeight + 30// Adjust as needed
+   
+
+  $("#myButton").hover(() => {
+    $("#floatingItem").css({ "display": "block" });
+    var buttonPosition = $("#myButton").position(); // Get button position
+    var buttonHeight = $("#myButton").outerHeight(); // Get button height
+    var floatingItem = $("#floatingItem");
+    // Set floating item position to below the button
+    floatingItem.css({
+      "top": buttonPosition.top + buttonHeight + 30 // Adjust as needed
+    });
+
+    $(document).on("click", function(event) {
+
+      // Check if the click target is outside the floating item
+      if (
+        !floatingItem.is(event.target) &&
+        !floatingItem.has(event.target).length
+      ) {
+        floatingItem.css({ "display": "none" });
+      }
+    });
+  });
+
+$("#test-btn").click(()=>{
+   Swal.fire({
+        title: 'Success!',
+        text: 'Your operation was successful.',
+        icon: 'success'
       });
-      floatingItem.toggle(); // Toggle display of floating item
-   });
+})
+   
    /*
 =============================================================================================================================================
 This marks the end of floating service and company pages

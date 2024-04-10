@@ -10,8 +10,6 @@
   <!-- font awesome  -->
   <link rel="stylesheet" href="vendor/font-awesome/css/all.css"> 
   <link rel="icon" href="images/logo/logo1.png" type="image/x-icon">
-  
-  <meta http-equiv="Content-Encoding" content="gzip">
 
 
   <style>
@@ -28,20 +26,18 @@
   </style>
 </head>
 <body>
-  <!-- preloader -->
-  <div id="preloader">
-    <div id="loader"></div>
-  </div>
+ 
    <!-- Navbar -->
   <?php include 'php/header.php'; ?>
 
   <!-- Content -->
-  <div class="container-fluid content-container mt-3">
+  <div class="container content-container mt-3">
     <div class="row">
         <!-- Column One -->
         <div class="col-md-6 column">
             <h2>Managed Services</h2>
             <p>At our core, we deliver the solutions and knowledge needed to effectively oversee essential IT services, freeing you to concentrate on strategic endeavors.</p>
+            <img src="images/services/Managed 2.png" alt="" class="img-fluid">
         </div>
         <!-- Column Two -->
         <div class="col-md-6 column">
@@ -49,21 +45,10 @@
             <br>
             <p>Our approach is centered on comprehending your desired business objectives and accelerating your progress toward achieving them.</p>
             <br>
-            <a href="#" class="btn btn-primary btn-advisory">Managed Services</a>
-        </div>
-    </div>
-</div>
-<div class="container-fluid content-container">
-    <div class="row">
-        <!-- Column One -->
-        <div class="col-md-6 column">
-            <img src="images/services/mentoring.png" alt="" class="img-fluid">
-        </div>
-        <!-- Column Two -->
-        <div class="col-md-6 column">
+            
             <h4>Empower your business with seamless connectivity and robust protection.</h4>
-            <p>With our support, your business stays connected and secure, enabling you to thrive in today's dynamic landscape</p>
-            <ul class="list-unstyled">
+            <p class="mt-3">With our support, your business stays connected and secure, enabling you to thrive in today's dynamic landscape</p>
+            <ul class="list-unstyled text-left">
                 <li class="list-item">&#10004; Ensure real-time service visibility and reduce downtime</li>
                 <li class="list-item">&#10004; Enhance your business's agility and resilience</li>
                 <li class="list-item">&#10004; Streamline operational processes for maximum efficiency</li>
@@ -71,10 +56,12 @@
                 <li class="list-item">&#10004; Boost stability, mitigate risks, and control operational costs</li>
                 <li class="list-item">&#10004; Elevate employee productivity and foster engagement.</li>
             </ul>
+            <a href="#" class="btn default-button-color btn-primary btn-advisory mt-3">Managed Services</a>
+        
         </div>
     </div>
 </div>
-<div class="container-fluid content-container">
+<div class="container content-container">
     <!-- Row 1 -->
     <div class="row row-spacing">
         <!-- Column One -->
@@ -90,7 +77,7 @@
             <!-- Icon 1 -->
             <div class="icon-label">
                 <img height="100" width="100" src="images/services/effective-communication.png" alt="Mentoring" class="img-fluid">
-                <p>Mentoring</p>
+                <p>Service Management</p>
             </div>
         </div>
         <!-- Column Two -->
@@ -98,7 +85,7 @@
             <!-- Icon 2 -->
             <div class="icon-label">
                 <img height="100" width="100" src="images/services/effective-communication.png" alt="Advisory Services" class="img-fluid">
-                <p>Advisory Services</p>
+                <p>Service Management</p>
             </div>
         </div>
     </div>
@@ -187,10 +174,12 @@
   <button  id="scrollToTopBtn" class="btn btn-primary rounded-circle" style="display:none; background: rgb(47,85,151);">
     <i style="font-size: 2em;" class="fa-solid fa-arrow-up"></i>
 </button>
- 
- <!-- start of Footer -->
+  
+  <!-- start of Footer -->
   <?php include 'php/footer.php'; ?>
 <!-- end of Footer -->
+
+
 
 <style>
   .modal-right {

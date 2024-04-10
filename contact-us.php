@@ -1,3 +1,4 @@
+<?php include 'php/actions.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -26,10 +27,7 @@
   </style>
 </head>
 <body>
-  <!-- preloader -->
-  <div id="preloader">
-    <div id="loader"></div>
-  </div>
+  
   <!-- Navbar -->
   <?php include 'php/header.php'; ?>
 
@@ -38,53 +36,39 @@
 
   <!-- end of services floating screen and company floating screen -->
   <!-- counter section -->
-<div class="col-md-10 container mt-3 mb-4 shadow p-4">
+<div class="col-md-11 container mt-3 mb-4 p-4">
     <h1 class="big-font">Inquiries</h1>
-    <h5 class="subtitle-font">For specific questions complete the form below.</h5>
   <div class="row mb-3">
     <div class="col-md-6">
-        <form>
-            <div class="form-row">
-              <div class="col-md-6 mb-1">
-                <label for="validationServer01">Name</label>
-                <input type="text" class="form-control  is-valid edit-input  edit-input-valid" id="validationServer01" placeholder="First name" value="Mark" required>
-                <div class="valid-feedback">
-                  Looks good!
+      <h5 class="subtitle-font">For specific questions complete the form below.</h5>
+          <form id="contact-form" method="post">
+              <div class="form-row">
+                <div class="col-md-6 mb-1">
+                  <label for="validationServer01">Name</label>
+                  <input type="text" class="form-control edit-input " id="validationServer01" placeholder="First name" name="name" required>
+                  
+                </div>
+                <div class="col-md-6 mb-1">
+                  <label for="validationServer02">Email</label>
+                  <input type="email" class="form-control edit-input" id="validationServer02" placeholder="Email" required name="email">
                 </div>
               </div>
-              <div class="col-md-6 mb-1">
-                <label for="validationServer02">Email</label>
-                <input type="email" class="form-control is-valid edit-input  edit-input-valid" id="validationServer02" placeholder="Email" value="Otto@gmail.com" required>
-                <div class="valid-feedback">
-                  Looks good!
+              <div class="form-row">
+                <div class="col-md-6 mb-3">
+                  <label for="validationServer03">Organization Name</label>
+                  <input type="text" class="form-control edit-input" id="validationServer03" placeholder="Organization Name" required name="organization">
+                </div>
+                <div class="col-md-6 mb-1">
+                  <label for="validationServer04">Phone Number</label>
+                  <input type="tel" class="form-control edit-input" id="validationServer04" placeholder="Phone Number" required name="phone">
+                </div>
+                <div class="col-md-12 mb-3">
+                  <label for="validationServer05">Message</label>
+                  <textarea rows="5" type="text" class="form-control edit-textarea" id="validationServer05" placeholder="Message..." required name="message"></textarea>
                 </div>
               </div>
-            </div>
-            <div class="form-row">
-              <div class="col-md-6 mb-3">
-                <label for="validationServer03">Organization Name</label>
-                <input type="text" class="form-control is-invalid edit-input" id="validationServer03" placeholder="Organization Name" required>
-                <div class="invalid-feedback">
-                  Please provide a valid Organization Name.
-                </div>
-              </div>
-              <div class="col-md-6 mb-1">
-                <label for="validationServer04">Phone Number</label>
-                <input type="text" class="form-control is-invalid edit-input" id="validationServer04" placeholder="Phone Number" required>
-                <div class="invalid-feedback">
-                  Please provide a valid Phone Number.
-                </div>
-              </div>
-              <div class="col-md-12 mb-3">
-                <label for="validationServer05">Message</label>
-                <textarea rows="5" type="text" class="form-control is-invalid edit-textarea" id="validationServer05" placeholder="Message..." required></textarea>
-                <div class="invalid-feedback">
-                  Please provide a valid Message.
-                </div>
-              </div>
-            </div>
-            <button class="btn btn-primary default-button-color" type="submit">Send Message</button>
-          </form>  
+              <button name="submit_form" class="btn btn-primary default-button-color" type="submit">Send Message</button>
+            </form>
     </div>
     <div class="col-md-6" style="border: 8px; opacity: 23px; border-radius: 8px;">
         <h5> Our Location</h5>
@@ -138,6 +122,9 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- sweet alerts -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.4/dist/sweetalert2.all.min.js"></script>
+  <script src="js/form-actions.js"></script>
   <script>
     document.addEventListener('DOMContentLoaded', function() {
       var currentYear = new Date().getFullYear();
@@ -146,16 +133,7 @@
     });
   </script>
   <script src="js/main3.js"></script>
-  <script>
-    window.addEventListener('load', function() {
-        // Get the element to animate
-        var typingText = document.querySelector('.typing-text');
-        // Set the opacity to 1 to reveal the text
-        typingText.style.opacity = 1;
-        // Start the typing animation
-        typingText.style.animation = 'typing 5s steps(50, end) forwards, fadeIn 2s ease-in-out';
-        
-    });
+  
 </script>
 
 

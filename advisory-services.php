@@ -10,8 +10,6 @@
   <!-- font awesome  -->
   <link rel="stylesheet" href="vendor/font-awesome/css/all.css"> 
   <link rel="icon" href="images/logo/logo1.png" type="image/x-icon">
-  
-  <meta http-equiv="Content-Encoding" content="gzip">
 
 
   <style>
@@ -36,43 +34,36 @@
   <?php include 'php/header.php'; ?>
   
   <!-- Content -->
-  <div class="container-fluid content-container mt-3">
+ <div class="container content-container mt-3">
     <div class="row">
         <!-- Column One -->
         <div class="col-md-6 column">
             <h2>Advisory Services</h2>
             <p>Armely's Advisory Hub provides insightful guidance, industry expertise and a proven track record of success.</p>
+            <img src="images/services/Advisory.png" alt="" class="img-fluid">
         </div>
         <!-- Column Two -->
         <div class="col-md-6 column">
+            <br>
+            <br>
             <p>At Armely, we understand that in today's rapidly evolving technological landscape, organizations must continually adapt and transform to stay competitive. We recognize the challenges that come with navigating these changes, and we stand ready to be your trusted and proficient partner in guiding you through this journey.</p>
             <br>
             <p>Our advisory services are tailored to meet your needs. With our team of experts, we will collaborate with you to create, oversee, and implement enduring solutions. Drawing upon our extensive industry insights and professional expertise, we are committed to helping you chart a clear roadmap and effectively communicate every step of the way.</p>
             <br>
-            <a href="#" class="btn btn-primary btn-advisory">Advisory Services</a>
-        </div>
-    </div>
-</div>
-<div class="container-fluid content-container">
-    <div class="row">
-        <!-- Column One -->
-        <div class="col-md-6 column">
-            <img src="images/services/mentoring.png" alt="" class="img-fluid">
-        </div>
-        <!-- Column Two -->
-        <div class="col-md-6 column">
-            <h4>Do you find it challenging to navigate the complexities of technology transformation without a dependable advisory partner?</h4>
+            <h4 class="text-left mt-3 mb-3">Do you find it challenging to navigate the complexities of technology transformation without a dependable advisory partner?</h4>
             <p>With Armely as your trusted partner, you can rely on our expertise to help you make informed decisions and implement lasting solutions.</p>
-            <ul class="list-unstyled">
+            <ul class="list-unstyled text-left">
                 <li class="list-item">&#10004; Trustworthy team of experts</li>
                 <li class="list-item">&#10004; Experienced advisory team for expert guidance and support</li>
                 <li class="list-item">&#10004; Effective communication throughout the advisory process</li>
                 <li class="list-item">&#10004; Customized Solutions</li>
             </ul>
+            <a href="#" class="btn default-button-color btn-primary btn-advisory mt-3">Advisory Services</a>
         </div>
     </div>
 </div>
-<div class="container-fluid content-container">
+
+<div class="container content-container mt-3">
     <!-- Row 1 -->
     <div class="row row-spacing">
         <!-- Column One -->
@@ -81,28 +72,9 @@
             <p>Our expert team offers four key services to simplify complex setups, craft cost-effective solutions, enhance operational flexibility and proactively optimize the ever-evolving technologies powering your business, ensuring peak performance.</p>
         </div>
     </div>
-    <!-- Row 2 -->
-    <div class="row row-spacing">
-        <!-- Column One -->
-        <div class="col-md-6 column">
-            <!-- Icon 1 -->
-            <div class="icon-label">
-                <img height="100" width="100" src="images/services/effective-communication.png" alt="Mentoring" class="img-fluid">
-                <p>Mentoring</p>
-            </div>
-        </div>
-        <!-- Column Two -->
-        <div class="col-md-6 column">
-            <!-- Icon 2 -->
-            <div class="icon-label">
-                <img height="100" width="100" src="images/services/effective-communication.png" alt="Advisory Services" class="img-fluid">
-                <p>Advisory Services</p>
-            </div>
-        </div>
-    </div>
 </div>
   <!-- form -->
-  <div class="container container-fluid content-container col-md-10 mt-5">
+  <div class="container container-fluid content-container col-md-10 mt-3">
     <div class="text-center">
         <h2>Optimize Your Business with Armely Services</h2>
         <p class="mt-2">Maximize your business potential with Armely's range of industry-leading solutions. Whether it's Data Services, Web Development, Business Intelligence, Managed Services, or Advisory Services, we provide the utmost value to your operations and applications.</p>
@@ -185,53 +157,13 @@
   <button  id="scrollToTopBtn" class="btn btn-primary rounded-circle" style="display:none; background: rgb(47,85,151);">
     <i style="font-size: 2em;" class="fa-solid fa-arrow-up"></i>
 </button>
-  <!-- Footer -->
- <footer id="footer" class="col-md-12">
-    <div class=" mt-5">
-      <div class="row text-light ">
-        <div class="col-md-2">
-          <h1 class="mt-3 armely-logo-font">armely</h1>
-         
-        </div>
-        <div class="col-md-2">
-          <h5 class="mt-3">ABOUT</h5>
-          <p>Case studies</p>
-          <p>Job Board</p>
-        </div>
-      <div class="col-md-3">
-          <h5 class="mt-3 text-white">SERVICES</h5>
-          <div><a class="text-light text-right" href="#">Data Services</a></div>
-          <div><a class="text-light text-right" href="#">Advisory Services</a></div>
-          <div><a class="text-light" href="#">Managed Services</a></div>
-         <div> <a class="text-light" href="#">Business intelligence</a></div>
-         <div> <a class="text-light" href="#">Application Development Mentoring</a></div>
-      </div>
+  
+  <!-- start of Footer -->
+  <?php include 'php/footer.php'; ?>
+<!-- end of Footer -->
 
-        <div class="col-md-2">
-          <h5 class="mt-3">CONTACT US</h5>
-           <div> <a class="text-white" href="tel:+1 972 460 0643"><i class="fa fa-phone"></i> +1 972 460 0643</a></div>
-            <div><h6>ADDRESS</h6></div>
-            <div><p>2831 Eldorado Pkwy Suite 103-128 Friso TX 75033</p></div>
-          </div>
 
-        <div class="col-md-2">
-          <h5 class="mt-3">FOLLOW US</h5>
-           <div style="align-items: start;" class="pt-3">
-              <a href=""><i class="fab fa-facebook text-light h3"></i></a>
-              <a href=""><i class="fab fa-linkedin text-light h3 pl-3"></i></a>
-              <a href=""><i class="fab fa-x-twitter text-light h3 pl-3"></i></a>
-              <a href=""><i class="fab fa-github text-light h3 pl-3"></i></a>
-              <a href=""><i class="fab fa-youtube text-light h3 pl-3"></i></a>
-            </div>     
-        </div>
-      </div>
-      <hr class="bg-light">
-      <div class="text-center col mb-3 text-light text-small">
-        <p> &copy; 2024 Armely LLC || All rights reserved.</p><br>
-      </div>
-    </div>
-   
-  </footer>
+
 <style>
   .modal-right {
   position: absolute;

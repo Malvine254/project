@@ -26,10 +26,7 @@
   </style>
 </head>
 <body>
-  <!-- preloader -->
-  <div id="preloader">
-    <div id="loader"></div>
-  </div>
+ 
   <!-- Navbar -->
   <?php include 'php/header.php'; ?>
 

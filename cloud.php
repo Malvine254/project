@@ -10,8 +10,6 @@
   <!-- font awesome  -->
   <link rel="stylesheet" href="vendor/font-awesome/css/all.css"> 
   <link rel="icon" href="images/logo/logo1.png" type="image/x-icon">
-  
-  <meta http-equiv="Content-Encoding" content="gzip">
 
 
   <style>
@@ -28,76 +26,43 @@
   </style>
 </head>
 <body>
-  <!-- preloader -->
-  <div id="preloader">
-    <div id="loader"></div>
-  </div>
+
    <!-- Navbar -->
   <?php include 'php/header.php'; ?>
-
   <!-- Content -->
-  <div class="container-fluid content-container mt-3">
+  <div class="container content-container mt-3">
     <div class="row">
         <!-- Column One -->
         <div class="col-md-6 column">
-            <h2>Advisory Services</h2>
-            <p>Armely's Advisory Hub provides insightful guidance, industry expertise and a proven track record of success.</p>
+            <h2>Cloud Services</h2>
+            <p>Businesses today recognize the immense benefits of migrating their on-premise data infrastructure to the cloud.</p>
+            <img src="images/services/cloud.png" alt="" class="img-fluid">
         </div>
         <!-- Column Two -->
         <div class="col-md-6 column">
-            <p>At Armely, we understand that in today's rapidly evolving technological landscape, organizations must continually adapt and transform to stay competitive. We recognize the challenges that come with navigating these changes, and we stand ready to be your trusted and proficient partner in guiding you through this journey.</p>
+          <h2>On-Premise to Cloud Data Migrations: Seamless Transition to the Cloud</h2>
+            <p>At Armely, we specialize in facilitating on-premise to cloud data migrations, enabling organizations to harness the full potential of cloud computing while minimizing disruption to their operations.</p>
             <br>
-            <p>Our advisory services are tailored to meet your needs. With our team of experts, we will collaborate with you to create, oversee, and implement enduring solutions. Drawing upon our extensive industry insights and professional expertise, we are committed to helping you chart a clear roadmap and effectively communicate every step of the way.</p>
-            <br>
-            <a href="#" class="btn btn-primary btn-advisory">Advisory Services</a>
-        </div>
-    </div>
-</div>
-<div class="container-fluid content-container">
-    <div class="row">
-        <!-- Column One -->
-        <div class="col-md-6 column">
-            <img src="images/services/mentoring.png" alt="" class="img-fluid">
-        </div>
-        <!-- Column Two -->
-        <div class="col-md-6 column">
-            <h4>Do you find it challenging to navigate the complexities of technology transformation without a dependable advisory partner?</h4>
-            <p>With Armely as your trusted partner, you can rely on our expertise to help you make informed decisions and implement lasting solutions.</p>
-            <ul class="list-unstyled">
-                <li class="list-item">&#10004; Trustworthy team of experts</li>
-                <li class="list-item">&#10004; Experienced advisory team for expert guidance and support</li>
-                <li class="list-item">&#10004; Effective communication throughout the advisory process</li>
-                <li class="list-item">&#10004; Customized Solutions</li>
+             <h4>Our Approach to On-Premise to Cloud Data Migrations</h4>
+            <ul class="list-unstyled text-left mt-3">
+                <li class="list-item">&#10004; Assessment and Planning</li>
+                <li class="list-item">&#10004; Data Preparation and Cleansing</li>
+                <li class="list-item">&#10004; Selection of Cloud Services</li>
+                <li class="list-item">&#10004; Migration Execution</li>
+                <li class="list-item">&#10004; Testing and Validation</li>
+                <li class="list-item">&#10004; Optimization and Continuous Improvement</li>
             </ul>
+            <a href="#" class="btn default-button-color btn-primary btn-advisory mt-3">Cloud Services</a>
         </div>
     </div>
 </div>
-<div class="container-fluid content-container">
+<div class="container content-container mt-3">
     <!-- Row 1 -->
     <div class="row row-spacing">
         <!-- Column One -->
         <div class="col-md-12 column">
-            <h2>Armely Advisory Services</h2>
+            <h2>Armely Cloud Services</h2>
             <p>Our expert team offers four key services to simplify complex setups, craft cost-effective solutions, enhance operational flexibility and proactively optimize the ever-evolving technologies powering your business, ensuring peak performance.</p>
-        </div>
-    </div>
-    <!-- Row 2 -->
-    <div class="row row-spacing">
-        <!-- Column One -->
-        <div class="col-md-6 column">
-            <!-- Icon 1 -->
-            <div class="icon-label">
-                <img height="100" width="100" src="images/services/effective-communication.png" alt="Mentoring" class="img-fluid">
-                <p>Mentoring</p>
-            </div>
-        </div>
-        <!-- Column Two -->
-        <div class="col-md-6 column">
-            <!-- Icon 2 -->
-            <div class="icon-label">
-                <img height="100" width="100" src="images/services/effective-communication.png" alt="Advisory Services" class="img-fluid">
-                <p>Advisory Services</p>
-            </div>
         </div>
     </div>
 </div>
@@ -186,11 +151,12 @@
     <i style="font-size: 2em;" class="fa-solid fa-arrow-up"></i>
 </button>
   
-<!-- start of Footer -->
+  <!-- start of Footer -->
   <?php include 'php/footer.php'; ?>
 <!-- end of Footer -->
 
-  
+
+
 <style>
   .modal-right {
   position: absolute;

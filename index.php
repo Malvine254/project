@@ -13,45 +13,48 @@
   
   <meta http-equiv="Content-Encoding" content="gzip">
 
-
-  <style>
-    /* Add your custom styles here */
-    body {
-      padding-top: 56px; /* Adjust based on the height of your fixed navbar */
-    }
-
-    footer {
-      padding: 0PX;
-      width: 100% !important;
-    }
-    
-  </style>
 </head>
 <body>
-  <!-- preloader -->
-  <div id="preloader">
-    <div id="loader"></div>
-  </div>
+  
   <!-- Navbar -->
   <?php include 'php/header.php'; ?>
    
   <!-- Content -->
-  <div class="container mt-3">
+  <!-- <div class="container mt-3 mb-3"> -->
     <!-- title text -->
-    <h1 class="text-center typing-text">Your Trusted Source<br>
+   <!--  <h1 class="text-center typing-text text-muted">Your Trusted Source<br>
       For Digital Excellence</h1>
-      <div class="mt-5">
-        <h6 class="text-center">BRINGING YOUR VISION TO LIFE 
+      
+         <div class="mt-3">
+           <h6 class="text-center">BEYOND IMAGINATION 
+          <i class="fa fa-angle-right text-light" style="background-color:
+           rgb(47,85,151); padding: 5px;"></i></h6>
+      </div> -->
+    <!-- playing video at the hompage here -->
+   <!--  <video src="videos/video1.mp4" 
+    preload="auto" autoplay loop muted style="width: 100%; height: 100%;   overflow: hidden;border-radius: 10px; box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);"></video>   -->
+  
+  <!-- </div> -->
+  
+  <div class="container col-md-11 mt-4" id="video-background">
+  <video autoplay loop muted style="opacity: 90%;">
+    <source src="videos/video2.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <div id="video-caption">
+     <h1 class="text-center typing-text text-light pb-4">Your Trusted Source <br>
+      For Digital Excellence</h1>
+      <div class="mt-3">
+           <h5 class="text-center">BEYOND IMAGINATION 
           <i class="fa fa-angle-right text-light" style="background-color:
            rgb(47,85,151); padding: 5px;"></i></h6>
       </div>
-    <!-- playing video at the hompage here -->
-    <video src="https://res.cloudinary.com/timothymugo2323/video/upload/f_auto:video,q_auto/v1/armely/mrngrcv3n9yeloisubz7" 
-    preload="auto" autoplay loop muted style="width: 100%; height: 100%;"></video>  
-  
+    <a href="services" class="custom-btn">LEARN MORE</a>
   </div>
+</div>
+
   <!-- counter section -->
-<div class="container mt-3 mb-4">
+<div class="container mt-3 mb-4 col-md-11">
   <div class="row d-flex justify-content-center align-items-center">
       <div class="col-md-4">
         <div class="counter plus" data-target="500">0</div>
@@ -74,7 +77,7 @@
 
   <!-- see our works section -->
   <section>
-    <div class="container mb-5">
+    <div class="container mb-5 col-md-11">
       <div class="row">
         <h3 class="mb-3">See our work</h3>
         <hr>
@@ -160,50 +163,70 @@
     width: 150px; /* Set the desired width */
     height: auto; /* Maintain aspect ratio */
 }
+.marquee-container {
+  overflow: hidden;
+}
+
+.marquee-content {
+  display: flex;
+  animation: marquee-scroll 30s linear infinite;
+}
+
+@keyframes marquee-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
 
   </style>
 
   <!-- partners section -->
-  <div class="container mt-5 mb-5">
+  <div class="container mt-5 mb-5 col-md-11">
     <p class="partner-subtitle mb-3">Your Reliable Hub for Digital Excellence, Committed to Caring, Building Relationships, 
       Backed by Industry Expertise and Recognized for Award-Winning Achievements.</p>
-    <div class="row align-items-center justify-content-center">
-        <div class="col-md-2 p-4 col-sm-4 d-flex justify-content-center">
-            <a href=""><img class="svg-img" src="https://upload.wikimedia.org/wikipedia/commons/9/97/Talend_logo.svg" alt=""></a>
+   <div class="row align-items-center justify-content-center">
+    <div class="col-md-12 p-4 col-sm-4 d-flex justify-content-center">
+        <div class="marquee-container">
+        <div class="marquee-content">
+          <a href="" class="ml-5"><img class="svg-img" src="https://upload.wikimedia.org/wikipedia/commons/9/97/Talend_logo.svg" alt=""></a>
+          <a href="" class="ml-5"><img class="svg-img" src="images/partners/us-cloud-logo.webp" alt=""></a>
+          <a href="" class="ml-5"><img class="svg-img" src="images/partners/ms.svg" alt=""></a>
+          <a href="" class="ml-5"><img class="svg-img" src="images/partners/SNX_BIG.D (1).svg" alt=""></a>
+          <a href="" class="ml-5"><img class="svg-img" src="images/partners/google_cloud-ar21.svg" alt=""></a>
+          <a href="" class="ml-5"><img class="svg-img" src="images/partners/amazon_aws-ar21.svg" alt=""></a>
+
+          <a href="" class="ml-5"><img class="svg-img" src="https://upload.wikimedia.org/wikipedia/commons/9/97/Talend_logo.svg" alt=""></a>
+          <a href="" class="ml-5"><img class="svg-img" src="images/partners/us-cloud-logo.webp" alt=""></a>
+          <a href="" class="ml-5"><img class="svg-img" src="images/partners/ms.svg" alt=""></a>
+          <a href="" class="ml-5"><img class="svg-img" src="images/partners/SNX_BIG.D (1).svg" alt=""></a>
+          <a href="" class="ml-5"><img class="svg-img" src="images/partners/google_cloud-ar21.svg" alt=""></a>
+          <a href="" class="ml-5"><img class="svg-img" src="images/partners/amazon_aws-ar21.svg" alt=""></a>
         </div>
-        <div class="col-md-2 p-4 col-sm-4 d-flex justify-content-center">
-            <a href=""><img class="svg-img" src="images/partners/us-cloud-logo.webp" alt=""></a>
-        </div>
-        <div class="col-md-2 p-4 col-sm-4 d-flex justify-content-center">
-            <a href=""><img class="svg-img" src="images/partners/ms.svg" alt=""></a>
-        </div>
-        <div class="col-md-2 p-4 col-sm-4 d-flex justify-content-center">
-            <a href=""><img class="svg-img" src="images/partners/SNX_BIG.D (1).svg" alt=""></a>
-        </div>
-        <div class="col-md-2 p-4 col-sm-4 d-flex justify-content-center">
-            <a href=""><img class="svg-img" src="images/partners/google_cloud-ar21.svg" alt=""></a>
-        </div>
-        <div class="col-md-2 p-4 col-sm-4 d-flex justify-content-center">
-            <a href=""><img class="svg-img" src="images/partners/amazon_aws-ar21.svg" alt=""></a>
-        </div>
+      </div>
     </div>
+</div>
+
+   
 </div>
 
 </div>
 
   <!-- connect with experts -->
-  <div class="container"><br>
+  <div class="container col-md-11"><br>
     <h3 class="mb-2">Our recent blog posts</h3>
   
     <div class="row">
       <div class="col-md-4">
         <div class="card bg-primary mb-3 transparent-card">
-          <img class="card-img-top" src="images/services/service1.jpg" alt="Card image cap">
+          <img class="card-img-top" src="images/blogs/image.png" alt="Card image cap">
           <div class="card-body">
-              <h6 class="text-muted">News Needs to Meet Its Audiences Where They Are</h6>
-             <p style="font-size: 14px;" class="mt-0 text-sm">Dave Rogers in News
-                <br><span class="text-muted">Jun 14 • 3 min read</span>
-                 <a href="" class="btn btn-outline-primary ml-2">Read more</a>
+              <h6 class="text-muted">Armely's R&D Unleashes OpenAI's Potential</h6>
+             <p style="font-size: 14px;" class="mt-0 text-sm">Edgar Ochieng
+                <br><span class="text-muted">March 14 • 3 min read</span>
+                 <a href="blog" class="btn btn-outline-primary ml-2">Read more</a>
               </p>
           </div>
       </div>
@@ -212,12 +235,12 @@
 
       <div  class="col-md-4">
         <div class="card bg-primary mb-3 transparent-card  ">
-          <img class="card-img-top" src="images/services/service1.jpg" alt="Card image cap">
+          <img class="card-img-top" src="images/blogs/1.png" alt="Card image cap">
           <div class="card-body">
-              <h6 class="text-muted">News Needs to Meet Its Audiences Where They Are</h6>
-             <p style="font-size: 14px;" class="mt-0 text-sm">Dave Rogers in News
-                <br><span class="text-muted">Jun 14 • 3 min read</span>
-                 <a href="" class="btn btn-outline-primary ml-2">Read more</a>
+              <h6 class="text-muted">Personalized Solutions for Your Team</h6>
+             <p style="font-size: 14px;" class="mt-0 text-sm">Ephy Wambugu
+                <br><span class="text-muted">April 5 • 3 min read</span>
+                 <a href="blog" class="btn btn-outline-primary ml-2">Read more</a>
               </p>
           </div>
       </div>
@@ -226,12 +249,12 @@
 
       <div class="col-md-4">
         <div class="card bg-primary mb-3 transparent-card  ">
-          <img class="card-img-top" src="images/services/service1.jpg" alt="Card image cap">
+          <img class="card-img-top" src="images/blogs/data.png" alt="Card image cap">
           <div class="card-body">
-              <h6 class="text-muted">News Needs to Meet Its Audiences Where They Are</h6>
-             <p style="font-size: 14px;" class="mt-0 text-sm">Dave Rogers in News
-                <br><span class="text-muted">Jun 14 • 3 min read</span>
-                 <a href="" class="btn btn-outline-primary ml-2">Read more</a>
+              <h6 class="text-muted">Embracing the Future with AI and Data Analytics Powerhouse</h6>
+             <p style="font-size: 14px;" class="mt-0 text-sm">Malvin Owuor
+                <br><span class="text-muted">April 8 • 3 min read</span>
+                 <a href="blog" class="btn btn-outline-primary ml-2">Read more</a>
               </p>
           </div>
       </div>
@@ -247,47 +270,33 @@
         <div class=" card-back">
           <div class="card-body">
             <h3 class="card-title text-center mb-4">Connect with our experts?</h3>
-            <form>
+            <form id="contact-form" method="post">
               <div class="form-row">
                 <div class="col-md-6 mb-1">
                   <label for="validationServer01">Name</label>
-                  <input type="text" class="form-control  is-valid edit-input  edit-input-valid" id="validationServer01" placeholder="First name" value="Mark" required>
-                  <div class="valid-feedback">
-                    Looks good!
-                  </div>
+                  <input type="text" class="form-control edit-input " id="validationServer01" placeholder="First name" name="name" required>
+                  
                 </div>
                 <div class="col-md-6 mb-1">
                   <label for="validationServer02">Email</label>
-                  <input type="email" class="form-control is-valid edit-input  edit-input-valid" id="validationServer02" placeholder="Email" value="Otto@gmail.com" required>
-                  <div class="valid-feedback">
-                    Looks good!
-                  </div>
+                  <input type="email" class="form-control edit-input" id="validationServer02" placeholder="Email" required name="email">
                 </div>
               </div>
               <div class="form-row">
                 <div class="col-md-6 mb-3">
                   <label for="validationServer03">Organization Name</label>
-                  <input type="text" class="form-control is-invalid edit-input" id="validationServer03" placeholder="Organization Name" required>
-                  <div class="invalid-feedback">
-                    Please provide a valid Organization Name.
-                  </div>
+                  <input type="text" class="form-control edit-input" id="validationServer03" placeholder="Organization Name" required name="organization">
                 </div>
                 <div class="col-md-6 mb-1">
                   <label for="validationServer04">Phone Number</label>
-                  <input type="text" class="form-control is-invalid edit-input" id="validationServer04" placeholder="Phone Number" required>
-                  <div class="invalid-feedback">
-                    Please provide a valid Phone Number.
-                  </div>
+                  <input type="tel" class="form-control edit-input" id="validationServer04" placeholder="Phone Number" required name="phone">
                 </div>
                 <div class="col-md-12 mb-3">
                   <label for="validationServer05">Message</label>
-                  <textarea rows="5" type="text" class="form-control is-invalid edit-textarea" id="validationServer05" placeholder="Message..." required></textarea>
-                  <div class="invalid-feedback">
-                    Please provide a valid Message.
-                  </div>
+                  <textarea rows="5" type="text" class="form-control edit-textarea" id="validationServer05" placeholder="Message..." required name="message"></textarea>
                 </div>
               </div>
-              <button class="btn btn-primary default-button-color" type="submit">Send Message</button>
+              <button name="submit_form" class="btn btn-primary default-button-color" type="submit">Send Message</button>
             </form>
           </div>
         </div>
@@ -337,6 +346,9 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- sweet alerts -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.4/dist/sweetalert2.all.min.js"></script>
+  <script src="js/form-actions.js"></script>
   <script>
     document.addEventListener('DOMContentLoaded', function() {
       var currentYear = new Date().getFullYear();
@@ -357,6 +369,10 @@
     });
 </script>
 
+
+<script>
+  
+</script>
 
 </body>
 </html>

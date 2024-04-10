@@ -54,7 +54,7 @@ background-color:#2f5597;
 border: solid #2f5597;
 border-radius: 5px;
 margin: auto;
-padding: 16px;
+padding: 8px;
 color: white;
 width: 200px;
 text-transform: capitalize;
@@ -227,19 +227,10 @@ color: #000;
 text-decoration: none;
 }
 .logo-size{
-font-size: 48px;
+font-size: 64px;
 margin-top: 0px !important;
 }
 
-
-/* animate the home text  */
-
-/* Style for cursor blinking animation */
-@keyframes blink {
-0% { opacity: 0; }
-50% { opacity: 1; }
-100% { opacity: 0; }
-}
 
 /* Fade-in animation */
 @keyframes fadeIn {
@@ -248,7 +239,6 @@ to { opacity: 1; }
 }
 
 .typing-text::after {
-content: ".";
 padding-bottom: 8px;
 display: inline-block;
 animation: blink 1s none;
@@ -376,10 +366,16 @@ position: fixed;
 padding: 10px;
 display: none;
 width: 100vw !important;
-height: 100vh;
+height: 70vh;
 z-index: 999;
 overflow: auto; /* Ensure the container appears above other elements */
 }
+/*#myButton:hover{
+  .floating-item {
+    display: block;
+  }
+
+}*/
 @media (max-width: 900px) {
 .hide-for-small-screen{
   display: none;
@@ -395,11 +391,62 @@ overflow: auto; /* Ensure the container appears above other elements */
 }
 
 @media screen and (min-width: 1200px) {
-/* CSS rules for big screens */
-.myButtonTwo{
-  display: none;
-}
+
 .myButton{
   display: block;
 }
+.myButtonTwo{
+  display: none;
 }
+}
+
+/*video styles*/
+ #video-background {
+      position: relative;
+      height: 95vh; /* Adjust as needed */
+      overflow: hidden;
+    }
+
+    #video-background video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+    }
+
+    #video-caption {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      color: #fff;
+
+      .custom-btn {
+      background-color: #fff;
+      border: 2px solid rgb(47,85,151);
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 8px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      background-color: rgb(47,85,151);
+      cursor: pointer;
+      font-weight: bold;
+      opacity: 90%;
+      transition: background-color 0.3s ease;
+    }
+    }
+     .custom-btn:hover {
+      background-color: #fff;
+      color: rgb(47,85,151);
+     
+    }
+
+
+

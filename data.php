@@ -10,8 +10,6 @@
   <!-- font awesome  -->
   <link rel="stylesheet" href="vendor/font-awesome/css/all.css"> 
   <link rel="icon" href="images/logo/logo1.png" type="image/x-icon">
-  
-  <meta http-equiv="Content-Encoding" content="gzip">
 
 
   <style>
@@ -28,21 +26,19 @@
   </style>
 </head>
 <body>
-  <!-- preloader -->
-  <div id="preloader">
-    <div id="loader"></div>
-  </div>
-  
+ 
    <!-- Navbar -->
   <?php include 'php/header.php'; ?>
   
   <!-- Content -->
-  <div class="container-fluid content-container mt-3">
+  <div class="container content-container mt-3">
     <div class="row">
         <!-- Column One -->
         <div class="col-md-6 column">
             <h2>Data Services</h2>
             <p>Navigate the complex data landscape with confidence. Find clarity amidst the data noise. Establish a reputation built on data-driven decisions.</p>
+            <img src="images/services/data (1).png" alt="" class="img-fluid">
+
         </div>
         <!-- Column Two -->
         <div class="col-md-6 column">
@@ -50,20 +46,9 @@
             <br>
             <p>Collaborating closely with your management team, we develop and execute plans, analyze data, uncover opportunities and navigate the challenges of the data-driven world. Our ultimate aim is to empower your company by optimizing data value, streamlining data management processes, ensuring data security and accuracy, and fostering sustainable growth through data.</p>
             <br>
-            <a href="#" class="btn btn-primary btn-advisory">Data Services</a>
-        </div>
-    </div>
-</div>
-<div class="container-fluid content-container">
-    <div class="row">
-        <!-- Column One -->
-        <div class="col-md-6 column">
-            <img src="images/services/mentoring.png" alt="" class="img-fluid">
-        </div>
-        <!-- Column Two -->
-        <div class="col-md-6 column">
             <h4>A business partner that embraces data management from every angle</h4>
             <p>We take pride in assembling a team of business intelligence experts at Armely. Whether it's Data Analysis, Strategy Formulation, Dashboard Development, or Data Visualization, your business intelligence project will benefit from a customized strategy rooted in thorough research.</p>
+            <a href="#" class="btn default-button-color btn-primary btn-advisory">Data Services</a>
         </div>
     </div>
 </div>
@@ -142,7 +127,7 @@
 </div>
 </div>
 
-   <!-- Floating Action Button -->
+    <!-- Floating Action Button -->
    <div class="floating-btn">
     <button id="myBtn"  style="border-radius: 50%; height: 70px; width: 70px; background-color: rgb(47,85,151);"  type="button" class="btn btn-primary btn-lg">
       <i class="fas fa-comments"></i>
@@ -152,53 +137,13 @@
   <button  id="scrollToTopBtn" class="btn btn-primary rounded-circle" style="display:none; background: rgb(47,85,151);">
     <i style="font-size: 2em;" class="fa-solid fa-arrow-up"></i>
 </button>
-  <!-- Footer -->
- <footer id="footer" class="col-md-12">
-    <div class=" mt-5">
-      <div class="row text-light ">
-        <div class="col-md-2">
-          <h1 class="mt-3 armely-logo-font">armely</h1>
-         
-        </div>
-        <div class="col-md-2">
-          <h5 class="mt-3">ABOUT</h5>
-          <p>Case studies</p>
-          <p>Job Board</p>
-        </div>
-      <div class="col-md-3">
-          <h5 class="mt-3 text-white">SERVICES</h5>
-          <div><a class="text-light text-right" href="#">Data Services</a></div>
-          <div><a class="text-light text-right" href="#">Advisory Services</a></div>
-          <div><a class="text-light" href="#">Managed Services</a></div>
-         <div> <a class="text-light" href="#">Business intelligence</a></div>
-         <div> <a class="text-light" href="#">Application Development Mentoring</a></div>
-      </div>
+  
+  <!-- start of Footer -->
+  <?php include 'php/footer.php'; ?>
+<!-- end of Footer -->
 
-        <div class="col-md-2">
-          <h5 class="mt-3">CONTACT US</h5>
-           <div> <a class="text-white" href="tel:+1 972 460 0643"><i class="fa fa-phone"></i> +1 972 460 0643</a></div>
-            <div><h6>ADDRESS</h6></div>
-            <div><p>2831 Eldorado Pkwy Suite 103-128 Friso TX 75033</p></div>
-          </div>
 
-        <div class="col-md-2">
-          <h5 class="mt-3">FOLLOW US</h5>
-           <div style="align-items: start;" class="pt-3">
-              <a href=""><i class="fab fa-facebook text-light h3"></i></a>
-              <a href=""><i class="fab fa-linkedin text-light h3 pl-3"></i></a>
-              <a href=""><i class="fab fa-x-twitter text-light h3 pl-3"></i></a>
-              <a href=""><i class="fab fa-github text-light h3 pl-3"></i></a>
-              <a href=""><i class="fab fa-youtube text-light h3 pl-3"></i></a>
-            </div>     
-        </div>
-      </div>
-      <hr class="bg-light">
-      <div class="text-center col mb-3 text-light text-small">
-        <p> &copy; 2024 Armely LLC || All rights reserved.</p><br>
-      </div>
-    </div>
-   
-  </footer>
+
 <style>
   .modal-right {
   position: absolute;

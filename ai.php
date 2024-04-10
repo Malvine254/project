@@ -10,8 +10,6 @@
   <!-- font awesome  -->
   <link rel="stylesheet" href="vendor/font-awesome/css/all.css"> 
   <link rel="icon" href="images/logo/logo1.png" type="image/x-icon">
-  
-  <meta http-equiv="Content-Encoding" content="gzip">
 
 
   <style>
@@ -36,71 +34,48 @@
   <?php include 'php/header.php'; ?>
 
   <!-- Content -->
-  <div class="container-fluid content-container mt-3">
+  <div class="container content-container mt-3">
     <div class="row">
         <!-- Column One -->
         <div class="col-md-6 column">
-            <h2>Advisory Services</h2>
-            <p>Armely's Advisory Hub provides insightful guidance, industry expertise and a proven track record of success.</p>
+            <h2>Artificial Intelligence</h2>
+            <p>We harness the power of artificial intelligence to automate processes, uncover patterns, predict outcomes, and drive innovation across your business.</p>
         </div>
         <!-- Column Two -->
         <div class="col-md-6 column">
-            <p>At Armely, we understand that in today's rapidly evolving technological landscape, organizations must continually adapt and transform to stay competitive. We recognize the challenges that come with navigating these changes, and we stand ready to be your trusted and proficient partner in guiding you through this journey.</p>
+          <h2>Azure Cognitive Services Development</h2>
+            <p>As a Microsoft Azure partner, we specialize in leveraging Azure Cognitive Services to build intelligent applications that can perceive, interpret, and interact with the world just like humans do. Whether you need to incorporate natural language processing, computer vision, or speech recognition into your applications, our team of experts can develop custom solutions tailored to your unique requirements.</p>
             <br>
-            <p>Our advisory services are tailored to meet your needs. With our team of experts, we will collaborate with you to create, oversee, and implement enduring solutions. Drawing upon our extensive industry insights and professional expertise, we are committed to helping you chart a clear roadmap and effectively communicate every step of the way.</p>
-            <br>
-            <a href="#" class="btn btn-primary btn-advisory">Advisory Services</a>
+            <a href="#" class="btn default-button-color btn-primary btn-advisory">Artificial Intelligence</a>
         </div>
     </div>
 </div>
-<div class="container-fluid content-container">
+<div class="container content-container mt-5">
     <div class="row">
         <!-- Column One -->
         <div class="col-md-6 column">
-            <img src="images/services/mentoring.png" alt="" class="img-fluid">
+            <img src="images/services/ai (1).png" alt="" class="img-fluid">
         </div>
         <!-- Column Two -->
         <div class="col-md-6 column">
-            <h4>Do you find it challenging to navigate the complexities of technology transformation without a dependable advisory partner?</h4>
-            <p>With Armely as your trusted partner, you can rely on our expertise to help you make informed decisions and implement lasting solutions.</p>
-            <ul class="list-unstyled">
-                <li class="list-item">&#10004; Trustworthy team of experts</li>
-                <li class="list-item">&#10004; Experienced advisory team for expert guidance and support</li>
-                <li class="list-item">&#10004; Effective communication throughout the advisory process</li>
-                <li class="list-item">&#10004; Customized Solutions</li>
-            </ul>
+            <h2>Retrieval-Augmented Generation</h2>
+            <p>One of the cutting-edge techniques we employ is retrieval-augmented generation, a hybrid approach that combines the strengths of information retrieval and natural language generation. By retrieving relevant information from large datasets and using it to generate contextually relevant responses or content, we enable more accurate and personalized interactions with your customers, employees, and stakeholders.</p>
+            <br>
+            <h2>Generative AI and Machine Learning</h2>
+            <p>Our expertise in generative AI and machine learning allows us to create intelligent systems that can generate new content, designs, or solutions autonomously. Whether it's generating realistic images, text, or even entire software code, our advanced algorithms can fuel creativity and innovation within your organization. From predictive analytics and recommendation engines to anomaly detection and process optimization, we leverage machine learning to extract valuable insights from your data and drive business growth.</p>
         </div>
     </div>
 </div>
-<div class="container-fluid content-container">
+<div class="container content-container">
     <!-- Row 1 -->
     <div class="row row-spacing">
         <!-- Column One -->
         <div class="col-md-12 column">
-            <h2>Armely Advisory Services</h2>
+            <h2>Armely AI Services</h2>
             <p>Our expert team offers four key services to simplify complex setups, craft cost-effective solutions, enhance operational flexibility and proactively optimize the ever-evolving technologies powering your business, ensuring peak performance.</p>
         </div>
     </div>
-    <!-- Row 2 -->
-    <div class="row row-spacing">
-        <!-- Column One -->
-        <div class="col-md-6 column">
-            <!-- Icon 1 -->
-            <div class="icon-label">
-                <img height="100" width="100" src="images/services/effective-communication.png" alt="Mentoring" class="img-fluid">
-                <p>Mentoring</p>
-            </div>
-        </div>
-        <!-- Column Two -->
-        <div class="col-md-6 column">
-            <!-- Icon 2 -->
-            <div class="icon-label">
-                <img height="100" width="100" src="images/services/effective-communication.png" alt="Advisory Services" class="img-fluid">
-                <p>Advisory Services</p>
-            </div>
-        </div>
-    </div>
-</div>
+</div>    
   <!-- form -->
   <div class="container container-fluid content-container col-md-10 mt-5">
     <div class="text-center">
@@ -175,7 +150,8 @@
 </div>
 </div>
 
-   <!-- Floating Action Button -->
+
+ <!-- Floating Action Button -->
    <div class="floating-btn">
     <button id="myBtn"  style="border-radius: 50%; height: 70px; width: 70px; background-color: rgb(47,85,151);"  type="button" class="btn btn-primary btn-lg">
       <i class="fas fa-comments"></i>
@@ -185,12 +161,13 @@
   <button  id="scrollToTopBtn" class="btn btn-primary rounded-circle" style="display:none; background: rgb(47,85,151);">
     <i style="font-size: 2em;" class="fa-solid fa-arrow-up"></i>
 </button>
- 
-<!-- start of Footer -->
+  
+  <!-- start of Footer -->
   <?php include 'php/footer.php'; ?>
 <!-- end of Footer -->
 
- 
+
+
 <style>
   .modal-right {
   position: absolute;

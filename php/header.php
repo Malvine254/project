@@ -1,14 +1,18 @@
 <?php 
 echo "<nav class='navbar navbar-expand-lg navbar-dark fixed-top pt-3 pb-3 '>
    
-    <div class='container col-md-10'>
+    <div class='container col-md-11'>
       <a class='navbar-brand link' href='index'><h1 class='armely-logo-font defaut-color logo-size h1'>armely</h1></a>
        <button style='background-color:rgb(47,85,151)' class='navbar-toggler' type='button' data-toggle='collapse' data-target='#navbarNav' aria-controls='navbarNav' aria-expanded='false' aria-label='Toggle navigation'>
       <span class='navbar-toggler-icon'></span>
     </button>
     <div class='collapse navbar-collapse justify-content-center text-center' id='navbarNav'>
       <ul class='navbar-nav mx-auto '>
+                <li class='nav-item'>
+          <a  class='nav-link text-dark link' href='company'>WHY ARMELY</a>
+        </li>
         <li class='nav-item active'>
+        
           <a  class='nav-link text-dark link myButton' id='myButton' >SERVICES <span class='sr-only myButton'>(current)</span></a>
           <a  href='services' class='nav-link text-dark link myButtonTwo'>SERVICES <span class='sr-only'>(current)</span></a>
 
@@ -16,10 +20,7 @@ echo "<nav class='navbar navbar-expand-lg navbar-dark fixed-top pt-3 pb-3 '>
         <li class='nav-item'>
           <a class='nav-link text-dark link' href='customer-stories'>CUSTOMER STORIES</a>
         </li>
-        <li class='nav-item'>
-          <a class='nav-link text-dark link myButton' id='myButtonTwo' >COMPANY</a>
-          <a class='nav-link text-dark link myButtonTwo' href='company'>COMPANY</a>
-        </li>
+
         <li class='nav-item'>
           <a class='nav-link text-dark link' href='contact-us' target='_parent' rel='noopener noreferrer'>CONTACT US</a>
         </li>
