@@ -22,9 +22,7 @@ RewriteRule ^ - [R=404,L]
 RewriteCond %{THE_REQUEST} \.php\s [NC]
 RewriteRule ^ - [R=404,L]
 
-<IfModule mod_headers.c>
-    # Cache static resources for 1 year
-    <FilesMatch "\.(jpg|jpeg|png|gif|mp4|js|css|woff|woff2|svg|ico)$">
-         #Header set Cache-Control "max-age=31536000, public"
-    </FilesMatch>
-</IfModule>
+# Set caching headers for fonts, images, and videos
+<FilesMatch "\.(woff|woff2|ttf|otf|svg|eot|jpg|jpeg|png|gif|ico|webp|mp4|webm)$">
+    Header set Cache-Control "max-age=31536000, public"
+</FilesMatch>

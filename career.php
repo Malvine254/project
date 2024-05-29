@@ -1,3 +1,4 @@
+<?php include 'php/actions.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,145 +14,135 @@
   
   <meta http-equiv="Content-Encoding" content="gzip">
 
-
-  <style>
-    /* Add your custom styles here */
-    body {
-      padding-top: 56px; /* Adjust based on the height of your fixed navbar */
-    }
-
-    footer {
-      padding: 0PX;
-      width: 100% !important;
-    }
-    
-  </style>
 </head>
 <body>
    <!-- Navbar -->
-  <?php include 'php/header.php'; ?>
+  <?php echo displayHeader(); ?>
   <!-- start of services floating screen and company floating screen -->
-   <?php include "display_services-company-floating-contents.php"; ?>
+   <?php echo displayFloatingButton();  ?>
 
   <!-- end of services floating screen and company floating screen -->
   <!-- Content -->
-  <div class="container mt-5 mb-5">
+  <div class="margin-top"></div>
+  <div class="container mt-5 mb-5 shadow col-md-11 p-4">
     <div class="row">
         <div class="col-md-6">
             <h2>Find Your Future Here!</h2>
             <p class="mt-3">We are always looking forward to having the right resources join our growing team. We offer competitive pay and benefits along with a great working environment. Our full-time positions offer employment benefits including paid holidays, paid vacations, annual performance bonuses, and project-driven bonuses.</p>
-<<<<<<< HEAD
-            <a href="job-board" class="btn default-button-color btn-primary">JOIN OUR TEAM</a>
+            <div class="container mt-3 mb-4 col-md-11">
+              <div class="row d-flex justify-content-center align-items-center">
+                  <!--<div class="col-md-4">-->
+                  <!--  <div class="counter" data-target="30">0</div>-->
+                  <!--  <div class="text-center counter-span">Jobs Posted</div>-->
+                  <!--</div>-->
+                  <!--<div class="col-md-4">-->
+                  <!--  <div class="counter" data-target="20"><h1>0</h1></div>-->
+                  <!--  <div class="text-center counter-span">Partners</div>-->
+                  <!--</div>-->
+                  <!--<div class="col-md-4">-->
+                  <!--    <div class="counter" data-target="102">0</div>-->
+                  <!--    <div class="text-center counter-span">Candidates</div>-->
+                  <!--</div>-->
+              </div>
+            </div>
 
-=======
-            <button class="btn default-button-color btn-primary">JOIN OUR TEAM</button>
->>>>>>> 08cb6bd748b01a9b5d60c749cf1dbd996506eb0e
         </div>
         <div class="col-md-6">
-          <img src="images/Careers/careers.png" alt="" class="img-fluid" loading="lazy">
+          <img src="images/careers/careers.png" alt="" class="img-fluid" loading="lazy">
         </div>
     </div>
 </div>
+<div class="container col-md-11 shadow p-4 mb-4 text-muted">
+  <div class="text-center">
+      <h1>Popular Categories</h1>
+      <p>Join us and help disrupt the enterprise market!</p>
+    </div>
+  <div class="m-5">
+    <div class="row">
+      <div class="col-md-3">
+       <center>
+          <i class="fa fa-money-bill-1 fa-3x "></i>
+        <p>Accounting / Finance</p>
+        <p>(234)</p>
+       </center> 
+      </div>
 
-<!-- Black Rectangle -->
-<div  class="container-fluid black-rectangle mb-5">
-  <h4 style="padding-left: 400px; padding-right: 400px;" class="text-center">We employ a wide array of cutting-edge tools and technologies To Create Timeless Design</h4>
-  <div class="row">
-      <div class="col-md-12">
-          <!-- First Row of Icons -->
-          <div class="text-center p-5 row ">
-            <div class="col">
-              <img height="50" width="50" src="images/Careers/css.svg" alt="" class="icon bg-white rounded-circle">
-            </div>
-            <div class="col">
-              <img height="50" width="50" src="images/Careers/linux.svg" alt="" class="icon bg-white rounded-circle">
-            </div>
-            <div class="col">
-              <img height="50" width="50" src="images/Careers/nodejs.svg" alt="" class="icon bg-white rounded-circle">
-            </div>
-            <div class="col">
-              <img height="50" width="50" src="images/Careers/angular.svg" alt="" class="icon bg-white rounded-circle">
-            </div>
-            <div class="col">
-              <img height="50" width="50" src="images/Careers/react.svg" alt="" class="icon bg-white rounded-circle">
-            </div>
-            <div class="col">
-              <img height="50" width="50" src="images/Careers/python.svg" alt="" class="icon bg-white rounded-circle">
-            </div>
-            <div class="col">
-              <img height="50" width="50" src="images/Careers/js.svg" alt="" class="icon bg-white rounded-circle">
-            </div>
-            <div class="col">
-              <img height="50" width="50" src="images/Careers/github.svg" alt="" class="icon bg-white rounded-circle">
-            </div>
-          </div>
+      <div class="col-md-3">
+       <center>
+          <i class="fa fa-graduation-cap fa-3x "></i>
+        <p>Education Training</p>
+        <p>(345)</p>
+       </center>
+        
+      </div>
+      <div class="col-md-3">
+       <center>
+          <i class="fa fa-heart fa-3x "></i>
+        <p>Digital Marketing</p>
+        <p>(345)</p>
+       </center>
+      </div>
+      <div class="col-md-3">
+       <center>
+          <i class="fa fa-earth-americas fa-3x "></i>
+        <p>Sales & Marketing</p>
+        <p>(045)</p>
+       </center>
+        
+      </div>
 
-          <!-- Second Row of Icons -->
-          <div class="text-center p-5 row">
-            <div class="col">
-              <img height="50" width="50" src="images/Careers/css.svg" alt="" class="icon bg-white rounded-circle">
-            </div>
-            <div class="col">
-              <img height="50" width="50" src="images/Careers/linux.svg" alt="" class="icon bg-white rounded-circle">
-            </div>
-            <div class="col">
-              <img height="50" width="50" src="images/Careers/nodejs.svg" alt="" class="icon bg-white rounded-circle">
-            </div>
-            <div class="col">
-              <img height="50" width="50" src="images/Careers/angular.svg" alt="" class="icon bg-white rounded-circle">
-            </div>
-            <div class="col">
-              <img height="50" width="50" src="images/Careers/react.svg" alt="" class="icon bg-white rounded-circle">
-            </div>
-            <div class="col">
-              <img height="50" width="50" src="images/Careers/python.svg" alt="" class="icon bg-white rounded-circle">
-            </div>
-            <div class="col">
-              <img height="50" width="50" src="images/Careers/js.svg" alt="" class="icon bg-white rounded-circle">
-            </div>
-            <div class="col">
-              <img height="50" width="50" src="images/Careers/github.svg" alt="" class="icon bg-white rounded-circle">
-            </div>
-          </div>
+       <div class="col-md-3">
+       <center>
+          <i class="fa fa-earth-americas fa-3x "></i>
+        <p>Writing & Translations</p>
+        <p>(045)</p>
+       </center>
+        
       </div>
-  </div>
-</div>
-<div class="container container-fluid content-container">
-  <div class="row">
-      <!-- First Column -->
-      <div class="col-md-6 column">
-<<<<<<< HEAD
-          <img src="images/Careers/software.png" alt="" class="img-fluid" loading="lazy">
-=======
-          <img src="images/Careers/software_engineer.png" alt="" class="img-fluid" loading="lazy">
->>>>>>> 08cb6bd748b01a9b5d60c749cf1dbd996506eb0e
-          <h4 class="mt-3">Software Engineer</h4>
-          <p text-left>Fuel Innovation in Web and Mobile App Development. Be part of our dynamic team, crafting the digital future one line of code at a time.</p>
+       <div class="col-md-3">
+       <center>
+          <i class="fa fa-earth-americas fa-3x "></i>
+        <p>Health</p>
+        <p>(045)</p>
+       </center>
+        
       </div>
-      <!-- Second Column -->
-      <div class="col-md-6 column">
-<<<<<<< HEAD
-          <img src="images/Careers/datascientist.png" alt="" class="img-fluid" loading="lazy">
-=======
-          <img src="images/Careers/software_engineer.png" alt="" class="img-fluid" loading="lazy">
->>>>>>> 08cb6bd748b01a9b5d60c749cf1dbd996506eb0e
-          <h4 class="mt-3">Data Scientist</h4>
-          <p text-left>Transform information into insights, and shape the future through data-driven decisions. Make your mark on the world of analytics with us.</p>
+       <div class="col-md-3">
+       <center>
+          <i class="fa fa-earth-americas fa-3x "></i>
+        <p>Accounting / Finance</p>
+        <p>(045)</p>
+       </center>
+        
       </div>
+       <div class="col-md-3">
+       <center>
+          <i class="fa fa-earth-americas fa-3x "></i>
+        <p>Transportation / Logistics</p>
+        <p>(045)</p>
+       </center>
+        
+      </div>
+    </div>
   </div>
-</div>
-<div class="row">
-  <!-- Centered Column -->
-  <div style="padding-left: 400px; padding-right: 400px;" class="text-center" class="col-md-12 center-column">
-<<<<<<< HEAD
-      <img src="images/Careers/data engineer.png" alt="" class="img-fluid" loading="lazy">
-=======
-      <img src="images/Careers/software_engineer.png" alt="" class="img-fluid" loading="lazy">
->>>>>>> 08cb6bd748b01a9b5d60c749cf1dbd996506eb0e
-      <h4>Data Engineer</h4>
-      <p class="text-left ml-5">Be the backbone of our data ecosystem, architecting solutions that power innovation and decision-making.</p>
+</div> 
+
+<div class="container col-md-11 shadow p-4 text-muted">
+  <div class="text-center">
+      <h1>Our Job Offers</h1>
+      <p>Join us and help disrupt the enterprise market!</p>
+    </div>
+   <div class="card transparent-card table-responsive">
+   <table style="min-width: 600px;" id="displayCareerPosts" class="table border-stripped">
+
+  </table>  
   </div>
+ 
+  </div>
+ <?php readMore(); ?>
 </div>
+
+
 
    <!-- Floating Action Button -->
    <div class="floating-btn">
@@ -165,17 +156,8 @@
 </button>
   <!-- Footer -->
  <!-- start of Footer -->
-  <?php include 'php/footer.php'; ?>
+  <?php echo displayFooter(); ?>
 <!-- end of Footer -->
-
-<style>
-  .modal-right {
-  position: absolute;
-  top: 50% ;
-  left: 0 ;
-  transform: translate(0, -50%) ;
-}
-</style>
 
 <!-- The Modal -->
 <div id="myModal" class="modal">
@@ -195,25 +177,9 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      var currentYear = new Date().getFullYear();
-      var copyrightElement = document.getElementById('copyright');
-      copyrightElement.innerHTML = '&copy; ' + currentYear + ' Your Company Name. All rights reserved.';
-    });
-  </script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.4/dist/sweetalert2.all.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" async></script>
+  <script src="js/form-actions.js"></script>
   <script src="js/main3.js"></script>
-  <script>
-    window.addEventListener('load', function() {
-        // Get the element to animate
-        var typingText = document.querySelector('.typing-text');
-        // Set the opacity to 1 to reveal the text
-        typingText.style.opacity = 1;
-        // Start the typing animation
-        typingText.style.animation = 'typing 5s steps(50, end) forwards, fadeIn 2s ease-in-out';
-        
-    });
-</script>
-
 </body>
 </html>

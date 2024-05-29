@@ -12,24 +12,14 @@
   <link rel="stylesheet" href="vendor/font-awesome/css/all.css"> 
   <link rel="icon" href="images/logo/logo1.png" type="image/x-icon">
 
-
-  <style>
-    /* Add your custom styles here */
-    body {
-      padding-top: 56px; /* Adjust based on the height of your fixed navbar */
-    }
-
-    footer {
-      padding: 0PX;
-      width: 100% !important;
-    }
-    
-  </style>
 </head>
 <body>
   
    <!-- Navbar -->
-  <?php include 'php/header.php'; ?>
+  <?php echo displayHeader() ?>
+  <!-- start of services floating screen and company floating screen -->
+   <?php echo displayFloatingButton(); ?>
+<!-- end of services floating screen and company floating screen -->
 
   <!-- Content -->
   <div class="container content-container mt-5">
@@ -102,31 +92,31 @@
         <h3 class="text-center mb-4">SCHEDULE A CONSULTATION TODAY</h3>
         <div class="row mb-3">
             <div class="col-md-12">
-                <form  method="post">
+                 <form id="consultation-form" method="post">
                     <div class="form-row">
                       <div class="col-md-6 mb-1">
                         <label for="validationServer01">Name</label>
-                        <input name ="name" type="text" class="form-control  edit-input  edit-input-valid" id="validationServer01" placeholder="First name" value="Mark" required>
+                        <input name="name" type="text" class="form-control edit-input " id="validationServer01" placeholder="First name"  required>
                       </div>
                       <div class="col-md-6 mb-1">
                         <label for="validationServer02">Email</label>
-                        <input name ="email" type="email" class="form-control  edit-input " id="validationServer02" placeholder="Email"  required>
+                        <input name="email" type="email" class="form-control  edit-input " id="validationServer02" placeholder="Email"  required>
+                        
                       </div>
                     </div>
                     <div class="form-row">
                       <div class="col-md-4 mb-3">
                         <label for="validationServer03">Organization Name</label>
-                        <input name ="organization" type="text" class="form-control edit-input" id="validationServer03" placeholder="Organization Name" required>
-                        
-                      </div>
-                      
+                        <input name="organization" type="text" class="form-control edit-input" id="validationServer03" placeholder="Organization Name" required>
+                       
+                      </div>   
                       <div class="col-md-4 mb-1">
                         <label for="validationServer04">Phone Number</label>
-                        <input name ="phone" type="text" class="form-control edit-input" id="validationServer04" placeholder="Phone Number" required>
+                        <input name="phone" type="text" class="form-control  edit-input" id="validationServer04" placeholder="Phone Number" required>
                       </div>
                       <div class="col-md-4 mb-3">
                         <label for="validationServer03">Which service piques your interest?</label>
-                        <select name ="service_name" type="text" class="form-control edit-input"  placeholder="Organization Name" required>
+                        <select name="service_type" type="text" class="form-control edit-input" id="validationServer03" placeholder="Organization Name" required>
                             <option value="" disabled selected>Select Service of Interest</option>
                             <option value="Data Services">Data Services</option>
                             <option value="Web Development">Web Development</option>
@@ -134,17 +124,15 @@
                             <option value="Managed Services">Managed Services</option>
                             <option value="Advisory Services">Advisory Services</option>
                         </select>
-                        
+
                       </div>
                       <div class="col-md-12 mb-3">
                         <label for="validationServer05">Message</label>
-                        <textarea name ="message" rows="5" type="text" class="form-control " id="validationServer05" placeholder="Message..." required></textarea>
-                        <div class="invalid-feedback">
-                          Please provide a valid Message.
-                        </div>
+                        <textarea name="message" rows="5" type="text" class="form-control  edit-textarea" id="validationServer05" placeholder="Message..." required></textarea>
+                       
                       </div>
                     </div>
-                    <button name ="consultation_btn" class="btn btn-primary default-button-color" type="submit">Send Message</button>
+                    <button name="submit_consultation_form" class="btn btn-primary default-button-color" type="submit">Send Message</button>
                   </form>  
             </div>
     </div>
@@ -163,19 +151,9 @@
 </button>
   
   <!-- start of Footer -->
-  <?php include 'php/footer.php'; ?>
+  <?php echo displayFooter(); ?>
 <!-- end of Footer -->
 
-
-
-<style>
-  .modal-right {
-  position: absolute;
-  top: 50% ;
-  left: 0 ;
-  transform: translate(0, -50%) ;
-}
-</style>
 
 <!-- The Modal -->
 <div id="myModal" class="modal">
@@ -195,25 +173,10 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      var currentYear = new Date().getFullYear();
-      var copyrightElement = document.getElementById('copyright');
-      copyrightElement.innerHTML = '&copy; ' + currentYear + ' Your Company Name. All rights reserved.';
-    });
-  </script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.4/dist/sweetalert2.all.min.js"></script>
+  <script src="js/form-actions.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" async></script>
   <script src="js/main3.js"></script>
-  <script>
-    window.addEventListener('load', function() {
-        // Get the element to animate
-        var typingText = document.querySelector('.typing-text');
-        // Set the opacity to 1 to reveal the text
-        typingText.style.opacity = 1;
-        // Start the typing animation
-        typingText.style.animation = 'typing 5s steps(50, end) forwards, fadeIn 2s ease-in-out';
-        
-    });
-</script>
 
 
 </body>

@@ -1,3 +1,5 @@
+<?php include 'php/check_session.php'; ?>
+<?php include 'php/uploads.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,30 +13,31 @@
   <!-- font awesome  -->
   <link rel="stylesheet" href="../vendor/font-awesome/css/all.css"> 
   <script src="../vendor/jquery/jquery.min.js"></script>  
-  <script src="https://cdn.ckeditor.com/ckeditor5/35.0.0/classic/ckeditor.js"></script>
+  <script src="https://cdn.ckeditor.com/4.16.2/full/ckeditor.js"></script>
+  <link rel="icon" href="../images/logo/logo1.png" type="image/x-icon">
 
 </head>
 <body>
   
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top pt-3 pb-3" style="padding: 0px !important;">
-    <a class="navbar-brand link" href="index"><h1 class="armely-logo-font text-light pl-2" ><strong>armely</strong></h1></a>
+    <a class="navbar-brand link" href="index"><h1 class="armely-logo-font ml-5" >armely</h1></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse justify-content-center text-center" id="navbarNav">
     <ul class="navbar-nav mx-auto">
     <li class="nav-item active">
-        <a class="nav-link text-light link" href="dashboard.php"><i class="fa fa-dashboard"></i> DASHBOARD <span class="sr-only">(current)</span></a>
+        <a class="nav-link text-light link" href="dashboard"><i class="fa fa-dashboard"></i> DASHBOARD <span class="sr-only">(current)</span></a>
     </li>
      <li class="nav-item">
-      <a class="nav-link text-light link" href="actions.php">  <i class="fa fa-list"></i> <u>ACTIONS</u></a>
+      <a class="nav-link text-light link" href="actions">  <i class="fa fa-list"></i> <u>ACTIONS</u></a>
     </li>
     <li class="nav-item">
-      <a class="nav-link text-light link" href="tables.php"> <i class="fa fa-table"></i> TABLES</a>
+      <a class="nav-link text-light link" href="tables"> <i class="fa fa-table"></i> TABLES</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link text-light link" href="reports.php">   <i class="fa fa-book"></i> REPORTS</a>
+      <a class="nav-link text-light link" href="reports">   <i class="fa fa-book"></i> REPORTS</a>
     </li>
     <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle text-light link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -150,43 +153,35 @@
               </div>
             </nav>
              <div class="card mt-3 p-4">
-             <h3 id="action-title" class="card-title text-center"></h3>
+             <h3 id="action-title" class="card-title text-center text-start"></h3>
             <!-- start of blog form -->
-               <form id="form-one" class="forms">
+               <form id="form-one" class="forms" enctype="multipart/form-data" method="post">
                 <div class="form-row">
                   <div class="col-md-6 mb-1">
                     <label for="validationServer01">Blog Tiltle</label>
-                    <input type="text" class="form-control  is-valid edit-input  edit-input-valid" id="validationServer01" placeholder="First name" value="Mark" required>
-                    <div class="valid-feedback">
-                      Looks good!
-                    </div>
+                    <input name="blog_title" type="text" class="form-control  edit-input " id="validationServer01" placeholder="First name" value="Mark" required>
+                   
                   </div>
                   <div class="col-md-6 mb-1">
                     <label for="validationServer02">Blog Image</label>
-                    <input type="file" class="form-control is-valid edit-input  edit-input-valid" id="validationServer02" placeholder="Email" value="Otto@gmail.com" required>
-                    <div class="valid-feedback">
-                      Looks good!
-                    </div>
+                    <input name="blog_image" type="file" class="form-control  edit-input" id="validationServer02" placeholder="Email" value="Otto@gmail.com" required>
                   </div>
                 </div>
                 <div class="form-row">
                   <div class="col-md-12 mb-3">
                     <label for="validationServer05">Blog Body</label>
-                    <textarea rows="5" type="text" class="form-control is-invalid edit-textarea" id="editor" placeholder="Articles here..." required></textarea>
+                    <textarea name="body" rows="5" type="text" class="form-control  edit-input" id="editor" placeholder="Articles here..." required></textarea>
                       <script>
-                          // Initialize CKEditor
-                          ClassicEditor
-                              .create(document.querySelector('#editor'))
-                              .catch(error => {
-                                  console.error(error);
-                              });
+                         CKEDITOR.replace('editor', {
+                            filebrowserUploadUrl: '../php/upload.php',
+                            filebrowserUploadMethod: 'form',
+                              height: '400px'
+
+                        });
                       </script>
-                    <div class="invalid-feedback">
-                      Please provide a valid Message.
-                    </div>
                   </div>
                 </div>
-                <button class="btn btn-primary default-button-color" type="submit">Add Blog</button>
+                <button name="upload_blog_btn" class="btn btn-primary default-button-color" type="submit">Add Blog</button>
               </form>
            
             <!-- end of blog form -->
@@ -261,12 +256,12 @@
                     <label for="validationServer05">Edit Footer</label>
                     <textarea rows="5" type="text" id="editor-two" class="form-control is-invalid edit-textarea" placeholder="Footer Contents here..." required></textarea>
                     <script>
-                          // Initialize CKEditor
-                          ClassicEditor
-                              .create(document.querySelector('#editor-two'))
-                              .catch(error => {
-                                  console.error(error);
-                              });
+                          CKEDITOR.replace('editor-two', {
+                            filebrowserUploadUrl: '../php/upload.php',
+                            filebrowserUploadMethod: 'form',
+                              height: '400px'
+
+                        });
                       </script>
                     <div class="invalid-feedback">
                       Please provide a valid Message.
@@ -285,12 +280,12 @@
                     <label for="validationServer05">Edit About</label>
                     <textarea id="editor-three" rows="5" type="text" class="form-control is-invalid edit-textarea" placeholder="Career body here..." required></textarea>
                     <script>
-                          // Initialize CKEditor
-                          ClassicEditor
-                              .create(document.querySelector('#editor-three'))
-                              .catch(error => {
-                                  console.error(error);
-                              });
+                        CKEDITOR.replace('editor-three', {
+                            filebrowserUploadUrl: '../php/actions.php',
+                            filebrowserUploadMethod: 'form',
+                              height: '400px'
+
+                        });
                       </script>
                     <div class="invalid-feedback">
                       Please provide a valid Message.

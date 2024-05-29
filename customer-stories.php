@@ -1,3 +1,4 @@
+<?php include 'php/actions.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,32 +11,19 @@
   <!-- font awesome  -->
   <link rel="stylesheet" href="vendor/font-awesome/css/all.css"> 
   <link rel="icon" href="images/logo/logo1.png" type="image/x-icon">
-
-
-  <style>
-    /* Add your custom styles here */
-    body {
-      padding-top: 56px; /* Adjust based on the height of your fixed navbar */
-    }
-
-    footer {
-      padding: 0PX;
-      width: 100% !important;
-    }
-    
-  </style>
 </head>
 <body>
   
   <!-- Navbar -->
-  <?php include 'php/header.php'; ?>
+  <?php echo displayHeader(); ?>
 
   <!-- start of services floating screen and company floating screen -->
-   <?php include "display_services-company-floating-contents.php"; ?>
+   <?php echo displayFloatingButton(); ?>
 
   <!-- end of services floating screen and company floating screen -->
   <!-- Content -->
-  <div class="container mt-5 mb-5 col-md-10">
+<div class="margin-top"></div>
+  <div class="container mt-5 mb-5 col-md-11">
     <div class="container content-container">
       <div class="row">
           <div class="col-md-6">
@@ -49,134 +37,210 @@
   </div>
   </div>
  
-  <div>
-    <h2 class="container">Our Impressive Customer Stories</h2>
+ <section >
+  <div class="container py-5 col-md-11">
+    <div class="row d-flex justify-content-center">
+      <div class="col-md-10 col-xl-8 text-center">
+        <h3 class="fw-bold mb-4">Testimonials</h3>
+        <p class="mb-4 pb-2 mb-md-5 pb-md-0">
+          Here, you'll find the voices of our satisfied customers sharing their experiences with our products/services. Dive into these authentic reviews to get a glimpse of the quality, reliability, and exceptional service we strive to deliver. Discover why our customers trust us and why you should too
+        </p>
+      </div>
+    </div>
+
+    <div class="row text-center">
+      <div class="col-md-4 mb-4 mb-md-0 ">
+        <div class="card transparent-card shadow" style="min-height: 400px !important;">
+          <div class="card-body py-4 mt-2">
+            <div class="d-flex justify-content-center mb-4">
+              <img src="images/testimonials/kevin.png"
+                class="rounded-circle shadow-1-strong" width="120" height="120" />
+            </div>
+            <h5 class="font-weight-bold">Kevin Leaverton</h5>
+            <h6 class="font-weight-bold my-3">IT Director American Medical Staffing</h6>
+            <i class="fas fa-quote-left pe-2">
+            <p class="mb-2 truncated-text">
+              </i> Armely is a fantastic partner for American Medical Staffing. They have shown their depth of expertise in quickly developing SharePoint sites and Power BI reports for us as well as supporting our Data Warehouse. They have been great to work with and very responsive.
+            </p>
+            <button class="btn btn-outline-primary read-more-btn">Read More</button>
+
+          </div>
+        </div>
+      </div><br>
+      <div class="col-md-4 mb-4 mb-md-0 ">
+        <div class="card transparent-card shadow" style="min-height: 400px !important;">
+          <div class="card-body py-4 mt-2">
+            <div class="d-flex justify-content-center mb-4">
+              <img src="images/testimonials/default.png"
+                class="rounded-circle shadow-1-strong" width="120" height="120" />
+            </div>
+            <h5 class="font-weight-bold">Todd Thielbar</h5>
+            <h6 class="font-weight-bold my-3">IT Manager KCG, Inc.</h6>
+            <i class="fas fa-quote-left pe-2"></i>
+            <p class="mb-2 truncated-text">
+               Armely has done a great job for KCG in our Power BI implementation and continuing development.  Leonard has been able to integrate Power BI with our ERP system which has provided our management team with invaluable information.   
+            </p>
+             <button class="btn btn-outline-primary read-more-btn">Read More</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4 mb-md-0 ">
+        <div class="card transparent-card shadow" style="min-height: 400px !important;">
+          <div class="card-body py-4 mt-2">
+            <div class="d-flex justify-content-center mb-4">
+              <img src="images/testimonials/last.png"
+                class="rounded-circle shadow-1-strong" width="120" height="120" />
+            </div>
+            <h5 class="font-weight-bold">Rob Ash</h5>
+            <h6 class="font-weight-bold my-3">CEO & Managing Partner T4S Partners</h6>
+            <i class="fas fa-quote-left pe-2"></i>
+            <p class="mb-2 truncated-text">
+               Armely proficiency in Data Analytics, Power BI, and Data Warehousing has significantly enhanced our organization's data utilization. Their solutions enable us to make informed decisions swiftly, driving operational efficiency and competitive advantage. Armely’s expertise is instrumental for any enterprise seeking to optimize data assets and achieve strategic goals.   
+            </p>
+             <button class="btn btn-outline-primary read-more-btn">Read More</button>
+          </div>
+        </div>
+      </div><br>
+      <div class="col-md-4 mt-3">
+        <div class="card transparent-card shadow" style="min-height: 400px !important;">
+          <div class="card-body py-4 mt-2">
+            <div class="d-flex justify-content-center mb-4">
+              <img src="images/testimonials/michael.png"
+                class="rounded-circle shadow-1-strong" width="120" height="120" />
+            </div>
+            <h5 class="font-weight-bold">Michael Green</h5>
+            <h6 class="font-weight-bold my-3">IT Director Northwood Energy</h6>
+            <i class="fas fa-quote-left pe-2 "></i>
+            <p class="mb-2 truncated-text">
+               I’ve engaged Armely on a multitude of projects over the last 6 years.  They’ve excelled in architecting solutions for me in Data Warehouse and the Microsoft Power platform (Power BI, Power Apps, Power Automate). Over those 6 years we’ve received far more value in the systems Armely has developed than the costs of developing them. 
+            </p>
+             <button class="btn btn-outline-primary read-more-btn">Read More</button>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-  <div class="container content-container col-md-10">
-    <!-- <h2 class="text-center mb-4">Our Services</h2> -->
-    <div class="row">
-        <div class="col-md-4">
-            <div class="service-card">
-<<<<<<< HEAD
-                <img src="images/services/advice 1.png" alt="" class="img-fluid" loading="lazy">
-=======
-                <img src="images/Customer stories/customer_services_1.png" alt="" class="img-fluid" loading="lazy">
->>>>>>> 08cb6bd748b01a9b5d60c749cf1dbd996506eb0e
-                <h5>Advisory Services</h5>
-                <p>Get expert guidance in planning, development, marketing, finance, and risk management for sustainable growth.</p>
+</section>
+ 
+<!-- see our works section -->
+  <section>
+    <div class="container mb-5 col-md-11">
+      <div class="row">
+        <h3 class="mb-3">Key Projects</h3>
+        <hr>
+
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row">
+                <div class="col-12 col-md-4">
+                  <img src="images/services/service1.jpg" class="d-block img-fluid" alt="Service 1">
+                  <div class="mt-2">
+                    <h5>Executive Reports Development</h5>
+                    <p class="card-text">Transforming data into actionable insights, 
+                      our Executive Reports Development ensures informed decision-making at every level of your organization.</p>
+                  </div>
+                </div>
+                <div class="col-md-4 d-none d-md-block">
+                  <img src="images/services/service2.jpg" class="d-block img-fluid" alt="Service 1">
+                  <div class="mt-2">
+                    <h5>Sybase to SQL Server Migration</h5>
+                    <p class="card-text">Seamlessly transition your data ecosystem with precision and 
+                      efficiency through Sybase to SQL Server migration, unlocking enhanced 
+                      performance and scalability.</p>
+                  </div>
+                </div>
+                <div class="col-md-4 d-none d-md-block">
+                  <img src="images/services/service3.jpg" class="d-block img-fluid" alt="Service 1">
+                  <div class="mt-2">
+                    <h5>Healthcare Productivity Reports</h5>
+                    <p class="card-text">Unlock operational efficiency 
+                      and elevate healthcare outcomes with our cutting-edge Healthcare Productivity Reports.</p>
+                  </div>
+                </div>
+              </div>
             </div>
-        </div>
-        <div class="col-md-4">
-            <div class="service-card">
-<<<<<<< HEAD
-                <img src="images/services/datapic.png" alt="" class="img-fluid" loading="lazy">
-=======
-                <img src="images/Customer stories/customer_services_2.png" alt="" class="img-fluid" loading="lazy">
->>>>>>> 08cb6bd748b01a9b5d60c749cf1dbd996506eb0e
-                <h5>Data</h5>
-                <p>Harness the power of data with performance management, data analysis, modeling, storage, and visualization services.</p>
+            <!-- Add more carousel-items here if needed -->
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-12 col-md-4">
+                  <img src="images/services/service2.jpg" class="d-block img-fluid" alt="Service 1">
+                  <div class="mt-2">
+                    <h5>Sybase to SQL Server Migration</h5>
+                    <p class="card-text">Seamlessly transition your data ecosystem with precision and 
+                      efficiency through Sybase to SQL Server migration, unlocking enhanced 
+                      performance and scalability.</p>
+                  </div>
+                </div>
+                <div class="col-md-4 d-none d-md-block">
+                  <img src="images/services/service5.jpg" class="d-block img-fluid" alt="Service 1">
+                  <div class="mt-2">
+                    <h5>Managed Services</h5>
+                    <p class="card-text">Optimize your business efficiency with our Managed Services,
+                       ensuring seamless operations and peace of mind.</p>
+                  </div>
+                </div>
+                <div class="col-md-4 d-none d-md-block">
+                  <img src="images/services/service4.jpg" class="d-block img-fluid" alt="Service 1">
+                  <div class="mt-2">
+                    <h5>Custom Application development</h5>
+                    <p class="card-text">Empower your business with tailor-made solutions through our 
+                      expert Custom Application Development services.</p>
+                  </div>
+                </div>
+              </div>
             </div>
-        </div>
-        <div class="col-md-4">
-            <div class="service-card">
-<<<<<<< HEAD
-                <img src="images/services/aipic.png" alt="" class="img-fluid" loading="lazy">
-=======
-                <img src="images/Customer stories/customer_services_3.png" alt="" class="img-fluid" loading="lazy">
->>>>>>> 08cb6bd748b01a9b5d60c749cf1dbd996506eb0e
-                <h5>Artificial Intelligence</h5>
-                <p>Harness the potential of AI to automate processes, enhance productivity, and uncover patterns that drive innovation and efficiency.</p>
-            </div>
+            <!-- Add more carousel-items here if needed -->
+          </div>
+          <!-- Previous and Next buttons -->
+          <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
         </div>
     </div>
-</div>
-  <!-- second row -->
-  <div class="container content-container col-md-10">
-    <!-- <h2 class="text-center mb-4">Our Services</h2> -->
-    <div class="row">
-        <div class="col-md-4">
-            <div class="service-card">
-<<<<<<< HEAD
-                <img src="images/services/managed p.png" alt="" class="img-fluid" loading="lazy">
-=======
-                <img src="images/Customer stories/customer_services_4.png" alt="" class="img-fluid" loading="lazy">
->>>>>>> 08cb6bd748b01a9b5d60c749cf1dbd996506eb0e
-                <h5>Managed Services</h5>
-                <p>Enhance your technology infrastructure with supportability reviews, root cause analysis, coordinated service delivery and technology.</p>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="service-card">
-<<<<<<< HEAD
-                <img src="images/services/appd.png" alt="" class="img-fluid" loading="lazy">
-=======
-                <img src="images/Customer stories/mentoringcustomer.png" alt="" class="img-fluid" loading="lazy">
->>>>>>> 08cb6bd748b01a9b5d60c749cf1dbd996506eb0e
-                <h5>Enterprise Applications</h5>
-                <p>Implement customized software solutions tailored to your business requirements, optimizing workflows and driving productivity across your organization.</p>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="service-card">
-<<<<<<< HEAD
-                <img src="images/services/web.png" alt="" class="img-fluid" loading="lazy">
-=======
-                <img src="images/Customer stories/customer_services_6.png" alt="" class="img-fluid" loading="lazy">
->>>>>>> 08cb6bd748b01a9b5d60c749cf1dbd996506eb0e
-                <h5>Cloud</h5>
-                <p>Embrace the scalability, flexibility, and cost-efficiency of cloud computing, empowering your business to innovate and grow without infrastructure constraints.</p>
-            </div>
-        </div>
-    </div>
-</div>
+    
+  </section> 
 
 <!-- start of    form -->
 <div class="container container-fluid content-container col-md-10">
     <div class="text-center">
-        <h2>Optimize Your Business with Armely Services</h2>
+        <h2 class="fw-bold">Optimize Your Business with Armely Services</h2>
         <p class="mt-2">Maximize your business potential with Armely's range of industry-leading solutions. Whether it's Data Services, Web Development, Business Intelligence, Managed Services, or Advisory Services, we provide the utmost value to your operations and applications.</p>
     </div>
     <div class="form-container">
-        <h3 class="text-center mb-4">SCHEDULE A CONSULTATION TODAY</h3>
+        <h3 class="text-center mb-4">Schedule a consultation today</h3>
         <div class="row mb-3">
             <div class="col-md-12">
-                <form>
+                <form id="consultation-form" method="post">
                     <div class="form-row">
                       <div class="col-md-6 mb-1">
                         <label for="validationServer01">Name</label>
-                        <input type="text" class="form-control  is-valid edit-input  edit-input-valid" id="validationServer01" placeholder="First name" value="Mark" required>
-                        <div class="valid-feedback">
-                          Looks good!
-                        </div>
+                        <input name="name" type="text" class="form-control edit-input " id="validationServer01" placeholder="First name"  required>
                       </div>
                       <div class="col-md-6 mb-1">
                         <label for="validationServer02">Email</label>
-                        <input type="email" class="form-control is-valid edit-input  edit-input-valid" id="validationServer02" placeholder="Email" value="Otto@gmail.com" required>
-                        <div class="valid-feedback">
-                          Looks good!
-                        </div>
+                        <input name="email" type="email" class="form-control  edit-input " id="validationServer02" placeholder="Email"  required>
+                        
                       </div>
                     </div>
                     <div class="form-row">
                       <div class="col-md-4 mb-3">
                         <label for="validationServer03">Organization Name</label>
-                        <input type="text" class="form-control is-invalid edit-input" id="validationServer03" placeholder="Organization Name" required>
-                        <div class="invalid-feedback">
-                          Please provide a valid Organization Name.
-                        </div>
-                        
-                      </div>
-                      
+                        <input name="organization" type="text" class="form-control edit-input" id="validationServer03" placeholder="Organization Name" required>
+                       
+                      </div>   
                       <div class="col-md-4 mb-1">
                         <label for="validationServer04">Phone Number</label>
-                        <input type="text" class="form-control is-invalid edit-input" id="validationServer04" placeholder="Phone Number" required>
-                        <div class="invalid-feedback">
-                          Please provide a valid Phone Number.
-                        </div>
+                        <input name="phone" type="text" class="form-control  edit-input" id="validationServer04" placeholder="Phone Number" required>
                       </div>
                       <div class="col-md-4 mb-3">
                         <label for="validationServer03">Which service piques your interest?</label>
-                        <select type="text" class="form-control is-invalid edit-input" id="validationServer03" placeholder="Organization Name" required>
+                        <select name="service_type" type="text" class="form-control edit-input" id="validationServer03" placeholder="Organization Name" required>
                             <option value="" disabled selected>Select Service of Interest</option>
                             <option value="Data Services">Data Services</option>
                             <option value="Web Development">Web Development</option>
@@ -184,20 +248,15 @@
                             <option value="Managed Services">Managed Services</option>
                             <option value="Advisory Services">Advisory Services</option>
                         </select>
-                        <div class="invalid-feedback">
-                          Please select an option to proceed.
-                        </div>
-                        
+
                       </div>
                       <div class="col-md-12 mb-3">
                         <label for="validationServer05">Message</label>
-                        <textarea rows="5" type="text" class="form-control is-invalid edit-textarea" id="validationServer05" placeholder="Message..." required></textarea>
-                        <div class="invalid-feedback">
-                          Please provide a valid Message.
-                        </div>
+                        <textarea name="message" rows="5" type="text" class="form-control  edit-textarea" id="validationServer05" placeholder="Message..." required></textarea>
+                       
                       </div>
                     </div>
-                    <button class="btn btn-primary default-button-color" type="submit">Send Message</button>
+                    <button name="submit_consultation_form" class="btn btn-primary default-button-color" type="submit">Send Message</button>
                   </form>  
             </div>
     </div>
@@ -219,7 +278,7 @@
 </button>
  
  <!-- start of Footer -->
-  <?php include 'php/footer.php'; ?>
+  <?php echo displayFooter(); ?>
 <!-- end of Footer -->
 
 
@@ -251,25 +310,11 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      var currentYear = new Date().getFullYear();
-      var copyrightElement = document.getElementById('copyright');
-      copyrightElement.innerHTML = '&copy; ' + currentYear + ' Your Company Name. All rights reserved.';
-    });
-  </script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.4/dist/sweetalert2.all.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" async></script>
+  <script src="js/form-actions.js"></script>
+ 
   <script src="js/main3.js"></script>
-  <script>
-    window.addEventListener('load', function() {
-        // Get the element to animate
-        var typingText = document.querySelector('.typing-text');
-        // Set the opacity to 1 to reveal the text
-        typingText.style.opacity = 1;
-        // Start the typing animation
-        typingText.style.animation = 'typing 5s steps(50, end) forwards, fadeIn 2s ease-in-out';
-        
-    });
-</script>
 
 
 </body>

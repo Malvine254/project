@@ -1,3 +1,4 @@
+<?php include 'php/actions.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,30 +11,19 @@
   <!-- font awesome  -->
   <link rel="stylesheet" href="vendor/font-awesome/css/all.css"> 
   <link rel="icon" href="images/logo/logo1.png" type="image/x-icon">
-
-
-  <style>
-    /* Add your custom styles here */
-    body {
-      padding-top: 56px; /* Adjust based on the height of your fixed navbar */
-    }
-
-    footer {
-      padding: 0PX;
-      width: 100% !important;
-    }
-    
-  </style>
 </head>
 <body>
   
   <!-- Navbar -->
-  <?php include 'php/header.php'; ?>
+  <?php echo displayHeader(); ?>
+  
   <!-- start of services floating screen and company floating screen -->
- <!-- link to be returned -->
-    <!-- end of services floating screen and company floating screen -->
+ <?php echo displayFloatingButton(); ?>
+
+<!-- end of services floating screen and company floating screen -->
   <!-- Content -->
-  <div class="container col-md-10 container-fluid content-container mt-5">
+  <div class="margin-top"></div>
+  <div class="container col-md-10  mt-5">
     <div class="row">
         <div class="col-md-6">
             <div class="text-left">
@@ -53,48 +43,69 @@
 </div>
 <div class="container col-md-10">
     <div class="row">
+        <div class="col-md-4 column">
+            <div class="shadow p-4 " style="min-height: 400px !important;">
+                <img width="130" height="130" src="images/company/integrity.svg" alt="" class="img-fluid rounded-circle  bg-light p-1 mt-4 mb-1 p-4">
+                <h5>Integrity</h5>
+                <p class="truncated-text">We uphold honesty and transparency in all our interactions, fostering trust and credibility with clients, partners, and colleagues alike.</p>
+                 <button class="btn btn-outline-primary read-more-btn">Read More</button>
+                </div>
+        </div>
         <div class="col-md-4 column" >
-            <img src="images/company/hands_care_black.png" alt="" class="img-fluid rounded-circle  bg-light p-1 mt-4 mb-1 p-4">
-            <h5>Do Right</h5>
-            <p>Lorem ipsum dolor sit amet consectetur. Sit libero ipsum proin nibh pulvinar in. Augue facilisis in ac turpis lorem porttito.</p>
+            <div class="shadow p-4" style="min-height: 400px !important;">
+                <img width="130" height="130" src="images/company/innovation.svg" alt="" class="img-fluid rounded-circle  bg-light p-1 mt-4 mb-1 p-4">
+                <h5>Innovation</h5>
+                <p class="truncated-text">We embrace creativity and continuous improvement, striving to pioneer new solutions and approaches that drive positive change and propel our organization forward.</p>
+                 <button class="btn btn-outline-primary read-more-btn">Read More</button>
+                
+            </div>
+           
             
         </div>
         <div class="col-md-4 column" >
-            <img src="images/company/hands_care_black.png" alt="" class="img-fluid rounded-circle  bg-light p-1 mt-4 mb-1 p-4">
-            <h5>Do Right</h5>
-            <p>Lorem ipsum dolor sit amet consectetur. Sit libero ipsum proin nibh pulvinar in. Augue facilisis in ac turpis lorem porttito.</p>
-            
-        </div>
-        <div class="col-md-4 column" >
-            <img src="images/company/hands_care_black.png" alt="" class="img-fluid rounded-circle  bg-light p-1 mt-4 mb-1 p-4">
-            <h5>Do Right</h5>
-            <p>Lorem ipsum dolor sit amet consectetur. Sit libero ipsum proin nibh pulvinar in. Augue facilisis in ac turpis lorem porttito.</p>
-            
+            <div class="shadow p-4" style="min-height: 400px !important;">
+              <img width="130" height="130" src="images/company/collaboration.svg" alt="" class="img-fluid rounded-circle  bg-light p-1 mt-4 mb-1 p-4">
+              <h5>Collaboration</h5>
+              <p class="truncated-text">We recognize the power of teamwork and actively promote a culture of collaboration, where diverse perspectives are valued, and collective efforts lead to greater success.</p>  
+               <button class="btn btn-outline-primary read-more-btn">Read More</button>
+            </div>
         </div>
     </div>
+    <div class="mt-5"></div>
     <div class="row">
         <div class="col-md-4 column" >
-            <img src="images/company/hands_care_black.png" alt="" class="img-fluid rounded-circle  bg-light p-1 mt-4 mb-1 p-4">
-            <h5>Do Right</h5>
-            <p>Lorem ipsum dolor sit amet consectetur. Sit libero ipsum proin nibh pulvinar in. Augue facilisis in ac turpis lorem porttito.</p>
+            <div class="shadow p-4" style="min-height: 400px !important;">
+                <img width="130" height="130" src="images/company/accountability.svg" alt="" class="img-fluid rounded-circle  bg-light p-1 mt-4 mb-1 p-4">
+                <h5>Accountability</h5>
+                <p class="truncated-text">We take ownership of our actions and decisions, holding ourselves responsible for delivering results and fulfilling our commitments to clients, stakeholders, and each other.</p>
+                 <button class="btn btn-outline-primary read-more-btn">Read More</button>
+                </div>
+            
             
         </div>
         <div class="col-md-4 column" >
-            <img src="images/company/hands_care_black.png" alt="" class="img-fluid rounded-circle  bg-light p-1 mt-4 mb-1 p-4" >
-            <h5>Do Right</h5>
-            <p>Lorem ipsum dolor sit amet consectetur. Sit libero ipsum proin nibh pulvinar in. Augue facilisis in ac turpis lorem porttito.</p>
+            <div class="shadow p-4" style="min-height: 400px !important;">
+                <img width="130" height="130" src="images/company/empowerment.svg" alt="" class="img-fluid rounded-circle  bg-light p-1 mt-4 mb-1 p-4" >
+                <h5>Empowerment</h5>
+                <p class="bb-4 truncated-text">We empower our employees to take initiative, pursue growth opportunities, and make meaningful contributions, fostering a culture of empowerment that fuels individual and organizational success.</p>
+                 <button class="btn btn-outline-primary read-more-btn">Read More</button>
+            </div>
             
         </div>
         <div class="col-md-4 column" >
-            <img src="images/company/hands_care_black.png" alt="" class="img-fluid rounded-circle  bg-light p-1 mt-4 mb-1 p-4">
-            <h5>Do Right</h5>
-            <p>Lorem ipsum dolor sit amet consectetur. Sit libero ipsum proin nibh pulvinar in. Augue facilisis in ac turpis lorem porttito.</p>
+            <div class="shadow p-4" style="min-height: 400px !important;">
+                <img width="130" height="130" src="images/company/centricity.svg" alt="" class="img-fluid rounded-circle  bg-light p-1 mt-4 mb-1 p-4">
+                <h5>Customer Centricity</h5>
+                <p class="mb-4 truncated-text">We prioritize the needs and satisfaction of our customers, striving to exceed expectations and deliver exceptional value through personalized solutions and attentive service.</p>
+                 <button class="btn btn-outline-primary read-more-btn">Read More</button>
+            </div>
+            
             
         </div>
     </div>
 </div>
 <!-- another div -->
-
+<div class="mt-5"></div>
 <div class="container mt-4 col-md-10">
     <div class="row">
         <div class="col-md-6">
@@ -103,7 +114,7 @@
         <div class="col-md-6 mt-5">
             <h1>Let's collaborate and achieve greatness together</h1>
             <p class="mt-5 mb-5">Whether you're launching a new venture or managing an established brand.</p>
-            <button class="btn default-button-color btn-primary">Contact Us</button>
+            <a href="contact-us" class="btn default-button-color btn-primary">Contact Us</a>
         </div>
     </div>
 </div>
@@ -121,7 +132,7 @@
   
 
   <!-- start of Footer -->
-     <?php include 'php/footer.php'; ?>
+     <?php echo displayFooter(); ?>
   <!-- end of Footer -->
 
 <style>
@@ -151,25 +162,12 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      var currentYear = new Date().getFullYear();
-      var copyrightElement = document.getElementById('copyright');
-      copyrightElement.innerHTML = '&copy; ' + currentYear + ' Your Company Name. All rights reserved.';
-    });
-  </script>
+  <!-- sweet alerts -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.4/dist/sweetalert2.all.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" async></script>
+  <script src="js/form-actions.js"></script>
   <script src="js/main3.js"></script>
-  <script>
-    window.addEventListener('load', function() {
-        // Get the element to animate
-        var typingText = document.querySelector('.typing-text');
-        // Set the opacity to 1 to reveal the text
-        typingText.style.opacity = 1;
-        // Start the typing animation
-        typingText.style.animation = 'typing 5s steps(50, end) forwards, fadeIn 2s ease-in-out';
-        
-    });
-</script>
+ <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
 
 </body>

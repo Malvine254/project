@@ -11,14 +11,20 @@
   <!-- font awesome  -->
   <link rel="stylesheet" href="vendor/font-awesome/css/all.css"> 
   <link rel="icon" href="images/logo/logo1.png" type="image/x-icon">
-  
-  <meta http-equiv="Content-Encoding" content="gzip">
+  <style>
+    @font-face {
+    font-family: myFirstFont;
+    src: url('logo-font/font.ttf');
+    }
+    
+  </style>
 
 </head>
 <body>
   
   <!-- Navbar -->
-  <?php include 'php/header.php'; ?>
+    <?php echo displayHeader(); ?>
+
    
   <!-- Content -->
   <!-- <div class="container mt-3 mb-3"> -->
@@ -36,28 +42,23 @@
     preload="auto" autoplay loop muted style="width: 100%; height: 100%;   overflow: hidden;border-radius: 10px; box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);"></video>   -->
   
   <!-- </div> -->
-  
-  <div class="container col-md-11 mt-4" id="video-background">
-  <video autoplay loop muted style="opacity: 90%;">
-    <source src="videos/video2.mp4" type="video/mp4">
+
+<div class="container col-md-11 mt-4" id="video-background">
+  <video id='vid' autoplay loop muted style="opacity: 90%;">
+    <source src="videos/vid1.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
   <div id="video-caption">
-     <h1 class="text-center typing-text text-light pb-4">Your Trusted Source <br>
-      For Digital Excellence</h1>
-      <div class="mt-3">
-           <h5 class="text-center">BEYOND IMAGINATION 
-          <i class="fa fa-angle-right text-light" style="background-color:
-           rgb(47,85,151); padding: 5px;"></i></h6>
-      </div>
-<<<<<<< HEAD
+    <h1 class="text-center text-light pb-4">
+    <span class="d-none d-lg-inline typing-text">Your Trusted Source<br> For Digital Excellence</span>
+    <span class="d-lg-none">Your Trusted Source<br>For Digital Excellence</span>
+    </h1>
+    <div class="mt-3">
+        <h5 class="text-center">BEYOND IMAGINATION 
+        <i class="fa fa-angle-right text-light" style="background-color:
+         rgb(47,85,151); padding: 5px;"></i></h5>
+    </div>
     <a href="services" class="custom-btn">LEARN MORE</a>
-=======
-    <!-- playing video at the hompage here -->
-    <video src="videos/video1.mp4" 
-    preload="auto" autoplay loop muted style="width: 100%; height: 100%;"></video>  
-  
->>>>>>> 08cb6bd748b01a9b5d60c749cf1dbd996506eb0e
   </div>
 </div>
 
@@ -79,7 +80,7 @@
   </div>
 </div>
 <!-- start of services floating screen and company floating screen -->
- <?php include "display_services-company-floating-contents.php"; ?>
+ <?php echo displayFloatingButton(); ?>
 
 <!-- end of services floating screen and company floating screen -->
 
@@ -90,23 +91,22 @@
         <h3 class="mb-3">See our work</h3>
         <hr>
 
-        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+       <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active">
               <div class="row">
                 <div class="col-12 col-md-4">
-                  <img src="images/services/service1.jpg" class="d-block img-fluid" alt="Service 1">
+                  <img style="min-height: 300px;" src="images/case-study/3.jpg" class="d-block img-fluid" alt="Service 1">
                   <div class="mt-2">
-                    <h5>Executive Reports Development</h5>
-                    <p class="card-text">Transforming data into actionable insights, 
-                      our Executive Reports Development ensures informed decision-making at every level of your organization.</p>
+                    <h5>Sage Butte Energy Strategic Shift</h5>
+                    <p class="card-text textContent">Discover how Denver based Energy Company leveraged armely’ s expertise in data, integration, and development to standardize, streamline and Integrate OpenInvoice data with Internal ERP Systemsn.</p>
                   </div>
                 </div>
                 <div class="col-md-4 d-none d-md-block">
                   <img src="images/services/service2.jpg" class="d-block img-fluid" alt="Service 1">
                   <div class="mt-2">
                     <h5>Sybase to SQL Server Migration</h5>
-                    <p class="card-text">Seamlessly transition your data ecosystem with precision and 
+                    <p class="card-text textContent">Seamlessly transition your data ecosystem with precision and 
                       efficiency through Sybase to SQL Server migration, unlocking enhanced 
                       performance and scalability.</p>
                   </div>
@@ -115,7 +115,7 @@
                   <img src="images/services/service3.jpg" class="d-block img-fluid" alt="Service 1">
                   <div class="mt-2">
                     <h5>Healthcare Productivity Reports</h5>
-                    <p class="card-text">Unlock operational efficiency 
+                    <p class="card-text textContent">Unlock operational efficiency 
                       and elevate healthcare outcomes with our cutting-edge Healthcare Productivity Reports.</p>
                   </div>
                 </div>
@@ -128,7 +128,7 @@
                   <img src="images/services/service2.jpg" class="d-block img-fluid" alt="Service 1">
                   <div class="mt-2">
                     <h5>Sybase to SQL Server Migration</h5>
-                    <p class="card-text">Seamlessly transition your data ecosystem with precision and 
+                    <p class="card-text textContent">Seamlessly transition your data ecosystem with precision and 
                       efficiency through Sybase to SQL Server migration, unlocking enhanced 
                       performance and scalability.</p>
                   </div>
@@ -137,7 +137,7 @@
                   <img src="images/services/service5.jpg" class="d-block img-fluid" alt="Service 1">
                   <div class="mt-2">
                     <h5>Managed Services</h5>
-                    <p class="card-text">Optimize your business efficiency with our Managed Services,
+                    <p class="card-text textContent">Optimize your business efficiency with our Managed Services,
                        ensuring seamless operations and peace of mind.</p>
                   </div>
                 </div>
@@ -145,7 +145,7 @@
                   <img src="images/services/service4.jpg" class="d-block img-fluid" alt="Service 1">
                   <div class="mt-2">
                     <h5>Custom Application development</h5>
-                    <p class="card-text">Empower your business with tailor-made solutions through our 
+                    <p class="card-text textContent">Empower your business with tailor-made solutions through our 
                       expert Custom Application Development services.</p>
                   </div>
                 </div>
@@ -199,19 +199,21 @@
     <div class="col-md-12 p-4 col-sm-4 d-flex justify-content-center">
         <div class="marquee-container">
         <div class="marquee-content">
-          <a href="" class="ml-5"><img class="svg-img" src="https://upload.wikimedia.org/wikipedia/commons/9/97/Talend_logo.svg" alt=""></a>
-          <a href="" class="ml-5"><img class="svg-img" src="images/partners/us-cloud-logo.webp" alt=""></a>
-          <a href="" class="ml-5"><img class="svg-img" src="images/partners/ms.svg" alt=""></a>
-          <a href="" class="ml-5"><img class="svg-img" src="images/partners/SNX_BIG.D (1).svg" alt=""></a>
-          <a href="" class="ml-5"><img class="svg-img" src="images/partners/google_cloud-ar21.svg" alt=""></a>
-          <a href="" class="ml-5"><img class="svg-img" src="images/partners/amazon_aws-ar21.svg" alt=""></a>
+          <a href="https://www.talend.com/" class="ml-5"><img class="svg-img" src="https://upload.wikimedia.org/wikipedia/commons/9/97/Talend_logo.svg" alt=""></a>
+          <a href="https://www.uscloud.com/" class="ml-5"><img class="svg-img" src="images/partners/us-cloud-logo.webp" alt=""></a>
+          <a href="https://www.microsoft.com/en-us/" class="ml-5"><img class="svg-img" src="images/partners/ms.svg" alt=""></a>
+          <a href="https://www.tdsynnex.com/na/us/" class="ml-5"><img class="svg-img" src="images/partners/SNX_BIG.D (1).svg" alt=""></a>
+          <a href="https://cloud.google.com/" class="ml-5"><img class="svg-img" src="images/partners/google_cloud-ar21.svg" alt=""></a>
+          <a href="https://aws.amazon.com/" class="ml-5"><img class="svg-img" src="images/partners/amazon_aws-ar21.svg" alt=""></a>
+          <a href="https://www.snowflake.com/en/" class="ml-5"><img class="svg-img" src="images/partners/snowflake.png" alt=""></a>
 
-          <a href="" class="ml-5"><img class="svg-img" src="https://upload.wikimedia.org/wikipedia/commons/9/97/Talend_logo.svg" alt=""></a>
-          <a href="" class="ml-5"><img class="svg-img" src="images/partners/us-cloud-logo.webp" alt=""></a>
-          <a href="" class="ml-5"><img class="svg-img" src="images/partners/ms.svg" alt=""></a>
-          <a href="" class="ml-5"><img class="svg-img" src="images/partners/SNX_BIG.D (1).svg" alt=""></a>
-          <a href="" class="ml-5"><img class="svg-img" src="images/partners/google_cloud-ar21.svg" alt=""></a>
-          <a href="" class="ml-5"><img class="svg-img" src="images/partners/amazon_aws-ar21.svg" alt=""></a>
+          <a href="https://www.talend.com/" class="ml-5"><img class="svg-img" src="https://upload.wikimedia.org/wikipedia/commons/9/97/Talend_logo.svg" alt=""></a>
+          <a href="https://www.uscloud.com/" class="ml-5"><img class="svg-img" src="images/partners/us-cloud-logo.webp" alt=""></a>
+          <a href="https://www.microsoft.com/en-us/" class="ml-5"><img class="svg-img" src="images/partners/ms.svg" alt=""></a>
+          <a href="https://www.tdsynnex.com/na/us/" class="ml-5"><img class="svg-img" src="images/partners/SNX_BIG.D (1).svg" alt=""></a>
+          <a href="https://cloud.google.com/" class="ml-5"><img class="svg-img" src="images/partners/google_cloud-ar21.svg" alt=""></a>
+          <a href="https://aws.amazon.com/" class="ml-5"><img class="svg-img" src="images/partners/amazon_aws-ar21.svg" alt=""></a>
+          <a href="https://www.snowflake.com/en/" class="ml-5"><img class="svg-img" src="images/partners/snowflake.png" alt=""></a>
         </div>
       </div>
     </div>
@@ -227,48 +229,9 @@
     <h3 class="mb-2">Our recent blog posts</h3>
   
     <div class="row">
-      <div class="col-md-4">
-        <div class="card bg-primary mb-3 transparent-card">
-          <img class="card-img-top" src="images/blogs/image.png" alt="Card image cap">
-          <div class="card-body">
-              <h6 class="text-muted">Armely's R&D Unleashes OpenAI's Potential</h6>
-             <p style="font-size: 14px;" class="mt-0 text-sm">Edgar Ochieng
-                <br><span class="text-muted">March 14 • 3 min read</span>
-                 <a href="blog" class="btn btn-outline-primary ml-2">Read more</a>
-              </p>
-          </div>
-      </div>
+     <?php displayRecentBlogs(); ?>
       
-      </div>
-
-      <div  class="col-md-4">
-        <div class="card bg-primary mb-3 transparent-card  ">
-          <img class="card-img-top" src="images/blogs/1.png" alt="Card image cap">
-          <div class="card-body">
-              <h6 class="text-muted">Personalized Solutions for Your Team</h6>
-             <p style="font-size: 14px;" class="mt-0 text-sm">Ephy Wambugu
-                <br><span class="text-muted">April 5 • 3 min read</span>
-                 <a href="blog" class="btn btn-outline-primary ml-2">Read more</a>
-              </p>
-          </div>
-      </div>
-      
-      </div>
-
-      <div class="col-md-4">
-        <div class="card bg-primary mb-3 transparent-card  ">
-          <img class="card-img-top" src="images/blogs/data.png" alt="Card image cap">
-          <div class="card-body">
-              <h6 class="text-muted">Embracing the Future with AI and Data Analytics Powerhouse</h6>
-             <p style="font-size: 14px;" class="mt-0 text-sm">Malvin Owuor
-                <br><span class="text-muted">April 8 • 3 min read</span>
-                 <a href="blog" class="btn btn-outline-primary ml-2">Read more</a>
-              </p>
-          </div>
-      </div>
-      
-      </div>
-      </div>
+    </div>
     </div>
   </div>
 
@@ -278,11 +241,7 @@
         <div class=" card-back">
           <div class="card-body">
             <h3 class="card-title text-center mb-4">Connect with our experts?</h3>
-<<<<<<< HEAD
             <form id="contact-form" method="post">
-=======
-            <form method="post">
->>>>>>> 08cb6bd748b01a9b5d60c749cf1dbd996506eb0e
               <div class="form-row">
                 <div class="col-md-6 mb-1">
                   <label for="validationServer01">Name</label>
@@ -301,11 +260,7 @@
                 </div>
                 <div class="col-md-6 mb-1">
                   <label for="validationServer04">Phone Number</label>
-<<<<<<< HEAD
                   <input type="tel" class="form-control edit-input" id="validationServer04" placeholder="Phone Number" required name="phone">
-=======
-                  <input type="text" class="form-control edit-input" id="validationServer04" placeholder="Phone Number" required name="phone">
->>>>>>> 08cb6bd748b01a9b5d60c749cf1dbd996506eb0e
                 </div>
                 <div class="col-md-12 mb-3">
                   <label for="validationServer05">Message</label>
@@ -330,19 +285,21 @@
   <button  id="scrollToTopBtn" class="btn btn-primary rounded-circle" style="display:none; background: rgb(47,85,151);">
     <i style="font-size: 2em;" class="fa-solid fa-arrow-up"></i>
 </button>
+
+<!-- Advert Modal -->
+<div id="snackbar" class="snackbar">
+    <button class="btn-close" aria-label="Close">&times;</button>
+    <div class="text-center">
+        <h5 class="mb-3">SQL Server 2014 End-of-Life!</h5>
+        <p>We are 64 days away from the end of support (EOS) for SQL Server 2014. On July 9th, 2024, Microsoft will stop the mainstream support of SQL Server 2014. Don’t wait until it’s too late to secure your data and maintain compliancy.</p>
+        <a href="sql" class="btn btn-success default-button-color">Contact Us</a>
+    </div>
+</div>
   
 <!-- start of Footer -->
-  <?php include 'php/footer.php'; ?>
+  <?php  echo displayFooter(); ?>
 <!-- end of Footer -->
 
-<style>
-  .modal-right {
-  position: absolute;
-  top: 50% ;
-  left: 0 ;
-  transform: translate(0, -50%) ;
-}
-</style>
 
 <!-- The Modal -->
 <div id="myModal" class="modal">
@@ -364,31 +321,23 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
   <!-- sweet alerts -->
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.4/dist/sweetalert2.all.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" async></script>
   <script src="js/form-actions.js"></script>
   <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      var currentYear = new Date().getFullYear();
-      var copyrightElement = document.getElementById('copyright');
-      copyrightElement.innerHTML = '&copy; ' + currentYear + ' Your Company Name. All rights reserved.';
-    });
+
+    $(document).ready(function(){
+ // Get the element to animate
+      var typingText = document.querySelector('.typing-text');
+      // Set the opacity to 1 to reveal the text
+      typingText.style.opacity = 1;
+      // Start the typing animation
+      typingText.style.animation = 'typing 3s steps(10, end) forwards, fadeIn 2s ease-in-out';
+      
+})
+
   </script>
   <script src="js/main3.js"></script>
-  <script>
-    window.addEventListener('load', function() {
-        // Get the element to animate
-        var typingText = document.querySelector('.typing-text');
-        // Set the opacity to 1 to reveal the text
-        typingText.style.opacity = 1;
-        // Start the typing animation
-        typingText.style.animation = 'typing 5s steps(50, end) forwards, fadeIn 2s ease-in-out';
-        
-    });
-</script>
 
-
-<script>
-  
-</script>
 
 </body>
 </html>

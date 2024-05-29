@@ -1,3 +1,4 @@
+<?php include 'php/actions.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,60 +12,32 @@
   <link rel="stylesheet" href="vendor/font-awesome/css/all.css"> 
   <link rel="icon" href="images/logo/logo1.png" type="image/x-icon">
 
-
-  <style>
-    /* Add your custom styles here */
-    body {
-      padding-top: 56px; /* Adjust based on the height of your fixed navbar */
-    }
-
-    footer {
-      padding: 0PX;
-      width: 100% !important;
-    }
-    
-  </style>
 </head>
 <body>
 
    <!-- Navbar -->
-  <?php include 'php/header.php'; ?>
+  <?php echo displayHeader() ?>
+  <!-- start of services floating screen and company floating screen -->
+   <?php echo displayFloatingButton(); ?>
+
+<!-- end of services floating screen and company floating screen -->
   <!-- Content -->
+  <div class="margin-top"></div>
   <div class="container content-container mt-3">
     <div class="row">
         <!-- Column One -->
         <div class="col-md-6 column">
             <h2>Cloud Services</h2>
             <p>Businesses today recognize the immense benefits of migrating their on-premise data infrastructure to the cloud.</p>
-<<<<<<< HEAD
             <img src="images/services/cloud.png" alt="" class="img-fluid">
-=======
->>>>>>> 08cb6bd748b01a9b5d60c749cf1dbd996506eb0e
         </div>
         <!-- Column Two -->
         <div class="col-md-6 column">
           <h2>On-Premise to Cloud Data Migrations: Seamless Transition to the Cloud</h2>
             <p>At Armely, we specialize in facilitating on-premise to cloud data migrations, enabling organizations to harness the full potential of cloud computing while minimizing disruption to their operations.</p>
             <br>
-<<<<<<< HEAD
              <h4>Our Approach to On-Premise to Cloud Data Migrations</h4>
             <ul class="list-unstyled text-left mt-3">
-=======
-            <a href="#" class="btn default-button-color btn-primary btn-advisory">Cloud Services</a>
-        </div>
-    </div>
-</div>
-<div class="container content-container">
-    <div class="row">
-        <!-- Column One -->
-        <div class="col-md-6 column">
-            <img src="images/services/mentoring.png" alt="" class="img-fluid">
-        </div>
-        <!-- Column Two -->
-        <div class="col-md-6 column">
-            <h4>Our Approach to On-Premise to Cloud Data Migrations</h4>
-            <ul class="list-unstyled">
->>>>>>> 08cb6bd748b01a9b5d60c749cf1dbd996506eb0e
                 <li class="list-item">&#10004; Assessment and Planning</li>
                 <li class="list-item">&#10004; Data Preparation and Cleansing</li>
                 <li class="list-item">&#10004; Selection of Cloud Services</li>
@@ -76,11 +49,7 @@
         </div>
     </div>
 </div>
-<<<<<<< HEAD
 <div class="container content-container mt-3">
-=======
-<div class="container content-container">
->>>>>>> 08cb6bd748b01a9b5d60c749cf1dbd996506eb0e
     <!-- Row 1 -->
     <div class="row row-spacing">
         <!-- Column One -->
@@ -100,43 +69,31 @@
         <h3 class="text-center mb-4">SCHEDULE A CONSULTATION TODAY</h3>
         <div class="row mb-3">
             <div class="col-md-12">
-                <form>
+                 <form id="consultation-form" method="post">
                     <div class="form-row">
                       <div class="col-md-6 mb-1">
                         <label for="validationServer01">Name</label>
-                        <input type="text" class="form-control  is-valid edit-input  edit-input-valid" id="validationServer01" placeholder="First name" value="Mark" required>
-                        <div class="valid-feedback">
-                          Looks good!
-                        </div>
+                        <input name="name" type="text" class="form-control edit-input " id="validationServer01" placeholder="First name"  required>
                       </div>
                       <div class="col-md-6 mb-1">
                         <label for="validationServer02">Email</label>
-                        <input type="email" class="form-control is-valid edit-input  edit-input-valid" id="validationServer02" placeholder="Email" value="Otto@gmail.com" required>
-                        <div class="valid-feedback">
-                          Looks good!
-                        </div>
+                        <input name="email" type="email" class="form-control  edit-input " id="validationServer02" placeholder="Email"  required>
+                        
                       </div>
                     </div>
                     <div class="form-row">
                       <div class="col-md-4 mb-3">
                         <label for="validationServer03">Organization Name</label>
-                        <input type="text" class="form-control is-invalid edit-input" id="validationServer03" placeholder="Organization Name" required>
-                        <div class="invalid-feedback">
-                          Please provide a valid Organization Name.
-                        </div>
-                        
-                      </div>
-                      
+                        <input name="organization" type="text" class="form-control edit-input" id="validationServer03" placeholder="Organization Name" required>
+                       
+                      </div>   
                       <div class="col-md-4 mb-1">
                         <label for="validationServer04">Phone Number</label>
-                        <input type="text" class="form-control is-invalid edit-input" id="validationServer04" placeholder="Phone Number" required>
-                        <div class="invalid-feedback">
-                          Please provide a valid Phone Number.
-                        </div>
+                        <input name="phone" type="text" class="form-control  edit-input" id="validationServer04" placeholder="Phone Number" required>
                       </div>
                       <div class="col-md-4 mb-3">
                         <label for="validationServer03">Which service piques your interest?</label>
-                        <select type="text" class="form-control is-invalid edit-input" id="validationServer03" placeholder="Organization Name" required>
+                        <select name="service_type" type="text" class="form-control edit-input" id="validationServer03" placeholder="Organization Name" required>
                             <option value="" disabled selected>Select Service of Interest</option>
                             <option value="Data Services">Data Services</option>
                             <option value="Web Development">Web Development</option>
@@ -144,20 +101,15 @@
                             <option value="Managed Services">Managed Services</option>
                             <option value="Advisory Services">Advisory Services</option>
                         </select>
-                        <div class="invalid-feedback">
-                          Please select an option to proceed.
-                        </div>
-                        
+
                       </div>
                       <div class="col-md-12 mb-3">
                         <label for="validationServer05">Message</label>
-                        <textarea rows="5" type="text" class="form-control is-invalid edit-textarea" id="validationServer05" placeholder="Message..." required></textarea>
-                        <div class="invalid-feedback">
-                          Please provide a valid Message.
-                        </div>
+                        <textarea name="message" rows="5" type="text" class="form-control  edit-textarea" id="validationServer05" placeholder="Message..." required></textarea>
+                       
                       </div>
                     </div>
-                    <button class="btn btn-primary default-button-color" type="submit">Send Message</button>
+                    <button name="submit_consultation_form" class="btn btn-primary default-button-color" type="submit">Send Message</button>
                   </form>  
             </div>
     </div>
@@ -176,19 +128,9 @@
 </button>
   
   <!-- start of Footer -->
-  <?php include 'php/footer.php'; ?>
+  <?php echo displayFooter(); ?>
 <!-- end of Footer -->
 
-
-
-<style>
-  .modal-right {
-  position: absolute;
-  top: 50% ;
-  left: 0 ;
-  transform: translate(0, -50%) ;
-}
-</style>
 
 <!-- The Modal -->
 <div id="myModal" class="modal">
@@ -208,25 +150,12 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      var currentYear = new Date().getFullYear();
-      var copyrightElement = document.getElementById('copyright');
-      copyrightElement.innerHTML = '&copy; ' + currentYear + ' Your Company Name. All rights reserved.';
-    });
-  </script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.4/dist/sweetalert2.all.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" async></script>
+  <script src="js/form-actions.js"></script>
+  
   <script src="js/main3.js"></script>
-  <script>
-    window.addEventListener('load', function() {
-        // Get the element to animate
-        var typingText = document.querySelector('.typing-text');
-        // Set the opacity to 1 to reveal the text
-        typingText.style.opacity = 1;
-        // Start the typing animation
-        typingText.style.animation = 'typing 5s steps(50, end) forwards, fadeIn 2s ease-in-out';
-        
-    });
-</script>
+  
 
 
 </body>

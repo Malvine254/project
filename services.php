@@ -1,3 +1,4 @@
+<?php include "php/actions.php"; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,137 +11,133 @@
   <!-- font awesome  -->
   <link rel="stylesheet" href="vendor/font-awesome/css/all.css"> 
   <link rel="icon" href="images/logo/logo1.png" type="image/x-icon">
-
-
-  <style>
-    /* Add your custom styles here */
-    body {
-      padding-top: 56px; /* Adjust based on the height of your fixed navbar */
-    }
-
-    footer {
-      padding: 0PX;
-      width: 100% !important;
-    }
-    
-  </style>
 </head>
 <body>
-  
-   <!-- Navbar -->
-  <?php include 'php/header.php'; ?>
-
+   
+  <!-- Navbar -->
+  <?php echo displayHeader() ?>
   <!-- start of services floating screen and company floating screen -->
- <?php include "display_services-company-floating-contents.php"; ?>
+   <?php echo displayFloatingButton(); ?>
+<!-- end of services floating screen and company floating screen -->
 
 <!-- end of services floating screen and company floating screen -->
   <!-- Content -->
-  <div class="container mt-5 col-md-10">
+  <div class="margin-top"></div>
+  <div class="container mt-5 col-md-11">
     <div class="content-container">
       <div class="row">
-          <div class="col-md-5 text-muted">
+          <div class="col-md-5">
               <h1>Empowering Your Tech Journey</h1>
               <p>Our experts provide tailored guidance in areas such as business planning, product development, marketing, financial management, and risk management, ensuring your company's competitiveness and sustainable growth.</p>
           </div>
           <div class="col-md-7">
-<<<<<<< HEAD
               <img src="images/services/services.png" alt="" class="img-fluid" loading="lazy">
-=======
-              <img src="images/services/services_main.png" alt="" class="img-fluid" loading="lazy">
->>>>>>> 08cb6bd748b01a9b5d60c749cf1dbd996506eb0e
           </div>
       </div>
   </div>
   </div>
+<section >
+  <div class="container py-5 col-md-11">
+    <div class="row d-flex justify-content-start">
+      <div class="col-md-10 col-xl-8">
+        <h3 class="fw-bold mb-3">Our Services Lead the Way</h3>
+        <p class="mb-4 pb-2 mb-md-3 pb-md-0">
+          
+        </p>
+      </div>
+    </div>
 
-  <div class="container content-container col-md-10">
-    <h2 class="mt-5" >Our Services Lead the Way</h2>
     <div class="row">
-        <div class="col-md-4">
-           <a href="advisory-services">
-              <div class="service-card text-muted">
-<<<<<<< HEAD
-                <img src="images/services/advice 1.png" alt="" class="img-fluid" loading="lazy">
-=======
-                <img src="images/services/advisory_services.png" alt="" class="img-fluid" loading="lazy">
->>>>>>> 08cb6bd748b01a9b5d60c749cf1dbd996506eb0e
-                <h5 class="m-1">Advisory Services</h5>
-                <p>Get expert guidance in planning, development, marketing, finance, and risk management for sustainable growth.</p>
+      <div class="col-md-4 mb-4 mb-md-0 ">
+        <div class="card transparent-card">
+          <div class="card-body py-4 mt-2">
+            <div class="d-flex justify-content-start mb-4">
+              <img src="images/services/advice 1.png"
+                class=" shadow-1-strong" width="100%" height="240" />
             </div>
-           </a>
-        </div>
-        <div class="col-md-4">
-         <a href="data">
-            <div class="service-card text-muted">
-<<<<<<< HEAD
-              <img src="images/services/datapic.png" alt="" class="img-fluid" loading="lazy">
-=======
-              <img src="images/services/business_intelligence.png" alt="" class="img-fluid" loading="lazy">
->>>>>>> 08cb6bd748b01a9b5d60c749cf1dbd996506eb0e
-              <h5 class="m-1">Data</h5>
-              <p>Harness the power of data with performance management, data analysis, modeling, storage, and visualization services.</p>
+            <h5 class="font-weight-bold my-3">Advisory Services</h5>
+            <p class="mb-2">
+              <i class="fas fa-quote-left pe-2"></i>Get expert guidance in planning, development, marketing, finance, and risk management for sustainable growth.<a href="advisory-services">Learn More</a>
+            </p>
           </div>
-         </a>
         </div>
-        <div class="col-md-4">
-           <a href="ai">
-              <div class="service-card text-muted">
-<<<<<<< HEAD
-                <img src="images/services/aipic.png" alt="" class="img-fluid" loading="lazy">
-=======
-                <img src="images/services/data_services.png" alt="" class="img-fluid" loading="lazy">
->>>>>>> 08cb6bd748b01a9b5d60c749cf1dbd996506eb0e
-                <h5 class="m-1">Artificial Intelligence</h5>
-                <p>Harness the potential of AI to automate processes, enhance productivity, and uncover patterns that drive innovation and efficiency.</p>
+      </div>
+     <div class="col-md-4 mb-4 mb-md-0 ">
+        <div class="card transparent-card">
+          <div class="card-body py-4 mt-2">
+            <div class="d-flex justify-content-start mb-4">
+              <img src="images/services/datapic.png"
+                class=" shadow-1-strong" width="100%" height="240"/>
             </div>
-           </a>
+            <h5 class="font-weight-bold my-3">Data</h5>
+            <p class="mb-2">
+              <i class="fas fa-quote-left pe-2"></i>Harness the power of data with performance management, data analysis, modeling, storage, and visualization services. <a href="data">Learn More</a>
+            </p>
+          </div>
         </div>
-    </div>
-  <!-- second row -->
+      </div>
+      <div class="col-md-4 mb-4 mb-md-0 ">
+        <div class="card transparent-card mb-5">
+          <div class="card-body py-4 mt-2">
+            <div class="d-flex justify-content-start mb-4">
+              <img src="images/services/aipic.png"
+                class=" shadow-1-strong" width="100%" height="240" />
+            </div>
+            <h5 class="font-weight-bold my-3">Artificial Intelligence</h5>
+            <p class="mb-2">
+              <i class="fas fa-quote-left pe-2"></i>Harness the potential of AI to automate processes, enhance productivity, and uncover patterns that drive innovation and efficiency.<a href="ai">Learn More</a>
+            </p>
+          </div>
+        </div>
 
-    <!-- <h2 class="text-center mb-4">Our Services</h2> -->
-    <div class="row mt-5">
-        <div class="col-md-4">
-           <a href="managed-services">
-              <div class="service-card text-muted">
-<<<<<<< HEAD
-                <img src="images/services/managed p.png" alt="" class="img-fluid" loading="lazy">
-=======
-                <img src="images/services/managed_services.png" alt="" class="img-fluid" loading="lazy">
->>>>>>> 08cb6bd748b01a9b5d60c749cf1dbd996506eb0e
-                <h5 class="m-1">Managed Services</h5>
-                <p>Enhance your technology infrastructure with supportability reviews, root cause analysis, coordinated service delivery and technology.</p>
+      </div>
+       <div class="col-md-4 mb-4 mb-md-0 ">
+        <div class="card transparent-card">
+          <div class="card-body py-4 mt-2">
+            <div class="d-flex justify-content-start mb-4">
+              <img src="images/services/managed_services.png"
+                class=" shadow-1-strong" width="100%" height="240" />
             </div>
-           </a>
+            <h5 class="font-weight-bold my-3">Managed Services</h5>
+            <p class="mb-2">
+              <i class="fas fa-quote-left pe-2"></i>Enhance your technology infrastructure with supportability reviews, root cause analysis, coordinated service delivery and technology.<a href="ai">Learn More</a>
+            </p>
+          </div>
         </div>
-        <div class="col-md-4">
-           <a href="enterprise-applications">
-              <div class="service-card text-muted">
-<<<<<<< HEAD
-                <img src="images/services/appd.png" alt="" class="img-fluid" loading="lazy">
-=======
-                <img src="images/services/web_development.png" alt="" class="img-fluid" loading="lazy">
->>>>>>> 08cb6bd748b01a9b5d60c749cf1dbd996506eb0e
-                <h5 class="m-1">Enterprise Applications</h5>
-                <p>Implement customized software solutions tailored to your business requirements, optimizing workflows and driving productivity across your organization.</p>
+      </div>
+       <div class="col-md-4 mb-4 mb-md-0 ">
+        <div class="card transparent-card">
+          <div class="card-body py-4 mt-2">
+            <div class="d-flex justify-content-start mb-4">
+              <img src="images/services/appd.png"
+                class=" shadow-1-strong" width="100%" height="240" />
             </div>
-           </a>
+            <h5 class="font-weight-bold my-3">Enterprise Applications</h5>
+            <p class="mb-2">
+              <i class="fas fa-quote-left pe-2"></i>Implement customized software solutions tailored to your business requirements, optimizing workflows and driving productivity across....<a href="ai">Learn More</a>
+            </p>
+          </div>
         </div>
-        <div class="col-md-4">
-            <a href="cloud">
-              <div class="service-card text-muted">
-<<<<<<< HEAD
-                <img src="images/services/web.png" alt="" class="img-fluid" loading="lazy">
-=======
-                <img src="images/services/mentoring.png" alt="" class="img-fluid" loading="lazy">
->>>>>>> 08cb6bd748b01a9b5d60c749cf1dbd996506eb0e
-                <h5 class="m-1">Cloud</h5>
-                <p>Embrace the scalability, flexibility, and cost-efficiency of cloud computing, empowering your business to innovate and grow without infrastructure constraints.</p>
+      </div>
+      <div class="col-md-4 mb-4 mb-md-0 ">
+        <div class="card transparent-card">
+          <div class="card-body py-4 mt-2">
+            <div class="d-flex justify-content-start mb-4">
+              <img src="images/services/web.png"
+                class=" shadow-1-strong" width="100%" height="240"/>
             </div>
-            </a>
+            <h5 class="font-weight-bold my-3">Cloud</h5>
+            <p class="mb-2">
+              <i class="fas fa-quote-left pe-2"></i>Embrace the scalability, flexibility, and cost-efficiency of cloud computing, empowering your business to innovate and grow without...<a href="ai">Learn More</a>
+            </p>
+          </div>
         </div>
+      </div>
+
     </div>
-</div>
+  </div>
+</section>
+  
    <!-- Floating Action Button -->
    <div class="floating-btn">
     <button id="myBtn"  style="border-radius: 50%; height: 70px; width: 70px; background-color: rgb(47,85,151);"  type="button" class="btn btn-primary btn-lg">
@@ -153,18 +150,9 @@
 </button>
   
   <!-- start of Footer -->
-  <?php include 'php/footer.php'; ?>
+   <?php echo displayFooter(); ?>
 <!-- end of Footer -->
 
-
-
-<style>
-  .modal-right {
-  position: absolute;
-  top: 50% ;
-  left: 0 ;
-  transform: translate(0, -50%) ;
-}
 </style>
 
 <!-- The Modal -->
@@ -185,25 +173,8 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      var currentYear = new Date().getFullYear();
-      var copyrightElement = document.getElementById('copyright');
-      copyrightElement.innerHTML = '&copy; ' + currentYear + ' Your Company Name. All rights reserved.';
-    });
-  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" async></script>
   <script src="js/main3.js"></script>
-  <script>
-    window.addEventListener('load', function() {
-        // Get the element to animate
-        var typingText = document.querySelector('.typing-text');
-        // Set the opacity to 1 to reveal the text
-        typingText.style.opacity = 1;
-        // Start the typing animation
-        typingText.style.animation = 'typing 5s steps(50, end) forwards, fadeIn 2s ease-in-out';
-        
-    });
-</script>
 
 
 </body>

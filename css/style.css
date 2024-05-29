@@ -2,8 +2,8 @@
   color: black !important;
   font-size: 18px !important;
 }
-h1,h2,h3,h4,h5,h6,p,strong,link,input,textarea{
-  font-family:__Inter_83848e,__Inter_Fallback_83848e,system-ui,sans-serif !important;
+h2,h3,h4,h5,h6,p,strong,link,input,textarea{
+ 
 }
 .nav{
 padding: 26px !important; 
@@ -152,7 +152,7 @@ transform: translate(0, -50%) ;
 
 /* The Close Button */
 .close {
-color: #aaaaaa;
+color: #2f5597;
 float: right;
 font-size: 28px;
 font-weight: bold;
@@ -181,7 +181,7 @@ color: #fff !important; /* Dark mode text color */
 
 /* armely default logo font  */
 @font-face {
-font-family: myFirstFont;
+font-family: myFirstFont !important;
 src: url(../logo-font/font.ttf);
 }
 .armely-logo-font{
@@ -238,11 +238,7 @@ from { opacity: 0; }
 to { opacity: 1; }
 }
 
-.typing-text::after {
-padding-bottom: 8px;
-display: inline-block;
-animation: blink 1s none;
-}
+
 @media screen and (max-width: 576px) {
   .typing-text {
 font-size: 25px;
@@ -258,11 +254,31 @@ font-size: 48px; /* Default font size */
 }
 
 /* Media query for larger screens */
-@media (min-width: 768px) {
-.typing-text {
+
+@media (max-width: 767.98px) {
+    #myButton {
+        /* Set the href attribute for small screens */
+        /* Replace 'services.php' with the actual URL */
+        href: url('services');
+    }
+    .typing-text {
   font-size: 72px; /* Adjust font size for larger screens */
+
+}
+#myButton:hover{
+  #floatingItem{
+    display: none;
+  }
 }
 }
+@media screen and (min-width: 768px) {
+  /* Remove the `href` attribute from the `a` tag */
+  #myButton {
+    pointer-events: none; /* Disable click events */
+    cursor: default; /* Show default cursor */
+  }
+}
+
 @media (min-width: 576px) {
 .typing-text {
   font-size: 32px; /* Adjust font size for larger screens */
@@ -358,17 +374,22 @@ animation: slide 10s linear infinite;
 .nav-link:hover{
   text-decoration: underline !important;
 
+
 }
 
+#hideAll:hover{
+  text-decoration: underline !important;
+
+}
 /*  service hover page on large screen styles*/
 .floating-item {
 position: fixed;
 padding: 10px;
 display: none;
 width: 100vw !important;
-height: 70vh;
+height: 65vh;
 z-index: 999;
-overflow: auto; /* Ensure the container appears above other elements */
+overflow: none; /* Ensure the container appears above other elements */
 }
 /*#myButton:hover{
   .floating-item {
@@ -380,13 +401,11 @@ overflow: auto; /* Ensure the container appears above other elements */
 .hide-for-small-screen{
   display: none;
 }
+ .floating-item {
+    display: none;
+  }
 
-.myButtonTwo{
-  display: block;
-}
-.myButton{
-  display: none;
-}
+
 
 }
 
@@ -395,20 +414,20 @@ overflow: auto; /* Ensure the container appears above other elements */
 .myButton{
   display: block;
 }
-.myButtonTwo{
-  display: none;
-}
+ 
+
 }
 
 /*video styles*/
  #video-background {
-      position: relative;
-      height: 95vh; /* Adjust as needed */
+      position: relative !important;
+      height: 80vh; /* Adjust as needed */
       overflow: hidden;
+      width: 90vw;
     }
 
     #video-background video {
-      position: absolute;
+      position: absolute !important;
       top: 0;
       left: 0;
       width: 100%;
@@ -447,6 +466,110 @@ overflow: auto; /* Ensure the container appears above other elements */
       color: rgb(47,85,151);
      
     }
+    .btn-outline-primary{
+      border-color: rgb(47,85,151) !important;
+      color: rgb(47,85,151) !important;
+      font-weight: bold !important;
+    }
+    .btn-outline-primary:hover{
+      background-color: rgb(47,85,151) !important;
+       color: #fff !important;
+    }
+    .hover-effect:hover{
+      background-color: rgb(211, 211, 211);
+    }
+  .modal-right {
+    position: absolute;
+    top: 50% ;
+    left: 0 ;
+    transform: translate(0, -50%) ;
+  }
 
 
+.highlight {
+    background-color: yellow;
+}
+.margin-top{
+  margin-top: 100px !important;
+}
+.items-height{
+  height: 400px;
+}
 
+/* The Modal */
+.modal-for-share {
+   display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  bottom: 0; /* Position at the bottom of the viewport */
+  width: 100vw !important; /* Full width */
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+  color: #fff; /* Text color */
+}
+
+/* Modal Content/Box */
+.modal-content-for-share {
+  background-color: #fefefe;
+  border: 1px solid #888;
+  padding: 30px;
+  width: 100%; /* Full width */
+  box-sizing: border-box; /* Include padding in width calculation */
+}
+
+/* Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  padding: 20px;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/*sneakbar for advert modal*/
+  .snackbar {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #343a40;
+  color: white;
+  padding: 20px;
+  border-radius: 5px 5px 0 0;
+  width: 90%;
+  max-width: 1000px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1050;
+  }
+  .snackbar.show {
+  display: block;
+  animation: slideUp 0.5s ease-in-out;
+  }
+  @keyframes slideUp {
+  from {
+      transform: translate(-50%, 100%);
+      opacity: 0;
+  }
+  to {
+      transform: translate(-50%, 0);
+      opacity: 1;
+  }
+  }
+  .snackbar .btn-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  color: white;
+  }

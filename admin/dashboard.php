@@ -1,3 +1,4 @@
+<?php include 'php/check_session.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,29 +11,29 @@
   <!-- font awesome  -->
   <link rel="stylesheet" href="../vendor/font-awesome/css/all.css"> 
   <script src="../vendor/jquery/jquery.min.js"></script>  
+  <link rel="icon" href="../images/logo/logo1.png" type="image/x-icon">
 
 </head>
 <body>
   
   <!-- Navbar -->
      <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top pt-3 pb-3" style="padding: 0px !important;">
-    <a class="navbar-brand link" href="index"><h1 class="armely-logo-font text-light pl-2" ><strong>armely</strong></h1></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <a class="navbar-brand link" href="index"><h1 class="armely-logo-font ml-5" >armely</h1></a>    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse justify-content-center text-center" id="navbarNav">
     <ul class="navbar-nav mx-auto">
     <li class="nav-item active">
-        <a class="nav-link text-light link" href="dashboard.php"><i class="fa fa-dashboard"></i> <u>DASHBOARD</u> <span class="sr-only">(current)</span></a>
+        <a class="nav-link text-light link" href="dashboard"><i class="fa fa-dashboard"></i> <u>DASHBOARD</u> <span class="sr-only">(current)</span></a>
     </li>
      <li class="nav-item">
-      <a class="nav-link text-light link" href="actions.php">  <i class="fa fa-list"></i> ACTIONS</a>
+      <a class="nav-link text-light link" href="actions">  <i class="fa fa-list"></i> ACTIONS</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link text-light link" href="actions.php"> <i class="fa fa-table"></i> TABLES</a>
+      <a class="nav-link text-light link" href="actions"> <i class="fa fa-table"></i> TABLES</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link text-light link" href="actions.php">   <i class="fa fa-book"></i> REPORTS</a>
+      <a class="nav-link text-light link" href="actions">   <i class="fa fa-book"></i> REPORTS</a>
     </li>
     <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle text-light link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
