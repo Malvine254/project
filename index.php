@@ -25,24 +25,7 @@
   <!-- Navbar -->
     <?php echo displayHeader(); ?>
 
-   
-  <!-- Content -->
-  <!-- <div class="container mt-3 mb-3"> -->
-    <!-- title text -->
-   <!--  <h1 class="text-center typing-text text-muted">Your Trusted Source<br>
-      For Digital Excellence</h1>
-      
-         <div class="mt-3">
-           <h6 class="text-center">BEYOND IMAGINATION 
-          <i class="fa fa-angle-right text-light" style="background-color:
-           rgb(47,85,151); padding: 5px;"></i></h6>
-      </div> -->
-    <!-- playing video at the hompage here -->
-   <!--  <video src="videos/video1.mp4" 
-    preload="auto" autoplay loop muted style="width: 100%; height: 100%;   overflow: hidden;border-radius: 10px; box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);"></video>   -->
   
-  <!-- </div> -->
-
 <div class="container col-md-11 mt-4" id="video-background">
   <video id='vid' autoplay loop muted style="opacity: 90%;">
     <source src="videos/vid1.mp4" type="video/mp4">

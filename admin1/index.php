@@ -46,21 +46,24 @@
         <img width='130px' height='auto' src='../images/logo/logo.svg'/>
       </a>
       <!-- Left links -->
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link" href="#">Dashboard</a>
+          <a class="nav-link text-info"  href="index">Dashboard</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Team</a>
+          <a class="nav-link" href="actions">Update User Page</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Projects</a>
+          <a class="nav-link" href="admins">Manage Admins</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Reports</a>
+          <a class="nav-link" href="reports">Generate Reports</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Tables</a>
+          <a class="nav-link" href="tables">Manage User Page</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="users">Account Settings</a>
         </li>
       </ul>
       <!-- Left links -->
@@ -173,6 +176,7 @@
       aria-controls="ex-with-icons-tabs-7" aria-selected="false"><i class="fas fa-home fa-fw me-2"></i>Edit Home Page</a>
   </li>
 </ul>
+</div>
 <!-- Tabs navs -->
 
 <!-- Tabs content -->
