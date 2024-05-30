@@ -27,7 +27,7 @@
     <div class="container content-container">
       <div class="row">
           <div class="col-md-6">
-              <h1 class="mt-5"> from me it straight from our thrilled clients</h1>
+              <h1 class="mt-5">rrrrr it straight from our thrilled clients</h1>
               <p>Our success stories are a testament to our dedication to delivering the highest quality solutions, getting it right on the first try.</p>
           </div>
           <div class="col-md-6">
