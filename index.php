@@ -270,12 +270,21 @@
 </button>
 
 <!-- Advert Modal -->
-<div id="snackbar" class="snackbar">
+<div id="snackbar" class="snackbar container" style="background-color: rgba(0, 0, 0, 0.5) !important;">
     <button class="btn-close" aria-label="Close">&times;</button>
-    <div class="text-center">
-        <h5 class="mb-3">SQL Server 2014 End-of-Life!</h5>
-        <p>We are 64 days away from the end of support (EOS) for SQL Server 2014. On July 9th, 2024, Microsoft will stop the mainstream support of SQL Server 2014. Don’t wait until it’s too late to secure your data and maintain compliancy.</p>
-        <a href="sql" class="btn btn-success default-button-color">Contact Us</a>
+    <div class="text-start row">
+      <div class="col-8">
+        <h3>We Value Your Privacy</h3>
+        <p>We use cookies to enhance your browsing experience, serve personalized content, and analyze our traffic. By clicking "Accept All", you consent to our use of cookies, <a href="">see our privacy policy</a>. You can manage your preferences by clicking "Settings".</p>
+       
+      </div>
+      <div class="col-4">
+         <div class="modal-buttons mt-5">
+          <button id="acceptAll" class="btn btn-primary mr-5"> Accept All</button>
+          <button id="manageSettings" class="btn btn-secondary">Settings</button>
+        </div>
+      </div>
+      
     </div>
 </div>
   
