@@ -181,11 +181,11 @@ color: #fff !important; /* Dark mode text color */
 
 /* armely default logo font  */
 @font-face {
-font-family: myFirstFont !important;
+font-family: armely_font !important;
 src: url(../logo-font/font.ttf);
 }
 .armely-logo-font{
-font-family: myFirstFont !important;
+font-family: armely_font !important;
 }
 
 /* preloader styling */
