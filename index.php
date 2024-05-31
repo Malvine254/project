@@ -270,18 +270,21 @@
 </button>
 
 <!-- Advert Modal -->
-<div id="snackbar" class="snackbar container">
+<div id="snackbar" class="snackbar container shadow"  >
     <button class="btn-close" aria-label="Close">&times;</button>
     <div class="text-start row">
       <div class="col-8">
+      <div class="ml-4">
         <h3>We Value Your Privacy</h3>
         <p>We use cookies to enhance your browsing experience, serve personalized content, and analyze our traffic. By clicking "Accept All", you consent to our use of cookies, <a href="">see our privacy policy</a>. You can manage your preferences by clicking "Settings".</p>
+      </div>
        
       </div>
       <div class="col-4">
-         <div class="modal-buttons mt-5">
-          <button id="acceptAll" class="btn btn-primary mr-5"> Accept All</button>
-          <button id="manageSettings" class="btn btn-secondary">Settings</button>
+         <div class="modal-buttons mt-5" >
+          <button id="acceptAll" class="btn btn-outline-light "> Accept All</button>
+          <button id="manageSettings" class="btn btn-outline-secondary">Customize</button>
+          <button id="acceptAll" class="btn btn-outline-danger mr-5 "> Reject All</button>
         </div>
       </div>
       
