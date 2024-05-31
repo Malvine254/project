@@ -270,7 +270,7 @@
 </button>
 
 <!-- Advert Modal -->
-<div id="snackbar" class="snackbar container" style="background-color: rgba(0, 0, 0, 0.5) !important;">
+<div id="snackbar" class="snackbar container">
     <button class="btn-close" aria-label="Close">&times;</button>
     <div class="text-start row">
       <div class="col-8">
