@@ -3,132 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cookie Consent Modal</title>
+    <title>Bootstrap 5 Modal with Toggle Switch</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
+        .form-check-input {
+            width: 3.5em;
+            height: 1.75em;
+            background-color: #ccc;
+            border-radius: 1.75em;
+            position: relative;
+            cursor: pointer;
+            transition: background-color 0.3s;
         }
 
-        .modal {
-            display: none; /* Hidden by default */
-            position: fixed;
-            z-index: 1000; /* Sit on top */
-            left: 0;
-            top: 0;
-            width: 100%; /* Full width */
-            height: 100%; /* Full height */
-            overflow: auto; /* Enable scroll if needed */
-            background-color: rgba(0, 0, 0, 0.5); /* Black with opacity */
-            justify-content: center;
-            align-items: center;
+        .form-check-input:checked {
+            background-color: #4caf50;
         }
 
-        .modal-content {
+        .form-check-input::before {
+            content: '';
+            position: absolute;
+            top: 0.125em;
+            left: 0.125em;
+            width: 1.5em;
+            height: 1.5em;
             background-color: white;
-            padding: 20px;
-            border-radius: 8px;
-            width: 90%;
-            max-width: 500px;
-            text-align: center;
+            border-radius: 50%;
+            transition: transform 0.3s;
         }
 
-        .modal h2 {
-            margin-top: 0;
-        }
-
-        .modal-buttons {
-            margin-top: 20px;
-        }
-
-        .btn-primary {
-            background-color: #007BFF;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 16px;
-            margin-right: 10px;
-        }
-
-        .btn-secondary {
-            background-color: #6C757D;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 16px;
-        }
-
-        .btn-primary:hover, .btn-secondary:hover {
-            opacity: 0.9;
+        .form-check-input:checked::before {
+            transform: translateX(1.75em);
         }
     </style>
 </head>
 <body>
-    <!-- Cookie Consent Modal -->
-    <div id="cookieConsentModal" class="modal">
-        <div class="modal-content">
-            <h2>We Value Your Privacy</h2>
-            <p>We use cookies to enhance your browsing experience, serve personalized content, and analyze our traffic. By clicking "Accept All", you consent to our use of cookies. You can manage your preferences by clicking "Settings".</p>
-            <div class="modal-buttons">
-                <button id="acceptAll" class="btn-primary">Accept All</button>
-                <button id="manageSettings" class="btn-secondary">Settings</button>
+    <!-- Button to trigger modal -->
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Launch modal
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Here is a toggle switch inside the modal:</p>
+                    <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" id="toggleSwitch">
+                        <label class="form-check-label" for="toggleSwitch">Toggle Switch</label>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
             </div>
         </div>
     </div>
-    
-    <!-- JavaScript to handle modal behavior -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script>
         document.addEventListener("DOMContentLoaded", function() {
-            var cookieModal = document.getElementById('cookieConsentModal');
-            var acceptAllBtn = document.getElementById('acceptAll');
-            var manageSettingsBtn = document.getElementById('manageSettings');
+            var toggleSwitch = document.getElementById('toggleSwitch');
 
-            // Show the modal
-            cookieModal.style.display = 'flex';
-
-            // Set a cookie
-            function setCookie(name, value, days) {
-                var expires = "";
-                if (days) {
-                    var date = new Date();
-                    date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
-                    expires = "; expires=" + date.toUTCString();
+            toggleSwitch.addEventListener('change', function() {
+                if (this.checked) {
+                    console.log("Toggle is ON");
+                } else {
+                    console.log("Toggle is OFF");
                 }
-                document.cookie = name + "=" + (value || "") + expires + "; path=/";
-            }
-
-            // Handle Accept All button click
-            acceptAllBtn.onclick = function() {
-                setCookie('cookieConsent', 'accepted', 365);
-                cookieModal.style.display = 'none';
-            };
-
-            // Handle Manage Settings button click
-            manageSettingsBtn.onclick = function() {
-                // Here you can add functionality to show another modal or section for cookie settings
-                alert('Manage your cookie settings here.');
-            };
-
-            // Check if the user has already accepted cookies
-            function getCookie(name) {
-                var nameEQ = name + "=";
-                var ca = document.cookie.split(';');
-                for (var i = 0; i < ca.length; i++) {
-                    var c = ca[i];
-                    while (c.charAt(0) == ' ') c = c.substring(1, c.length);
-                    if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
-                }
-                return null;
-            }
-
-            if (getCookie('cookieConsent') === 'accepted') {
-                cookieModal.style.display = 'none';
-            }
+            });
         });
     </script>
 </body>

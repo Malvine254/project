@@ -282,7 +282,7 @@
       </div>
       <div class="col-4">
          <div class="modal-buttons mt-5" >
-          <button id="acceptAll" class="btn btn-outline-light "> Accept All</button>
+          <button id="openModalBtn4" class="btn btn-outline-light "> Accept All</button>
           <button id="manageSettings" class="btn btn-outline-secondary">Customize</button>
           <button id="acceptAll" class="btn btn-outline-danger mr-5 "> Reject All</button>
         </div>
@@ -307,6 +307,45 @@
       </div>
 
 </div>
+
+<!-- Modal Trigger Button -->
+   
+
+
+<div id="myModal4" class="modal4">
+  <div class="modal-content4">
+    <span class="close4">&times;</span>
+    <div class="cookie-list">
+      <div class="form-check">
+        <div><h3 class="armely-logo-font text-primary">armely</h3></div>
+        <hr>
+        <input class="form-check-input" type="checkbox" id="cookie1">
+        <label class="form-check-label" for="cookie1">
+          <h6>Analytical cookies</h6>
+        </label>
+        <p class="cookie-description">These cookies allow us to analyze how users use our website, so we can improve it.</p>
+      </div>
+      <hr>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="cookie2">
+        <label class="form-check-label" for="cookie2">
+         <h6>Marketing cookies</h6>
+        </label>
+        <p class="cookie-description">These cookies are used to personalize advertisements and measure their effectiveness.</p>
+      </div>
+      <hr>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="cookie3">
+        <label class="form-check-label" for="cookie3">
+          <h6>Functional cookies</h6>
+        </label>
+        <p class="cookie-description">These cookies enable core functionality such as security, network management, and accessibility.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
 
   <!--Bootrap and jQuery Scripts -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>

@@ -577,3 +577,87 @@ overflow: none; /* Ensure the container appears above other elements */
   font-size: 1.2rem;
   color: white;
   }
+/*   cookies modal*/
+/* Modal Styling */
+.modal4 {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content4 {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 60%;
+  border-radius: 10px;
+}
+
+/* Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+  /* Styling for Toggle Switch */
+  .form-check-input {
+    position: absolute;
+    opacity: 0;
+  }
+
+  .form-check-label {
+    position: relative;
+    cursor: pointer;
+    padding-left: 40px; /* Adjust based on your design */
+  }
+
+  .form-check-label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 25px; /* Adjust based on your design */
+    height: 15px; /* Adjust based on your design */
+    border-radius: 10px; /* Round shape */
+    background-color: #ccc; /* Default background color */
+    transition: background-color 0.3s ease;
+  }
+
+  .form-check-input:checked + .form-check-label:before {
+    background-color: #2196F3; /* Color when checked */
+  }
+
+  .form-check-label:after {
+    content: '';
+    position: absolute;
+    left: 5px;
+    top: 2px;
+    width: 10px; /* Width of the toggle */
+    height: 10px; /* Height of the toggle */
+    border-radius: 50%; /* Round shape */
+    background-color: white; /* Toggle color */
+    transition: left 0.3s ease;
+  }
+
+  .form-check-input:checked + .form-check-label:after {
+    left: 15px; /* Move toggle to the right when checked */
+  }
+
