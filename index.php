@@ -282,8 +282,8 @@
       </div>
       <div class="col-4">
          <div class="modal-buttons mt-5" >
-          <button id="openModalBtn4" class="btn btn-outline-light "> Accept All</button>
-          <button id="manageSettings" class="btn btn-outline-secondary">Customize</button>
+          <button id="" class="btn btn-outline-light "> Accept All</button>
+          <button id="openModalBtn4" class="btn btn-outline-secondary">Customize</button>
           <button id="acceptAll" class="btn btn-outline-danger mr-5 "> Reject All</button>
         </div>
       </div>
@@ -317,7 +317,6 @@
     <span class="close4">&times;</span>
     <div class="cookie-list">
       <div class="form-check">
-        <div><h3 class="armely-logo-font text-primary">armely</h3></div>
         <hr>
         <input class="form-check-input" type="checkbox" id="cookie1">
         <label class="form-check-label" for="cookie1">
