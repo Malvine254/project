@@ -276,7 +276,7 @@
       <div class="col-8">
       <div class="ml-4">
         <h3>We Value Your Privacy</h3>
-        <p>We use cookies to enhance your browsing experience, serve personalized content, and analyze our traffic. By clicking "Accept All", you consent to our use of cookies, <a href="">see our privacy policy</a>. You can manage your preferences by clicking "Settings".</p>
+        <p>We use cookies to enhance your browsing experience, serve personalized content, and analyze our traffic. By clicking "Accept All", you consent to our use of cookies, <a href="">see our privacy policy</a>. You can manage your preferences by clicking "customize".</p>
       </div>
        
       </div>
@@ -284,7 +284,7 @@
          <div class="modal-buttons mt-5" >
           <button id="" class="btn btn-outline-light "> Accept All</button>
           <button id="openModalBtn4" class="btn btn-outline-secondary">Customize</button>
-          <button id="acceptAll" class="btn btn-outline-danger mr-5 "> Reject All</button>
+          <button id="acceptAll" class="btn btn-outline-danger"> Reject All</button>
         </div>
       </div>
       
@@ -313,7 +313,7 @@
 
 
 <div id="myModal4" class="modal4">
-  <div class="modal-content4">
+  <div class="modal-content4 col-sm-12 col-md-8">
     <span class="close4">&times;</span>
     <div class="cookie-list">
       <div class="form-check">
