@@ -51,7 +51,7 @@
             }
 
             function trackUser() {
-                $.get("php/cookies.php", function(data) {
+                $.get("php/cookies", function(data) {
                     console.log("User tracked:", data);
                 });
             }
