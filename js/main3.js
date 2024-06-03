@@ -642,5 +642,5 @@ window.onclick = function(event) {
         });
     }
 
-    trackUser();
+    
 
