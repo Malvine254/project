@@ -3,81 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bootstrap 5 Modal with Toggle Switch</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        .form-check-input {
-            width: 3.5em;
-            height: 1.75em;
-            background-color: #ccc;
-            border-radius: 1.75em;
-            position: relative;
-            cursor: pointer;
-            transition: background-color 0.3s;
-        }
-
-        .form-check-input:checked {
-            background-color: #4caf50;
-        }
-
-        .form-check-input::before {
-            content: '';
-            position: absolute;
-            top: 0.125em;
-            left: 0.125em;
-            width: 1.5em;
-            height: 1.5em;
-            background-color: white;
-            border-radius: 50%;
-            transition: transform 0.3s;
-        }
-
-        .form-check-input:checked::before {
-            transform: translateX(1.75em);
-        }
-    </style>
+    <title>Cookie Tracking Example</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 </head>
 <body>
-    <!-- Button to trigger modal -->
-    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-        Launch modal
-    </button>
-
-    <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <p>Here is a toggle switch inside the modal:</p>
-                    <div class="form-check form-switch">
-                        <input class="form-check-input" type="checkbox" id="toggleSwitch">
-                        <label class="form-check-label" for="toggleSwitch">Toggle Switch</label>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
-                </div>
+    <div class="container">
+        <div class="col-md-4">
+            <div class="modal-buttons mt-5">
+                <button id="acceptAll" class="btn btn-outline-light">Accept All</button>
+                <button id="openModalBtn4" class="btn btn-outline-secondary">Customize</button>
+                <button id="rejectAll" class="btn btn-outline-danger">Reject All</button>
             </div>
         </div>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            var toggleSwitch = document.getElementById('toggleSwitch');
-
-            toggleSwitch.addEventListener('change', function() {
-                if (this.checked) {
-                    console.log("Toggle is ON");
-                } else {
-                    console.log("Toggle is OFF");
-                }
+        $(document).ready(function() {
+            $('#acceptAll').on('click', function() {
+                setCookie('userConsent', 'accepted', 365);
+                trackUser();
             });
+
+            $('#rejectAll').on('click', function() {
+                setCookie('userConsent', 'rejected', 365);
+            });
+
+            function setCookie(name, value, days) {
+                var expires = "";
+                if (days) {
+                    var date = new Date();
+                    date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+                    expires = "; expires=" + date.toUTCString();
+                }
+                document.cookie = name + "=" + (value || "") + expires + "; path=/";
+            }
+
+            function getCookie(name) {
+                var nameEQ = name + "=";
+                var ca = document.cookie.split(';');
+                for(var i=0; i < ca.length; i++) {
+                    var c = ca[i];
+                    while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+                    if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+                }
+                return null;
+            }
+
+            function trackUser() {
+                $.get("php/cookies", function(data) {
+                    console.log("User tracked:", data);
+                });
+            }
         });
     </script>
 </body>

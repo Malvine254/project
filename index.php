@@ -275,7 +275,7 @@
     <div class="text-start row">
       <div class="col-md-8">
       <div class="ml-4">
-        <h3>We Value Your Privacy</h3>
+        <h5>We Value Your Privacy</h5>
         <p>We use cookies to enhance your browsing experience, serve personalized content, and analyze our traffic. By clicking "Accept All", you consent to our use of cookies, <a href="">see our privacy policy</a>. You can manage your preferences by clicking "customize".</p>
       </div>
        
@@ -312,10 +312,10 @@
    
 
 
-<div id="myModal4" class="modal4">
-  <div class="modal-content4 col-sm-12 col-md-8" style="overflow: scroll;">
+<div id="myModal4" class="modal4 ">
+  <div class="modal-content4 col-sm-12 col-md-8  transparent-card ">
     <span class="close4">&times;</span>
-    <div class="cookie-list">
+    <div class="cookie-list bg-dark text-light">
       <div class="form-check">
         <hr>
         <input class="form-check-input" type="checkbox" id="cookie1">
