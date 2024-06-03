@@ -282,9 +282,9 @@
       </div>
       <div class="col-md-4">
          <div class="modal-buttons mt-5" >
-          <button id="" class="btn btn-outline-light "> Accept All</button>
+          <button id="acceptAll" class="btn btn-outline-light "> Accept All</button>
           <button id="openModalBtn4" class="btn btn-outline-secondary">Customize</button>
-          <button id="acceptAll" class="btn btn-outline-danger"> Reject All</button>
+          <button id="rejectAll" class="btn btn-outline-danger"> Reject All</button>
         </div>
       </div>
       
