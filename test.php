@@ -50,11 +50,29 @@
                 return null;
             }
 
-            function trackUser() {
-                $.get("php/cookies", function(data) {
-                    console.log("User tracked:", data);
+            function generateUUID() {
+                return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
+                    var r = Math.random() * 16 | 0,
+                        v = c === 'x' ? r : (r & 0x3 | 0x8);
+                    return v.toString(16);
                 });
             }
+
+            function trackUser() {
+                var userID = getCookie('userID');
+                if (!userID) {
+                    userID = generateUUID();
+                    setCookie('userID', userID, 365);
+                }
+
+                $.get("php/cookies", { userID: userID }, function(data) {
+                    console.log("User tracked:", data);
+                }).fail(function(xhr, status, error) {
+                    console.error("Error tracking user:", error);
+                });
+            }
+
+            trackUser();
         });
     </script>
 </body>

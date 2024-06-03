@@ -13,10 +13,13 @@ $userID = isset($_GET['userID']) ? $_GET['userID'] : null;
 
 if ($userID) {
     // Use an API to get the country of origin from IP (e.g., ipinfo.io)
-    $details = json_decode(file_get_contents("http://ipinfo.io/{$ip}/json"));
+    $details = @json_decode(file_get_contents("http://ipinfo.io/{$ip}/json"));
 
     // Check if country is available in the API response
     $country = isset($details->country) ? $details->country : 'Unknown';
+
+    // Log the data for debugging
+    error_log("IP: $ip, UserID: $userID, Country: $country");
 
     // Check if the user ID already exists in the database
     $stmt = $conn->prepare("SELECT id FROM analytics WHERE user_id = ?");
@@ -40,6 +43,8 @@ if ($userID) {
     }
 
     $stmt->close();
+} else {
+    echo json_encode(array('error' => 'User ID not provided'));
 }
 
 $conn->close();
