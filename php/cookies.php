@@ -9,22 +9,38 @@ if (!empty($_SERVER['HTTP_CLIENT_IP'])) {
     $ip = $_SERVER['REMOTE_ADDR'];
 }
 
-// Use an API to get the country of origin from IP (e.g., ipinfo.io)
-$details = json_decode(file_get_contents("http://ipinfo.io/{$ip}/json"));
+$userID = isset($_GET['userID']) ? $_GET['userID'] : null;
 
-// Check if country is available in the API response
-$country = isset($details->country) ? $details->country : 'Unknown';
+if ($userID) {
+    // Use an API to get the country of origin from IP (e.g., ipinfo.io)
+    $details = json_decode(file_get_contents("http://ipinfo.io/{$ip}/json"));
 
-// Insert data into MySQL table
-$stmt = $conn->prepare("INSERT INTO analytics (ip_address, country) VALUES (?, ?)");
-$stmt->bind_param("ss", $ip, $country);
+    // Check if country is available in the API response
+    $country = isset($details->country) ? $details->country : 'Unknown';
 
-if ($stmt->execute()) {
-    echo json_encode(array('ip' => $ip, 'country' => $country));
-} else {
-    echo json_encode(array('error' => $stmt->error));
+    // Check if the user ID already exists in the database
+    $stmt = $conn->prepare("SELECT id FROM analytics WHERE user_id = ?");
+    $stmt->bind_param("s", $userID);
+    $stmt->execute();
+    $stmt->store_result();
+
+    if ($stmt->num_rows > 0) {
+        // User ID exists
+        echo json_encode(array('message' => 'User already tracked'));
+    } else {
+        // User ID does not exist, insert new record
+        $stmt = $conn->prepare("INSERT INTO analytics (ip_address, country, user_id) VALUES (?, ?, ?)");
+        $stmt->bind_param("sss", $ip, $country, $userID);
+
+        if ($stmt->execute()) {
+            echo json_encode(array('ip' => $ip, 'country' => $country, 'user_id' => $userID));
+        } else {
+            echo json_encode(array('error' => $stmt->error));
+        }
+    }
+
+    $stmt->close();
 }
 
-$stmt->close();
 $conn->close();
 ?>
