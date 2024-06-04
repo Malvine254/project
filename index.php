@@ -183,7 +183,6 @@
         <div class="marquee-container">
         <div class="marquee-content">
           <a href="https://www.talend.com/" class="ml-5"><img class="svg-img" src="https://upload.wikimedia.org/wikipedia/commons/9/97/Talend_logo.svg" alt=""></a>
-          <a href="https://www.uscloud.com/" class="ml-5"><img class="svg-img" src="images/partners/us-cloud-logo.webp" alt=""></a>
           <a href="https://www.microsoft.com/en-us/" class="ml-5"><img class="svg-img" src="images/partners/ms.svg" alt=""></a>
           <a href="https://www.tdsynnex.com/na/us/" class="ml-5"><img class="svg-img" src="images/partners/SNX_BIG.D (1).svg" alt=""></a>
           <a href="https://cloud.google.com/" class="ml-5"><img class="svg-img" src="images/partners/google_cloud-ar21.svg" alt=""></a>
@@ -191,7 +190,6 @@
           <a href="https://www.snowflake.com/en/" class="ml-5"><img class="svg-img" src="images/partners/snowflake.png" alt=""></a>
 
           <a href="https://www.talend.com/" class="ml-5"><img class="svg-img" src="https://upload.wikimedia.org/wikipedia/commons/9/97/Talend_logo.svg" alt=""></a>
-          <a href="https://www.uscloud.com/" class="ml-5"><img class="svg-img" src="images/partners/us-cloud-logo.webp" alt=""></a>
           <a href="https://www.microsoft.com/en-us/" class="ml-5"><img class="svg-img" src="images/partners/ms.svg" alt=""></a>
           <a href="https://www.tdsynnex.com/na/us/" class="ml-5"><img class="svg-img" src="images/partners/SNX_BIG.D (1).svg" alt=""></a>
           <a href="https://cloud.google.com/" class="ml-5"><img class="svg-img" src="images/partners/google_cloud-ar21.svg" alt=""></a>
