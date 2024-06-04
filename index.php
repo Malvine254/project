@@ -290,6 +290,72 @@
       
     </div>
 </div>
+<style type="text/css">
+  .badged-container {
+    position: fixed;
+    left: 20px; /* Adjust as needed */
+    top: 80%;
+    transform: translateY(-50%);
+    z-index: 999; /* Ensure it appears on top of other content */
+  }
+
+  .badged {
+    position: relative;
+    padding: 20px;
+    border-radius: 50%;
+    text-align: center;
+    width: 200px; /* Adjust as needed */
+    height: 200px; /* Adjust as needed */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Optional: Add shadow effect */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+/*    animation: blinker 3s linear infinite;*/
+    background: #2f5597 !important;
+  
+  }
+
+  .badged p {
+    margin: 0;
+    font-size: 14px;
+    font-family: comic Sans ;
+
+  }
+
+  .dismiss-icon {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    cursor: pointer;
+    color: #2f5597;
+
+  }
+
+  .new-badge {
+    background-color: red;
+    color: #fff;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 12px;
+    animation: blinker 1s linear infinite;
+  }
+
+  @keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+  }
+
+</style>
+<div class="badged-container">
+  <div class="badged text-white">
+    <p class="new-badge">NEW</</p>
+    <h5>SQL Server 2014<br> End-of-Life</h5>
+    <p>Contact us today for a <br> free migration analysis.</p>
+    <i class="fas fa-times dismiss-icon"></i>
+  </div>
+</div>
   
 <!-- start of Footer -->
   <?php  echo displayFooter(); ?>

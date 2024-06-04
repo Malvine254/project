@@ -481,25 +481,22 @@ $(document).ready(function(){
   // Read more button click event
   $(".read-more-btn").click(function(){
     var $truncatedText = $(this).prev(".truncated-text");
+    $truncatedText.toggleClass("text-truncate");
     if ($truncatedText.hasClass("text-truncate")) {
-      $truncatedText.text($truncatedText.attr("data-full-text"));
-      $truncatedText.removeClass("text-truncate");
-      $(this).text("Read Less");
+      $truncatedText.html($truncatedText.html().slice(0, 200) + '...');
+      $(this).html("Read More");
     } else {
-      $truncatedText.text($truncatedText.attr("data-truncated-text"));
-      $truncatedText.addClass("text-truncate");
-      $(this).text("Read More");
+      $truncatedText.html($truncatedText.attr("data-full-text"));
+      $(this).html("Read Less");
     }
   });
 
   // Initialize truncated text
   $(".truncated-text").each(function() {
-    var content = $(this).text();
+    var content = $(this).html();
     if (content.length > 200) {
-      var truncatedContent = content.slice(0, 200) + '...';
       $(this).attr("data-full-text", content);
-      $(this).attr("data-truncated-text", truncatedContent);
-      $(this).text(truncatedContent);
+      $(this).html(content.slice(0, 200) + '...');
       $(this).next(".read-more-btn").show();
     }
   });
