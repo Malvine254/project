@@ -41,6 +41,29 @@ function uploadNewBlog(){
 } 
 }
 
+function displayJobApplicantsTable(){
+
+include '../php/config.php';
+$numbering=1;
+$select = $conn->query("SELECT * FROM job_applications ");
+if ($select->num_rows>0) {
+    while ($row=$select->fetch_assoc()) {
+        return  ' <tr>
+                    <td>'.$numbering++.'</td>
+                    <td>Job Title</td>
+                    <td> '.$row['name'].'</td>
+                    <td> <a href="mailto:'.$row['email'].'">'.$row['email'].'</a></td>
+                    <td> '.$row['address'].'</td>
+                    <td> <a href="tel:'.$row['phone'].'">'.$row['phone'].'</a></td>
+                    <td> <a href="../pdf/'.$row['cv'].'" target="_blank">Click here to Preview Cv</a></td>
+                    <td>
+                      <a href=""> <i class="fa fa-trash"></i></a>
+                      <a class="pl-2" href=""> <i  class="fa-regular fa-pen-to-square"></i></a>
+                    </td> 
+                  </tr>';
+    }
+}
+}
 
 
 ?>
