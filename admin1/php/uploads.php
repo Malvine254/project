@@ -42,7 +42,13 @@ function uploadNewBlog(){
 }
 
 function displayJobApplicantsTable(){
-
+    function cheIfNull($role){
+        if ($role==="") {
+                return "Data Analysis | Data Management | Business";
+            }else{
+                return $role;
+            }
+    }
 include '../php/config.php';
 $numbering=1;
 $select = $conn->query("SELECT * FROM job_applications ");
@@ -50,7 +56,7 @@ if ($select->num_rows>0) {
     while ($row=$select->fetch_assoc()) {
         echo  ' <tr >
                     <td>'.$numbering++.'</td>
-                    <td>'.$row['role'].'</td>
+                    <td>'.cheIfNull($row['role']).'</td>
                     <td> '.$row['name'].'</td>
                     <td> <a href="mailto:'.$row['email'].'">'.$row['email'].'</a></td>
                     <td> '.$row['address'].'</td>
