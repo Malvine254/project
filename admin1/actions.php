@@ -1,4 +1,4 @@
-<?php include "php/uploads.php"; ?>
+<?php require 'php/check_session.php'; include "php/uploads.php"; ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -56,6 +56,9 @@
         </li>
         <li class="nav-item">
           <a class="nav-link text-info" href="actions">Update User Page</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="career">Manage Career</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="admins">Manage Admins</a>

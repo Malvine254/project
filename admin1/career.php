@@ -57,13 +57,16 @@
           <a class="nav-link" href="actions">Update User Page</a>
         </li>
         <li class="nav-item">
+          <a class="nav-link text-info" href="career">Manage Career</a>
+        </li>
+        <li class="nav-item">
           <a class="nav-link" href="admins">Manage Admins</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="reports">Generate Reports</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-info" href="tables">Manage User Page</a>
+          <a class="nav-link" href="tables">Manage User Page</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="users">Account Settings</a>
@@ -198,7 +201,7 @@
         </div>
     </form>
   </div>
-  <div class="tab-pane fade show active" id="ex-with-icons-tabs-1" role="tabpanel" aria-labelledby="ex-with-icons-tab-1" style="height: 90vh; overflow: hidden;">
+  <div class="tab-pane fade show active" id="ex-with-icons-tabs-1" role="tabpanel" aria-labelledby="ex-with-icons-tab-1" style="height: 90vh; overflow: scroll;">
     <table  class="table table-bordered" >
       <div  class="table-responsive" >
         <tr>

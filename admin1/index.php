@@ -1,3 +1,4 @@
+<?php require 'php/check_session.php'; require 'php/uploads.php'?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -23,7 +24,7 @@
 </head>
 <body>
     <!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-light bg-body-tertiary">
+<nav class="navbar navbar-expand-lg navbar-light  bg-body-tertiary">
   <!-- Container wrapper -->
   <div class="container-fluid">
     <!-- Toggle button -->
@@ -40,18 +41,21 @@
     </button>
 
     <!-- Collapsible wrapper -->
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <div class="collapse navbar-collapse " id="navbarSupportedContent">
       <!-- Navbar brand -->
       <a class="navbar-brand mt-2 mt-lg-0" href="#">
         <img width='130px' height='auto' src='../images/logo/logo.svg'/>
       </a>
       <!-- Left links -->
-       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
           <a class="nav-link text-info"  href="index">Dashboard</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="actions">Update User Page</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="career">Manage Career</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="admins">Manage Admins</a>

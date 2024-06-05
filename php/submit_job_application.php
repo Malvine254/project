@@ -16,7 +16,7 @@ if($_FILES["cv"]["error"] == UPLOAD_ERR_OK) {
     $cv = isset($_FILES['cv']['name']) ? htmlspecialchars($_FILES['cv']['name'] ) : '';
     $new_file_name = $email.basename($cv);
     $target = "../pdf/".$email.basename($cv); 
-    $check_if_applied = $conn->query("SELECT * FROM job_applications WHERE LOWER(email)='$final_email' AND LOWER(role)='$final_role'");
+    $check_if_applied = $conn->query("SELECT * FROM job_applications WHERE LOWER(email)='$final_email' AND LOWER(role)='$final_role' ORDER BY id DESC");
     if ($check_if_applied->num_rows>0) {
             echo "You have already made an application";
         }else{

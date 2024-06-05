@@ -1,3 +1,4 @@
+<?php require 'php/check_session.php'; require 'php/uploads.php'?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -55,6 +56,9 @@
         </li>
         <li class="nav-item">
           <a class="nav-link" href="actions">Update User Page</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="career">Manage Career</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="admins">Manage Admins</a>
