@@ -48,7 +48,7 @@ $numbering=1;
 $select = $conn->query("SELECT * FROM job_applications ");
 if ($select->num_rows>0) {
     while ($row=$select->fetch_assoc()) {
-        return  ' <tr>
+        echo  ' <tr>
                     <td>'.$numbering++.'</td>
                     <td>Job Title</td>
                     <td> '.$row['name'].'</td>

@@ -71,7 +71,9 @@
             <select  class="form-control edit-input" id="position" name="position">
                 <option selected value=""><?php if (isset($_GET['jobId'])) {
                     echo $job_type;
-                } ?></option> <!-- Default option -->
+                } ?></option>
+                <option>Full Time</option>
+                 <!-- Default option -->
             </select>
         </div>
         <div class="form-group">

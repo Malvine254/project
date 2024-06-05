@@ -212,7 +212,7 @@
         <th>Actions</th>
       </tr>
      
-        <?php  echo displayJobApplicantsTable(); ?>
+        <?php  displayJobApplicantsTable(); ?>
       </div>
     </table>
   </div>

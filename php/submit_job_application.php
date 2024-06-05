@@ -19,8 +19,7 @@ if($_FILES["cv"]["error"] == UPLOAD_ERR_OK) {
             $stmt->bind_param("ssssssssss", $name, $email, $city, $phone, $address, $state,$zip,$role,$position,$cv);
 
             // Execute the statement
-            if ($stmt->execute()) {
-                echo 1;
+            if ($stmt->execute()) {                echo 1;
             } else {
                 // Log the error securely
                 error_log('Failed to insert contact form data into the database');
