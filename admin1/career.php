@@ -198,7 +198,7 @@
         </div>
     </form>
   </div>
-  <div class="tab-pane fade show active" id="ex-with-icons-tabs-1" role="tabpanel" aria-labelledby="ex-with-icons-tab-1" style="height: 90vh; overflow: scroll;">
+  <div class="tab-pane fade show active" id="ex-with-icons-tabs-1" role="tabpanel" aria-labelledby="ex-with-icons-tab-1" style="height: 90vh; overflow: hidden;">
     <table  class="table table-bordered" >
       <div  class="table-responsive" >
         <tr>
