@@ -48,9 +48,9 @@ $numbering=1;
 $select = $conn->query("SELECT * FROM job_applications ");
 if ($select->num_rows>0) {
     while ($row=$select->fetch_assoc()) {
-        echo  ' <tr>
+        echo  ' <tr >
                     <td>'.$numbering++.'</td>
-                    <td>Job Title</td>
+                    <td>'.$row['role'].'</td>
                     <td> '.$row['name'].'</td>
                     <td> <a href="mailto:'.$row['email'].'">'.$row['email'].'</a></td>
                     <td> '.$row['address'].'</td>

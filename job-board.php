@@ -72,7 +72,7 @@
                 <option selected value=""><?php if (isset($_GET['jobId'])) {
                     echo $job_type;
                 } ?></option>
-                <option>Full Time</option>
+                <option>Part Time</option>
                  <!-- Default option -->
             </select>
         </div>
@@ -86,8 +86,8 @@
         </select>
     </div>
     <div class="form-group">
-        <label for="cv">Upload CV or Resume (PDF, DOC or DOCX)*:</label>
-        <input type="file" class="form-control edit-input" id="cv" name="cv" accept=".pdf,.doc,.docx" required>
+        <label for="cv">Upload CV or Resume (PDF)*:</label>
+        <input type="file" class="form-control edit-input" id="cv" name="cv" accept=".pdf" required>
     </div>
     <button name="submit_applications_btn" type="submit" class="btn default-button-color btn-primary text-center">Submit Form</button>
     </form>

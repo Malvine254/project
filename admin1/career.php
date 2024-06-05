@@ -198,9 +198,9 @@
         </div>
     </form>
   </div>
-  <div class="tab-pane fade show active" id="ex-with-icons-tabs-1" role="tabpanel" aria-labelledby="ex-with-icons-tab-1">
-    <table  class="table table-bordered">
-      <div  class="table-responsive">
+  <div class="tab-pane fade show active" id="ex-with-icons-tabs-1" role="tabpanel" aria-labelledby="ex-with-icons-tab-1" style="height: 90vh; overflow: scroll;">
+    <table  class="table table-bordered" >
+      <div  class="table-responsive" >
         <tr>
         <th>#</th>
         <th>Job Title</th>
@@ -210,7 +210,7 @@
         <th>Phone</th>
         <th>Cv</th>
         <th>Actions</th>
-      </tr>
+      </tr >
      
         <?php  displayJobApplicantsTable(); ?>
       </div>
