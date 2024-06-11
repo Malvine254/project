@@ -51,10 +51,10 @@ function displayJobApplicantsTable(){
     }
 include '../php/config.php';
 $numbering=1;
-$select = $conn->query("SELECT * FROM job_applications ");
+$select = $conn->query("SELECT * FROM job_applications ORDER BY ID DESC");
 if ($select->num_rows>0) {
     while ($row=$select->fetch_assoc()) {
-        echo  ' <tr >
+        echo  ' <tr class="'.highlightStatus($row['status']).'" id="'.$row['id'].'">
                     <td>'.$numbering++.'</td>
                     <td>'.cheIfNull($row['role']).'</td>
                     <td> '.$row['name'].'</td>
@@ -63,13 +63,157 @@ if ($select->num_rows>0) {
                     <td> <a href="tel:'.$row['phone'].'">'.$row['phone'].'</a></td>
                     <td> <a href="../pdf/'.$row['cv'].'" target="_blank">Click here to Preview Cv</a></td>
                     <td>
-                      <a href=""> <i class="fa fa-trash"></i></a>
-                      <a class="pl-2" href=""> <i  class="fa-regular fa-pen-to-square"></i></a>
+                     <div class="d-flex">
+                      '.revokeShortlisted($row['status'],$row['id']).'
+                      <a class="btn btn-danger me-2" href="?deletionId='.$row['id'].'">
+                        <i class="fa fa-trash"></i>
+                      </a>
+                    </div>
+
                     </td> 
                   </tr>';
     }
 }
+if (isset($_GET['aplicationId'])) {
+        $id = mysqli_real_escape_string($conn,$_GET['aplicationId']);
+        $update_status = $conn->query("UPDATE job_applications SET status='2' WHERE id='$id'");
+        if ($update_status) {
+            echo "<script>window.location.assign('career#".$id."')</script>";
+        }else{
+            echo "<script>alert('Could not finish the operation!')</script>";
+        }
+    }
+    if (isset($_GET['revokeId'])) {
+        $id = mysqli_real_escape_string($conn,$_GET['revokeId']);
+        $update_status = $conn->query("UPDATE job_applications SET status='1' WHERE id='$id'");
+        if ($update_status) {
+            echo "<script>window.location.assign('career#".$id."')</script>";
+        }else{
+            echo "<script>alert('Could not finish the operation!')</script>";
+        }
+    }
+}
+
+function highlightStatus($status){
+    if ($status==="1") {
+       return "table-light";
+    }else{
+        return "table-success";
+    }
+}
+function revokeShortlisted($status,$id){
+     if ($status==="1") {
+       return '<a class="btn btn-primary me-2" href="?aplicationId='.$id.'"><i class="fas fa-check"></i></a>';
+    }else{
+        return '<a class="btn btn-danger me-2" href="?revokeId='.$id.'">
+                        <i class="fas fa-times"></i>
+                      </a>';
+    }
+}
+
+function returnAllLocation(){
+    include '../php/config.php';
+    $select = $conn->query("SELECT address FROM job_applications");
+    if ($select->num_rows>0) {
+        while ($row=$select->fetch_assoc()) {
+            echo "<option>".$row['address']."</option>";
+        }
+    }else{
+            echo "<option> disabled>No location found!</option>";
+        }
 }
 
 
+function displayShortlistedCandidates(){
+    function cheIfNullTwo($role){
+        if ($role==="") {
+                return "Data Analysis | Data Management | Business";
+            }else{
+                return $role;
+            }
+    }
+include '../php/config.php';
+$numbering=1;
+$select = $conn->query("SELECT * FROM job_applications WHERE status='2' ORDER BY ID DESC ");
+if ($select->num_rows>0) {
+    while ($row=$select->fetch_assoc()) {
+        echo  ' <tr class="'.highlightStatus($row['status']).'" id="'.$row['id'].'">
+                    <td>'.$numbering++.'</td>
+                    <td>'.cheIfNullTwo($row['role']).'</td>
+                    <td> '.$row['name'].'</td>
+                    <td> <a href="mailto:'.$row['email'].'">'.$row['email'].'</a></td>
+                    <td> '.$row['address'].'</td>
+                    <td> <a href="tel:'.$row['phone'].'">'.$row['phone'].'</a></td>
+                    <td> <a href="../pdf/'.$row['cv'].'" target="_blank">Click here to Preview Cv</a></td>
+                    <td>
+                     <div class="d-flex">
+                      '.revokeShortlisted($row['status'],$row['id']).'
+                      <a class="btn btn-danger me-2" href="?deletionId='.$row['id'].'">
+                        <i class="fa fa-trash"></i>
+                      </a>
+                    </div>
+
+                    </td> 
+                  </tr>';
+    }
+}
+if (isset($_GET['aplicationId'])) {
+        $id = mysqli_real_escape_string($conn,$_GET['aplicationId']);
+        $update_status = $conn->query("UPDATE job_applications SET status='2' WHERE id='$id'");
+        if ($update_status) {
+            echo "<script>window.location.assign('career#".$id."')</script>";
+        }else{
+            echo "<script>alert('Could not finish the operation!')</script>";
+        }
+    }
+    if (isset($_GET['revokeId'])) {
+        $id = mysqli_real_escape_string($conn,$_GET['revokeId']);
+        $update_status = $conn->query("UPDATE job_applications SET status='1' WHERE id='$id'");
+        if ($update_status) {
+            echo "<script>window.location.assign('career#".$id."')</script>";
+        }else{
+            echo "<script>alert('Could not finish the operation!')</script>";
+        }
+    }
+}
+
+
+function displayJobsPosted(){
+    include '../php/config.php';
+    $numbering =1;
+    $select = $conn->query("SELECT * FROM career");
+     function readMore($text,$id){
+        if (strlen($text) > 100) {
+        // Trim the text to the maximum length and append the additional text
+        return substr($text, 0, 100) . "<a href='?readMoreId=".$id."'>..Read More</a>";
+    }
+   
+    }
+
+    if ($select->num_rows>0) {
+        while ($row=$select->fetch_assoc()) {
+        echo  ' <tr id="'.$row['id'].'">
+                <td>'.$numbering++.'</td>
+                <td>'.$row['job_title'].'</td>
+                <td> '. readMore($row['job_description'],$row['job_id']).'</td>
+                <td> '.$row['job_deadline'].'</td>
+                <td> '.$row['job_type'].'</td>
+                <td> '.$row['job_location'].'</td>
+                <td> <a href="../'.$row['job_image_path'].'"><img src=../'.$row['job_image_path'].'/></a></td>
+                <td>
+                 <div class="d-flex">
+                  <a class="btn btn-danger me-2" href="?editJobId='.$row['job_id'].'">
+                    <i class="fa fa-pen-to-square"> Close</i>
+                  </a>
+                  <a class="btn btn-danger me-2" href="?deletionJobId='.$row['job_id'].'">
+                    <i class="fa fa-trash"></i>
+                  </a>
+                </div>
+
+                </td> 
+                  </tr>';
+        }
+    }
+   
+}
 ?>

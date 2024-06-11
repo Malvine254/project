@@ -179,7 +179,7 @@
     <div class="mb-3">
       <form class="form-inline my-2 my-lg-0">
         <div class="input-group col" style="width: 350px;">
-            <input class="form-control py-2 border-right-0 border col-md-12 bg-transparent" type="search" placeholder="Search..." id="example-search-input" style="outline: none;">
+            <input class="form-control py-2 border-right-0 border col-md-12 bg-transparent" type="search" placeholder="Search..." id="searchInput" style="outline: none;">
             <span class="input-group-append">
                 <button class="btn btn-outline-secondary border-left-0 border" type="button" style="outline: none;">
                     <i class="fa fa-search"></i>
@@ -188,10 +188,9 @@
         </div>
 
         <div class="input-group col" style="width: 350px;">
-            <select class="form-control py-2 border-right-0 border col-md-12 bg-transparent" type="search" placeholder="Search..." id="example-search-input" style="outline: none;">
-              <option>Filter By</option>
-              <option>Ascending</option>
-              <option>Descending</option>
+            <select class="form-control py-2 border-right-0 border col-md-12 bg-transparent" type="search" placeholder="Search..." id="filterSearch" style="outline: none;">
+              <option>Filter By Location</option>
+              <?php returnAllLocation(); ?>
             </select>
             <span class="input-group-append">
                 <button class="btn btn-outline-secondary border-left-0 border" type="button" style="outline: none;">
@@ -202,7 +201,7 @@
     </form>
   </div>
   <div class="tab-pane fade show active" id="ex-with-icons-tabs-1" role="tabpanel" aria-labelledby="ex-with-icons-tab-1" style="height: 90vh; overflow: scroll;">
-    <table  class="table table-bordered" >
+    <table  class="table table-bordered myTable" >
       <div  class="table-responsive" >
         <tr>
         <th>#</th>
@@ -221,128 +220,61 @@
   </div>
 
   <div class="tab-pane fade" id="ex-with-icons-tabs-2" role="tabpanel" aria-labelledby="ex-with-icons-tab-2">
-    <table class="table table-bordered">
+    <table class="table table-bordered myTable">
         <div  class="table-responsive">
           <tr>
           <th>#</th>
-          <th>Service Title</th>
-          <th>Service Image</th>
-          <th>Service Date</th>
-          <th>Service Body</th>
+          <th>Job Title</th>
+          <th>Job Description</th>
+          <th>Job Deadline</th>
+          <th>Job Type</th>
+          <th>Job Location</th>
+          <th>Job Image</th>
           <th>Actions</th>
         </tr>
-        <tr>
-          <td>1</td>
-          <td>Effects of climate change</td>
-          <td><img width="70" height="70" class="img-fluid" src="../images/services/service1.jpg"></td>
-          <td> 22 Nov</td>
-          <td> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-          tempor <a href="">Read More</a></td>
-          <td>
-            <a href=""> <i class="fa fa-trash"></i></a>
-            <a class="pl-2" href=""> <i  class="fa-regular fa-pen-to-square"></i></a>
-          </td> 
-        </tr>
-          <tr>
-          <td>2</td>
-          <td>Effects of climate change</td>
-          <td><img width="70" height="70" class="img-fluid" src="../images/services/service1.jpg"></td>
-          <td> 22 Nov</td>
-          <td> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-          tempor <a href="">Read More</a></td>
-          <td>
-            <a href=""> <i class="fa fa-trash"></i></a>
-            <a class="pl-2" href=""> <i  class="fa-regular fa-pen-to-square"></i></a>
-          </td> 
-            <tr>
-          <td>3</td>
-          <td>Effects of climate change</td>
-          <td><img width="70" height="70" class="img-fluid" src="../images/services/service1.jpg"></td>
-          <td> 22 Nov</td>
-          <td> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-          tempor <a href="">Read More</a></td>
-          <td>
-            <a href=""> <i class="fa fa-trash"></i></a>
-            <a class="pl-2" href=""> <i  class="fa-regular fa-pen-to-square"></i></a>
-          </td> 
-        </tr>
-        </tr>
+          <?php  displayJobsPosted(); ?>
         </div>
         
       </table>
   </div>
 
 <div class="tab-pane fade" id="ex-with-icons-tabs-3" role="tabpanel" aria-labelledby="ex-with-icons-tab-3">
-  <table class="table table-bordered">
+  <table class="table table-bordered myTable">
     <div  class="table-responsive">
       <tr>
-      <th>#</th>
-      <th>Career Title</th>
-      <th>Career Image</th>
-      <th>Career Date</th>
-      <th>Career Body</th>
-      <th>Actions</th>
-    </tr>
-    <tr>
-      <td>1</td>
-      <td>Effects of climate change</td>
-      <td><img width="70" height="70" class="img-fluid" src="../images/services/service1.jpg"></td>
-      <td> 22 Nov</td>
-      <td> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-      tempor <a href="">Read More</a></td>
-      <td>
-        <a href=""> <i class="fa fa-trash"></i></a>
-        <a class="pl-2" href=""> <i  class="fa-regular fa-pen-to-square"></i></a>
-      </td> 
-    </tr>
-      <tr>
-      <td>2</td>
-      <td>Effects of climate change</td>
-      <td><img width="70" height="70" class="img-fluid" src="../images/services/service1.jpg"></td>
-      <td> 22 Nov</td>
-      <td> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-      tempor <a href="">Read More</a></td>
-      <td>
-        <a href=""> <i class="fa fa-trash"></i></a>
-        <a class="pl-2" href=""> <i  class="fa-regular fa-pen-to-square"></i></a>
-      </td> 
-        <tr>
-      <td>3</td>
-      <td>Effects of climate change</td>
-      <td><img width="70" height="70" class="img-fluid" src="../images/services/service1.jpg"></td>
-      <td> 22 Nov</td>
-      <td> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-      tempor <a href="">Read More</a></td>
-      <td>
-        <a href=""> <i class="fa fa-trash"></i></a>
-        <a class="pl-2" href=""> <i  class="fa-regular fa-pen-to-square"></i></a>
-      </td> 
-    </tr>
-    </tr>
+        <th>#</th>
+        <th>Job Title</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Address</th>
+        <th>Phone</th>
+        <th>Cv</th>
+        <th>Actions</th>
+      </tr > 
+    
+     <?php displayShortlistedCandidates(); ?>
     </div>
     
   </table>
 </div>
 
       <div class="tab-pane fade" id="ex-with-icons-tabs-4" role="tabpanel" aria-labelledby="ex-with-icons-tab-4">
-         <form class="row g-3 col-md-11 mt-4 shadow p-4">
-          <div class="col-md-12">
-            <div class="form-outline" data-mdb-input-init>
-              <textarea id="footerBody"  type="text" class="form-control" id="validationDefault03" required ></textarea>
-              <script>
-                   CKEDITOR.replace('footerBody', {
-                      filebrowserUploadUrl: '../php/upload.php',
-                      filebrowserUploadMethod: 'form',
-                        height: '300px'
-
-                  });
-              </script>
+          <table class="table table-bordered myTable">
+            <div  class="table-responsive">
+              <tr>
+                <th>#</th>
+                <th>Full Name</th>
+                <th>Email Address</th>
+                <th>Address</th>
+                <th>Phone Number</th>
+                <th>Gender</th>
+                <th>Actions</th>
+              </tr > 
+            
+            
             </div>
-          </div>
-          <div class="col-12">
-            <button class="btn btn-primary " type="submit" data-mdb-ripple-init>Submit form</button>
-          </div>
-        </form>
+            
+          </table>
       </div>
 
        
@@ -362,7 +294,26 @@
 <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 <!-- MDB -->
 <script type="text/javascript" src="js/mdb.umd.min.js"></script>
+<script type="text/javascript">
+   $(document).ready(function(){
+    $("#searchInput").on("keyup", function() {
+      var value = $(this).val().toLowerCase();
+      $(".myTable tr").filter(function() {
+        $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+      });
+     
+    });
 
+    var filter = $("#filterSearch");
+    filter.change(()=>{
+       $(".myTable tr").filter(function() {
+        $(this).toggle($(this).text().toLowerCase().indexOf(filter.val().toLowerCase()) > -1)
+      });
+    })
+
+    
+  });
+</script>
 </body>
 </html>
 
