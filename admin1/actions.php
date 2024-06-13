@@ -190,7 +190,7 @@
   <div class="tab-content " id="ex-with-icons-content ">
   <div class="tab-pane fade show active" id="ex-with-icons-tabs-1" role="tabpanel" aria-labelledby="ex-with-icons-tab-1">
     <?php uploadNewBlog(); ?>
-    <form enctype="multipart/form-data" id="addBlogTable" class="row g-3 col-md-11 mt-4 shadow p-4" method="post">
+    <form enctype="multipart/form-data" id="addBlogTable" class="row g-3 col-md-11 mt-2 shadow p-4" method="post">
       <div class="col-md-6">
         <div class="form-outline" data-mdb-input-init>
           <input name="blog_title" type="text" class="form-control" id="validationDefault01" required />
@@ -292,7 +292,6 @@
           <div class="col-md-12">
             <div class="form-outline" data-mdb-input-init>
               <textarea id="footerBody"  type="text" class="form-control" id="validationDefault03" required >
-                <?php include '../index.php';?>
               </textarea>
               <script>
                    CKEDITOR.replace('footerBody', {
@@ -333,40 +332,59 @@
         </div>
 
        <div class="tab-pane fade" id="ex-with-icons-tabs-6" role="tabpanel" aria-labelledby="ex-with-icons-tab-6">
-         <form class="row g-3 col-md-11 mt-4 shadow p-4">
-
+        <?php if (isset($_POST['submitCustomerStories'])) {
+          addNewCustomerStory();
+        } ?>
+         <form method="post" enctype="multipart/form-data" class="row g-3 col-md-11 mt-4 shadow p-4">
+          <div class="col-md-4">
+            <div class="form-outline" data-mdb-input-init>
+              <input name="name" type="text" class="form-control" id="validationDefault07" required />
+              <label for="validationDefault07" class="form-label">Name</label>
+            </div>
+          </div>
+           <div class="col-md-4">
+            <div class="form-outline" data-mdb-input-init>
+              <input name="position" type="text" class="form-control" id="validationDefault01" required />
+              <label for="validationDefault01" class="form-label">Position</label>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="form-outline" data-mdb-input-init>
+              <input name="profile" type="file" class="form-control" id="validationDefault02" required />
+            </div>
+          </div>
           <div class="col-md-12">
             <div class="form-outline" data-mdb-input-init>
-              <textarea id="editCustomerBody"  type="text" class="form-control" id="validationDefault03" required ></textarea>
+              <textarea name="body_content" id="editCustomerBody"  type="text" class="form-control" id="validationDefault03" required >
+
+              </textarea>
               <script>
                    CKEDITOR.replace('editCustomerBody', {
                       filebrowserUploadUrl: '../php/upload.php',
                       filebrowserUploadMethod: 'form',
-                        height: '300px'
+                        height: '300px',
+                         contentsCss: [
+                          'https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css',
+                          '../css/style.css'
+                      ]
 
                   });
               </script>
             </div>
           </div>
           <div class="col-12">
-            <button class="btn btn-primary " type="button" data-mdb-ripple-init>Submit form</button>
+            <button name="submitCustomerStories" class="btn btn-primary " type="submit" data-mdb-ripple-init>Submit form</button>
           </div>
         </form>
       </div>
+
       <div class="tab-pane fade" id="ex-with-icons-tabs-7" role="tabpanel" aria-labelledby="ex-with-icons-tab-7">
          <form class="row g-3 col-md-11 mt-4 shadow p-4">
 
           <div class="col-md-12">
             <div class="form-outline" data-mdb-input-init>
               <textarea id="editIndexPage"  type="text" class="form-control" id="validationDefault03" required ></textarea>
-              <script>
-                   CKEDITOR.replace('editIndexPage', {
-                      filebrowserUploadUrl: '../php/upload.php',
-                      filebrowserUploadMethod: 'form',
-                        height: '300px'
-
-                  });
-              </script>
+             
             </div>
           </div>
           <div class="col-12">
@@ -374,6 +392,7 @@
           </div>
         </form>
       </div>
+
     </div>
 </center>
 <!-- Tabs content -->

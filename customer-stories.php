@@ -31,151 +31,26 @@
               <p>Our success stories are a testament to our dedication to delivering the highest quality solutions, getting it right on the first try.</p>
           </div>
           <div class="col-md-6">
-              <img src="images/Customer stories/customer.png" alt="" class="img-fluid">
+              <img src="images/customer-stories/1.png" alt="" class="img-fluid">
           </div>
       </div>
   </div>
   </div>
- 
- <section >
-  <div class="container py-5 col-md-11">
+  <div class="container col-md-11">
     <div class="row d-flex justify-content-center">
       <div class="col-md-10 col-xl-8 text-center">
-        <h3 class="fw-bold mb-4">Testimonials</h3>
+        <h3 class="fw-bold mb-1">Testimonials</h3>
         <p class="mb-4 pb-2 mb-md-5 pb-md-0">
           Here, you'll find the voices of our satisfied customers sharing their experiences with our products/services. Dive into these authentic reviews to get a glimpse of the quality, reliability, and exceptional service we strive to deliver. Discover why our customers trust us and why you should too
         </p>
       </div>
     </div>
-
     <div class="row text-center">
-       <div class="col-md-4 mb-4 mb-md-4 ">
-        <div class="card transparent-card shadow" style="min-height: 400px !important;">
-          <div class="card-body py-4 mt-2">
-            <div class="d-flex justify-content-center mb-4">
-              <img src="images/testimonials/kevin.png"
-                class="rounded-circle shadow-1-strong" width="120" height="120" />
-            </div>
-            <h5 class="font-weight-bold">Kevin Leaverton</h5>
-            <h6 class="font-weight-bold my-3">IT Director American Medical Staffing</h6>
-            <i class="fas fa-quote-left pe-2"></i>
-            <p class="mb-2 truncated-text">
-              Armely is a fantastic partner for American Medical Staffing. They have shown their depth of expertise in quickly developing SharePoint sites and Power BI reports for us as well as supporting our Data Warehouse. They have been great to work with and very responsive.
-            </p>
-             <button class="btn btn-outline-primary read-more-btn">Read More</button>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-4 mb-4 mb-md-4 ">
-        <div class="card transparent-card shadow" style="min-height: 400px !important;">
-          <div class="card-body py-4 mt-2">
-            <div class="d-flex justify-content-center mb-4">
-              <img src="images/testimonials/default.png"
-                class="rounded-circle shadow-1-strong" width="120" height="120" />
-            </div>
-            <h5 class="font-weight-bold">Todd Thielbar</h5>
-            <h6 class="font-weight-bold my-3">IT Manager KCG, Inc.</h6>
-            <i class="fas fa-quote-left pe-2"></i>
-            <p class="mb-2 truncated-text">
-               Armely has done a great job for KCG in our Power BI implementation and continuing development.  Leonard has been able to integrate Power BI with our ERP system which has provided our management team with invaluable information.   
-            </p>
-             <button class="btn btn-outline-primary read-more-btn">Read More</button>
-          </div>
-        </div>
-      </div>
-       <div class="col-md-4 mb-4 mb-md-4 ">
-        <div class="card transparent-card shadow" style="min-height: 400px !important;">
-          <div class="card-body py-4 mt-2">
-            <div class="d-flex justify-content-center mb-4">
-              <img src="images/testimonials/smith.png"
-                class="rounded-circle shadow-1-strong" width="120" height="120" />
-            </div>
-            <h5 class="font-weight-bold">Thurston Smith, PhD., MBA</h5>
-            <h6 class="font-weight-bold my-3">Chief Information Officer, Swope Health.</h6>
-            <i class="fas fa-quote-left pe-2"></i>
-            <p class="mb-2 truncated-text">
-               We are very grateful to Armely for their excellent work and support. They have been more than just a 
-                    vendor, they have been a true partner. They have always delivered on time, within budget, and with high 
-                    quality. They have also been responsive, flexible, and proactive in addressing our needs and requests. 
-                    We highly recommend Armely to any FQHC that is looking for a professional and experienced company 
-                    to handle their reports and data analytics
-                    <a href="pdf/3674368953378532.pdf" target="_blank">Get full review</a>
-            </p>
-             <button class="btn btn-outline-primary read-more-btn">Read More</button>
-          </div>
-        </div>
-      </div><br>
-      <div class="col-md-4 mb-4 mb-md-4 ">
-        <div class="card transparent-card shadow" style="min-height: 400px !important;">
-          <div class="card-body py-4 mt-2">
-            <div class="d-flex justify-content-center mb-4">
-              <img src="images/testimonials/last.png"
-                class="rounded-circle shadow-1-strong" width="120" height="120" />
-            </div>
-            <h5 class="font-weight-bold">Rob Ash</h5>
-            <h6 class="font-weight-bold my-3">CEO & Managing Partner T4S Partners</h6>
-            <i class="fas fa-quote-left pe-2"></i>
-            <p class="mb-2 truncated-text">
-               Armely proficiency in Data Analytics, Power BI, and Data Warehousing has significantly enhanced our organization's data utilization. Their solutions enable us to make informed decisions swiftly, driving operational efficiency and competitive advantage. Armely’s expertise is instrumental for any enterprise seeking to optimize data assets and achieve strategic goals.   
-            </p>
-             <button class="btn btn-outline-primary read-more-btn">Read More</button>
-          </div>
-        </div>
-      </div>
-       <div class="col-md-4 mb-4 mb-md-4">
-        <div class="card transparent-card shadow" style="min-height: 400px !important;">
-          <div class="card-body py-4 mt-2">
-            <div class="d-flex justify-content-center mb-4">
-              <img src="images/testimonials/default.png""
-                class="rounded-circle shadow-1-strong" width="120" height="120" />
-            </div>
-            <h5 class="font-weight-bold">Douglas Denton</h5>
-            <h6 class="font-weight-bold my-3">Executive Director, Homeward Bound Inc.</h6>
-            <i class="fas fa-quote-left pe-2"></i>
-            <p class="mb-2 truncated-text">Our organization has worked with Armely as our IT development consultant on a grant from Microsoft for over a year. The purpose of the grant is to develop a public facing dashboard to show how law enforcement agencies can divert homeless, behaviorally challenged individuals to treatment and case services instead of repeated arrests and incarceration. ( <a href='https://www.homewardboundinc.org/dashboard'>Home Ward Bound Dashboard</a> ) Leonard and his team at Armely gave Homeward Bound exceptional service, helping us understand how we can display the elements of engagement and process for our clients. 
-            </p>
-             <button class="btn btn-outline-primary read-more-btn">Read More</button>
-          </div>
-        </div>
-      </div>
-       <div class="col-md-4 mb-4 mb-md-4">
-        <div class="card transparent-card shadow" style="min-height: 400px !important;">
-          <div class="card-body py-4 mt-2">
-            <div class="d-flex justify-content-center mb-4">
-              <img src="images/testimonials/default.png""
-                class="rounded-circle shadow-1-strong" width="120" height="120" />
-            </div>
-            <h5 class="font-weight-bold">Doug Stabenow  </h5>
-            <h6 class="font-weight-bold my-3">Client Director</h6>
-            <i class="fas fa-quote-left pe-2"></i>
-            <p class="mb-2 truncated-text">I have worked with Armely for many years now as a reseller of their Services.  Lead by Leonard Mwangi, who has years of experience and provides exceptional leadership for his team of talented individuals!  We utilize Armely for skills our company doesn’t have, like SQL, Data Warehouse, Power BI and other Microsoft solutions.  This partnership has been very successful.  My customers have been extremely satisfied with Armely’s work over many years.  If you are looking for a highly skilled SQL/PowerBI, Data Warehouse architects, Leonard and team will be your answer!
-            </p>
-             <button class="btn btn-outline-primary read-more-btn">Read More</button>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4 mb-4 mb-md-4">
-        <div class="card transparent-card shadow" style="min-height: 400px !important;">
-          <div class="card-body py-4 mt-2">
-            <div class="d-flex justify-content-center mb-4">
-              <img src="images/testimonials/michael.png"
-                class="rounded-circle shadow-1-strong" width="120" height="120" />
-            </div>
-            <h5 class="font-weight-bold">Michael Green</h5>
-            <h6 class="font-weight-bold my-3">IT Director Northwood Energy</h6>
-            <i class="fas fa-quote-left pe-2 "></i>
-            <p class="mb-2 truncated-text">
-               I’ve engaged Armely on a multitude of projects over the last 6 years.  They’ve excelled in architecting solutions for me in Data Warehouse and the Microsoft Power platform (Power BI, Power Apps, Power Automate). Over those 6 years we’ve received far more value in the systems Armely has developed than the costs of developing them. 
-            </p>
-             <button class="btn btn-outline-primary read-more-btn">Read More</button>
-          </div>
-        </div>
-      </div>
+       
+      <?php displayCustomerStoriesTestimonials(); ?>
     </div>
   </div>
-</section>
- 
+
 <!-- see our works section -->
   <section>
     <div class="container mb-5 col-md-11">

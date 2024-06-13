@@ -294,6 +294,8 @@
 <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 <!-- MDB -->
 <script type="text/javascript" src="js/mdb.umd.min.js"></script>
+<script src="../js/main3.js"></script>
+
 <script type="text/javascript">
    $(document).ready(function(){
     $("#searchInput").on("keyup", function() {

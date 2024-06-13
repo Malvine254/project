@@ -54,24 +54,24 @@ $numbering=1;
 $select = $conn->query("SELECT * FROM job_applications ORDER BY ID DESC");
 if ($select->num_rows>0) {
     while ($row=$select->fetch_assoc()) {
-        echo  ' <tr class="'.highlightStatus($row['status']).'" id="'.$row['id'].'">
-                    <td>'.$numbering++.'</td>
-                    <td>'.cheIfNull($row['role']).'</td>
-                    <td> '.$row['name'].'</td>
-                    <td> <a href="mailto:'.$row['email'].'">'.$row['email'].'</a></td>
-                    <td> '.$row['address'].'</td>
-                    <td> <a href="tel:'.$row['phone'].'">'.$row['phone'].'</a></td>
-                    <td> <a href="../pdf/'.$row['cv'].'" target="_blank">Click here to Preview Cv</a></td>
-                    <td>
-                     <div class="d-flex">
-                      '.revokeShortlisted($row['status'],$row['id']).'
-                      <a class="btn btn-danger me-2" href="?deletionId='.$row['id'].'">
-                        <i class="fa fa-trash"></i>
-                      </a>
-                    </div>
+    echo  ' <tr class="'.highlightStatus($row['status']).'" id="'.$row['id'].'">
+            <td>'.$numbering++.'</td>
+            <td>'.cheIfNull($row['role']).'</td>
+            <td> '.$row['name'].'</td>
+            <td> <a href="mailto:'.$row['email'].'">'.$row['email'].'</a></td>
+            <td> '.$row['address'].'</td>
+            <td> <a href="tel:'.$row['phone'].'">'.$row['phone'].'</a></td>
+            <td> <a href="../pdf/'.$row['cv'].'" target="_blank">Click here to Preview Cv</a></td>
+            <td>
+             <div class="d-flex">
+              '.revokeShortlisted($row['status'],$row['id']).'
+              <a class="btn btn-danger me-2" href="?deletionId='.$row['id'].'">Delete
+                <i class="fa fa-trash"> </i>
+              </a>
+            </div>
 
-                    </td> 
-                  </tr>';
+            </td> 
+          </tr>';
     }
 }
 if (isset($_GET['aplicationId'])) {
@@ -92,22 +92,34 @@ if (isset($_GET['aplicationId'])) {
             echo "<script>alert('Could not finish the operation!')</script>";
         }
     }
+    if (isset($_GET['rejectId'])) {
+        $id = mysqli_real_escape_string($conn,$_GET['rejectId']);
+        $update_status = $conn->query("UPDATE job_applications SET status='3' WHERE id='$id'");
+        if ($update_status) {
+            echo "<script>window.location.assign('career#".$id."')</script>";
+        }else{
+            echo "<script>alert('Could not finish the operation!')</script>";
+        }
+    }
 }
 
 function highlightStatus($status){
     if ($status==="1") {
-       return "table-light";
+       return "";
+    }else if($status==="3"){
+         return "table-danger";
     }else{
         return "table-success";
     }
 }
 function revokeShortlisted($status,$id){
      if ($status==="1") {
-       return '<a class="btn btn-primary me-2" href="?aplicationId='.$id.'"><i class="fas fa-check"></i></a>';
+       return '<a class="btn btn-primary me-2" href="?aplicationId='.$id.'">Shortlist<i class="fas fa-check"></i></a>
+       <a class="btn btn-info me-2" href="?rejectId='.$id.'">Reject<i class="fas fa-times"></i></a>';
     }else{
-        return '<a class="btn btn-danger me-2" href="?revokeId='.$id.'">
+        return '<a class="btn btn-danger me-2" href="?revokeId='.$id.'"> Shortlisted
                         <i class="fas fa-times"></i>
-                      </a>';
+                      </a><a class="btn btn-info me-2" href="?rejectId='.$id.'">Reject<i class="fas fa-times"></i></a>';
     }
 }
 
@@ -137,24 +149,24 @@ $numbering=1;
 $select = $conn->query("SELECT * FROM job_applications WHERE status='2' ORDER BY ID DESC ");
 if ($select->num_rows>0) {
     while ($row=$select->fetch_assoc()) {
-        echo  ' <tr class="'.highlightStatus($row['status']).'" id="'.$row['id'].'">
-                    <td>'.$numbering++.'</td>
-                    <td>'.cheIfNullTwo($row['role']).'</td>
-                    <td> '.$row['name'].'</td>
-                    <td> <a href="mailto:'.$row['email'].'">'.$row['email'].'</a></td>
-                    <td> '.$row['address'].'</td>
-                    <td> <a href="tel:'.$row['phone'].'">'.$row['phone'].'</a></td>
-                    <td> <a href="../pdf/'.$row['cv'].'" target="_blank">Click here to Preview Cv</a></td>
-                    <td>
-                     <div class="d-flex">
-                      '.revokeShortlisted($row['status'],$row['id']).'
-                      <a class="btn btn-danger me-2" href="?deletionId='.$row['id'].'">
-                        <i class="fa fa-trash"></i>
-                      </a>
-                    </div>
+    echo  ' <tr class="'.highlightStatus($row['status']).'" id="'.$row['id'].'">
+            <td>'.$numbering++.'</td>
+            <td>'.cheIfNullTwo($row['role']).'</td>
+            <td> '.$row['name'].'</td>
+            <td> <a href="mailto:'.$row['email'].'">'.$row['email'].'</a></td>
+            <td> '.$row['address'].'</td>
+            <td> <a href="tel:'.$row['phone'].'">'.$row['phone'].'</a></td>
+            <td> <a href="../pdf/'.$row['cv'].'" target="_blank">Click here to Preview Cv</a></td>
+            <td>
+             <div class="d-flex">
+              '.revokeShortlisted($row['status'],$row['id']).'
+              <a class="btn btn-danger me-2" href="?deletionId='.$row['id'].'">
+                <i class="fa fa-trash"></i>
+              </a>
+            </div>
 
-                    </td> 
-                  </tr>';
+            </td> 
+          </tr>';
     }
 }
 if (isset($_GET['aplicationId'])) {
@@ -215,5 +227,28 @@ function displayJobsPosted(){
         }
     }
    
+}
+
+
+function addNewCustomerStory(){
+   include '../php/config.php';
+    $body_content = mysqli_real_escape_string($conn,$_POST['body_content']);
+    $profile = mysqli_real_escape_string($conn,$_FILES['profile']['name']); 
+    $new_path = strtolower(rand(10000,20000)."_".basename($profile));  
+    $destination = "../images/customer-stories/". $new_path; 
+    $position = mysqli_real_escape_string($conn,$_POST['position']);
+    $name = mysqli_real_escape_string($conn,$_POST['name']);
+    if (move_uploaded_file($_FILES['profile']['tmp_name'], $destination)) {
+        $insert = $conn->query("INSERT INTO customer_stories(name,position,body_content,profile) VALUES('$name','$position','$body_content','$new_path')");
+        if ($insert) {
+             echo "<script>alert('Operation was successful!')</script>";
+        }else{
+             echo "<script>alert('Could not finish the operation!')</script>";
+        }
+    }else{
+        echo "<script>alert('Failed to upload the file!')</script>";
+    }
+    
+
 }
 ?>

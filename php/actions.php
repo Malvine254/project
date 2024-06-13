@@ -285,8 +285,36 @@ function readMore(){
 	}
 }
 
-//display see our work
+function displayCustomerStoriesTestimonials(){
+    include 'config.php';
+     $select = $conn->query("SELECT * FROM customer_stories");
+     if ($select->num_rows>0) {
+        while ($row=$select->fetch_assoc()) {
 
 
+        	echo '<div class="col-md-4 mb-4 mb-md-3 ">
+        <div class="card transparent-card shadow" style="min-height: 400px !important;">
+          <div class="card-body py-4 mt-2">
+            <div class="d-flex justify-content-center mb-4">
+              <img src="images/customer-stories/'.$row['profile'].'"
+                class="rounded-circle shadow-1-strong" width="70" height="70" />
+            </div>
+            <h6 class="font-weight-bold">'.$row['name'].'</h6>
+            <p class="font-weight-bold my-3">'.$row['position'].'</p>
+
+            <div class="mb-2 truncated-text">
+              '.$row['body_content'].'
+            </div>
+             <button class="btn btn-outline-primary read-more-btn">Read More</button>
+          </div>
+        </div>
+      </div>';
+      
+        }
+    }else{
+        echo "No records found!";
+    }
+
+}
 
 ?>
