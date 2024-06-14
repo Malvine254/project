@@ -29,19 +29,19 @@
       <div class="row">
         
         <?php
-require 'php/config.php';
+          require 'php/config.php';
 
-if (isset($_GET['blogId'])) {
-    $id = mysqli_real_escape_string($conn, $_GET['blogId']);
-    $query = "SELECT * FROM blogs WHERE blog_id='$id' LIMIT 1";
-} else {
-    $query = "SELECT * FROM blogs ORDER BY id  DESC LIMIT 1";
-}
+          if (isset($_GET['blogId'])) {
+              $id = mysqli_real_escape_string($conn, $_GET['blogId']);
+              $query = "SELECT * FROM blogs WHERE blog_id='$id' LIMIT 1";
+          } else {
+              $query = "SELECT * FROM blogs ORDER BY id  DESC LIMIT 1";
+          }
 
-$select = $conn->query($query);
+          $select = $conn->query($query);
 
-if ($select->num_rows > 0) {
-    while ($row = $select->fetch_assoc()) {
+          if ($select->num_rows > 0) {
+              while ($row = $select->fetch_assoc()) {
         ?>
         <div class='col-md-8'>
             <img src='<?php echo $row['image_path']; ?>' class='img-fluid' alt='image'>
@@ -71,18 +71,6 @@ if ($select->num_rows > 0) {
 } else {
     ?>
     <div class='col-md-8'>
-            <div class='mt-3'>
-                <h3 id='blogTitle'></h3>
-            </div>
-            <div class='profile-card d-flex align-items-center'>
-                <img width='45' height='45' src='images/blog/profile.jpg' class='rounded-circle img-fluid mr-3' alt='Profile Picture'>
-                <div>
-                    <p class='mt-0 text-muted'><strong id='blog-author'></strong>
-                        <span class='ml-5 h4 btn btn-primary ' id='toggleSpeech'>Read Aloud <i id='volume-icons' class='fa fa-volume-high'></i></span>
-                        <br><span class='text-muted'></span>
-                    </p>
-                </div>
-            </div>
             <div class='paragraph alert alert-danger bg-danger text-light text-center p-2'>
                 <h5><i class="fa fa-warning"></i> Warning !</h5><p id='content '>No data was found! </p>
                
@@ -90,14 +78,20 @@ if ($select->num_rows > 0) {
         </div>
     <?php
 }
-?>
+  ?>   
 
         <div class="col-md-4">
           <h4 class="mb-3"><u>Popular Posts</u></h4>
           <?php echo  displayBlogs(); ?>
         <div>
-          <a id='see_all_blogs_one' class="text-link"> SEE ALL POPULAR <i class="fa fa-angle-right"></i></a>
-          <a style="display:none;" id='see_all_blogs' class="text-link"> SEE ALL POPULAR <i class="fa fa-angle-right"></i></a>
+          <?php if (isset($_GET['blogId'])):$url = mysqli_real_escape_string($conn, $_GET['blogId']); ?>
+            <a id='see_all_blogs_one' href="?blogId=<?php echo $url; ?>&aseealessblogpost" class="text-link"> SEE LESS BLOG POSTS <i class="fa fa-angle-right"></i></a>
+            
+
+          <?php else:?>
+             <a  href="?action=seeallblogpost&blogId" class="text-link"> SEE ALL BLOG POSTS <i class="fa fa-angle-right"></i></a>
+          <?php endif ?>
+    
       </div>
     </div>
   </div>

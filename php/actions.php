@@ -221,10 +221,12 @@ function selectFromBlog($condition){
 	      </div></span>";
 	}
 	}
-	if (isset($_POST['see_all_blogs_btn'])) {
+	if (isset($_GET['aseealessblogpost'])) {
 	   selectFromBlog("");
+	 }elseif (isset($_GET['aseealessblogpost']) && isset($_GET['blogId']) ) {
+	 	selectFromBlog("");
 	 } else{
-	  selectFromBlog("ORDER BY id DESC LIMIT 10");
+	  selectFromBlog("ORDER BY id DESC LIMIT 3");
 	 }
 
 }
