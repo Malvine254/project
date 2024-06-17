@@ -1,7 +1,6 @@
 <?php
 function uploadNewBlog(){
-    include '../php/config.php';
-   if (isset($_POST['submitBlogBtn'])) {
+    include '../../php/config.php';
     if($_FILES["blog_image"]["error"] == UPLOAD_ERR_OK) {
     // Sanitize and validate user input
     $blog_title = mysqli_real_escape_string($conn,$_POST['blog_title']);
@@ -13,17 +12,17 @@ function uploadNewBlog(){
     $date = date("F jS", strtotime($date)); // Ensure proper date parsing
     $blog_id= rand(1000000,10000000000);
     
-    $target = "../images/blogs/".$blog_image;     
+    $target = "../../images/blogs/".$blog_image;     
     if (move_uploaded_file($_FILES['blog_image']['tmp_name'], $target)) {
             // Prepare and bind the SQL statement
             $stmt = $conn->query("INSERT INTO blogs (title, author, body, `date`, image_path,blog_id) VALUES ('$blog_title', '$blog_author', '$body', '$date', '$new_path','$blog_id')");
 
             // Execute the statement
             if ($stmt) {
-                echo "<script>alert('New blog was added successfully')</script>";
+                echo "1";
             } else {
                 // Log the error securely
-                error_log('Failed to insert contact form data into the database');
+                //error_log('Failed to insert contact form data into the database');
 
                 // Display a generic error message
                 echo "Failed to submit the form. Please try again later";
@@ -36,10 +35,16 @@ function uploadNewBlog(){
         echo "Failed to upload, try again";
     }
 
+}else{
+    echo "Not set";
 }
 
 } 
+
+if (isset($_FILES['blog_image']['name']) && isset($_POST['blog_title']) && isset($_POST['blog_body'])) {
+    uploadNewBlog();
 }
+
 
 function displayJobApplicantsTable(){
     function cheIfNull($role){
@@ -189,7 +194,7 @@ if (isset($_GET['aplicationId'])) {
     }
 }
 
-
+//start of display Jobs Posted//
 function displayJobsPosted(){
     include '../php/config.php';
     $numbering =1;
@@ -228,27 +233,103 @@ function displayJobsPosted(){
     }
    
 }
+//end of display Jobs Posted//
 
-
+//start of add new customer story//
 function addNewCustomerStory(){
-   include '../php/config.php';
+   include '../../php/config.php';
     $body_content = mysqli_real_escape_string($conn,$_POST['body_content']);
     $profile = mysqli_real_escape_string($conn,$_FILES['profile']['name']); 
     $new_path = strtolower(rand(10000,20000)."_".basename($profile));  
-    $destination = "../images/customer-stories/". $new_path; 
+    $destination = "../../images/customer-stories/". $new_path; 
     $position = mysqli_real_escape_string($conn,$_POST['position']);
     $name = mysqli_real_escape_string($conn,$_POST['name']);
     if (move_uploaded_file($_FILES['profile']['tmp_name'], $destination)) {
         $insert = $conn->query("INSERT INTO customer_stories(name,position,body_content,profile) VALUES('$name','$position','$body_content','$new_path')");
         if ($insert) {
-             echo "<script>alert('Operation was successful!')</script>";
+             echo "1";
         }else{
-             echo "<script>alert('Could not finish the operation!')</script>";
+             echo "Could not finish the operation!";
         }
     }else{
-        echo "<script>alert('Failed to upload the file!')</script>";
+        echo "Failed to upload the file!";
     }
     
 
 }
+if (isset($_POST['name']) && isset($_FILES['profile']['name']) && isset($_POST['position'])) {
+    addNewCustomerStory();
+}
+//end of add new customer story//
+
+//start of edit career banner//
+function editCareerBanner(){
+   include '../../php/config.php';
+    $career_body = mysqli_real_escape_string($conn,$_POST['career_body']);
+    $career_image = mysqli_real_escape_string($conn,$_FILES['career_image']['name']); 
+    $new_path = strtolower(rand(10000,20000)."_".basename($career_image));  
+    $destination = "../../images/careers/". $new_path; 
+    $career_title = mysqli_real_escape_string($conn,$_POST['career_title']);
+    $select = $conn->query("SELECT * FROM career_banner");
+    if ($select->num_rows>0) {
+        if (move_uploaded_file($_FILES['career_image']['tmp_name'], $destination)) {
+        $insert = $conn->query("UPDATE career_banner SET (career_body='$career_body',career_image='$career_image',career_title='$career_title')");
+        if ($insert) {
+             echo "1";
+        }else{
+             echo "Could not finish the operation!";
+        }
+    }else{
+        echo "Failed to upload the file!";
+    }
+    }else{
+        if (move_uploaded_file($_FILES['career_image']['tmp_name'], $destination)) {
+        $insert = $conn->query("INSERT INTO career_banner (career_body,career_image,career_title) VALUES('$career_body','$career_image','$career_title')");
+        if ($insert) {
+             echo "1";
+        }else{
+             echo "Could not finish the operation!";
+        }
+    }else{
+        echo "Failed to upload the file!";
+    }
+    }
+   
+    
+
+}
+if (isset($_POST['career_title']) && isset($_FILES['career_image']['name']) && isset($_POST['career_body'])) {
+    editCareerBanner();
+}
+//end of edit career banner//
+
+//start of edit career banner//
+function editFooter(){
+   include '../../php/config.php';
+    $footerBody = mysqli_real_escape_string($conn,$_POST['footerBody']);
+    $select = $conn->query("SELECT * FROM header_footer_contents");
+    if ($select->num_rows>0) {
+       $insert = $conn->query("UPDATE header_footer_contents SET footer='$footerBody'");
+        if ($insert) {
+             echo "1";
+        }else{
+             echo "Could not finish the operation!";
+        }
+    }else{
+         $insert = $conn->query("INSERT INTO header_footer_contents (footer) VALUES('$footerBody')");
+        if ($insert) {
+             echo "1";
+        }else{
+             echo "Could not finish the operation!";
+        }
+    }
+   
+    
+
+}
+if (isset($_POST['footerBody'])) {
+    editFooter();
+}
+//end of edit career banner//
+
 ?>

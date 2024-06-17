@@ -189,17 +189,16 @@
 <center>
   <div class="tab-content " id="ex-with-icons-content ">
   <div class="tab-pane fade show active" id="ex-with-icons-tabs-1" role="tabpanel" aria-labelledby="ex-with-icons-tab-1">
-    <?php uploadNewBlog(); ?>
-    <form enctype="multipart/form-data" id="addBlogTable" class="row g-3 col-md-11 mt-2 shadow p-4" method="post">
+    <form enctype="multipart/form-data" id="addBlogForm" class="row g-3 col-md-11 mt-2 shadow p-4" method="post">
       <div class="col-md-6">
         <div class="form-outline" data-mdb-input-init>
-          <input name="blog_title" type="text" class="form-control" id="validationDefault01" required />
-          <label for="validationDefault01" class="form-label">Blog Title</label>
+          <input name="blog_title" type="text" class="form-control" id="blog_title" required />
+          <label for="blog_title" class="form-label">Blog Title</label>
         </div>
       </div>
       <div class="col-md-6">
         <div class="form-outline" data-mdb-input-init>
-          <input name="blog_image" type="file" class="form-control" id="validationDefault02" required />
+          <input accept=".jpg,.jpeg,.png" name="blog_image" type="file" class="form-control" id="blog_image" required />
         </div>
       </div>
       <div class="col-md-12">
@@ -215,7 +214,7 @@
         </div>
       </div>
       <div class="col-12">
-        <button name="submitBlogBtn" class="btn btn-primary " type="submit" data-mdb-ripple-init>Submit form</button>
+        <button name="submitBlogBtn" id="submitBlogBtn" class="btn btn-primary " type="submit" data-mdb-ripple-init>Submit form</button>
       </div>
       </form>
       </div>
@@ -255,22 +254,22 @@
       </div>
 
       <div class="tab-pane fade" id="ex-with-icons-tabs-3" role="tabpanel" aria-labelledby="ex-with-icons-tab-3">
-        <form class="row g-3 col-md-11 mt-4 shadow p-4">
+        <form id="careerForm" class="row g-3 col-md-11 mt-4 shadow p-4">
       <div class="col-md-6">
         <div class="form-outline" data-mdb-input-init>
-          <input type="text" class="form-control" id="validationDefault01" required />
-          <label for="validationDefault01" class="form-label">Career Title</label>
+          <input name="career_title" type="text" class="form-control" id="career_title" required />
+          <label for="career_title" class="form-label">Career Title</label>
         </div>
       </div>
       <div class="col-md-6">
         <div class="form-outline" data-mdb-input-init>
-          <input type="file" class="form-control" id="validationDefault02" required />
+          <input name="career_image" type="file" class="form-control" id="career_image" required />
         </div>
       </div>
       
       <div class="col-md-12">
         <div class="form-outline" data-mdb-input-init>
-          <textarea id="careerBody"  type="text" class="form-control" id="validationDefault03" required ></textarea>
+          <textarea id="careerBody" name="career_body" type="text" class="form-control"  required ></textarea>
           <script>
                CKEDITOR.replace('careerBody', {
                   filebrowserUploadUrl: '../php/upload.php',
@@ -288,10 +287,11 @@
       </div>
 
       <div class="tab-pane fade" id="ex-with-icons-tabs-4" role="tabpanel" aria-labelledby="ex-with-icons-tab-4">
-         <form class="row g-3 col-md-11 mt-4 shadow p-4">
+         <form id="footerForm" class="row g-3 col-md-11 mt-4 shadow p-4">
           <div class="col-md-12">
             <div class="form-outline" data-mdb-input-init>
               <textarea id="footerBody"  type="text" class="form-control" id="validationDefault03" required >
+                <footer id='footer' class='col-md-12'><div class=' mt-5'><div class='row text-light '><div class='col-md-2'><h1 class='mt-3 armely-logo-font '><img width='170' height='130' class='img-fluid' src='images/logo/footer_logo.svg'/></h1></div><div class='col-md-2'><h5 class='mt-3'>ABOUT</h5><div><a class='text-light text-right' href='case study'>Case studies</a></div><div><a class='text-light text-right' href='career'>Job Board</a></div></div><div class='col-md-3'><h5 class='mt-3 text-white'>SERVICES</h5><div><a class='text-light text-right' href='data'>Data Services</a></div><div><a class='text-light text-right' href='advisory-services'>Advisory Services</a></div><div><a class='text-light' href='managed-services'>Managed Services</a></div><div> <a class='text-light' href='ai'>Artificial intelligence</a></div><div> <a class='text-light' href='enterprise-applications'Enterprise Applications</a></div></div><div class='col-md-2'><h5 class='mt-3'>CONTACT US</h5><div> <a class='text-white' href='tel:+1 972 460 0643'><i class='fa fa-phone'></i> +1 972 460 0643</a></div><div class='mt-1'><p><i class='fa fa-map-marker'> </i> 2831 Eldorado Pkwy Suite 103-128 Frisco TX 75033</p></div></div><div class='col-md-2'><h5 class='mt-3'>FOLLOW US</h5><div style='align-items: start;' class='pt-3'><a href='https://www.instagram.com/armelyconsulting/'><i class='fab fa-instagram text-light h3'></i></a><a href='https://www.linkedin.com/company/armely/mycompany/'><i class='fab fa-linkedin text-light h3 pl-3'></i></a><a href='https://twitter.com/armelyData'><i class='fab fa-x-twitter text-light h3 pl-3'></i></a><a href='https://github.com/armely'><i class='fab fa-github text-light h3 pl-3'></i></a><a href='https://www.youtube.com/channel/UCcSuw012w_eheyVdIgp9mgA'><i class='fab fa-youtube text-light h3 pl-3'></i></a></div></div></div><hr class='bg-light'><div class='text-center col mb-3 text-light text-small'><p> © 2024 ARMELY LLC.,  ALL RIGHTS RESERVED</p><br></div></div></footer>
               </textarea>
               <script>
                    CKEDITOR.replace('footerBody', {
@@ -332,25 +332,23 @@
         </div>
 
        <div class="tab-pane fade" id="ex-with-icons-tabs-6" role="tabpanel" aria-labelledby="ex-with-icons-tab-6">
-        <?php if (isset($_POST['submitCustomerStories'])) {
-          addNewCustomerStory();
-        } ?>
-         <form method="post" enctype="multipart/form-data" class="row g-3 col-md-11 mt-4 shadow p-4">
+       
+         <form id="customerStoriesForm" method="post" enctype="multipart/form-data" class="row g-3 col-md-11 mt-4 shadow p-4">
           <div class="col-md-4">
             <div class="form-outline" data-mdb-input-init>
-              <input name="name" type="text" class="form-control" id="validationDefault07" required />
+              <input id="clientName" name="name" type="text" class="form-control" id="validationDefault07" required />
               <label for="validationDefault07" class="form-label">Name</label>
             </div>
           </div>
            <div class="col-md-4">
             <div class="form-outline" data-mdb-input-init>
-              <input name="position" type="text" class="form-control" id="validationDefault01" required />
+              <input id="clientPosition" name="position" type="text" class="form-control" id="validationDefault01" required />
               <label for="validationDefault01" class="form-label">Position</label>
             </div>
           </div>
           <div class="col-md-4">
             <div class="form-outline" data-mdb-input-init>
-              <input name="profile" type="file" class="form-control" id="validationDefault02" required />
+              <input id="profile"  accept=".jpg,.jpeg,.png" name="profile" type="file" class="form-control" id="validationDefault02" required />
             </div>
           </div>
           <div class="col-md-12">
@@ -406,9 +404,9 @@
 <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.4/dist/sweetalert2.all.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
- <script src="../js/form-actions.js"></script>
 <!-- MDB -->
 <script type="text/javascript" src="js/mdb.umd.min.js"></script>
+<script src="js/main.js"></script>
 
 
 </body>
