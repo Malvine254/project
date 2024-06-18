@@ -11,6 +11,7 @@
   <!-- font awesome  -->
   <link rel="stylesheet" href="vendor/font-awesome/css/all.css"> 
   <link rel="icon" href="images/logo/logo1.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
 </head>
 <body>
   
@@ -19,14 +20,14 @@
 
   <!-- counter section -->  
   <div class="margin-top"></div>
-<div class="col-md-11 container mt-5 mb-4 p-4">
+<div class="col-md-11 container mt-5 mb-4 p-4" data-aos="fade-left">
   <div class=" mb-3">
     <div class="col-md-12 shadow p-5">
       <h1 class="">Inquiries</h1>
       <p class="subtitle-font">For specific questions complete the form below.</p>
           <form id="contact-form" method="post">
               <div class="form-row">
-                <div class="col-md-6 mb-1">
+                <div class="col-md-6 mb-1" data-aos="fade-left">
                   <label for="validationServer01">Name</label>
                   <input type="text" class="form-control edit-input " id="validationServer01" placeholder="First name" name="name" required>
                   
@@ -53,7 +54,7 @@
               <button name="submit_form" class="btn btn-primary default-button-color" type="submit">Send Message</button>
             </form>
     </div>
-    <div class="col-md-12 mt-5 shadow p-5" style="border: 8px; opacity: 23px; border-radius: 8px;">
+    <div class="col-md-12 mt-5 shadow p-5" style="border: 8px; opacity: 23px; border-radius: 8px;" data-aos="fade-left">
         <h2> Our Location</h2>
         <iframe class="col-md-12" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3339.393990831668!2d-96.88709372452247!3d33.177533073498864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864c39992307da29%3A0x2c2a76b897ebb224!2s2831%20Eldorado%20Pkwy%20103%20128%2C%20Frisco%2C%20TX%2075033%2C%20USA!5e0!3m2!1sen!2ske!4v1710673206549!5m2!1sen!2ske"
           height="550" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -100,6 +101,7 @@
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.4/dist/sweetalert2.all.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" async></script>
   <script src="js/form-actions.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
   <script src="js/main3.js"></script>
   
 </script>

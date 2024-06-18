@@ -11,6 +11,7 @@
   <!-- font awesome  -->
   <link rel="stylesheet" href="vendor/font-awesome/css/all.css"> 
   <link rel="icon" href="images/logo/logo1.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
   <style>
     @font-face {
     font-family: myFirstFont;
@@ -27,131 +28,131 @@
 
 
   
-<div class="container col-md-11 mt-4" id="video-background">
+<!-- Your HTML structure -->
+<div class="container col-md-11 mt-4" id="video-background" data-aos="fade-in">
   <video id='vid' autoplay loop muted style="opacity: 90%;">
     <source src="videos/vid1.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
-  <div id="video-caption">
+  <div id="video-caption" data-aos="fade-up">
     <h1 class="text-center text-light pb-4">
-    <span class="d-none d-lg-inline typing-text">Your Trusted Source<br> For Digital Excellence</span>
-    <span class="d-lg-none">Your Trusted Source<br>For Digital Excellence</span>
+      <span class="d-none d-lg-inline typing-text">Your Trusted Source<br> For Digital Excellence</span>
+      <span class="d-lg-none">Your Trusted Source<br>For Digital Excellence</span>
     </h1>
     <div class="mt-3">
-        <h5 class="text-center">BEYOND IMAGINATION 
-        <i class="fa fa-angle-right text-light" style="background-color:
-         rgb(47,85,151); padding: 5px;"></i></h5>
+      <h5 class="text-center">BEYOND IMAGINATION 
+        <i class="fa fa-angle-right text-light" style="background-color: rgb(47,85,151); padding: 5px;"></i>
+      </h5>
     </div>
-    <a href="services" class="custom-btn">LEARN MORE</a>
+    <a href="services" class="custom-btn" data-aos="fade-up">LEARN MORE</a>
   </div>
 </div>
 
+
   <!-- counter section -->
-<div class="container mt-3 mb-4 col-md-11">
+<!-- Your HTML structure -->
+<div class="container mt-3 mb-4 col-md-11" data-aos="fade-in">
   <div class="row d-flex justify-content-center align-items-center">
-      <div class="col-md-4">
-        <div class="counter plus" data-target="500">0</div>
-        <div class="text-center counter-span">Projects Completed</div>
+    <div class="col-md-4">
+      <div class="counter plus" data-aos="fade-up" data-target="500">0</div>
+      <div class="text-center counter-span">Projects Completed</div>
+    </div>
+    <div class="col-md-4">
+      <div class="counter percent" data-aos="fade-up" data-target="99">
+        <h1>0</h1>
       </div>
-      <div class="col-md-4">
-        <div class="counter percent" data-target="99"><h1>0</h1></div>
-        <div class="text-center counter-span">Customer Satisfaction</div>
-      </div>
-      <div class="col-md-4">
-          <div class="counter plus" data-target="300">0</div>
-          <div class="text-center counter-span">Community Commitment Hours</div>
-      </div>
+      <div class="text-center counter-span">Customer Satisfaction</div>
+    </div>
+    <div class="col-md-4">
+      <div class="counter plus" data-aos="fade-up" data-target="300">0</div>
+      <div class="text-center counter-span">Community Commitment Hours</div>
+    </div>
   </div>
 </div>
+
 
 
   <!-- see our works section -->
   <section>
-    <div class="container mb-5 col-md-11">
-      <div class="row">
-        <h3 class="mb-3">See our work</h3>
-        <hr>
+  <div class="container mb-5 col-md-11" data-aos="fade-in">
+    <div class="row">
+      <h3 class="mb-3" data-aos="fade-up">See our work</h3>
+      <hr>
 
-       <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <div class="row">
-                <div class="col-12 col-md-4">
-                  <img style="min-height: 300px;" src="images/case-study/3.jpg" class="d-block img-fluid" alt="Service 1">
-                  <div class="mt-2">
-                    <h5>Sage Butte Energy Strategic Shift</h5>
-                    <p class="card-text textContent">Discover how Denver based Energy Company leveraged armely’ s expertise in data, integration, and development to standardize, streamline and Integrate OpenInvoice data with Internal ERP Systemsn.</p>
-                  </div>
+      <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row">
+              <div class="col-12 col-md-4" data-aos="fade-right" >
+                <img style="min-height: 300px;" src="images/case-study/3.jpg" class="d-block img-fluid" alt="Service 1">
+                <div class="mt-2">
+                  <h5>Sage Butte Energy Strategic Shift</h5>
+                  <p class="card-text textContent">Discover how Denver based Energy Company leveraged armely’s expertise in data, integration, and development to standardize, streamline and integrate OpenInvoice data with Internal ERP Systems.</p>
                 </div>
-                <div class="col-md-4 d-none d-md-block">
-                  <img src="images/services/service2.jpg" class="d-block img-fluid" alt="Service 1">
-                  <div class="mt-2">
-                    <h5>Sybase to SQL Server Migration</h5>
-                    <p class="card-text textContent">Seamlessly transition your data ecosystem with precision and 
-                      efficiency through Sybase to SQL Server migration, unlocking enhanced 
-                      performance and scalability.</p>
-                  </div>
+              </div>
+              <div class="col-md-4 d-none d-md-block" data-aos="fade-up">
+                <img src="images/services/service2.jpg" class="d-block img-fluid" alt="Service 1">
+                <div class="mt-2">
+                  <h5>Sybase to SQL Server Migration</h5>
+                  <p class="card-text textContent">Seamlessly transition your data ecosystem with precision and efficiency through Sybase to SQL Server migration, unlocking enhanced performance and scalability.</p>
                 </div>
-                <div class="col-md-4 d-none d-md-block">
-                  <img src="images/services/service3.jpg" class="d-block img-fluid" alt="Service 1">
-                  <div class="mt-2">
-                    <h5>Healthcare Productivity Reports</h5>
-                    <p class="card-text textContent">Unlock operational efficiency 
-                      and elevate healthcare outcomes with our cutting-edge Healthcare Productivity Reports.</p>
-                  </div>
+              </div>
+              <div class="col-md-4 d-none d-md-block" data-aos="fade-left">
+                <img src="images/services/service3.jpg" class="d-block img-fluid" alt="Service 1">
+                <div class="mt-2">
+                  <h5>Healthcare Productivity Reports</h5>
+                  <p class="card-text textContent">Unlock operational efficiency and elevate healthcare outcomes with our cutting-edge Healthcare Productivity Reports.</p>
                 </div>
               </div>
             </div>
-            <!-- Add more carousel-items here if needed -->
-            <div class="carousel-item">
-              <div class="row">
-                <div class="col-12 col-md-4">
-                  <img src="images/services/service2.jpg" class="d-block img-fluid" alt="Service 1">
-                  <div class="mt-2">
-                    <h5>Sybase to SQL Server Migration</h5>
-                    <p class="card-text textContent">Seamlessly transition your data ecosystem with precision and 
-                      efficiency through Sybase to SQL Server migration, unlocking enhanced 
-                      performance and scalability.</p>
-                  </div>
-                </div>
-                <div class="col-md-4 d-none d-md-block">
-                  <img src="images/services/service5.jpg" class="d-block img-fluid" alt="Service 1">
-                  <div class="mt-2">
-                    <h5>Managed Services</h5>
-                    <p class="card-text textContent">Optimize your business efficiency with our Managed Services,
-                       ensuring seamless operations and peace of mind.</p>
-                  </div>
-                </div>
-                <div class="col-md-4 d-none d-md-block">
-                  <img src="images/services/service4.jpg" class="d-block img-fluid" alt="Service 1">
-                  <div class="mt-2">
-                    <h5>Custom Application development</h5>
-                    <p class="card-text textContent">Empower your business with tailor-made solutions through our 
-                      expert Custom Application Development services.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- Add more carousel-items here if needed -->
           </div>
-          <!-- Previous and Next buttons -->
-          <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
+          <!-- Add more carousel-items here if needed -->
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-12 col-md-4" data-aos="fade-right">
+                <img src="images/services/service2.jpg" class="d-block img-fluid" alt="Service 1">
+                <div class="mt-2">
+                  <h5>Sybase to SQL Server Migration</h5>
+                  <p class="card-text textContent">Seamlessly transition your data ecosystem with precision and efficiency through Sybase to SQL Server migration, unlocking enhanced performance and scalability.</p>
+                </div>
+              </div>
+              <div class="col-md-4 d-none d-md-block" data-aos="fade-up">
+                <img src="images/services/service5.jpg" class="d-block img-fluid" alt="Service 1">
+                <div class="mt-2">
+                  <h5>Managed Services</h5>
+                  <p class="card-text textContent">Optimize your business efficiency with our Managed Services, ensuring seamless operations and peace of mind.</p>
+                </div>
+              </div>
+              <div class="col-md-4 d-none d-md-block" data-aos="fade-left">
+                <img src="images/services/service4.jpg" class="d-block img-fluid" alt="Service 1">
+                <div class="mt-2">
+                  <h5>Custom Application development</h5>
+                  <p class="card-text textContent">Empower your business with tailor-made solutions through our expert Custom Application Development services.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Add more carousel-items here if needed -->
         </div>
+        <!-- Previous and Next buttons -->
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
     </div>
-    
-  </section>
+  </div>
+</section>
+
   <style>
     .svg-img {
     width: 150px; /* Set the desired width */
     height: auto; /* Maintain aspect ratio */
-}
+} 
 .marquee-container {
   overflow: hidden;
 }
@@ -173,12 +174,11 @@
   </style>
 
   <!-- partners section -->
-  <div class="container mt-5 mb-5 col-md-11">
-    <p class="partner-subtitle mb-3">Your Reliable Hub for Digital Excellence, Committed to Caring, Building Relationships, 
-      Backed by Industry Expertise and Recognized for Award-Winning Achievements.</p>
-   <div class="row align-items-center justify-content-center">
+  <div class="container mt-5 mb-5 col-md-11" data-aos="fade-in">
+  <p class="partner-subtitle mb-3" data-aos="fade-up">Your Reliable Hub for Digital Excellence, Committed to Caring, Building Relationships, Backed by Industry Expertise and Recognized for Award-Winning Achievements.</p>
+  <div class="row align-items-center justify-content-center" data-aos="fade-in">
     <div class="col-md-12 p-4 col-sm-4 d-flex justify-content-center">
-        <div class="marquee-container">
+      <div class="marquee-container">
         <div class="marquee-content">
           <a href="https://www.talend.com/" class="ml-5"><img class="svg-img" src="https://upload.wikimedia.org/wikipedia/commons/9/97/Talend_logo.svg" alt=""></a>
           <a href="https://www.microsoft.com/en-us/" class="ml-5"><img class="svg-img" src="images/partners/ms.svg" alt=""></a>
@@ -196,25 +196,24 @@
         </div>
       </div>
     </div>
+  </div>
 </div>
 
-   
-</div>
 
 </div>
 
   <!-- connect with experts -->
-  <div class="container col-md-11"><br>
+  <div class="container col-md-11" data-aos="fade-in"><br>
     <h3 class="mb-2">Our recent blog posts</h3>
   
-    <div class="row">
+    <div class="row" data-aos="fade-up">
      <?php displayRecentBlogs(); ?>
       
     </div>
     </div>
   </div>
 
-  <div class="container mt-3">
+  <div class="container mt-3" data-aos="fade-up">
     <div class="row justify-content-center">
       <div class="col-md-12">
         <div class=" card-back">
@@ -418,6 +417,7 @@
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.4/dist/sweetalert2.all.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" async></script>
   <script src="js/form-actions.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
   <script>
 
     $(document).ready(function(){

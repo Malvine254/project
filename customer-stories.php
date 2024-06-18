@@ -11,6 +11,7 @@
   <!-- font awesome  -->
   <link rel="stylesheet" href="vendor/font-awesome/css/all.css"> 
   <link rel="icon" href="images/logo/logo1.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
 </head>
 <body>
   
@@ -19,21 +20,21 @@
 
   <!-- Content -->
 <div class="margin-top"></div>
-  <div class="container mt-1 mb-5 p-4 col-md-11 shadow">
+  <div class="container mt-1 mb-5 p-4 col-md-11 shadow" data-aos="fade-in ">
     <div class="container content-container">
       <div class="row">
-          <div class="col-md-6">
+          <div class="col-md-6" data-aos="fade-left">
               <h1 class="mt-5">Hear it straight from our thrilled clients</h1>
               <p>Our success stories are a testament to our dedication to delivering the highest quality solutions, getting it right on the first try.</p>
           </div>
-          <div class="col-md-6">
+          <div class="col-md-6" data-aos="fade-right">
               <img src="images/customer-stories/1.png" alt="" class="img-fluid">
           </div>
       </div>
   </div>
   </div>
   <div class="container col-md-11 shadow p-4">
-    <div class="row d-flex justify-content-center">
+    <div class="row d-flex justify-content-center" data-aos="fade-left">
       <div class="col-md-10 col-xl-8 text-center">
         <h3 class="fw-bold mb-1">Testimonials</h3>
         <p class="mb-4 pb-2 mb-md-5 pb-md-0">
@@ -41,7 +42,7 @@
         </p>
       </div>
     </div>
-    <div class="row text-center">
+    <div class="row text-center" data-aos="fade-left">
        
       <?php displayCustomerStoriesTestimonials(); ?>
     </div>
@@ -67,11 +68,10 @@
 
 <!-- see our works section -->
   <section>
-    <div class="container mb-5 col-md-11 shadow mt-4 p-5">
+    <div class="container mb-5 col-md-11 shadow mt-4 p-5" data-aos="fade-left">
       <div class="row">
         <h3 class="mb-3">Key Projects</h3>
         <hr>
-
         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active">
@@ -150,7 +150,7 @@
   </section> 
 
 <!-- start of    form -->
-<div class="container container-fluid content-container col-md-11 shadow p-5">
+<div class="container container-fluid content-container col-md-11 shadow p-5" data-aos="fade-right">
     <div class="text-center">
         <h2 class="fw-bold">Optimize Your Business with Armely Services</h2>
         <p class="mt-2">Maximize your business potential with Armely's range of industry-leading solutions. Whether it's Data Services, Web Development, Business Intelligence, Managed Services, or Advisory Services, we provide the utmost value to your operations and applications.</p>
@@ -256,7 +256,7 @@
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.4/dist/sweetalert2.all.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" async></script>
   <script src="js/form-actions.js"></script>
- 
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
   <script src="js/main3.js"></script>
 
 

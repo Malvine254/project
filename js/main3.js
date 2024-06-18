@@ -4,6 +4,9 @@ This marks the start of counter
 =============================================================================================================================================
 */
 $(document).ready(function() {
+    //initialize animation
+    AOS.init();
+    
   var counterList = $(".counter");
 
   // Function to start counting from 0 to the target value

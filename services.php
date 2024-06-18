@@ -11,7 +11,7 @@
   <!-- font awesome  -->
   <link rel="stylesheet" href="vendor/font-awesome/css/all.css"> 
   <link rel="icon" href="images/logo/logo1.png" type="image/x-icon">
-  <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.2/mdb.min.css" rel="stylesheet"> -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
 </head>
 <body>
    
@@ -19,14 +19,14 @@
   <?php echo displayHeader() ?>
   <!-- Content -->
   <div class="margin-top"></div>
-  <div class="container mt-1 shadow col-md-11 p-5" style="width: 98vw !important;">
-    <div class="content-container">
+  <div class="container mt-1 shadow col-md-11 p-5" style="width: 98vw !important;" data-aos="fade-fade">
+    <div class="content-container" data-aos="fade-left">
       <div class="row">
           <div class="col-md-5">
               <h1>Empowering Your Tech Journey</h1>
               <p>Our experts provide tailored guidance in areas such as business planning, product development, marketing, financial management, and risk management, ensuring your company's competitiveness and sustainable growth.</p>
           </div>
-          <div class="col-md-7">
+          <div class="col-md-7" data-aos="fade-right">
               <img src="images/services/services.png" alt="" class="img-fluid" loading="lazy">
           </div>
       </div>
@@ -44,7 +44,7 @@
     </div>
 
     <div class="row">
-      <div class="col-md-4 mb-4 mb-md-0 ">
+      <div class="col-md-4 mb-4 mb-md-0" data-aos="fade-left">
         <div class="card transparent-card">
           <div class="card-body py-4 mt-2">
             <div class="d-flex justify-content-start mb-4">
@@ -58,7 +58,7 @@
           </div>
         </div>
       </div>
-     <div class="col-md-4 mb-4 mb-md-0 ">
+     <div class="col-md-4 mb-4 mb-md-0 " data-aos="fade-left">
         <div class="card transparent-card">
           <div class="card-body py-4 mt-2">
             <div class="d-flex justify-content-start mb-4">
@@ -72,7 +72,7 @@
           </div>
         </div>
       </div>
-      <div class="col-md-4 mb-4 mb-md-0 ">
+      <div class="col-md-4 mb-4 mb-md-0" data-aos="fade-left">
         <div class="card transparent-card mb-5">
           <div class="card-body py-4 mt-2">
             <div class="d-flex justify-content-start mb-4">
@@ -87,7 +87,7 @@
         </div>
 
       </div>
-       <div class="col-md-4 mb-4 mb-md-0 ">
+       <!-- <div class="col-md-4 mb-4 mb-md-0 ">
         <div class="card transparent-card">
           <div class="card-body py-4 mt-2">
             <div class="d-flex justify-content-start mb-4">
@@ -128,8 +128,8 @@
             </p>
           </div>
         </div>
-      </div>
-       <div class="container mt-5">
+      </div> -->
+       <div class="container mt-1">
         <nav aria-label="Page navigation example">
             <ul class="pagination justify-content-center">
                 <li class="page-item disabled">
@@ -187,6 +187,7 @@
   <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" async></script>
+   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
   <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.2/mdb.min.js"></script> -->
   <script src="js/main3.js"></script>
 

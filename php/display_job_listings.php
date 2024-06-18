@@ -19,7 +19,7 @@ function selectFromCareerTable($condition){
   $select = $conn->query("SELECT * FROM career $condition");
   if ($select->num_rows>0) {
     while ($row=$select->fetch_assoc()) {
-      echo "<tr class='hover-effect'>
+      echo "<tr class='hover-effect' data-aos='fade-left'>
         <td class='text-muted'>".joblistingNumbering($numbering++)."</td>
         <td>
         <div class='profile-card d-flex align-items-center'>

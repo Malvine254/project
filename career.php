@@ -11,6 +11,7 @@
   <!-- font awesome  -->
   <link rel="stylesheet" href="vendor/font-awesome/css/all.css"> 
   <link rel="icon" href="images/logo/logo1.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
   
   <meta http-equiv="Content-Encoding" content="gzip">
 
@@ -20,9 +21,9 @@
   <?php echo displayHeader(); ?>
   <!-- Content -->
   <div class="margin-top"></div>
-  <div class="container mt-5 mb-5 shadow col-md-11 p-4">
+  <div class="container mt-5 mb-5 shadow col-md-11 p-4" data-aos="fade-in">
     <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-6" data-aos="fade-left">
             <h2>Find Your Future Here!</h2>
             <p class="mt-3">We are always looking forward to having the right resources join our growing team. We offer competitive pay and benefits along with a great working environment. Our full-time positions offer employment benefits including paid holidays, paid vacations, annual performance bonuses, and project-driven bonuses.</p>
             <div class="container mt-3 mb-4 col-md-11">
@@ -43,19 +44,19 @@
             </div>
 
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6" data-aos="fade-right">
           <img src="images/careers/careers.png" alt="" class="img-fluid" loading="lazy">
         </div>
     </div>
 </div>
-<div class="container col-md-11 shadow p-4 mb-4 text-muted">
-  <div class="text-center">
+<div class="container col-md-11 shadow p-4 mb-4 text-muted" data-aos="fade-left" data-aos="fade-left">
+  <div class="text-center" >
       <h1>Popular Categories</h1>
       <p>Join us and help disrupt the enterprise market!</p>
     </div>
   <div class="m-5">
     <div class="row">
-      <div class="col-md-3">
+      <div class="col-md-3" data-aos="fade-left">
        <center>
           <i class="fa fa-money-bill-1 fa-3x "></i>
         <p>Accounting / Finance</p>
@@ -63,7 +64,7 @@
        </center> 
       </div>
 
-      <div class="col-md-3">
+      <div class="col-md-3" data-aos="fade-right">
        <center>
           <i class="fa fa-graduation-cap fa-3x "></i>
         <p>Education Training</p>
@@ -71,7 +72,7 @@
        </center>
         
       </div>
-      <div class="col-md-3">
+      <div class="col-md-3" data-aos="fade-left">
        <center>
           <i class="fa fa-heart fa-3x "></i>
         <p>Digital Marketing</p>
@@ -80,40 +81,40 @@
       </div>
       <div class="col-md-3">
        <center>
-          <i class="fa fa-earth-americas fa-3x "></i>
+          <i class="fa fa-earth-americas fa-3x" data-aos="fade-right"> </i>
         <p>Sales & Marketing</p>
         <p>(045)</p>
        </center>
         
       </div>
 
-       <div class="col-md-3">
+       <div class="col-md-3" data-aos="fade-left">
        <center>
-          <i class="fa fa-earth-americas fa-3x "></i>
+          <i class="fa fa-book fa-3x "></i>
         <p>Writing & Translations</p>
         <p>(045)</p>
        </center>
         
       </div>
-       <div class="col-md-3">
+       <div class="col-md-3" data-aos="fade-right">
        <center>
-          <i class="fa fa-earth-americas fa-3x "></i>
+          <i class="fa fa-stethoscope fa-3x "></i>
         <p>Health</p>
         <p>(045)</p>
        </center>
         
       </div>
-       <div class="col-md-3">
+       <div class="col-md-3" data-aos="fade-left">
        <center>
-          <i class="fa fa-earth-americas fa-3x "></i>
-        <p>Accounting / Finance</p>
+          <i class="fa fa-users fa-3x "></i>
+        <p>Human Resources</p>
         <p>(045)</p>
        </center>
         
       </div>
-       <div class="col-md-3">
+       <div class="col-md-3" data-aos="fade-right">
        <center>
-          <i class="fa fa-earth-americas fa-3x "></i>
+          <i class="fa fa-bus fa-3x "></i>
         <p>Transportation / Logistics</p>
         <p>(045)</p>
        </center>
@@ -123,12 +124,12 @@
   </div>
 </div> 
 
-<div class="container col-md-11 shadow p-4 text-muted">
+<div class="container col-md-11 shadow p-4 text-muted" data-aos="fade-left">
   <div class="text-center">
       <h1>Our Job Offers</h1>
       <p>Join us and help disrupt the enterprise market!</p>
     </div>
-   <div class="card transparent-card table-responsive">
+   <div class="card transparent-card table-responsive" data-aos="fade-in">
    <table style="min-width: 600px;" id="displayCareerPosts" class="table border-stripped">
 
   </table>  
@@ -176,6 +177,8 @@
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.4/dist/sweetalert2.all.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" async></script>
   <script src="js/form-actions.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
   <script src="js/main3.js"></script>
+  
 </body>
 </html>

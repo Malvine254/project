@@ -187,22 +187,22 @@ function selectFromBlog($condition){
 	if ($select->num_rows>0) {
 		while ($row=$select->fetch_assoc()) {
 			echo "
-			<div class='row align-items-center'>
-	            <div class='col-2'>
-	            <h6 class='lead h1 text-muted text-center'>".stringLength($numbering++)."</h6>
-	          </div>
-	          <a  href='?blogId=".$row['blog_id']."' >
-	          <div class='col-10 '>
-	             <span class='text-muted title-new ".hightlightSelectedBlog($row['blog_id'])."'><strong>".$row['title']."</strong></span>
-	           <div>
-	           </a>
-	              <p style='font-size: 14px;' class='mt-0 text-sm text-muted'>".$row['author']."
-	                <br><span class='text-muted'>".$row['date']." • ".estimateReadingTime($row['body'])." min read</span>
-	              </p>
-	          </div>
-	        </div>
-
-	      </div></span>";
+		<div class='row align-items-center' data-aos='fade-up'>
+    <div class='col-2'>
+        <h6 class='lead h1 text-muted text-center'>".stringLength($numbering++)."</h6>
+    </div>
+    <a href='?blogId=".$row['blog_id']."'>
+        <div class='col-10'>
+            <span class='text-muted title-new ".hightlightSelectedBlog($row['blog_id'])."'><strong>".$row['title']."</strong></span>
+            <div>
+            </a>
+                <p style='font-size: 14px;' class='mt-0 text-sm text-muted'>".$row['author']."
+                    <br><span class='text-muted'>".$row['date']." • ".estimateReadingTime($row['body'])." min read</span>
+                </p>
+        </div>
+    </div>
+</div>
+";
 		}
 	}else{
 		echo "<div class='row align-items-center'>
@@ -250,7 +250,7 @@ function displayRecentBlogs(){
 	$select = $conn->query("SELECT * FROM blogs ORDER BY id DESC LIMIT 3");
 	if ($select->num_rows>0) {
 		while ($row=$select->fetch_assoc()) {
-			echo "<div class='col-md-4'>
+			echo "<div class='col-md-4' data-aos='fade-in'>
 	        <div class='card bg-primary mb-3 transparent-card'>
 	          <img style='max-height: 250px;' class='card-img-top img-fluid' src='".$row['image_path']."' alt='Card image cap'>
 	          <div class='card-body'>
@@ -294,7 +294,7 @@ function displayCustomerStoriesTestimonials(){
         while ($row=$select->fetch_assoc()) {
 
 
-        	echo '<div class="col-md-4 mb-4 mb-md-3">
+        	echo '<div class="col-md-4 mb-4 mb-md-3" data-aos="fade-left">
         <div class="card border-dark transparent-card shadow" style="min-height: 400px !important;">
           <div class="card-body py-4 mt-2">
             <div class="d-flex justify-content-center mb-4">

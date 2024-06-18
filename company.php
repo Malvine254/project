@@ -11,6 +11,7 @@
   <!-- font awesome  -->
   <link rel="stylesheet" href="vendor/font-awesome/css/all.css"> 
   <link rel="icon" href="images/logo/logo1.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
 </head>
 <body>
   
@@ -19,15 +20,15 @@
   
   <!-- Content -->
   <div class="margin-top"></div>
-  <div class="container col-md-11  mt-5 shadow p-5">
+  <div class="container col-md-11  mt-5 shadow p-5" data-aos="fade-left">
     <div class="row">
         <div class="col-md-6">
-            <div class="text-left">
+            <div class="text-left" data-aos="fade-left">
                 <h1>Turn your data into insightful business solutions</h1>
                 <p>Intuition or gut feeling business decisions don’t work anymore. In an era where consumer preferences constantly evolve and market dynamics shift rapidly, relying solely on intuition can lead to missed opportunities and costly missteps. We help your organization leverage data to make insightful decisions becomes paramount.</p>
             </div>
         </div>
-        <div class="col-md-6 mt-5">
+        <div class="col-md-6 mt-5" data-aos="fade-left">
             <p>Our proven end-to-end track record of data management positions us as your strategic partner. By handling data at every stage of its lifecycle, from collection and storage to analysis and utilization, we ensure that our clients have the insights they need to make informed decisions and drive their business forward. Our expertise in data management not only enhances operational efficiency but also enables us to provide tailored solutions that align with our clients' objectives. With a focus on accuracy, security, and compliance, we establish trust and reliability in our partnerships. As a result, our clients view us not just as service providers, but as indispensable collaborators who contribute to their long-term success.</p>
         </div>
     </div>
@@ -35,10 +36,10 @@
 
 <!-- our values section -->
 
-<div class="container col-md-11 shadow p-4 mt-5">
+<div class="container col-md-11 shadow p-4 mt-5" data-aos="fade-left">
     <h1 class="text-start mt-4 mb-4">Our Values</h1>
     <div class="row">
-        <div class="col-md-4 column">
+        <div class="col-md-4 column" data-aos="fade-left">
             <div class="shadow p-4 " style="min-height: 400px !important;">
                 <img width="130" height="130" src="images/company/integrity.svg" alt="" class="img-fluid rounded-circle  bg-light p-1 mt-4 mb-1 p-4">
                 <h5>Integrity</h5>
@@ -46,7 +47,7 @@
                  <button class="btn btn-outline-primary read-more-btn">Read More</button>
                 </div>
         </div>
-        <div class="col-md-4 column" >
+        <div class="col-md-4 column" data-aos="fade-left">
             <div class="shadow p-4" style="min-height: 400px !important;">
                 <img width="130" height="130" src="images/company/innovation.svg" alt="" class="img-fluid rounded-circle  bg-light p-1 mt-4 mb-1 p-4">
                 <h5>Innovation</h5>
@@ -57,7 +58,7 @@
            
             
         </div>
-        <div class="col-md-4 column" >
+        <div class="col-md-4 column" data-aos="fade-left">
             <div class="shadow p-4" style="min-height: 400px !important;">
               <img width="130" height="130" src="images/company/collaboration.svg" alt="" class="img-fluid rounded-circle  bg-light p-1 mt-4 mb-1 p-4">
               <h5>Collaboration</h5>
@@ -120,7 +121,7 @@
     </div>
 <!-- another div -->
 <div class="mt-5"></div>
-<div class="container mt-4 col-md-10">
+<div class="container mt-4 col-md-10" data-aos="fade-left">
     <div class="row">
         <div class="col-md-6">
             <img src="images/company/Comp.svg" alt="" class="img-fluid">
@@ -180,6 +181,7 @@
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.4/dist/sweetalert2.all.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" async></script>
   <script src="js/form-actions.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
   <script src="js/main3.js"></script>
  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
