@@ -20,10 +20,6 @@
       
        <!-- Navbar -->
       <?php echo displayHeader(); ?>
-      <!-- start of services floating screen and company floating screen -->
-       <?php echo displayFloatingButton(); ?>
-
-    <!-- end of services floating screen and company floating screen -->
 
       <!-- Content -->
    <div class="margin-top"></div>

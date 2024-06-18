@@ -11,19 +11,15 @@
   <!-- font awesome  -->
   <link rel="stylesheet" href="vendor/font-awesome/css/all.css"> 
   <link rel="icon" href="images/logo/logo1.png" type="image/x-icon">
+  <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.2/mdb.min.css" rel="stylesheet"> -->
 </head>
 <body>
    
   <!-- Navbar -->
   <?php echo displayHeader() ?>
-  <!-- start of services floating screen and company floating screen -->
-   <?php echo displayFloatingButton(); ?>
-<!-- end of services floating screen and company floating screen -->
-
-<!-- end of services floating screen and company floating screen -->
   <!-- Content -->
   <div class="margin-top"></div>
-  <div class="container mt-5 col-md-11">
+  <div class="container mt-1 shadow col-md-11 p-5" style="width: 98vw !important;">
     <div class="content-container">
       <div class="row">
           <div class="col-md-5">
@@ -37,7 +33,7 @@
   </div>
   </div>
 <section >
-  <div class="container py-5 col-md-11">
+  <div class="container py-5 col-md-11 mt-5 p-4 col-sm-12 shadow">
     <div class="row d-flex justify-content-start">
       <div class="col-md-10 col-xl-8">
         <h3 class="fw-bold mb-3">Our Services Lead the Way</h3>
@@ -133,7 +129,24 @@
           </div>
         </div>
       </div>
-
+       <div class="container mt-5">
+        <nav aria-label="Page navigation example">
+            <ul class="pagination justify-content-center">
+                <li class="page-item disabled">
+                    <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">4</a></li>
+                <li class="page-item"><a class="page-link" href="#">5</a></li>
+                <li class="page-item"><a class="page-link" href="#">6</a></li>
+                <li class="page-item">
+                    <a class="page-link" href="#">Next</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
     </div>
   </div>
 </section>
@@ -174,6 +187,7 @@
   <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" async></script>
+  <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.2/mdb.min.js"></script> -->
   <script src="js/main3.js"></script>
 
 

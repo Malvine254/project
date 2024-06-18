@@ -17,13 +17,9 @@
   <!-- Navbar -->
   <?php echo displayHeader(); ?>
 
-  <!-- start of services floating screen and company floating screen -->
-   <?php echo displayFloatingButton(); ?>
-
-  <!-- end of services floating screen and company floating screen -->
   <!-- Content -->
 <div class="margin-top"></div>
-  <div class="container mt-5 mb-5 col-md-11">
+  <div class="container mt-1 mb-5 p-4 col-md-11 shadow">
     <div class="container content-container">
       <div class="row">
           <div class="col-md-6">
@@ -36,7 +32,7 @@
       </div>
   </div>
   </div>
-  <div class="container col-md-11">
+  <div class="container col-md-11 shadow p-4">
     <div class="row d-flex justify-content-center">
       <div class="col-md-10 col-xl-8 text-center">
         <h3 class="fw-bold mb-1">Testimonials</h3>
@@ -49,11 +45,29 @@
        
       <?php displayCustomerStoriesTestimonials(); ?>
     </div>
+    <div class="container mt-3">
+        <nav aria-label="Page navigation example">
+            <ul class="pagination justify-content-center">
+                <li class="page-item disabled">
+                    <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">4</a></li>
+                <li class="page-item"><a class="page-link" href="#">5</a></li>
+                <li class="page-item"><a class="page-link" href="#">6</a></li>
+                <li class="page-item">
+                    <a class="page-link" href="#">Next</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
   </div>
 
 <!-- see our works section -->
   <section>
-    <div class="container mb-5 col-md-11">
+    <div class="container mb-5 col-md-11 shadow mt-4 p-5">
       <div class="row">
         <h3 class="mb-3">Key Projects</h3>
         <hr>
@@ -136,7 +150,7 @@
   </section> 
 
 <!-- start of    form -->
-<div class="container container-fluid content-container col-md-10">
+<div class="container container-fluid content-container col-md-11 shadow p-5">
     <div class="text-center">
         <h2 class="fw-bold">Optimize Your Business with Armely Services</h2>
         <p class="mt-2">Maximize your business potential with Armely's range of industry-leading solutions. Whether it's Data Services, Web Development, Business Intelligence, Managed Services, or Advisory Services, we provide the utmost value to your operations and applications.</p>

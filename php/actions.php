@@ -289,13 +289,13 @@ function readMore(){
 
 function displayCustomerStoriesTestimonials(){
     include 'config.php';
-     $select = $conn->query("SELECT * FROM customer_stories");
+     $select = $conn->query("SELECT * FROM customer_stories LIMIT 3");
      if ($select->num_rows>0) {
         while ($row=$select->fetch_assoc()) {
 
 
-        	echo '<div class="col-md-4 mb-4 mb-md-3 ">
-        <div class="card transparent-card shadow" style="min-height: 400px !important;">
+        	echo '<div class="col-md-4 mb-4 mb-md-3">
+        <div class="card border-dark transparent-card shadow" style="min-height: 400px !important;">
           <div class="card-body py-4 mt-2">
             <div class="d-flex justify-content-center mb-4">
               <img src="images/customer-stories/'.$row['profile'].'"

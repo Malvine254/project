@@ -23,7 +23,8 @@
 <body>
   
   <!-- Navbar -->
-    <?php echo displayHeader(); ?>
+  <?php echo displayHeader(); ?>
+
 
   
 <div class="container col-md-11 mt-4" id="video-background">
@@ -62,10 +63,7 @@
       </div>
   </div>
 </div>
-<!-- start of services floating screen and company floating screen -->
- <?php echo displayFloatingButton(); ?>
 
-<!-- end of services floating screen and company floating screen -->
 
   <!-- see our works section -->
   <section>

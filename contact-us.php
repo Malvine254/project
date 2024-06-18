@@ -17,10 +17,6 @@
   <!-- Navbar -->
   <?php echo displayHeader(); ?>
 
-  <!-- start of services floating screen and company floating screen -->
-   <?php echo displayFloatingButton(); ?>
-
-  <!-- end of services floating screen and company floating screen -->
   <!-- counter section -->  
   <div class="margin-top"></div>
 <div class="col-md-11 container mt-5 mb-4 p-4">

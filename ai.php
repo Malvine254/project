@@ -15,8 +15,6 @@
 <body>
    <!-- Navbar -->
   <?php echo displayHeader() ?>
-  <!-- start of services floating screen and company floating screen -->
-   <?php echo displayFloatingButton(); ?>
 
 
   <!-- Content -->
