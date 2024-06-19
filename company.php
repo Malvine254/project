@@ -37,81 +37,19 @@
 <!-- our values section -->
 
 <div class="container col-md-11 shadow p-4 mt-5" data-aos="fade-left">
-    <h1 class="text-start mt-4 mb-4">Our Values</h1>
+    <h1 class="text-start mt-2 mb-4">Our Values</h1>
     <div class="row">
-        <div class="col-md-4 column" data-aos="fade-left">
-            <div class="shadow p-4 " style="min-height: 400px !important;">
-                <img width="130" height="130" src="images/company/integrity.svg" alt="" class="img-fluid rounded-circle  bg-light p-1 mt-4 mb-1 p-4">
-                <h5>Integrity</h5>
-                <p class="truncated-text">We uphold honesty and transparency in all our interactions, fostering trust and credibility with clients, partners, and colleagues alike.</p>
-                 <button class="btn btn-outline-primary read-more-btn">Read More</button>
-                </div>
-        </div>
-        <div class="col-md-4 column" data-aos="fade-left">
-            <div class="shadow p-4" style="min-height: 400px !important;">
-                <img width="130" height="130" src="images/company/innovation.svg" alt="" class="img-fluid rounded-circle  bg-light p-1 mt-4 mb-1 p-4">
-                <h5>Innovation</h5>
-                <p class="truncated-text">We embrace creativity and continuous improvement, striving to pioneer new solutions and approaches that drive positive change and propel our organization forward.</p>
-                 <button class="btn btn-outline-primary read-more-btn">Read More</button>
-                
-            </div>
-           
-            
-        </div>
-        <div class="col-md-4 column" data-aos="fade-left">
-            <div class="shadow p-4" style="min-height: 400px !important;">
-              <img width="130" height="130" src="images/company/collaboration.svg" alt="" class="img-fluid rounded-circle  bg-light p-1 mt-4 mb-1 p-4">
-              <h5>Collaboration</h5>
-              <p class="truncated-text">We recognize the power of teamwork and actively promote a culture of collaboration, where diverse perspectives are valued, and collective efforts lead to greater success.</p>  
-               <button class="btn btn-outline-primary read-more-btn">Read More</button>
-            </div>
-        </div>
+        <?php displayCoreValues(); ?>
     </div>
-    <!-- <div class="mt-5"></div>
-    <div class="row">
-        <div class="col-md-4 column" >
-            <div class="shadow p-4" style="min-height: 400px !important;">
-                <img width="130" height="130" src="images/company/accountability.svg" alt="" class="img-fluid rounded-circle  bg-light p-1 mt-4 mb-1 p-4">
-                <h5>Accountability</h5>
-                <p class="truncated-text">We take ownership of our actions and decisions, holding ourselves responsible for delivering results and fulfilling our commitments to clients, stakeholders, and each other.</p>
-                 <button class="btn btn-outline-primary read-more-btn">Read More</button>
-                </div>
-            
-            
-        </div>
-        <div class="col-md-4 column" >
-            <div class="shadow p-4" style="min-height: 400px !important;">
-                <img width="130" height="130" src="images/company/empowerment.svg" alt="" class="img-fluid rounded-circle  bg-light p-1 mt-4 mb-1 p-4" >
-                <h5>Empowerment</h5>
-                <p class="bb-4 truncated-text">We empower our employees to take initiative, pursue growth opportunities, and make meaningful contributions, fostering a culture of empowerment that fuels individual and organizational success.</p>
-                 <button class="btn btn-outline-primary read-more-btn">Read More</button>
-            </div>
-            
-        </div>
-        <div class="col-md-4 column" >
-            <div class="shadow p-4" style="min-height: 400px !important;">
-                <img width="130" height="130" src="images/company/centricity.svg" alt="" class="img-fluid rounded-circle  bg-light p-1 mt-4 mb-1 p-4">
-                <h5>Customer Centricity</h5>
-                <p class="mb-4 truncated-text">We prioritize the needs and satisfaction of our customers, striving to exceed expectations and deliver exceptional value through personalized solutions and attentive service.</p>
-                 <button class="btn btn-outline-primary read-more-btn">Read More</button>
-            </div>
-            
-            
-        </div>
-    </div> -->
+    
     <div class="container mt-5">
-    <nav aria-label="Page navigation example">
-        <ul class="pagination justify-content-center">
-            <li class="page-item disabled">
+     <nav aria-label="Page navigation example">
+        <ul class="pagination justify-content-center" id="pagination">
+            <li class="page-item disabled" id="prev-page">
                 <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
             </li>
-            <li class="page-item"><a class="page-link" href="#">1</a></li>
-            <li class="page-item"><a class="page-link" href="#">2</a></li>
-            <li class="page-item"><a class="page-link" href="#">3</a></li>
-            <li class="page-item"><a class="page-link" href="#">4</a></li>
-            <li class="page-item"><a class="page-link" href="#">5</a></li>
-            <li class="page-item"><a class="page-link" href="#">6</a></li>
-            <li class="page-item">
+            <!-- Page numbers will be inserted here by JavaScript -->
+            <li class="page-item" id="next-page">
                 <a class="page-link" href="#">Next</a>
             </li>
         </ul>
@@ -121,7 +59,7 @@
     </div>
 <!-- another div -->
 <div class="mt-5"></div>
-<div class="container mt-4 col-md-10" data-aos="fade-left">
+<div class="container mt-4 col-md-11 shadow" data-aos="fade-left">
     <div class="row">
         <div class="col-md-6">
             <img src="images/company/Comp.svg" alt="" class="img-fluid">
@@ -181,9 +119,11 @@
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.4/dist/sweetalert2.all.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" async></script>
   <script src="js/form-actions.js"></script>
-   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
   <script src="js/main3.js"></script>
+  <script src="js/page_stylings.js"></script>
  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
 
 
 </body>

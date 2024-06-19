@@ -42,23 +42,21 @@
         </p>
       </div>
     </div>
-    <div class="row text-center" data-aos="fade-left">
+    <div data-aos="fade-left">
+        <div class="row text-center" >
        
       <?php displayCustomerStoriesTestimonials(); ?>
     </div>
+    </div>
+  
     <div class="container mt-3">
-        <nav aria-label="Page navigation example">
-            <ul class="pagination justify-content-center">
-                <li class="page-item disabled">
+         <nav aria-label="Page navigation example">
+            <ul class="pagination justify-content-center" id="pagination">
+                <li class="page-item disabled" id="prev-page">
                     <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
                 </li>
-                <li class="page-item"><a class="page-link" href="#">1</a></li>
-                <li class="page-item"><a class="page-link" href="#">2</a></li>
-                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                <li class="page-item"><a class="page-link" href="#">4</a></li>
-                <li class="page-item"><a class="page-link" href="#">5</a></li>
-                <li class="page-item"><a class="page-link" href="#">6</a></li>
-                <li class="page-item">
+                <!-- Page numbers will be inserted here by JavaScript -->
+                <li class="page-item" id="next-page">
                     <a class="page-link" href="#">Next</a>
                 </li>
             </ul>
@@ -67,16 +65,16 @@
   </div>
 
 <!-- see our works section -->
-  <section>
-    <div class="container mb-5 col-md-11 shadow mt-4 p-5" data-aos="fade-left">
-      <div class="row">
+  <section >
+    <div class="container mb-5 col-md-11 shadow mt-4 p-5"  data-aos="fade-in">
+      <div class="row" >
         <h3 class="mb-3">Key Projects</h3>
         <hr>
         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active">
               <div class="row">
-                <div class="col-12 col-md-4">
+                <div class="col-12 col-md-4"  data-aos="fade-left">
                   <img src="images/services/service1.jpg" class="d-block img-fluid" alt="Service 1">
                   <div class="mt-2">
                     <h5>Executive Reports Development</h5>
@@ -84,8 +82,8 @@
                       our Executive Reports Development ensures informed decision-making at every level of your organization.</p>
                   </div>
                 </div>
-                <div class="col-md-4 d-none d-md-block">
-                  <img src="images/services/service2.jpg" class="d-block img-fluid" alt="Service 1">
+                <div class="col-md-4 d-none d-md-block"  data-aos="fade-right">
+                  <img src="images/services/service2.jpg" class="d-block img-fluid" alt="Service 1" >
                   <div class="mt-2">
                     <h5>Sybase to SQL Server Migration</h5>
                     <p class="card-text">Seamlessly transition your data ecosystem with precision and 
@@ -93,7 +91,7 @@
                       performance and scalability.</p>
                   </div>
                 </div>
-                <div class="col-md-4 d-none d-md-block">
+                <div class="col-md-4 d-none d-md-block"  data-aos="fade-left">
                   <img src="images/services/service3.jpg" class="d-block img-fluid" alt="Service 1">
                   <div class="mt-2">
                     <h5>Healthcare Productivity Reports</h5>
@@ -106,7 +104,7 @@
             <!-- Add more carousel-items here if needed -->
             <div class="carousel-item">
               <div class="row">
-                <div class="col-12 col-md-4">
+                <div class="col-12 col-md-4"  data-aos="fade-left">
                   <img src="images/services/service2.jpg" class="d-block img-fluid" alt="Service 1">
                   <div class="mt-2">
                     <h5>Sybase to SQL Server Migration</h5>
@@ -115,7 +113,7 @@
                       performance and scalability.</p>
                   </div>
                 </div>
-                <div class="col-md-4 d-none d-md-block">
+                <div class="col-md-4 d-none d-md-block"  data-aos="fade-left">
                   <img src="images/services/service5.jpg" class="d-block img-fluid" alt="Service 1">
                   <div class="mt-2">
                     <h5>Managed Services</h5>
@@ -123,7 +121,7 @@
                        ensuring seamless operations and peace of mind.</p>
                   </div>
                 </div>
-                <div class="col-md-4 d-none d-md-block">
+                <div class="col-md-4 d-none d-md-block"  data-aos="fade-left">
                   <img src="images/services/service4.jpg" class="d-block img-fluid" alt="Service 1">
                   <div class="mt-2">
                     <h5>Custom Application development</h5>
@@ -146,7 +144,7 @@
           </a>
         </div>
     </div>
-    
+     </div>
   </section> 
 
 <!-- start of    form -->
@@ -257,6 +255,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" async></script>
   <script src="js/form-actions.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="js/page_stylings.js"></script>
   <script src="js/main3.js"></script>
 
 

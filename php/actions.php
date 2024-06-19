@@ -289,12 +289,11 @@ function readMore(){
 
 function displayCustomerStoriesTestimonials(){
     include 'config.php';
-     $select = $conn->query("SELECT * FROM customer_stories LIMIT 3");
+     $select = $conn->query("SELECT * FROM customer_stories");
      if ($select->num_rows>0) {
         while ($row=$select->fetch_assoc()) {
 
-
-        	echo '<div class="col-md-4 mb-4 mb-md-3" data-aos="fade-left">
+        	echo '<div class="col-md-4 mb-4 mb-md-3 card-item">
         <div class="card border-dark transparent-card shadow" style="min-height: 400px !important;">
           <div class="card-body py-4 mt-2">
             <div class="d-flex justify-content-center mb-4">
@@ -311,6 +310,57 @@ function displayCustomerStoriesTestimonials(){
           </div>
         </div>
       </div>';
+      
+        }
+    }else{
+        echo "No records found!";
+    }
+
+}
+
+function displayCoreValues(){
+    include 'config.php';
+     $select = $conn->query("SELECT * FROM core_values ");
+     if ($select->num_rows>0) {
+        while ($row=$select->fetch_assoc()) {
+
+        	echo '<div class="col-md-4 column card-item" >
+            <div class="shadow p-4" style="min-height: 400px !important;">
+                <img width="130" height="130" src="images/company/'.$row['icon'].' " alt="" class="img-fluid rounded-circle  bg-light p-1 mt-4 mb-1 p-4">
+                <h5>'.$row['title'].'</h5>
+                <p class="mb-4 truncated-text">'.$row['body'].'</p>
+                 <button class="btn btn-outline-primary read-more-btn">Read More</button>
+            </div>
+                   
+        </div>';
+      
+        }
+    }else{
+        echo "No records found!";
+    }
+
+}
+
+function displayServicesList(){
+    include 'config.php';
+     $select = $conn->query("SELECT * FROM services_lists ");
+     if ($select->num_rows>0) {
+        while ($row=$select->fetch_assoc()) {
+
+        	echo ' <div class="col-md-4 mb-4 mb-md-0 card-item" data-aos="fade-left">
+				        <div class="card transparent-card">
+				          <div class="card-body py-4 mt-2">
+				            <div class="d-flex justify-content-start mb-4">
+				              <img src="images/services/'.$row['image'].'"
+				                class=" shadow-1-strong" width="100%" height="240"/>
+				            </div>
+				            <h5 class="font-weight-bold my-3">'.$row['title'].'</h5>
+				            <p class="mb-2">
+				              <i class="fas fa-quote-left pe-2"></i>'.$row['body'].' <a href="data">Learn More</a>
+				            </p>
+				          </div>
+				        </div>
+				      </div>';
       
         }
     }else{

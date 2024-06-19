@@ -44,109 +44,21 @@
     </div>
 
     <div class="row">
-      <div class="col-md-4 mb-4 mb-md-0" data-aos="fade-left">
-        <div class="card transparent-card">
-          <div class="card-body py-4 mt-2">
-            <div class="d-flex justify-content-start mb-4">
-              <img src="images/services/advice 1.png"
-                class=" shadow-1-strong" width="100%" height="240" />
-            </div>
-            <h5 class="font-weight-bold my-3">Advisory Services</h5>
-            <p class="mb-2">
-              <i class="fas fa-quote-left pe-2"></i>Get expert guidance in planning, development, marketing, finance, and risk management for sustainable growth.<a href="advisory-services">Learn More</a>
-            </p>
-          </div>
-        </div>
-      </div>
-     <div class="col-md-4 mb-4 mb-md-0 " data-aos="fade-left">
-        <div class="card transparent-card">
-          <div class="card-body py-4 mt-2">
-            <div class="d-flex justify-content-start mb-4">
-              <img src="images/services/datapic.png"
-                class=" shadow-1-strong" width="100%" height="240"/>
-            </div>
-            <h5 class="font-weight-bold my-3">Data</h5>
-            <p class="mb-2">
-              <i class="fas fa-quote-left pe-2"></i>Harness the power of data with performance management, data analysis, modeling, storage, and visualization services. <a href="data">Learn More</a>
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4 mb-4 mb-md-0" data-aos="fade-left">
-        <div class="card transparent-card mb-5">
-          <div class="card-body py-4 mt-2">
-            <div class="d-flex justify-content-start mb-4">
-              <img src="images/services/aipic.png"
-                class=" shadow-1-strong" width="100%" height="240" />
-            </div>
-            <h5 class="font-weight-bold my-3">Artificial Intelligence</h5>
-            <p class="mb-2">
-              <i class="fas fa-quote-left pe-2"></i>Harness the potential of AI to automate processes, enhance productivity, and uncover patterns that drive innovation and efficiency.<a href="ai">Learn More</a>
-            </p>
-          </div>
-        </div>
-
-      </div>
-       <!-- <div class="col-md-4 mb-4 mb-md-0 ">
-        <div class="card transparent-card">
-          <div class="card-body py-4 mt-2">
-            <div class="d-flex justify-content-start mb-4">
-              <img src="images/services/managed_services.png"
-                class=" shadow-1-strong" width="100%" height="240" />
-            </div>
-            <h5 class="font-weight-bold my-3">Managed Services</h5>
-            <p class="mb-2">
-              <i class="fas fa-quote-left pe-2"></i>Enhance your technology infrastructure with supportability reviews, root cause analysis, coordinated service delivery and technology.<a href="ai">Learn More</a>
-            </p>
-          </div>
-        </div>
-      </div>
-       <div class="col-md-4 mb-4 mb-md-0 ">
-        <div class="card transparent-card">
-          <div class="card-body py-4 mt-2">
-            <div class="d-flex justify-content-start mb-4">
-              <img src="images/services/appd.png"
-                class=" shadow-1-strong" width="100%" height="240" />
-            </div>
-            <h5 class="font-weight-bold my-3">Enterprise Applications</h5>
-            <p class="mb-2">
-              <i class="fas fa-quote-left pe-2"></i>Implement customized software solutions tailored to your business requirements, optimizing workflows and driving productivity across....<a href="ai">Learn More</a>
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4 mb-4 mb-md-0 ">
-        <div class="card transparent-card">
-          <div class="card-body py-4 mt-2">
-            <div class="d-flex justify-content-start mb-4">
-              <img src="images/services/web.png"
-                class=" shadow-1-strong" width="100%" height="240"/>
-            </div>
-            <h5 class="font-weight-bold my-3">Cloud</h5>
-            <p class="mb-2">
-              <i class="fas fa-quote-left pe-2"></i>Embrace the scalability, flexibility, and cost-efficiency of cloud computing, empowering your business to innovate and grow without...<a href="ai">Learn More</a>
-            </p>
-          </div>
-        </div>
-      </div> -->
+     <?php displayServicesList(); ?>
+   </div>
+       
        <div class="container mt-1">
-        <nav aria-label="Page navigation example">
-            <ul class="pagination justify-content-center">
-                <li class="page-item disabled">
+         <nav aria-label="Page navigation example">
+            <ul class="pagination justify-content-center" id="pagination">
+                <li class="page-item disabled" id="prev-page">
                     <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
                 </li>
-                <li class="page-item"><a class="page-link" href="#">1</a></li>
-                <li class="page-item"><a class="page-link" href="#">2</a></li>
-                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                <li class="page-item"><a class="page-link" href="#">4</a></li>
-                <li class="page-item"><a class="page-link" href="#">5</a></li>
-                <li class="page-item"><a class="page-link" href="#">6</a></li>
-                <li class="page-item">
+                <!-- Page numbers will be inserted here by JavaScript -->
+                <li class="page-item" id="next-page">
                     <a class="page-link" href="#">Next</a>
                 </li>
             </ul>
         </nav>
-    </div>
     </div>
   </div>
 </section>
@@ -187,8 +99,8 @@
   <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" async></script>
-   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-  <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.2/mdb.min.js"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="js/page_stylings.js"></script>
   <script src="js/main3.js"></script>
 
 
