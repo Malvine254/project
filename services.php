@@ -16,7 +16,7 @@
 <body>
    
   <!-- Navbar -->
-  <?php echo displayHeader() ?>
+   <?php echo displayHeader(); echo displayFloatingButton();?>
   <!-- Content -->
   <div class="margin-top"></div>
   <div class="container mt-1 shadow col-md-11 p-5" style="width: 98vw !important;" data-aos="fade-fade">
@@ -34,9 +34,10 @@
   </div>
 <section >
   <div class="container py-5 col-md-11 mt-5 p-4 col-sm-12 shadow">
-    <div class="row d-flex justify-content-start">
-      <div class="col-md-10 col-xl-8">
+    <div class="row d-flex justify-content-start ">
+      <div class=" col-xl-12">
         <h3 class="fw-bold mb-3">Our Services Lead the Way</h3>
+        <hr>
         <p class="mb-4 pb-2 mb-md-3 pb-md-0">
           
         </p>
@@ -47,19 +48,6 @@
      <?php displayServicesList(); ?>
    </div>
        
-       <div class="container mt-1">
-         <nav aria-label="Page navigation example">
-            <ul class="pagination justify-content-center" id="pagination">
-                <li class="page-item disabled" id="prev-page">
-                    <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
-                </li>
-                <!-- Page numbers will be inserted here by JavaScript -->
-                <li class="page-item" id="next-page">
-                    <a class="page-link" href="#">Next</a>
-                </li>
-            </ul>
-        </nav>
-    </div>
   </div>
 </section>
   
@@ -100,7 +88,6 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" async></script>
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-  <script src="js/page_stylings.js"></script>
   <script src="js/main3.js"></script>
 
 

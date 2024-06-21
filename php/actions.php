@@ -79,62 +79,11 @@ function displayFooter(){
 }
 
 function displayFloatingButton(){
-	return "<div class='d-flex justify-content-center'>
-  <div  id='floatingItem' class='floating-item container col-md-12 shadow'>
-    <div class='m-5'>
-      <div class=''>  
-          <h3 class='mt-0'>The Armely Ecosystem</h3>
-          <p class='col-6  mb-5'>An integrated ecosystem of cutting-edge services, with our state-of-the-art technology at the core of Armely's offerings.</p>
-      </div>
-       <div class='row'>
-        <div class='col-sm-4 mb-4'>
-         <a href='professional-services' class='text-muted'>
-         <div class='card transparent-card shadow'>
-            <div class='card-body'>
-               <i class='fa fa-briefcase fa-3x'></i>
-                <h5 class='card-title mt-2'>Professional Services</h5>
-                <p class='card-text'>Explore a range of career opportunities.</p>
-            </div>
-          </div>
-          </a>
-        </div>
-        <div class='col-sm-4 mb-4'>
-        <a href='advisory-services' class='text-muted'>
-          <div class='card transparent-card shadow'>
-            <div class='card-body'>
-              <div class=''>
-                <i class='fas fa-users-line fa-3x'></i>
-              </div>
-                <h5 class='card-title mt-2'>Advisory Services</h5>
-                <p class='card-text'>Explore a range of career opportunities.</p>
-            </div>
-          </div>
-           </a>
-        </div>
-         <div class='col-sm-4 mb-4'>
-         <a href='managed-services' class='text-muted'>
-          <div class='card transparent-card shadow'>
-            <div class='card-body'>
-               <i class='fas fa-hand-holding fa-3x mb-3'></i>
-                <h5 class='card-title'>Managed Services</h5>
-                <p class='card-text'>Explore a range of career opportunities.</p>
-            </div>
-          </div>
-          </a>
-        </div>
-    </div>
-    <div class='mt-0 '>
-      <a href='services' class='default-button-color shadow mt-4'>SEE ALL SERVICES</a> 
-    </div>
-   
-    </div>
-  </div>
-</div>
-
-<div class='d-flex justify-content-center'>
+	return "
+<div class='d-flex justify-content-center' >
   <div style='overflow: hidden;' id='floatingItem' class='floating-item floatingItemTwo container col-md-12 shadow bg-light'>
     <div class='m-5 '>
-      <div class=''>  
+      <div style='overflow: scroll; height: 60vh;'>  
         <h4>Search Results</h4>
          <div id='searchResults'></div>
       </div>
@@ -293,17 +242,17 @@ function displayCustomerStoriesTestimonials(){
      if ($select->num_rows>0) {
         while ($row=$select->fetch_assoc()) {
 
-        	echo '<div class="col-md-4 mb-4 mb-md-3 card-item">
-        <div class="card border-dark transparent-card shadow" style="min-height: 400px !important;">
+        	echo '<div class="col-md-4 mb-2 mb-md-2 card-item">
+        <div class="card border-dark transparent-card" style="min-height: 300px !important;">
           <div class="card-body py-4 mt-2">
             <div class="d-flex justify-content-center mb-4">
               <img src="images/customer-stories/'.$row['profile'].'"
-                class="rounded-circle shadow-1-strong" width="70" height="70" />
+                class="rounded-circle shadow-1-strong" width="60" height="60" />
             </div>
             <h6 class="font-weight-bold">'.$row['name'].'</h6>
             <p class="font-weight-bold my-3">'.$row['position'].'</p>
 
-            <div class="mb-2 truncated-text">
+            <div class="mb-0 truncated-text">
               '.$row['body_content'].'
             </div>
              <button class="btn btn-outline-primary read-more-btn">Read More</button>
@@ -324,9 +273,9 @@ function displayCoreValues(){
      if ($select->num_rows>0) {
         while ($row=$select->fetch_assoc()) {
 
-        	echo '<div class="col-md-4 column card-item" >
-            <div class="shadow p-4" style="min-height: 400px !important;">
-                <img width="130" height="130" src="images/company/'.$row['icon'].' " alt="" class="img-fluid rounded-circle  bg-light p-1 mt-4 mb-1 p-4">
+        	echo '<div class="col-md-4 column card-item" data-aos="fade-right">
+            <div class=" p-4" style="min-height: 320px !important;">
+                <img width="100" height="100" src="images/company/'.$row['icon'].' " alt="" class="img-fluid rounded-circle  bg-light p-1 mt-2 mb-1 p-2">
                 <h5>'.$row['title'].'</h5>
                 <p class="mb-4 truncated-text">'.$row['body'].'</p>
                  <button class="btn btn-outline-primary read-more-btn">Read More</button>

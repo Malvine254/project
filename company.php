@@ -16,7 +16,7 @@
 <body>
   
   <!-- Navbar -->
-  <?php echo displayHeader(); ?>
+   <?php echo displayHeader(); echo displayFloatingButton();?>
   
   <!-- Content -->
   <div class="margin-top"></div>
@@ -36,35 +36,20 @@
 
 <!-- our values section -->
 
-<div class="container col-md-11 shadow p-4 mt-5" data-aos="fade-left">
-    <h1 class="text-start mt-2 mb-4">Our Values</h1>
+<div class="container col-md-11 shadow p-4 mt-5">
+    <h1 class="text-center mt-2 mb-1">Our Values</h1>
     <div class="row">
         <?php displayCoreValues(); ?>
     </div>
-    
-    <div class="container mt-5">
-     <nav aria-label="Page navigation example">
-        <ul class="pagination justify-content-center" id="pagination">
-            <li class="page-item disabled" id="prev-page">
-                <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
-            </li>
-            <!-- Page numbers will be inserted here by JavaScript -->
-            <li class="page-item" id="next-page">
-                <a class="page-link" href="#">Next</a>
-            </li>
-        </ul>
-    </nav>
-    </div>
-
     </div>
 <!-- another div -->
 <div class="mt-5"></div>
-<div class="container mt-4 col-md-11 shadow" data-aos="fade-left">
+<div class="container mt-4 col-md-11 shadow">
     <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-6" data-aos="fade-right">
             <img src="images/company/Comp.svg" alt="" class="img-fluid">
         </div>
-        <div class="col-md-6 mt-5">
+        <div class="col-md-6 mt-5" data-aos="fade-left">
             <h1>Let's collaborate and achieve greatness together</h1>
             <p class="mt-5 mb-5">Whether you're launching a new venture or managing an established brand.</p>
             <a href="contact-us" class="btn default-button-color btn-primary">Contact Us</a>
@@ -121,7 +106,6 @@
   <script src="js/form-actions.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
   <script src="js/main3.js"></script>
-  <script src="js/page_stylings.js"></script>
  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
 

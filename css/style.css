@@ -218,29 +218,7 @@ font-size: 48px; /* Default font size */
 
 /* Media query for larger screens */
 
-@media (max-width: 767.98px) {
-    #myButton {
-        /* Set the href attribute for small screens */
-        /* Replace 'services.php' with the actual URL */
-        href: url('services');
-    }
-    .typing-text {
-  font-size: 72px; /* Adjust font size for larger screens */
 
-}
-#myButton:hover{
-  #floatingItem{
-    display: none;
-  }
-}
-}
-@media screen and (min-width: 768px) {
-  /* Remove the `href` attribute from the `a` tag */
-  #myButton {
-    pointer-events: none; /* Disable click events */
-    cursor: default; /* Show default cursor */
-  }
-}
 
 @media (min-width: 576px) {
 .typing-text {
@@ -508,8 +486,6 @@ overflow: none; /* Ensure the container appears above other elements */
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
-  background-color: #343a40;
-  color: white;
   padding: 20px;
   border-radius: 5px 5px 0 0;
   width: 100vw;
@@ -556,7 +532,7 @@ overflow: none; /* Ensure the container appears above other elements */
 
 /* Modal Content */
 .modal-content4 {
-  background-color: #fefefe;
+  background-color: #fff;
   margin: 15% auto;
   padding: 20px;
   border: 1px solid #888;

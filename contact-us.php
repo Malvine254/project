@@ -16,15 +16,35 @@
 <body>
   
   <!-- Navbar -->
-  <?php echo displayHeader(); ?>
+   <?php echo displayHeader(); echo displayFloatingButton();?>
 
   <!-- counter section -->  
-  <div class="margin-top"></div>
-<div class="col-md-11 container mt-5 mb-4 p-4" data-aos="fade-left">
-  <div class=" mb-3">
-    <div class="col-md-12 shadow p-5">
-      <h1 class="">Inquiries</h1>
-      <p class="subtitle-font">For specific questions complete the form below.</p>
+  <style>
+    .background-image {
+      background-image: url('https://images.pexels.com/photos/280193/pexels-photo-280193.jpeg');
+      background-size: cover;
+      background-position: center;
+      background-size: 100vw;
+      background-repeat: no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 60vh; /* or any height you prefer */
+    }
+    .font-size{
+      font-size: 57px;
+    }
+  </style>
+ <div class="margin-top"></div>  
+<div class="container col-md-12">
+  <div class="background-image">
+    <h1 class="text-center text-light font-size">Contact Us</h1>
+  </div>
+</div>  
+<div class="col-md-12 container mt-1 mb-4 p-4 shadow mt-0" data-aos="fade-left">
+  <div class=" mb-3 row">
+    <div class="col-md-8  p-5">
+      <h1 class="">Get in Touch</h1>
           <form id="contact-form" method="post">
               <div class="form-row">
                 <div class="col-md-6 mb-1" data-aos="fade-left">
@@ -54,10 +74,25 @@
               <button name="submit_form" class="btn btn-primary default-button-color" type="submit">Send Message</button>
             </form>
     </div>
-    <div class="col-md-12 mt-5 shadow p-5" style="border: 8px; opacity: 23px; border-radius: 8px;" data-aos="fade-left">
-        <h2> Our Location</h2>
-        <iframe class="col-md-12" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3339.393990831668!2d-96.88709372452247!3d33.177533073498864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864c39992307da29%3A0x2c2a76b897ebb224!2s2831%20Eldorado%20Pkwy%20103%20128%2C%20Frisco%2C%20TX%2075033%2C%20USA!5e0!3m2!1sen!2ske!4v1710673206549!5m2!1sen!2ske"
-          height="550" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <div class="col-md-4  p-5" style="border: 8px; opacity: 23px; border-radius: 8px;" data-aos="fade-left">
+        <h1 class="mb-3">Company Contact</h1>
+       <div>
+          <h5>Email: <a href="mailto:info@armely.com">info@armely.com</a></h5>
+       </div>
+        <div>
+            <h5>Phone: <a href="tel:+1 972 460 0643">+1 972 460 0643</a></h5>
+        </div>
+        <hr>
+         <h2>Office Locations</h2>
+         <div>
+            <h5>Dallas, Texas</h5>
+            <p>2831 Eldorado Pkwy Suite 103-128 Frisco TX 75033</p>
+        </div>
+        <hr>
+        <div>
+            <h5>Nairobi, Kenya</h5>
+            <p>Off Thika Superhighway, Juja, Highpoint, Nairobi</p>
+        </div>
 
     </div>
     

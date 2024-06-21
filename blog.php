@@ -17,8 +17,7 @@
 <body>
  
   <!-- Navbar -->
-   <!-- Navbar -->
-  <?php echo displayHeader(); ?>
+   <?php echo displayHeader(); echo displayFloatingButton();?>
 
 <!-- end of services floating screen and company floating screen -->
   <!-- Content -->

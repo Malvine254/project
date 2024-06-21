@@ -18,7 +18,7 @@
 </head>
 <body>
    <!-- Navbar -->
-  <?php echo displayHeader(); ?>
+  <?php echo displayHeader(); echo displayFloatingButton();?>
   <!-- Content -->
   <div class="margin-top"></div>
   <div class="container mt-5 mb-5 shadow col-md-11 p-4" data-aos="fade-in">

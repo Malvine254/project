@@ -24,7 +24,7 @@
 <body>
   
   <!-- Navbar -->
-  <?php echo displayHeader(); ?>
+  <?php echo displayHeader(); echo displayFloatingButton();?>
 
 
   
@@ -265,7 +265,7 @@
 </button>
 
 <!-- Advert Modal -->
-<div id="snackbar" class="snackbar container shadow"  >
+<div id="snackbar" class="snackbar container shadow">
     <button class="btn-close" aria-label="Close">&times;</button>
     <div class="text-start row">
       <div class="col-md-8">
@@ -277,7 +277,7 @@
       </div>
       <div class="col-md-4">
          <div class="modal-buttons mt-5" >
-          <button id="acceptAll" class="btn btn-outline-light "> Accept All</button>
+          <button id="acceptAll" class="btn btn-outline-info "> Accept All</button>
           <button id="openModalBtn4" class="btn btn-outline-secondary">Customize</button>
           <button id="rejectAll" class="btn btn-outline-danger"> Reject All</button>
         </div>
@@ -374,9 +374,9 @@
 
 
 <div id="myModal4" class="modal4 ">
-  <div class="modal-content4 col-sm-12 col-md-8  transparent-card ">
+  <div class="modal-content4 col-sm-12 col-md-8 ">
     <span class="close4">&times;</span>
-    <div class="cookie-list bg-dark text-light">
+    <div class="cookie-list">
       <div class="form-check">
         <hr>
         <input class="form-check-input" type="checkbox" id="cookie1">
@@ -417,6 +417,7 @@
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.4/dist/sweetalert2.all.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" async></script>
   <script src="js/form-actions.js"></script>
+  <script src="js/main3.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
   <script>
 
@@ -431,7 +432,7 @@
 })
 
   </script>
-  <script src="js/main3.js"></script>
+  
 
 
 </body>

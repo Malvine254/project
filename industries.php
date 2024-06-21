@@ -16,10 +16,73 @@
 <body>
   
   <!-- Navbar -->
-  <?php echo displayHeader(); ?>
+   <?php echo displayHeader(); echo displayFloatingButton();?>
   
   <!-- Content -->
+
   <div class="margin-top"></div>
+  <div class="container mt-5 col-md-11">
+  <button style='background-color:rgb(47,85,151); ' class="btn btn-primary btn-block d-md-none mb-3" type="button" data-toggle="collapse" data-target="#tabsMenu" aria-expanded="false" aria-controls="tabsMenu"><i class="fa fa-angle-left"></i>
+    CLICK FOR MORE OPTIONS
+  </button>
+  <div class="collapse d-md-block" id="tabsMenu">
+    <ul class="nav nav-tabs" id="myTab" role="tablist" style="background: none !important;">
+      <li class="nav-item" role="presentation">
+        <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Healthcare</a>
+      </li>
+      <li class="nav-item" role="presentation">
+        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Energy</a>
+      </li>
+      <li class="nav-item" role="presentation">
+        <a class="nav-link" id="higher-tab" data-toggle="tab" href="#higher" role="tab" aria-controls="higher" aria-selected="false">Higher Education</a>
+      </li>
+       <li class="nav-item" role="presentation">
+        <a class="nav-link" id="education-tab" data-toggle="tab" href="#education" role="tab" aria-controls="education" aria-selected="false">Education</a>
+      </li>
+       <li class="nav-item" role="presentation">
+        <a class="nav-link" id="government-tab" data-toggle="tab" href="#government" role="tab" aria-controls="government" aria-selected="false">Local Government</a>
+      </li>
+       <li class="nav-item" role="presentation">
+        <a class="nav-link" id="marketing-tab" data-toggle="tab" href="#marketing" role="tab" aria-controls="contact" aria-selected="false">Marketing</a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="tab-content" id="myTabContent">
+    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+      <p>Healthcare content goes here.</p>
+    </div>
+    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+      <p>Energy content goes here.</p>
+    </div>
+    <div class="tab-pane fade" id="education" role="tabpanel" aria-labelledby="education-tab">
+      <p>Education content goes here.</p>
+    </div>
+    <div class="tab-pane fade" id="energy" role="tabpanel" aria-labelledby="energy-tab">
+      <p>Energy content goes here.</p>
+    </div>
+    <div class="tab-pane fade" id="government" role="tabpanel" aria-labelledby="government-tab">
+      <p>Government Education content goes here.</p>
+    </div>
+    <div class="tab-pane fade" id="marketing" role="tabpanel" aria-labelledby="marketing-tab">
+      <p>Marketing Education content goes here.</p>
+    </div>
+    <div class="tab-pane fade" id="higher" role="tabpanel" aria-labelledby="higher-tab">
+      <p>Higher Education content goes here.</p>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
   <div class="container col-md-11 mt-5 shadow p-5" data-aos="fade-up">
     <div class="row">
         <div class="col-md-6">
@@ -34,67 +97,7 @@
     </div>
   </div>
 
-  <!-- our values section -->
-  <div class="container col-md-11 shadow p-4 mt-5" data-aos="fade-up">
-    <h1 class="text-start mt-4 mb-4">Our Values</h1>
-    <div class="row">
-        <div class="col-md-4 column" data-aos="zoom-in">
-            <div class="shadow p-4" style="min-height: 400px !important;">
-                <img width="130" height="130" src="images/company/integrity.svg" alt="" class="img-fluid rounded-circle bg-light p-1 mt-4 mb-1 p-4">
-                <h5>Integrity</h5>
-                <p class="truncated-text">We uphold honesty and transparency in all our interactions, fostering trust and credibility with clients, partners, and colleagues alike.</p>
-                <button class="btn btn-outline-primary read-more-btn">Read More</button>
-            </div>
-        </div>
-        <div class="col-md-4 column" data-aos="zoom-in" data-aos-delay="100">
-            <div class="shadow p-4" style="min-height: 400px !important;">
-                <img width="130" height="130" src="images/company/innovation.svg" alt="" class="img-fluid rounded-circle bg-light p-1 mt-4 mb-1 p-4">
-                <h5>Innovation</h5>
-                <p class="truncated-text">We embrace creativity and continuous improvement, striving to pioneer new solutions and approaches that drive positive change and propel our organization forward.</p>
-                <button class="btn btn-outline-primary read-more-btn">Read More</button>
-            </div>
-        </div>
-        <div class="col-md-4 column" data-aos="zoom-in" data-aos-delay="200">
-            <div class="shadow p-4" style="min-height: 400px !important;">
-                <img width="130" height="130" src="images/company/collaboration.svg" alt="" class="img-fluid rounded-circle bg-light p-1 mt-4 mb-1 p-4">
-                <h5>Collaboration</h5>
-                <p class="truncated-text">We recognize the power of teamwork and actively promote a culture of collaboration, where diverse perspectives are valued, and collective efforts lead to greater success.</p>
-                <button class="btn btn-outline-primary read-more-btn">Read More</button>
-            </div>
-        </div>
-    </div>
-    <div class="container mt-5">
-        <nav aria-label="Page navigation example">
-            <ul class="pagination justify-content-center">
-                <li class="page-item disabled">
-                    <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
-                </li>
-                <li class="page-item"><a class="page-link" href="#">1</a></li>
-                <li class="page-item"><a class="page-link" href="#">2</a></li>
-                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                <li class="page-item"><a class="page-link" href="#">4</a></li>
-                <li class="page-item"><a class="page-link" href="#">5</a></li>
-                <li class="page-item"><a class="page-link" href="#">6</a></li>
-                <li class="page-item">
-                    <a class="page-link" href="#">Next</a>
-                </li>
-            </ul>
-        </nav>
-    </div>
-  </div>
 
-  <div class="mt-5"></div>
-  <div class="container mt-4 col-md-10">
-    <div class="row">
-        <div class="col-md-6" data-aos="fade-right">
-            <img src="images/company/Comp.svg" alt="" class="img-fluid">
-        </div>
-        <div class="col-md-6 mt-5" data-aos="fade-left">
-            <h1>Let's collaborate and achieve greatness together</h1>
-            <p class="mt-5 mb-5">Whether you're launching a new venture or managing an established brand.</p>
-            <a href="contact-us" class="btn default-button-color btn-primary">Contact Us</a>
-        </div>
-    </div>
   </div>
 
   <!-- Floating Action Button -->

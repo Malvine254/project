@@ -19,7 +19,7 @@
     <body>
       
        <!-- Navbar -->
-      <?php echo displayHeader(); ?>
+      <?php echo displayHeader(); echo displayFloatingButton();?>
 
       <!-- Content -->
    <div class="margin-top"></div>

@@ -155,6 +155,7 @@ This marks the start of Check if user preference for dark mode is stored in loca
      $(".link").addClass("text-light")
      $("#floatingItem").css({"background":"#121212"})
      $("#floatingItemTwo").css({"background":"#121212"})
+      $(".snackbar").removeClass("bg-light");
         
     
  }else{
@@ -166,6 +167,7 @@ This marks the start of Check if user preference for dark mode is stored in loca
     $(".link").addClass("text-dark")
     $("#floatingItem").css({"background":"#fff"})
     $("#floatingItemTwo").css({"background":"#fff"})
+    $(".snackbar").addClass("bg-light");
     
     
  }
@@ -186,6 +188,7 @@ This marks the start of Check if user preference for dark mode is stored in loca
         $(".link").addClass("text-light")
         $("#floatingItem").css({"background":"#121212"})
         $("#floatingItemTwo").css({"background":"#121212"})
+        $(".snackbar").removeClass("bg-light")
            
     }else{
        $('.icon').removeClass('fa fa-sun')
@@ -196,6 +199,7 @@ This marks the start of Check if user preference for dark mode is stored in loca
        $(".link").addClass("text-dark") 
        $("#floatingItem").css({"background":"#fff"})  
        $("#floatingItemTwo").css({"color":"#fff"})
+       $(".snackbar").addClass("bg-light")
     }
    
      // Store user preference in local storage
@@ -297,7 +301,7 @@ This marks the end of floating service and company pages
 
 /*
 =============================================================================================================================================
-This marks the end of search bar
+This marks the start of search bar
 =============================================================================================================================================
 */  
 
@@ -308,7 +312,7 @@ $(document).ready(function() {
         $('#searchResults').empty();
         
         // Array of PHP page URLs
-        var pageURLs = ['index', 'blog', 'services', 'career','data','job-board','cloud','ai','case study', 'contact-us','customer-stories'];
+        var pageURLs = ['index', 'blog', 'services', 'career','data','job-board','cloud','ai','case study', 'contact-us','customer-stories','industries'];
         var resultsCount = 0;
         // Loop through each page URL
         pageURLs.forEach(function(pageURL) {
@@ -486,7 +490,7 @@ $(document).ready(function(){
     var $truncatedText = $(this).prev(".truncated-text");
     $truncatedText.toggleClass("text-truncate");
     if ($truncatedText.hasClass("text-truncate")) {
-      $truncatedText.html($truncatedText.html().slice(0, 200) + '...');
+      $truncatedText.html($truncatedText.html().slice(0, 100) + '...');
       $(this).html("Read More");
     } else {
       $truncatedText.html($truncatedText.attr("data-full-text"));
@@ -497,9 +501,9 @@ $(document).ready(function(){
   // Initialize truncated text
   $(".truncated-text").each(function() {
     var content = $(this).html();
-    if (content.length > 200) {
+    if (content.length > 100) {
       $(this).attr("data-full-text", content);
-      $(this).html(content.slice(0, 200) + '...');
+      $(this).html(content.slice(0, 100) + '...');
       $(this).next(".read-more-btn").show();
     }
   });
@@ -543,31 +547,31 @@ $('.textContent').each(function() {
 });
 
 
-// Get the modal
-var modal4 = document.getElementById("myModal4");
+// // Get the modal
+// var modal4 = document.getElementById("myModal4");
 
-// Get the button that opens the modal
-var btn4 = document.getElementById("openModalBtn4");
+// // Get the button that opens the modal
+// var btn4 = document.getElementById("openModalBtn4");
 
-// Get the <span> element that closes the modal
-var span4 = document.getElementsByClassName("close4")[0];
+// // Get the <span> element that closes the modal
+// var span4 = document.getElementsByClassName("close4")[0];
 
-// When the user clicks the button, open the modal 
-btn4.onclick = function() {
-  modal4.style.display = "block";
-}
+// // When the user clicks the button, open the modal 
+// btn4.onclick = function() {
+//   modal4.style.display = "block";
+// }
 
-// When the user clicks on <span> (x), close the modal
-span4.onclick = function() {
-  modal4.style.display = "none";
-}
+// // When the user clicks on <span> (x), close the modal
+// span4.onclick = function() {
+//   modal4.style.display = "none";
+// }
 
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal4.style.display = "none";
-  }
-}
+// // When the user clicks anywhere outside of the modal, close it
+// window.onclick = function(event) {
+//   if (event.target == modal) {
+//     modal4.style.display = "none";
+//   }
+// }
 
 
 

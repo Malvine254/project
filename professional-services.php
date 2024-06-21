@@ -16,7 +16,7 @@
 <body>
   
    <!-- Navbar -->
-  <?php echo displayHeader() ?>
+   <?php echo displayHeader(); echo displayFloatingButton();?>
 
   <!-- Content -->
   <div class="container content-container mt-5">
