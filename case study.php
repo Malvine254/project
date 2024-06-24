@@ -11,7 +11,7 @@
   <!-- font awesome  -->
   <link rel="stylesheet" href="vendor/font-awesome/css/all.css"> 
   <link rel="icon" href="images/logo/logo1.png" type="image/x-icon">
-  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
   <meta http-equiv="Content-Encoding" content="gzip">
 </head>
 <body style="background-color: #efefef;" >
@@ -24,7 +24,7 @@
   <div class="container mt-3 p-5 col-md-11 ">
       <div class="row">
 
-       <dv class="col-md-6">
+       <dv class="col-md-6" data-aos="fade-left">
           <h2>Sage Butte Energy Strategic Shift: <br> Enhancing Reporting and Invoices <br> Retrieval from OpenInvoice</h2>
           <h6 style="font-size: 20px;">
             Discover how Denver based Energy Company leveraged <br>
@@ -54,7 +54,7 @@
         <div class="col-md-6">
          <img src="images/case-study/challenges.jpg" class="img-fluid">
        </div>
-       <dv class="col-md-6">
+       <dv class="col-md-6" data-aos="fade-right">
           <h2 class="pl-2">CHALLENGES</h2>
          <ol>
           <li><strong>Incomplete Data Integration: </strong>OpenInvoice doesn&rsquo;t have integration with customer&rsquo;s ERP and Internal Systems.</li>
@@ -73,7 +73,7 @@
   </div>
   <div class="p-5 remove-bg"><div class="container mt-3 col-md-11">
       <div class="row">
-       <dv class="col-md-6">
+       <dv class="col-md-6" data-aos="fade-left">
           <h2 class="pl-2">TECHNOLOGIES</h2>
           <p>To address these challenges and enhance AFE data retrieval and reporting, armely implemented the following technologies.</p>
 
@@ -97,7 +97,7 @@
 
   <div class="bg-light p-5 remove-bg"><div class="container mt-3 col-md-11">
       <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-6" data-aos="fade-right">
          <img src="images/case-study/solution (2).jpg" class="img-fluid">
        </div>
        <dv class="col-md-6">
@@ -119,7 +119,7 @@
 
   <div class="p-5 remove-bg"><div class="container mt-3 col-md-11">
       <div class="row">
-       <dv class="col-md-6">
+       <dv class="col-md-6" data-aos="fade-right">
           <h2 class="pl-2">RESULTS</h2>
           <p>We achieved the following results. -</p>
           <ul>
@@ -221,6 +221,7 @@
   <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" async></script>
+   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
   <script src="js/form-actions.js"></script>
   <script>
     

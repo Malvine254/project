@@ -35,15 +35,15 @@
       font-size: 57px;
     }
   </style>
- <div class="margin-top"></div>  
+ 
 <div class="container col-md-12">
   <div class="background-image">
     <h1 class="text-center text-light font-size">Contact Us</h1>
   </div>
 </div>  
-<div class="col-md-12 container mt-1 mb-4 p-4 shadow mt-0" data-aos="fade-left">
+<div class="col-md-12 container mt-1 mb-4 p-4 shadow">
   <div class=" mb-3 row">
-    <div class="col-md-8  p-5">
+    <div class="col-md-8 ">
       <h1 class="">Get in Touch</h1>
           <form id="contact-form" method="post">
               <div class="form-row">
@@ -74,7 +74,7 @@
               <button name="submit_form" class="btn btn-primary default-button-color" type="submit">Send Message</button>
             </form>
     </div>
-    <div class="col-md-4  p-5" style="border: 8px; opacity: 23px; border-radius: 8px;" data-aos="fade-left">
+    <div class="col-md-4 sm-mt-4" style="border: 8px; opacity: 23px; border-radius: 8px;" data-aos="fade-right">
         <h1 class="mb-3">Company Contact</h1>
        <div>
           <h5>Email: <a href="mailto:info@armely.com">info@armely.com</a></h5>

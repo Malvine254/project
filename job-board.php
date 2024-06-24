@@ -12,7 +12,7 @@
       <!-- font awesome  -->
       <link rel="stylesheet" href="vendor/font-awesome/css/all.css"> 
       <link rel="icon" href="images/logo/logo1.png" type="image/x-icon">
-      
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
       <meta http-equiv="Content-Encoding" content="gzip">
 
     </head>
@@ -25,7 +25,7 @@
    <div class="margin-top"></div>
     <div class="container col-md-11 mt-5 shadow p-4">
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-6" data-aos="fade-fade">
                 <?php include 'php/job_description_preview.php'; ?>  
             </div>
             <div class="col-md-6">
@@ -120,16 +120,17 @@
 
     </div>
 
-      <!--Bootrap and jQuery Scripts -->
-      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-      <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
-      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.4/dist/sweetalert2.all.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" async></script>
-      <script src="js/form-actions.js"></script>
-      <script src="js/main3.js"></script>
+  <!--Bootrap and jQuery Scripts -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.4/dist/sweetalert2.all.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" async></script>
+  <script src="js/form-actions.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="js/main3.js"></script>
 
 
     </body>

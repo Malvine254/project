@@ -11,7 +11,7 @@
   <!-- font awesome  -->
   <link rel="stylesheet" href="vendor/font-awesome/css/all.css"> 
   <link rel="icon" href="images/logo/logo1.png" type="image/x-icon">
-  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
   <meta http-equiv="Content-Encoding" content="gzip">
 </head>
 <body>
@@ -169,18 +169,12 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" async></script>
   <script src="js/form-actions.js"></script>
-  <script>
-    // document.addEventListener('DOMContentLoaded', function() {
-    //   var currentYear = new Date().getFullYear();
-    //   var copyrightElement = document.getElementById('copyright');
-    //   copyrightElement.innerHTML = '&copy; ' + currentYear + ' Your Company Name. All rights reserved.';
-    // });
-  </script>
   <script src="js/main3.js"></script>
-
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
   <script>
   $(document).ready(function(){
     $("img").addClass("img-fluid");
+    $("table").addClass("table table-responsive");
     // Share button click event
     $(".shareBtn").click(function(){
       var social = $(this).data("social");

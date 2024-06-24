@@ -19,7 +19,7 @@
    <?php echo displayHeader(); echo displayFloatingButton();?>
   <!-- Content -->
   <div class="margin-top"></div>
-  <div class="container mt-1 shadow col-md-11 p-5" style="width: 98vw !important;" data-aos="fade-fade">
+  <div class="container mt-1 shadow col-md-11 p-5" style="width: 98vw !important;">
     <div class="content-container" data-aos="fade-left">
       <div class="row">
           <div class="col-md-5">
@@ -34,7 +34,7 @@
   </div>
 <section >
   <div class="container py-5 col-md-11 mt-5 p-4 col-sm-12 shadow">
-    <div class="row d-flex justify-content-start ">
+    <div class="row d-flex justify-content-start" data-aos="fade-left">
       <div class=" col-xl-12">
         <h3 class="fw-bold mb-3">Our Services Lead the Way</h3>
         <hr>
