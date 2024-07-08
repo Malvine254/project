@@ -1,0 +1,659 @@
+.menu-item-color{
+  color: black !important;
+  font-size: 18px !important;
+}
+h2,h3,h4,h5,h6,p,strong,link,input,textarea{
+ 
+}
+.nav{
+padding: 26px !important; 
+background: white !important; 
+}
+.floating-btn {
+  position: fixed;
+  bottom: 20px; /* Adjust the distance from the bottom */
+  right: 20px; /* Adjust the distance from the left */
+  z-index: 1000; /* Set the z-index to ensure the button appears above other elements */
+}
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+
+  * {
+    box-sizing: border-box;
+  }
+
+  /* .counter-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 30px 50px;
+  }
+*/
+  .counter {
+    font-size: 50px;
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  .counter-span{
+    font-size: 19px;
+  }
+
+
+
+  /* courosel next and previous bitton color */
+  .carousel-control-prev:hover,
+          .carousel-control-next:hover {
+            color: rgb(47,85,151) !important; /* Change this to the desired hover color */
+          }
+.partner-subtitle{
+font-size: 24px;
+text-align: center;
+}
+.default-button-color{
+background-color:#2f5597;
+border: solid #2f5597;
+border-radius: 5px;
+margin: auto;
+padding: 8px;
+color: white;
+width: 200px;
+text-transform: capitalize;
+}
+.default-button-color:hover{
+background-color:  black;
+border: solid black;
+}
+.defaut-color{
+ color: #2f5597;
+}
+.defaut-background{
+background: rgb(47,85,151);
+}
+
+/* counter styling */
+.counter
+{
+  /* background-color: rgb(47,85,151); */
+  text-align: center;
+}
+.employees,.customer,.design,.order
+{
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+.counter-count
+{
+  font-size: 48px;
+  font-weight: bolder;
+  display: inline-block;
+}
+
+.employee-p,.customer-p,.order-p,.design-p
+{
+  font-size: 20px;
+  line-height: 34px;
+}
+
+/* scroll button */
+#scrollToTopBtn {
+position: fixed;
+bottom: 50%;
+right: 0;
+transform: translateY(50%);
+display: none;
+margin: 20px;
+}
+/* write the word go up verticallt */
+.vertical-words{
+writing-mode: vertical-rl; /* Set vertical writing mode */
+text-orientation: upright;
+font-weight: bold;
+font-size: 12px;
+letter-spacing: -8px !important; 
+}
+
+/* The Modal (background) */
+
+/* The Modal (background) */
+.modal {
+display: none; /* Hidden by default */
+position: fixed; /* Stay in place */
+z-index: 1; /* Sit on top */
+padding-top: 100px; /* Location of the box */
+left: 0;
+top: 0;
+width: 100%; /* Full width */
+height: 100%; /* Full height */
+overflow: auto; /* Enable scroll if needed */
+background-color: rgb(0,0,0); /* Fallback color */
+background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+background-color: #fefefe;
+margin: 15% auto; /* 15% from the top and centered */
+padding: 20px;
+border: 1px solid #888;
+height: 70%;
+margin: 10px;
+position: fixed;
+top: 50%;
+right: 0;
+transform: translate(0, -50%);
+}
+/* modal position */
+.modal-right {
+position: absolute;
+top: 50% ;
+left: 0 ;
+transform: translate(0, -50%) ;
+}
+
+/* The Close Button */
+.close {
+color: #2f5597;
+float: right;
+font-size: 28px;
+font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+color: #000;
+text-decoration: none;
+cursor: pointer;
+}
+
+
+body {
+background-color: #fff; /* Default light mode background color */
+color: black !important; /* Default light mode text color */
+
+}
+
+body.dark-mode {
+background-color: #121212 !important; /* Dark mode background color */
+color: #fff !important; /* Dark mode text color */
+
+}
+
+@keyframes spin {
+0% { transform: rotate(0deg); }
+100% { transform: rotate(360deg); }
+}
+
+
+.round-div:hover{
+background-color: white;
+color: #000;
+text-decoration: none;
+}
+.logo-size{
+font-size: 64px;
+margin-top: 0px !important;
+}
+
+
+/* Fade-in animation */
+@keyframes fadeIn {
+from { opacity: 0; }
+to { opacity: 1; }
+}
+
+
+@media screen and (max-width: 576px) {
+  .typing-text {
+font-size: 25px;
+}
+}
+
+
+.typing-text {
+overflow: hidden; /* Ensures text doesn't overflow container */
+white-space: nowrap; /* Prevents wrapping */
+opacity: 0; /* Initially hide the text */
+font-size: 48px; /* Default font size */
+}
+
+/* Media query for larger screens */
+
+
+
+@media (min-width: 576px) {
+.typing-text {
+  font-size: 32px; /* Adjust font size for larger screens */
+}
+}
+/* Media query for extra-large screens */
+@media (min-width: 1200px) {
+.typing-text {
+  font-size: 100px !important; /* Adjust font size for extra-large screens */
+}
+}
+
+/* adding the % and + signs */
+.plus::after {
+content: "+";
+margin-left: 5px; /* Adjust spacing between counter and percentage icon */
+}
+.percent::after {
+content: "%";
+margin-left: 5px; /* Adjust spacing between counter and percentage icon */
+}
+
+
+.transparent-card {
+background-color: transparent !important;
+box-shadow: none;
+min-height: 200px;
+border: solid transparent !important;
+
+}
+
+.slider-container {
+overflow: hidden;
+white-space: nowrap;
+width: 100%;
+}
+
+.slider-image {
+display: inline-block;
+animation: slide 10s linear infinite;
+}
+
+@keyframes slide {
+0% {
+    transform: translateX(0);
+}
+100% {
+    transform: translateX(-100%);
+}
+}
+
+  .card-back{
+    background-color: transparent !important;
+
+  }
+  .edit-input{
+    height: 56px;
+    background-color: transparent !important;
+  }
+  .edit-input-valid{
+    border-color: rgb(47,85,151) !important;
+  }
+  .edit-textarea{
+    background-color: transparent !important;
+  }
+  .blog-hover-effect:hover .card-body {
+    background-color: red; /* Change background color on hover */
+  }
+
+  /* contact page */
+  .big-font{
+    font-size: 103px;
+  }
+  .subtitle-font{
+    font-size: 24px;
+  }
+
+  /* company page div 2 */
+
+.three-column-section {
+    background-color: #000;
+    color: #fff;
+    padding: 50px 20px;
+    width: 100%;
+}
+.column {
+    text-align: center;
+}
+.symbol {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+.nav-link:hover{
+  text-decoration: underline !important;
+
+
+}
+.nav-link{
+  font-family: 'Maven Pro', sans-serif;
+
+
+}
+#hideAll:hover{
+  text-decoration: underline !important;
+
+}
+/*  service hover page on large screen styles*/
+.floating-item {
+position: fixed;
+padding: 10px;
+display: none;
+width: 100vw !important;
+height: 65vh;
+z-index: 999;
+overflow: none; /* Ensure the container appears above other elements */
+}
+/*#myButton:hover{
+  .floating-item {
+    display: block;
+  }
+
+}*/
+@media (max-width: 900px) {
+.hide-for-small-screen{
+  display: none;
+}
+ .floating-item {
+    display: none;
+  }
+
+
+
+}
+
+@media screen and (min-width: 1200px) {
+
+.myButton{
+  display: block;
+}
+ 
+
+}
+
+/*video styles*/
+ #video-background {
+      position: relative !important;
+      height: 80vh; /* Adjust as needed */
+      overflow: hidden;
+      width: 90vw;
+    }
+
+    #video-background video {
+      position: absolute !important;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+    }
+
+    #video-caption {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      color: #fff;
+
+      .custom-btn {
+      background-color: #fff;
+      border: 2px solid rgb(47,85,151);
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 8px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      background-color: rgb(47,85,151);
+      cursor: pointer;
+      font-weight: bold;
+      opacity: 90%;
+      transition: background-color 0.3s ease;
+    }
+    }
+     .custom-btn:hover {
+      background-color: #fff;
+      color: rgb(47,85,151);
+     
+    }
+    .btn-outline-primary{
+      border-color: rgb(47,85,151) !important;
+      color: rgb(47,85,151) !important;
+      font-weight: bold !important;
+    }
+    .btn-outline-primary:hover{
+      background-color: rgb(47,85,151) !important;
+       color: #fff !important;
+    }
+    .hover-effect:hover{
+      background-color: rgb(211, 211, 211);
+    }
+  .modal-right {
+    position: absolute;
+    top: 50% ;
+    left: 0 ;
+    transform: translate(0, -50%) ;
+  }
+
+
+.highlight {
+    background-color: yellow;
+}
+.margin-top{
+  margin-top: 100px !important;
+}
+.items-height{
+  height: 400px;
+}
+
+/* The Modal */
+.modal-for-share {
+   display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  bottom: 0; /* Position at the bottom of the viewport */
+  width: 100vw !important; /* Full width */
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+  color: #fff; /* Text color */
+}
+
+/* Modal Content/Box */
+.modal-content-for-share {
+  background-color: #fefefe;
+  border: 1px solid #888;
+  padding: 30px;
+  width: 100%; /* Full width */
+  box-sizing: border-box; /* Include padding in width calculation */
+}
+
+/* Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  padding: 20px;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/*sneakbar for advert modal*/
+  .snackbar {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 20px;
+  border-radius: 5px 5px 0 0;
+  width: 100vw;
+  max-width: 100vw;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1050;
+  }
+  .snackbar.show {
+  display: block;
+  animation: slideUp 0.5s ease-in-out;
+  }
+  @keyframes slideUp {
+  from {
+      transform: translate(-50%, 100%);
+      opacity: 0;
+  }
+  to {
+      transform: translate(-50%, 0);
+      opacity: 1;
+  }
+  }
+  .snackbar .btn-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  color: white;
+  }
+/*   cookies modal*/
+/* Modal Styling */
+.modal4 {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content4 {
+  background-color: #fff;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: auto;
+  border-radius: 10px;
+}
+
+/* Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+  /* Styling for Toggle Switch */
+  .form-check-input {
+    position: absolute;
+    opacity: 0;
+  }
+
+  .form-check-label {
+    position: relative;
+    cursor: pointer;
+    padding-left: 40px; /* Adjust based on your design */
+  }
+
+  .form-check-label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 25px; /* Adjust based on your design */
+    height: 15px; /* Adjust based on your design */
+    border-radius: 10px; /* Round shape */
+    background-color: #ccc; /* Default background color */
+    transition: background-color 0.3s ease;
+  }
+
+  .form-check-input:checked + .form-check-label:before {
+    background-color: #2196F3; /* Color when checked */
+  }
+
+  .form-check-label:after {
+    content: '';
+    position: absolute;
+    left: 5px;
+    top: 2px;
+    width: 10px; /* Width of the toggle */
+    height: 10px; /* Height of the toggle */
+    border-radius: 50%; /* Round shape */
+    background-color: white; /* Toggle color */
+    transition: left 0.3s ease;
+  }
+
+  .form-check-input:checked + .form-check-label:after {
+    left: 15px; /* Move toggle to the right when checked */
+  }
+/*Badged container styling for adverts*/
+.badged-container {
+    position: fixed;
+    left: 20px; /* Adjust as needed */
+    top: 80%;
+    transform: translateY(-50%);
+    z-index: 999; /* Ensure it appears on top of other content */
+  }
+
+  .badged {
+    position: relative;
+    padding: 20px;
+    border-radius: 50%;
+    text-align: center;
+    width: 200px; /* Adjust as needed */
+    height: 200px; /* Adjust as needed */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Optional: Add shadow effect */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+/*    animation: blinker 3s linear infinite;*/
+    background: #2f5597 !important;
+  
+  }
+
+  .badged p {
+    margin: 0;
+    font-size: 14px;
+    font-family: comic Sans ;
+
+  }
+
+  .dismiss-icon {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    cursor: pointer;
+    color: #2f5597;
+
+  }
+
+  .new-badge {
+    
+   
+    background-color: red;
+    color: #fff;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 12px;
+    animation: blinker 1s linear infinite;
+  }
+
+  @keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+  }
