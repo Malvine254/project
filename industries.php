@@ -12,6 +12,7 @@
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <link rel="icon" href="images/logo/logo1.png" type="image/x-icon">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lobster&family=Dancing+Script&family=Cinzel:wght@400;700&family=Great+Vibes&family=Roboto+Slab:wght@400;700&family=Sacramento&family=Merriweather:wght@400;700&family=PT+Serif:wght@400;700&family=Zilla+Slab:wght@400;700&family=Poppins:wght@400;600&family=Lato:wght@100;300;400;700;900&display=swap">
 </head>
 <body>
   
@@ -33,17 +34,17 @@
       <li class="nav-item" role="presentation">
         <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Energy</a>
       </li>
-      <li class="nav-item" role="presentation">
+     <!--  <li class="nav-item" role="presentation">
         <a class="nav-link" id="higher-tab" data-toggle="tab" href="#higher" role="tab" aria-controls="higher" aria-selected="false">Higher Education</a>
       </li>
        <li class="nav-item" role="presentation">
         <a class="nav-link" id="education-tab" data-toggle="tab" href="#education" role="tab" aria-controls="education" aria-selected="false">Education</a>
-      </li>
+      </li> -->
        <li class="nav-item" role="presentation">
         <a class="nav-link" id="government-tab" data-toggle="tab" href="#government" role="tab" aria-controls="government" aria-selected="false">Local Government</a>
       </li>
        <li class="nav-item" role="presentation">
-        <a class="nav-link" id="marketing-tab" data-toggle="tab" href="#marketing" role="tab" aria-controls="contact" aria-selected="false">Marketing</a>
+        <a class="nav-link" id="marketing-tab" data-toggle="tab" href="#marketing" role="tab" aria-controls="contact" aria-selected="false">Legal</a>
       </li>
       <li class="nav-item" role="presentation">
         <a id="save-as-pdf" class="btn default-button-color" >Download PDF</a>
@@ -58,92 +59,121 @@
           <div class="row">
             <div class="col-md-6">
               <h2>Healthcare</h2>
+              <hr>
               <p>Data empowers personalized healthcare journeys. Analyzing medical history and wearables allows providers to tailor treatments and optimize workflows, leading to better patient outcomes.</p>
               <p>We partner with you to unlock this potential. Our expertise in data analytics and EHR integration empowers you to consolidate patient data, generate actionable insights for personalized care, and make data-driven decisions for better resource allocation and cost reduction. </p>
+              <p>Accelerate innovation while improving healthcare experience with AI-powered Solutions, actionable insights and trustworthy capabilities  </p>
             </div>
 
-            <div class="col-md-4">
-              <img height="100" class="img-fluid" src="images/services/service2.jpg">
+            <div class="col-md-6">
+              <img  class="img-fluid" src="images/industry/nurse.png">
             </div>
 
-          </div>
-          
-          <div class=" mt-5">
-             <p>Accelerate innovation while improving healthcare experience with AI-powered Solutions, actionable insights and trustworthy capabilities  </p>
-            <div class="row justify-content-center text-center">
-            <div class="col">
-              <h6>Connected</h6>
-              <i class="fa fa-share-nodes fa-3x"></i>
-            </div>
-             <div class="col">
-              <h6>Secure</h6>
-              <i class="fa fa-user fa-3x"></i>
-            </div>
-             <div class="col">
-              <h6>Productive</h6>
-              <i class="fa fa-chart-line fa-3x"></i>
-            </div>
-             <div class="col">
-              <h6>Insights</h6>
-              <i class="fa fa-list fa-3x"></i>
-            </div>
-          </div>
-          </div>
-
-          <div class="row mt-4">
-            <div class="col-md-2">
-              <div class="shadow p-2" style="min-height: 360px; max-height: 360px;">
-                <img width="48" height="48" src="https://www.microsoft.com/content/dam/microsoft/final/en-us/microsoft-brand/icons/Icon-Microsoft-fabric-24x24.svg" alt="microsoft-power-automate-2020"/>
-                <h6>Microsoft Fabric in healthcare</h6>
-                <p>Unlock powerful analytics in healthcare data. As Microsoft Fabric Partners we empower organizations build data-driven decisions solutions</p>
-              </div>
-            </div>
-             <div class="col-md-2">
-              <div class="shadow p-2" style="min-height: 360px; max-height: 360px;">
-                <img width="48" height="48" src="https://www.microsoft.com/content/dam/microsoft/final/en-us/microsoft-brand/icons/Icon-Power-Platform-24x24.svg" alt="microsoft-power-automate-2020"/>
-                <h6>Power Platform in healthcare</h6>
-                <p>Streamline workflows and automates tasks, building low-code/no-code solutions that empower organizations to transform data into actionable insights.</p>
-              </div>
-            </div>
-             <div class="col-md-2">
-              <div class="shadow p-2" style="min-height: 360px; max-height: 360px;">
-                <img width="48" height="48" src="https://www.microsoft.com/content/dam/microsoft/final/en-us/microsoft-brand/icons/Icon-Microsft-Cloud-for-Healthcare-24x24.svg" alt="microsoft-power-automate-2020"/>
-                <h6>Microsoft Cloud for healthcare</h6>
-                <p>Cloud for healthcare brings together secure, scalable cloud services to empower healthcare organizations with data-driven insights.</p>
-              </div>
-            </div>
-             <div class="col-md-2">
-              <div class="shadow p-2" style="min-height: 360px; max-height: 360px;">
-                <img width="48" height="48" src="https://img.icons8.com/fluency/48/microsoft-power-automate-2020.png" alt="microsoft-power-automate-2020"/>
-                <h6>Azure AI in healthcare</h6>
-                <p>Empowers organizations with intelligent capabilities, enabling tasks like analyzing medical images for faster diagnoses, predicting patient outcomes and extracting insights from unstructured data to improve research and development.</p>
-              </div>
-            </div>
-             <div class="col-md-2">
-              <div class="shadow p-2" style="min-height: 360px; max-height: 360px;">
-                <img width="48" height="48" src="https://th.bing.com/th/id/OIP.GIheK6M3kWlHXSMg_2L-nQAAAA?rs=1&pid=ImgDetMain" alt="microsoft-power-automate-2020"/>
-                <h6>FHIR Integration</h6>
-                <p>Unlocks seamless data exchange within healthcare ecosystems, enabling secure sharing of patient information across different applications and platforms for improved care coordination and decision-making.</p>
-              </div>
-            </div>
-             <div class="col-md-2">
-              <div class="shadow p-2" style="min-height: 360px; max-height: 360px;">
-               <img width="48" height="48" src="https://www.microsoft.com/content/dam/microsoft/final/en-us/microsoft-brand/icons/Icon-Azure-AI-24x24-1.svg" alt="tableau-software"/>
-                <h6>Tableau in healthcare</h6>
-                <p>Transform complex healthcare data into clear, insightful visualizations allowing organization to identify trends, patterns leading to better patient care, optimized resource allocation, and informed decision-making.</p>
-              </div>
-            </div>
           </div>
           
         </div>
+
     </div>
+    <div class="row">
+      <div class="col-md-4 mb-3">
+        <div class="shadow p-2" style="min-height: 260px; max-height: 260px;">
+          <img width="48" height="48" src="https://www.microsoft.com/content/dam/microsoft/final/en-us/microsoft-brand/icons/Icon-Microsoft-fabric-24x24.svg" alt="microsoft-power-automate-2020"/>
+          <h6>Microsoft Fabric in healthcare</h6>
+          <p>Unlock powerful analytics in healthcare data. As Microsoft Fabric Partners we empower organizations build data-driven decisions solutions</p>
+        </div>
+      </div>
+       <div class="col-md-4">
+        <div class="shadow p-2" style="min-height: 260px; max-height: 260px;">
+          <img width="48" height="48" src="https://www.microsoft.com/content/dam/microsoft/final/en-us/microsoft-brand/icons/Icon-Power-Platform-24x24.svg" alt="microsoft-power-automate-2020"/>
+          <h6>Power Platform in healthcare</h6>
+          <p>Streamline workflows and automates tasks, building low-code/no-code solutions that empower organizations to transform data into actionable insights.</p>
+        </div>
+      </div>
+       <div class="col-md-4">
+        <div class="shadow p-2" style="min-height: 260px; max-height: 260px;">
+          <img width="48" height="48" src="https://www.microsoft.com/content/dam/microsoft/final/en-us/microsoft-brand/icons/Icon-Microsft-Cloud-for-Healthcare-24x24.svg" alt="microsoft-power-automate-2020"/>
+          <h6>Microsoft Cloud for healthcare</h6>
+          <p>Cloud for healthcare brings together secure, scalable cloud services to empower healthcare organizations with data-driven insights.</p>
+        </div>
+      </div>
+       <div class="col-md-4">
+        <div class="shadow p-2" style="min-height: 260px; max-height: 260px;">
+          <img width="48" height="48" src="https://img.icons8.com/fluency/48/microsoft-power-automate-2020.png" alt="microsoft-power-automate-2020"/>
+          <h6>Azure AI in healthcare</h6>
+          <p>Empowers organizations with intelligent capabilities, enabling tasks like analyzing medical images for faster diagnoses, predicting patient outcomes and extracting insights from unstructured data to improve research and development.</p>
+        </div>
+      </div>
+       <div class="col-md-4">
+        <div class="shadow p-2" style="min-height: 260px; max-height: 260px;">
+          <img width="48" height="48" src="https://th.bing.com/th/id/OIP.GIheK6M3kWlHXSMg_2L-nQAAAA?rs=1&pid=ImgDetMain" alt="microsoft-power-automate-2020"/>
+          <h6>FHIR Integration</h6>
+          <p>Unlocks seamless data exchange within healthcare ecosystems, enabling secure sharing of patient information across different applications and platforms for improved care coordination and decision-making.</p>
+        </div>
+      </div>
+       <div class="col-md-4">
+        <div class="shadow p-2" style="min-height: 260px; max-height: 260px;">
+         <img width="48" height="48" src="https://www.microsoft.com/content/dam/microsoft/final/en-us/microsoft-brand/icons/Icon-Azure-AI-24x24-1.svg" alt="tableau-software"/>
+          <h6>Tableau in healthcare</h6>
+          <p>Transform complex healthcare data into clear, insightful visualizations allowing organization to identify trends, patterns leading to better patient care, optimized resource allocation, and informed decision-making.</p>
+        </div>
+      </div>
+    </div>
+
+
+
     </div>
     <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-         <div style="min-height: 65vh; height: auto;">
-             
-         </div>
-      
-    </div>
+     <div style="min-height: 65vh; height: auto;">
+
+       <div class="mt-4">
+          <div class="row">
+            <div class="col-md-6">
+              <img  class="img-fluid" src="images/industry/oil.png">
+            </div>
+            <div class="col-md-6">
+              <h2>Oil & Gas</h2>
+              <hr>
+              <p>Data in Oil and Gas industry fuels the revolution of how the industry operates. With forward thinking solutions, players explore the transformative opportunities presented by today’s technology.</p>
+              <p>Armely as a partner has a track record in helping organizations in this industry realize the value of digital transformation. </p>
+              
+            </div>
+
+          </div>
+          
+        </div>
+
+      <div class="row mt-5">
+      <div class="col-md-3">
+        <div class="shadow p-2" style="min-height: 260px; max-height: 260px;">
+          <img width="48" height="48" src="https://www.microsoft.com/content/dam/microsoft/final/en-us/microsoft-brand/icons/Icon-Microsoft-fabric-24x24.svg" alt="microsoft-power-automate-2020"/>
+          <h6>Microsoft Fabric in oil & gas </h6>
+          <p>Unlock powerful analytics in oil & gas data. As Microsoft Fabric Partners we empower organizations build data-driven decisions solutions </p>
+        </div>
+      </div>
+       <div class="col-md-3">
+        <div class="shadow p-2" style="min-height: 260px; max-height: 260px;">
+          <img width="48" height="48" src="https://www.microsoft.com/content/dam/microsoft/final/en-us/microsoft-brand/icons/Icon-Power-Platform-24x24.svg" alt="microsoft-power-automate-2020"/>
+          <h6>Power Platform in oil & gas</h6>
+          <p>Streamline workflows and automates tasks, building low-code/no-code solutions that empower organizations to transform data into actionable insights</p>
+        </div>
+      </div>
+       <div class="col-md-3">
+        <div class="shadow p-2" style="min-height: 260px; max-height: 260px;">
+          <img width="48" height="48" src="https://img.icons8.com/fluency/48/azure-1.png" alt="azure-1"/>
+          <h6>Azure AI in oil & gas </h6>
+          <p>Empowers organizations with intelligent capabilities, enabling tasks like analyzing medical images for faster diagnoses, predicting patient outcomes and extracting insights from unstructured data to improve research and development.</p>
+        </div>
+      </div>
+       <div class="col-md-3">
+        <div class="shadow p-2" style="min-height: 260px; max-height: 260px;">
+          <img width="50" height="50" src="https://img.icons8.com/bubbles/50/azure-api-manager.png" alt="azure-api-manager"/>
+          <h6>API Integration</h6>
+          <p>Transform complex oil & gas data into clear, insightful visualizations allowing organization to identify trends by integrating with external data</p>
+        </div>
+      </div>
+    </div>    
+     </div>
+  </div>
     <div class="tab-pane fade" id="education" role="tabpanel" aria-labelledby="education-tab">
          <div style="min-height: 65vh; height: auto;">
              <p>Education content goes here.</p>
@@ -152,19 +182,108 @@
       
     </div>
     <div class="tab-pane fade" id="energy" role="tabpanel" aria-labelledby="energy-tab">
-         <div style="height: 65vh;">
+         <div style="min-height: 65vh; height: auto">
              <p>Energy content goes here.</p>
          </div>
     </div>
     <div class="tab-pane fade" id="government" role="tabpanel" aria-labelledby="government-tab">
-        <div style="height: 65vh;">
-            <p>Government Education content goes here.</p>
+      <div style="min-height: 65vh; height: auto;">        
+       <div class="mt-4">
+          <div class="row">
+            <div class="col-md-6">
+              <h2>Local Government</h2>
+              <hr>
+              <p>In today's data-driven world, local governments are undergoing a revolution. Data is no longer just numbers; it's the fuel that propels smarter decision-making, improved service delivery, and a more responsive government.</p>
+              <p>Armely, a trusted partner with a proven track record, empowers local governments to unlock the transformative potential of data through forward-thinking solutions.</p>
+            </div>
+            <div class="col-md-6">
+              <img  class="img-fluid" src="images/industry/government.png">
+            </div>
+            <div class="mt-2">
+              <h5>Here&#39;s how Armely makes a difference:&nbsp;</h5>
+              <hr>
+                <ul>
+                  <li>
+                  <p>Harnessing Data Insights: We help you collect, analyze, and utilize data to gain valuable insights into your community&#39;s needs.&nbsp;</p>
+                  </li>
+                </ul>
+
+                <ul>
+                  <li>
+                  <p>Streamlined Operations: Our solutions optimize processes, improve efficiency, and free up valuable resources for what matters most &ndash; serving your citizens.&nbsp;</p>
+                  </li>
+                </ul>
+
+                <ul>
+                  <li>
+                  <p>Data-Driven Decisions: Empower your leaders with real-time information to make informed decisions that truly benefit your community.&nbsp;</p>
+                  </li>
+                </ul>
+
+                <ul>
+                  <li>
+                  <p>Enhanced Citizen Engagement: We help foster transparency and build trust through open data initiatives and citizen-friendly applications.&nbsp;</p>
+                  </li>
+                </ul>
+
+            </div>
+          </div> 
         </div>
+
+
+      </div>
     </div>
     <div class="tab-pane fade" id="marketing" role="tabpanel" aria-labelledby="marketing-tab">
-        <div style="height: 65vh;">
-             <p>Marketing Education content goes here.</p>
+      <div style="min-height: 65vh; height: auto;">
+
+        <div class="mt-4">
+          <div class="row">
+            <div class="col-md-6">
+              <h2>Legal</h2>
+              <hr>
+              <p>The legal industry is undergoing a seismic shift, driven by the transformative power of data. Data has been revolutionizing how legal services are delivered. At Armely, we're at the forefront, partnering with forward-thinking legal organizations to unlock the immense potential of this data revolution.</p>
+              <p>Armely, a trusted partner with a proven track record, empowers local governments to unlock the transformative potential of data through forward-thinking solutions.</p>
+            </div>
+            <div class="col-md-6">
+              <img  class="img-fluid" src="images/industry/legal.png">
+            </div>
+            <div class="mt-2">
+             <h5>Harnessing the Power of Information&nbsp;</h5>
+             <hr>
+
+              <p>We understand the challenges of navigating the vast amount of data that permeates every aspect of the legal industry. From case law and contracts to due diligence and client communication, data holds the key to unlocking new levels of efficiency, accuracy, and insight.&nbsp;</p>
+
+              <p> <strong>Armely: Your Trusted Partner in Legal Data Transformation&nbsp;</strong></p>
+
+              <p>Our proven track record speaks for itself. We partner with legal organizations to:&nbsp;</p>
+
+              <ul>
+                <li>
+                <p>Extract value from data: We help implement solutions to collect, organize, and analyze legal data, turning it into actionable insights.&nbsp;</p>
+                </li>
+              </ul>
+
+              <ul>
+                <li>
+                <p>Automate routine tasks: By leveraging data and automation, we free up valuable time for legal professionals to focus on high-value strategy and client service.&nbsp;</p>
+                </li>
+              </ul>
+
+              <ul>
+                <li>
+                <p>Gain a competitive edge: Data-driven insights empower lawyers to build stronger cases, deliver more efficient services, and gain a competitive advantage in the market.&nbsp;</p>
+                </li>
+              </ul>
+
+              <p><a href="case study">See our case Studies for Local Government&nbsp;</a></p>
+
+              <p>Get started today, work with Armely to extend and develop solutions that will transform your business today. Using our knowledge and expertise in the industry, we will partner in transform your business&nbsp;</p>
+
+            </div>
+          </div> 
         </div>
+          
+      </div>
      
     </div>
     <div class="tab-pane fade" id="higher" role="tabpanel" aria-labelledby="higher-tab">
@@ -173,12 +292,38 @@
         </div>
      
     </div>
+
+  </div>
+</div>
+<div class="row justify-content-center text-center mt-5">
+  <div class="col">
+    <h6>Connected</h6>
+    <img class="img-fluid" width="50" height="50" src="images/industry/svg1.svg">
+  </div>
+   <div class="col">
+    <h6>Secure</h6>
+     <img class="img-fluid rounded-circle" width="50" height="50" src="images/industry/svg2.svg">
+  </div>
+   <div class="col">
+    <h6>Productive</h6>
+     <img class="img-fluid" width="50" height="50" src="images/industry/svg3.svg">
+  </div>
+   <div class="col">
+    <h6>Insights</h6>
+     <img class="img-fluid" width="50" height="50" src="images/industry/svg4.svg">
+  </div>
+</div>
+<div class="container col-md-11 mt-5 p-5">
+  <div class="row">
+    <div class="col-md-7">
+      <h6>Get started today, work with Armely to extend and develop solutions that will transform your business today. Using our knowledge and expertise in the industry, we will partner in transform your business</h6>
+    </div>
+    <div class="col-md-5">
+      <a href="contact-us" class="btn btn-lg btn-outline-info default-button-color"> <i class="fa fa-phone fa-1x"></i> Contact Us</a>
+    </div>
   </div>
 </div>
 
-
-
-  </div>
 
   <!-- Floating Action Button -->
   <div class="floating-btn" data-aos="fade-in">
@@ -215,27 +360,27 @@
   <script src="js/main3.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
- <!--  <script>
+  <script>
   $(document).ready(function() {
-    // Get the response data from sessionStorage
-    var responseData = sessionStorage.getItem('responseData');
-     //console.log( responseData);
-    var fd = new FormData()
-    fd.append("arrayString",responseData);
-     if (fd != "") {
-        $.ajax({
-            type: 'POST',
-            url: 'php/actions', // Replace with your actual server-side endpoint
-            processData: false, // Prevent jQuery from automatically processing data
-            contentType: false,
-            data: fd,
-            success: function(e) {
-                $("#showAllContents").html(e)
-              //alert(e)
+    // // Get the response data from sessionStorage
+    // var responseData = sessionStorage.getItem('responseData');
+    //  //console.log( responseData);
+    // var fd = new FormData()
+    // fd.append("arrayString",responseData);
+    //  if (fd != "") {
+    //     $.ajax({
+    //         type: 'POST',
+    //         url: 'php/actions', // Replace with your actual server-side endpoint
+    //         processData: false, // Prevent jQuery from automatically processing data
+    //         contentType: false,
+    //         data: fd,
+    //         success: function(e) {
+    //             $("#showAllContents").html(e)
+    //           //alert(e)
             
-              }
-        })
-     }
+    //           }
+    //     })
+    //  }
     
     //sessionStorage.removeItem('responseData');
 
@@ -246,7 +391,7 @@
 });
     
     
-  </script> -->
+  </script>
 
 </body>
 </html>

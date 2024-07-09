@@ -2,8 +2,8 @@
   color: black !important;
   font-size: 18px !important;
 }
-h2,h3,h4,h5,h6,p,strong,link,input,textarea{
- 
+ p,li,a,div,span{
+  font-family: 'Verdana', serif !important;
 }
 .nav{
 padding: 26px !important; 

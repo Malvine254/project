@@ -14,6 +14,7 @@
   <link rel="icon" href="images/logo/logo1.png" type="image/x-icon">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
   <meta http-equiv="Content-Encoding" content="gzip">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lobster&family=Dancing+Script&family=Cinzel:wght@400;700&family=Great+Vibes&family=Roboto+Slab:wght@400;700&family=Sacramento&family=Merriweather:wght@400;700&family=PT+Serif:wght@400;700&family=Zilla+Slab:wght@400;700&family=Poppins:wght@400;600&family=Lato:wght@100;300;400;700;900&display=swap">
 </head>
 <body>
  
@@ -92,7 +93,7 @@
               <div class="p-3">
                  <strong> <p id="'.$row['id'].'" class="text-muted">Industry: Artificial Intelligence</p></strong>
                   <p>
-                    <?php echo substr("Discover how a multinational corporation improved internal communication by partnering with Armely to develop a Retrieval Augmented Generation (RAG) system for their private ChatGPT. This integration increased productivity by 40% and reduced time spent searching for information.", 0,200) ?>
+                    <?php echo substr("Discover how a multinational corporation improved internal communication by partnering with Armely to develop a Retrieval Augmented Generation (RAG) system for their private ChatGPT. This integration increased productivity by 40% and reduced time spent searching for information", 0,180) ?>...
                    </p>
                     <div class="col" style="display: none;">
                        <h6><a target="_blank" href="#">Read More <i class="fa fa-angle-right"></i><i class="fa fa-angle-right"></i> </a></h6>
@@ -105,7 +106,7 @@
               <img style="min-height: 300px;" src="images/case-study/education.png" class="d-block img-fluid" alt="">
               <div class="p-3">
                  <strong> <p id="" class="text-muted">Industry: Education</p></strong>
-                  <p> <?php echo substr(" Discover how an online learning platform partnered with Armely to utilize data analytics and machine learning to enhance student engagement and success. By analyzing student interactions and performance data, the platform implemented personalized learning paths and early intervention strategies, resulting in a 25% increase in course completion rates.", 0,200) ?> </p>
+                  <p> <?php echo substr(" Discover how an online learning platform partnered with Armely to utilize data analytics and machine learning to enhance student engagement and success. By analyzing student interactions and performance data, the platform implemented personalized learning paths and early intervention strategies, resulting in a 25% increase in course completion rates.", 0,180) ?>... </p>
                     <div class="col" style="display: none;">
                        <h6><a target="_blank" href="#">Read More <i class="fa fa-angle-right"></i><i class="fa fa-angle-right"></i> </a></h6>
                      </div>

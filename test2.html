@@ -3,109 +3,155 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Underline Example</title>
+    <title>Font Family Examples</title>
+    <!-- Google Fonts CDN -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lobster&family=Dancing+Script&family=Cinzel:wght@400;700&family=Great+Vibes&family=Roboto+Slab:wght@400;700&family=Sacramento&family=Merriweather:wght@400;700&family=PT+Serif:wght@400;700&family=Zilla+Slab:wght@400;700&family=Poppins:wght@400;600&family=Lato:wght@100;300;400;700;900&display=swap">
+    <!-- Custom CSS -->
     <style>
-        .border-underline {
-            display: inline-block;
-            position: relative;
-            padding-bottom: 5px; /* Space between text and the border */
+        body {
+            font-family: 'Lato', sans-serif;
+            padding: 20px;
+            line-height: 1.6;
         }
-        .border-underline::after {
-            content: '';
-            position: absolute;
-            left: 0;
-            bottom: 0;
-            width: 100%;
-            height: 3px; /* Thickness of the underline */
-            background-color: red; /* Color of the underline */
-            border-radius: 2px; /* Rounded corners */
+        .font-example {
+            margin-bottom: 30px;
+        }
+        .font-example h2 {
+            margin-bottom: 10px;
+            font-size: 24px;
+        }
+        .font-example p {
+            font-size: 18px;
+        }
+        .playfair {
+            font-family: 'Playfair Display', serif;
+        }
+        .lobster {
+            font-family: 'Lobster', cursive;
+        }
+        .dancing-script {
+            font-family: 'Dancing Script', cursive;
+        }
+        .cinzel {
+            font-family: 'Cinzel', serif;
+        }
+        .great-vibes {
+            font-family: 'Great Vibes', cursive;
+        }
+        .roboto-slab {
+            font-family: 'Roboto Slab', serif;
+        }
+        .sacramento {
+            font-family: 'Sacramento', cursive;
+        }
+        .merriweather {
+            font-family: 'Merriweather', serif;
+        }
+        .pt-serif {
+            font-family: 'PT Serif', serif;
+        }
+        .zilla-slab {
+            font-family: 'Zilla Slab', serif;
+        }
+        .poppins {
+            font-family: 'Poppins', sans-serif;
+        }
+        .lato {
+            font-family: 'Lato', sans-serif;
+        }
+        .arial {
+            font-family: Arial, sans-serif;
+        }
+        .times-new-roman {
+            font-family: 'Times New Roman', serif;
+        }
+        .verdana {
+            font-family: Verdana, sans-serif;
+        }
+        .courier-new {
+            font-family: 'Courier New', monospace;
         }
     </style>
 </head>
 <body>
-   <nav class='navbar navbar-expand-lg navbar-dark fixed-top'>
-    <div class='container col-md-12'>
-        <a class='navbar-brand link' href='index'>
-            <img class='img-fluid' style='max-width: 170px; width: auto;' height='auto' src='images/logo/logo.svg'/>
-        </a>
-        <button style='background-color:rgb(47,85,151)' class='navbar-toggler' type='button' data-toggle='collapse' data-target='#navbarNav' aria-controls='navbarNav' aria-expanded='false' aria-label='Toggle navigation'>
-            <span class='navbar-toggler-icon'></span>
-        </button>
-        <div class='collapse navbar-collapse justify-content-center text-center' id='navbarNav'>
-            <ul class='navbar-nav mx-auto'>
-                <li class='nav-item dropdown'>
-                    <a class='nav-link text-dark link remove-floating dropdown-toggle' href='#' id='whyArmelyDropdown' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false'>
-                        WHY ARMELY?
-                    </a>
-                    <div class='dropdown-menu' aria-labelledby='whyArmelyDropdown'>
-                        <a class='dropdown-item' href='company'>Company Overview bbbbbb</a>
-                        <a class='dropdown-item' href='career'>Career Opportunities</a>
-                       
-                    </div>
-                </li>
-                <li class='nav-item active dropdown'>
-                    <span >
-                        <a href='services' class='nav-link text-dark link myButton dropdown-toggle' id='servicesDropdown' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false'>
-                            SERVICES <span class='sr-only'>(current)</span>
-                        </a>
-                        <div class='dropdown-menu' aria-labelledby='servicesDropdown'>
-                            <a class='dropdown-item' href='services'>All Services</a>
-                            <a class='dropdown-item' href='cloud'>Cloud Services</a>
-                            <a class='dropdown-item' href='data'>Data Services</a>
-                            <a class='dropdown-item' href='ai'>AI Services</a>
-                            <a class='dropdown-item' href='managed-services'>Managed Services</a>
-                            <a class='dropdown-item' href='professional-services'>Professional Services</a>
-                            <a class='dropdown-item' href='enterprise-services'>Enterprise Services</a>
-                            <a class='dropdown-item' href='advisory services'>Advisory Services</a>
-                        </div>
-                    </span>
-               <!--  <li class='nav-item dropdown'>
-                    <a class='nav-link text-dark link remove-floating dropdown-toggle' href='#' id='whyArmelyDropdown' role='button' data-toggle='dropdown' aria-haspopup='true' aria               expanded='false'>
-                       INDUSTRIES
-                    </a>
-                    <div class='dropdown-menu' aria-labelledby='Energy'>
-                        <a class='dropdown-item' href='#'>Higher Education</a>
-                        <a class='dropdown-item' href='#'>Education</a>
-                        <a class='dropdown-item' href='#'>Local Government</a>
-            <a class='dropdown-item' href='#'>Marketing</a>
-                    </div>
-                </li> -->
-            <li class='nav-item dropdown'>
-                    <a class='nav-link text-dark link remove-floating dropdown-toggle' href='#' id='whyArmelyDropdown' role='button' data-toggle='dropdown' aria-haspopup='true' aria               expanded='false'>
-                       INSIGHTS
-                    </a>
-                    <div class='dropdown-menu' aria-labelledby='Case Study'>
-                        <a class='dropdown-item' href='blog'>Blog Articles</a>
-                        <a class='dropdown-item' href='customer-stories'>Customer Stories</a>
-            <a class='dropdown-item' href='case study'>Case Studies</a>
-
-                   </div>
-                </li>
-
-
-              <!--   <li class='nav-item'>
-                    <a class='nav-link text-dark link remove-floating' href='#'>PROJECTS</a>
-                </li> -->
-
-                 </li>
-                               <li class='nav-item'>
-                    <a class='nav-link text-dark link' href='contact-us'>CONTACT US</a>
-                </li>
-            </ul>
-            <form class='form-inline my-2 my-lg-0'>
-                <div class='input-group' style='width: auto;'>
-                    <input style='width: auto;' class='form-control py-2 border-right-0 border col-md-12 bg-transparent' type='search' placeholder='Search...' id='searchInput'>
-                    <span class='input-group-append'>
-                        <button class='btn btn-outline-secondary border-left-0 border' type='button' style='outline: none;'>
-                            <i class='fa fa-search'></i>
-                        </button>
-                    </span>
-                </div>
-            </form>
-            <a id='toggleDarkMode' class='nav-link link'><i class='icon fa fa-moon icon'></i></a>
-        </div>
+    <div class="font-example playfair">
+        <h2>Playfair Display</h2>
+        <p>This is an example of the Playfair Display font.</p>
     </div>
-</nav>
 
+    <div class="font-example lobster">
+        <h2>Lobster</h2>
+        <p>This is an example of the Lobster font.</p>
+    </div>
+
+    <div class="font-example dancing-script">
+        <h2>Dancing Script</h2>
+        <p>This is an example of the Dancing Script font.</p>
+    </div>
+
+    <div class="font-example cinzel">
+        <h2>Cinzel</h2>
+        <p>This is an example of the Cinzel font.</p>
+    </div>
+
+    <div class="font-example great-vibes">
+        <h2>Great Vibes</h2>
+        <p>This is an example of the Great Vibes font.</p>
+    </div>
+
+    <div class="font-example roboto-slab">
+        <h2>Roboto Slab</h2>
+        <p>This is an example of the Roboto Slab font.</p>
+    </div>
+
+    <div class="font-example sacramento">
+        <h2>Sacramento</h2>
+        <p>This is an example of the Sacramento font.</p>
+    </div>
+
+    <div class="font-example merriweather">
+        <h2>Merriweather</h2>
+        <p>This is an example of the Merriweather font.</p>
+    </div>
+
+    <div class="font-example pt-serif">
+        <h2>PT Serif</h2>
+        <p>This is an example of the PT Serif font.</p>
+    </div>
+
+    <div class="font-example zilla-slab">
+        <h2>Zilla Slab</h2>
+        <p>This is an example of the Zilla Slab font.</p>
+    </div>
+
+    <div class="font-example poppins">
+        <h2>Poppins</h2>
+        <p>This is an example of the Poppins font.</p>
+    </div>
+
+    <div class="font-example lato">
+        <h2>Lato</h2>
+        <p>This is an example of the Lato font.</p>
+    </div>
+
+    <div class="font-example arial">
+        <h2>Arial</h2>
+        <p>This is an example of the Arial font.</p>
+    </div>
+
+    <div class="font-example times-new-roman">
+        <h2>Times New Roman</h2>
+        <p>This is an example of the Times New Roman font.</p>
+    </div>
+
+    <div class="font-example verdana">
+        <h2>Verdana</h2>
+        <p>This is an example of the Verdana font.</p>
+    </div>
+
+    <div class="font-example courier-new">
+        <h2>Courier New</h2>
+        <p>This is an example of the Courier New font.</p>
+    </div>
 </body>
 </html>

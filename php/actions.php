@@ -292,6 +292,13 @@ function displayCoreValues(){
 
 function displayServicesList(){
     include 'config.php';
+    function readMoreText($text){
+    	if (strlen($text)>=50) {
+    		return substr($text, 0,100)."...";
+    	}else{
+    		return $text;
+    	}
+    }
      $select = $conn->query("SELECT * FROM services_lists ");
      if ($select->num_rows>0) {
         while ($row=$select->fetch_assoc()) {
@@ -305,7 +312,7 @@ function displayServicesList(){
 				            </div>
 				            <h5 class="font-weight-bold my-3">'.$row['title'].'</h5>
 				            <p class="mb-2">
-				              <i class="fas fa-quote-left pe-2"></i>'.$row['body'].' <a href="'.$row['url'].'">Learn More</a>
+				              <i class="fas fa-quote-left pe-2"></i>'.readMoreText($row['body']).' <a href="'.$row['url'].'">Learn More</a>
 				            </p>
 				          </div>
 				        </div>
@@ -315,6 +322,8 @@ function displayServicesList(){
     }else{
         echo "No records found!";
     }
+
+    
 
 }
 
