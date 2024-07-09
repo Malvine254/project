@@ -22,7 +22,7 @@
   <!-- counter section -->  
   <style>
     .background-image {
-      background-image: url('https://images.pexels.com/photos/280193/pexels-photo-280193.jpeg');
+      background-image: url('images/contact/dallas.png');
       background-size: cover;
       background-position: center;
       background-size: 100vw;
@@ -30,14 +30,15 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      height: 60vh; /* or any height you prefer */
+      height: 65vh; /* or any height you prefer */
     }
     .font-size{
       font-size: 57px;
     }
   </style>
-<div class="container col-md-11 shadow p-3">
-  <div class="background-image">
+ <div style="margin-top: 80px;"></div> 
+<div class="container col-md-11">
+  <div class="background-image shadow col-md-12">
     <h1 class="text-center text-light font-size">Contact Us</h1>
   </div>
 
