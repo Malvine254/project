@@ -46,12 +46,9 @@
        <li class="nav-item" role="presentation">
         <a class="nav-link" id="marketing-tab" data-toggle="tab" href="#marketing" role="tab" aria-controls="contact" aria-selected="false">Legal</a>
       </li>
-      <li class="nav-item" role="presentation">
-        <a id="save-as-pdf" class="btn default-button-color" >Download PDF</a>
-      </li>
     </ul>
   </div>
-  <div class="tab-content" id="myTabContent">
+  <div class="tab-content container col-md-11" id="myTabContent">
     <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
       <div style="height: auto; min-height: 65vh">
 
@@ -72,55 +69,52 @@
           </div>
           
         </div>
-
-    </div>
-    <div class="row">
-      <div class="col-md-4 mb-3">
-        <div class="shadow p-2" style="min-height: 260px; max-height: 260px;">
-          <img width="48" height="48" src="https://www.microsoft.com/content/dam/microsoft/final/en-us/microsoft-brand/icons/Icon-Microsoft-fabric-24x24.svg" alt="microsoft-power-automate-2020"/>
-          <h6>Microsoft Fabric in healthcare</h6>
-          <p>Unlock powerful analytics in healthcare data. As Microsoft Fabric Partners we empower organizations build data-driven decisions solutions</p>
+        <div class="row mt-5">
+          <div class="col-md-4 mb-3">
+            <div class="shadow p-2" style="min-height: 260px; max-height: 260px;">
+              <img class="img-fluid" width="48" height="48" src="https://www.microsoft.com/content/dam/microsoft/final/en-us/microsoft-brand/icons/Icon-Microsoft-fabric-24x24.svg" alt="microsoft-power-automate-2020"/>
+              <h6><strong>Microsoft Fabric in healthcare</strong></h6>
+              <p>Unlock powerful analytics in healthcare data. As Microsoft Fabric Partners we empower organizations build data-driven decisions solutions</p>
+            </div>
+          </div>
+           <div class="col-md-4">
+            <div class="shadow p-2" style="min-height: 260px; max-height: 260px;">
+              <img class="img-fluid" width="48" height="48" src="https://www.microsoft.com/content/dam/microsoft/final/en-us/microsoft-brand/icons/Icon-Power-Platform-24x24.svg" alt="microsoft-power-automate-2020"/>
+              <h6><strong>Power Platform in healthcare</strong></h6>
+              <p>Streamline workflows and automates tasks, building low-code/no-code solutions that empower organizations to transform data into actionable insights.</p>
+            </div>
+          </div>
+           <div class="col-md-4">
+            <div class="shadow p-2" style="min-height: 260px; max-height: 260px;">
+              <img class="img-fluid" width="48" height="48" src="https://www.microsoft.com/content/dam/microsoft/final/en-us/microsoft-brand/icons/Icon-Microsft-Cloud-for-Healthcare-24x24.svg" alt="microsoft-power-automate-2020"/>
+              <h6><strong>Microsoft Cloud for healthcare</strong></h6>
+              <p>Cloud for healthcare brings together secure, scalable cloud services to empower healthcare organizations with data-driven insights.</p>
+            </div>
+          </div>
+           <div class="col-md-4">
+            <div class="shadow p-2" style="min-height: 260px; max-height: 260px;">
+              <img class="img-fluid" width="48" height="48" src="https://img.icons8.com/fluency/48/microsoft-power-automate-2020.png" alt="microsoft-power-automate-2020"/>
+              <h6><strong>Azure AI in healthcare</strong></h6>
+              <p>Empowers organizations with intelligent capabilities, enabling tasks like analyzing medical images for faster diagnoses, predicting patient outcomes and extracting insights from unstructured data to improve research and development.</p>
+            </div>
+          </div>
+           <div class="col-md-4">
+            <div class="shadow p-2" style="min-height: 260px; max-height: 260px;">
+              <img class="img-fluid" width="48" height="48" src="https://th.bing.com/th/id/OIP.GIheK6M3kWlHXSMg_2L-nQAAAA?rs=1&pid=ImgDetMain" alt="microsoft-power-automate-2020"/>
+              <h6><strong>FHIR Integration</strong></h6>
+              <p>Unlocks seamless data exchange within healthcare ecosystems, enabling secure sharing of patient information across different applications and platforms for improved care coordination and decision-making.</p>
+            </div>
+          </div>
+           <div class="col-md-4">
+            <div class="shadow p-2" style="min-height: 260px; max-height: 260px;">
+             <img class="img-fluid" width="48" height="48" src="https://www.microsoft.com/content/dam/microsoft/final/en-us/microsoft-brand/icons/Icon-Azure-AI-24x24-1.svg" alt="tableau-software"/>
+              <h6><strong>Tableau in healthcare</strong></h6>
+              <p>Transform complex healthcare data into clear, insightful visualizations allowing organization to identify trends, patterns leading to better patient care, optimized resource allocation, and informed decision-making.</p>
+            </div>
+          </div>
         </div>
-      </div>
-       <div class="col-md-4">
-        <div class="shadow p-2" style="min-height: 260px; max-height: 260px;">
-          <img width="48" height="48" src="https://www.microsoft.com/content/dam/microsoft/final/en-us/microsoft-brand/icons/Icon-Power-Platform-24x24.svg" alt="microsoft-power-automate-2020"/>
-          <h6>Power Platform in healthcare</h6>
-          <p>Streamline workflows and automates tasks, building low-code/no-code solutions that empower organizations to transform data into actionable insights.</p>
         </div>
-      </div>
-       <div class="col-md-4">
-        <div class="shadow p-2" style="min-height: 260px; max-height: 260px;">
-          <img width="48" height="48" src="https://www.microsoft.com/content/dam/microsoft/final/en-us/microsoft-brand/icons/Icon-Microsft-Cloud-for-Healthcare-24x24.svg" alt="microsoft-power-automate-2020"/>
-          <h6>Microsoft Cloud for healthcare</h6>
-          <p>Cloud for healthcare brings together secure, scalable cloud services to empower healthcare organizations with data-driven insights.</p>
-        </div>
-      </div>
-       <div class="col-md-4">
-        <div class="shadow p-2" style="min-height: 260px; max-height: 260px;">
-          <img width="48" height="48" src="https://img.icons8.com/fluency/48/microsoft-power-automate-2020.png" alt="microsoft-power-automate-2020"/>
-          <h6>Azure AI in healthcare</h6>
-          <p>Empowers organizations with intelligent capabilities, enabling tasks like analyzing medical images for faster diagnoses, predicting patient outcomes and extracting insights from unstructured data to improve research and development.</p>
-        </div>
-      </div>
-       <div class="col-md-4">
-        <div class="shadow p-2" style="min-height: 260px; max-height: 260px;">
-          <img width="48" height="48" src="https://th.bing.com/th/id/OIP.GIheK6M3kWlHXSMg_2L-nQAAAA?rs=1&pid=ImgDetMain" alt="microsoft-power-automate-2020"/>
-          <h6>FHIR Integration</h6>
-          <p>Unlocks seamless data exchange within healthcare ecosystems, enabling secure sharing of patient information across different applications and platforms for improved care coordination and decision-making.</p>
-        </div>
-      </div>
-       <div class="col-md-4">
-        <div class="shadow p-2" style="min-height: 260px; max-height: 260px;">
-         <img width="48" height="48" src="https://www.microsoft.com/content/dam/microsoft/final/en-us/microsoft-brand/icons/Icon-Azure-AI-24x24-1.svg" alt="tableau-software"/>
-          <h6>Tableau in healthcare</h6>
-          <p>Transform complex healthcare data into clear, insightful visualizations allowing organization to identify trends, patterns leading to better patient care, optimized resource allocation, and informed decision-making.</p>
-        </div>
-      </div>
-    </div>
-
-
-
+    
     </div>
     <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
      <div style="min-height: 65vh; height: auto;">
@@ -145,29 +139,29 @@
       <div class="row mt-5">
       <div class="col-md-3">
         <div class="shadow p-2" style="min-height: 260px; max-height: 260px;">
-          <img width="48" height="48" src="https://www.microsoft.com/content/dam/microsoft/final/en-us/microsoft-brand/icons/Icon-Microsoft-fabric-24x24.svg" alt="microsoft-power-automate-2020"/>
-          <h6>Microsoft Fabric in oil & gas </h6>
+          <img class="img-fluid" width="48" height="48" src="https://www.microsoft.com/content/dam/microsoft/final/en-us/microsoft-brand/icons/Icon-Microsoft-fabric-24x24.svg" alt="microsoft-power-automate-2020"/>
+          <h6><strong>Microsoft Fabric in oil & gas </strong></h6>
           <p>Unlock powerful analytics in oil & gas data. As Microsoft Fabric Partners we empower organizations build data-driven decisions solutions </p>
         </div>
       </div>
        <div class="col-md-3">
         <div class="shadow p-2" style="min-height: 260px; max-height: 260px;">
-          <img width="48" height="48" src="https://www.microsoft.com/content/dam/microsoft/final/en-us/microsoft-brand/icons/Icon-Power-Platform-24x24.svg" alt="microsoft-power-automate-2020"/>
-          <h6>Power Platform in oil & gas</h6>
+          <img class="img-fluid" width="48" height="48" src="https://www.microsoft.com/content/dam/microsoft/final/en-us/microsoft-brand/icons/Icon-Power-Platform-24x24.svg" alt="microsoft-power-automate-2020"/>
+          <h6><strong>Power Platform in oil & gas</strong></h6>
           <p>Streamline workflows and automates tasks, building low-code/no-code solutions that empower organizations to transform data into actionable insights</p>
         </div>
       </div>
        <div class="col-md-3">
         <div class="shadow p-2" style="min-height: 260px; max-height: 260px;">
-          <img width="48" height="48" src="https://img.icons8.com/fluency/48/azure-1.png" alt="azure-1"/>
-          <h6>Azure AI in oil & gas </h6>
+          <img class="img-fluid" width="48" height="48" src="https://img.icons8.com/fluency/48/azure-1.png" alt="azure-1"/>
+          <h6><strong>Azure AI in oil & gas</strong></h6>
           <p>Empowers organizations with intelligent capabilities, enabling tasks like analyzing medical images for faster diagnoses, predicting patient outcomes and extracting insights from unstructured data to improve research and development.</p>
         </div>
       </div>
        <div class="col-md-3">
         <div class="shadow p-2" style="min-height: 260px; max-height: 260px;">
-          <img width="50" height="50" src="https://img.icons8.com/bubbles/50/azure-api-manager.png" alt="azure-api-manager"/>
-          <h6>API Integration</h6>
+          <img class="img-fluid" width="50" height="50" src="https://img.icons8.com/bubbles/50/azure-api-manager.png" alt="azure-api-manager"/>
+          <h6><strong>API Integration</strong></h6>
           <p>Transform complex oil & gas data into clear, insightful visualizations allowing organization to identify trends by integrating with external data</p>
         </div>
       </div>
@@ -295,7 +289,7 @@
 
   </div>
 </div>
-<div class="row justify-content-center text-center mt-5">
+<div class="container col-md-11 row justify-content-center text-center mt-5">
   <div class="col">
     <h6>Connected</h6>
     <img class="img-fluid" width="50" height="50" src="images/industry/svg1.svg">
@@ -313,20 +307,21 @@
      <img class="img-fluid" width="50" height="50" src="images/industry/svg4.svg">
   </div>
 </div>
-<div class="container col-md-11 mt-5 p-5">
-  <div class="row">
-    <div class="col-md-7">
-      <h6>Get started today, work with Armely to extend and develop solutions that will transform your business today. Using our knowledge and expertise in the industry, we will partner in transform your business</h6>
-    </div>
-    <div class="col-md-5">
-      <a href="contact-us" class="btn btn-lg btn-outline-info default-button-color"> <i class="fa fa-phone fa-1x"></i> Contact Us</a>
-    </div>
+<div class="container col-md-11 col-sm-12 mt-5 p-5">
+  <div class="row align-items-center text-center">
+      <div class="col-md-2 col-sm-12"></div>
+      <div class="col-md-8 col-sm-12">
+          <h5>Get started today, work with Armely to extend and develop solutions that will transform your business today. Using our knowledge and expertise in the industry, we will partner in transform your business</h5>
+         <a href="contact-us" class="btn btn-lg btn-outline-info default-button-color mt-2"> <i class="fa fa-phone fa-1x"></i> Contact Us</a>
+       </div>
+      <div class="col-md-2 col-sm-12"></div>
+
   </div>
 </div>
 
 
   <!-- Floating Action Button -->
-  <div class="floating-btn" data-aos="fade-in">
+  <div class="floating-btn">
     <button id="myBtn" style="border-radius: 50%; height: 70px; width: 70px; background-color: rgb(47,85,151);" type="button" class="btn btn-primary btn-lg">
       <i class="fas fa-comments"></i>
     </button>
@@ -359,37 +354,8 @@
   <script src="js/form-actions.js"></script>
   <script src="js/main3.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
   <script>
-  $(document).ready(function() {
-    // // Get the response data from sessionStorage
-    // var responseData = sessionStorage.getItem('responseData');
-    //  //console.log( responseData);
-    // var fd = new FormData()
-    // fd.append("arrayString",responseData);
-    //  if (fd != "") {
-    //     $.ajax({
-    //         type: 'POST',
-    //         url: 'php/actions', // Replace with your actual server-side endpoint
-    //         processData: false, // Prevent jQuery from automatically processing data
-    //         contentType: false,
-    //         data: fd,
-    //         success: function(e) {
-    //             $("#showAllContents").html(e)
-    //           //alert(e)
-            
-    //           }
-    //     })
-    //  }
-    
-    //sessionStorage.removeItem('responseData');
-
-    $("#save-as-pdf").click(function() {
-    var element = document.getElementById('myTabContent');
-    html2pdf().from(element).save();
-});
-});
-    
+ 
     
   </script>
 

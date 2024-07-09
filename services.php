@@ -23,7 +23,7 @@
   <div class="container mt-1 shadow col-md-11 p-5" style="width: 98vw !important;">
     <div class="content-container">
       <div class="row">
-          <div class="col-md-5">
+          <div class="col-md-5  col-sm-12">
               <h1>Empowering Your Tech Journey</h1>
               <p>Our experts provide tailored guidance in areas such as business planning, product development, marketing, financial management, and risk management, ensuring your company's competitiveness and sustainable growth.</p>
           </div>

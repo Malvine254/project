@@ -136,7 +136,7 @@ function selectFromBlog($condition){
 	if ($select->num_rows>0) {
 		while ($row=$select->fetch_assoc()) {
 			echo "
-		<div  style='display: none;' class='row align-items-center blog-article' data-aos='fade-up'>
+		<div  style='display: none;' class='row align-items-center blog-article'>
     <div class='col-2'>
         <h6 class='lead h1 text-muted text-center'>".stringLength($numbering++)."</h6>
     </div>
@@ -199,7 +199,7 @@ function displayRecentBlogs(){
 	$select = $conn->query("SELECT * FROM blogs ORDER BY id DESC LIMIT 3");
 	if ($select->num_rows>0) {
 		while ($row=$select->fetch_assoc()) {
-			echo "<div class='col-md-4' data-aos='fade-in'>
+			echo "<div class='col-md-4'>
 	        <div class='card bg-primary mb-3 transparent-card shadow'>
 	          <img style='max-height: 300px; min-height: 300px;' class='card-img-top img-fluid' src='".$row['image_path']."' alt='Card image cap'>
 	          <div class='card-body'>
@@ -243,11 +243,11 @@ function displayCustomerStoriesTestimonials(){
         while ($row=$select->fetch_assoc()) {
 
         	echo '<div class="col-md-4 mb-2 mb-md-2 card-item">
-        <div class="card border-dark transparent-card" style="min-height: 300px !important;">
+        <div data-aos="fade-right" class="card border-dark transparent-card" style="min-height: 300px !important;">
           <div class="card-body py-4 mt-2">
             <div class="d-flex justify-content-center mb-4">
               <img src="images/customer-stories/'.$row['profile'].'"
-                class="rounded-circle shadow-1-strong" width="60" height="60" />
+                class="rounded-circle shadow-1-strong" width="150" height="150" />
             </div>
             <h6 class="font-weight-bold">'.$row['name'].'</h6>
             <p class="font-weight-bold my-3">'.$row['position'].'</p>
@@ -273,7 +273,7 @@ function displayCoreValues(){
      if ($select->num_rows>0) {
         while ($row=$select->fetch_assoc()) {
 
-        	echo '<div class="col-md-4 column card-item" data-aos="fade-right">
+        	echo '<div class="col-md-4 column card-item">
             <div class=" p-4" style="min-height: 320px !important;">
                 <img width="100" height="100" src="images/company/'.$row['icon'].' " alt="" class="img-fluid rounded-circle  bg-light p-1 mt-2 mb-1 p-2">
                 <h5>'.$row['title'].'</h5>
@@ -362,7 +362,7 @@ function displayIndustryListings(){
         while ($row=$select->fetch_assoc()) {
 
         	echo '<div class="col-md-4 mb-4 p-1">
-                <div class="customer-story-card shadow m-1" data-aos="fade-left" >
+                <div class="customer-story-card shadow m-1" data-aos="fade-right">
                     <img style="min-height: 300px;" src="images/case-study/'.$row['listing_image'].'" class="d-block img-fluid" alt="">
                     <div class="p-3">
                        <strong> <p id="'.$row['id'].'" class="text-muted">Industry: '.$row['category'].'</p></strong>
@@ -430,7 +430,7 @@ function displayRecentIndustryListings(){
         while ($row=$select->fetch_assoc()) {
 
         	echo '<div class="col-md-4 mb-4 p-1">
-                <div class="customer-story-card shadow m-1" data-aos="fade-left" >
+                <div class="customer-story-card shadow m-1" >
                     <img  src="images/case-study/'.$row['listing_image'].'" class="d-block img-fluid" alt="">
                     <div class="p-3">
                        <strong> <p id="'.$row['id'].'" class="text-muted">Industry: '.$row['category'].'</p></strong>

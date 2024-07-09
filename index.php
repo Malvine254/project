@@ -24,12 +24,12 @@
 
   
 <!-- Your HTML structure -->
-<div class="container col-md-11 mt-4" id="video-background">
+<div class="container col-md-11 col-sm-12 mt-4" id="video-background">
   <video id='vid' autoplay loop muted style="opacity: 90%;">
     <source src="videos/vid2.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
-  <div id="video-caption" data-aos="fade-up">
+  <div id="video-caption">
     <h1 class="text-center text-light pb-4">
       <span class="d-none d-lg-inline typing-text">Your Trusted Source<br> For Digital Excellence</span>
       <span class="d-lg-none">Your Trusted Source<br>For Digital Excellence</span>
@@ -47,7 +47,7 @@
 
   <!-- counter section -->
 <!-- Your HTML structure -->
-<div class="container mt-3 mb-4 col-md-11" data-aos="fade-in">
+<div class="container mt-3 mb-4 col-md-11 col-sm-12" data-aos="fade-in">
   <div class="row d-flex justify-content-center align-items-center">
     <div class="col-md-4">
       <div class="counter plus" data-aos="fade-up" data-target="500">0</div>
@@ -70,7 +70,7 @@
 
   <!-- see our works section -->
 <section>
-  <div class="container mt-5 col-md-11">
+  <div class="container mt-5 col-md-11 col-sm-12">
     <div class="d-flex justify-content-between align-items-center mb-4">
         <h2 class="mb-0">Case Studies</h2>
           <h5><a href="case study" class="default-color">Explore More Case Studies <i class="fa fa-angle-right"></i><i class="fa fa-angle-right"></i> </a></h5>
@@ -107,7 +107,7 @@
   </style>
 
   <!-- partners section -->
-  <div class="container mt-5 mb-5 col-md-11" data-aos="fade-in">
+  <div class="container mt-5 mb-5 col-md-11 col-sm-12" data-aos="fade-in">
   <p class="partner-subtitle mb-3" data-aos="fade-up">Your Reliable Hub for Digital Excellence, Committed to Caring, Building Relationships, Backed by Industry Expertise and Recognized for Award-Winning Achievements.</p>
   <div class="row align-items-center justify-content-center" data-aos="fade-in">
     <div class="col-md-12 p-4 col-sm-4 d-flex justify-content-center">
@@ -122,7 +122,7 @@
 </div>
 
   <!-- connect with experts -->
-  <div class="container col-md-11" data-aos="fade-in"><br>
+  <div class="container col-md-11 col-sm-12" data-aos="fade-in"><br>
     <h3 class="mb-3">Our recent blog posts</h3>
     <div class="row" data-aos="fade-up">
      <?php displayRecentBlogs(); ?> 

@@ -22,22 +22,23 @@
   <!-- counter section -->  
   <style>
     .background-image {
-      background-image: url('https://images.pexels.com/photos/280193/pexels-photo-280193.jpeg');
+      background-image: url('images/contact/dallas.png');
       background-size: cover;
       background-position: center;
-      background-size: 100vw;
+/*      background-size: 100vw;*/
       background-repeat: no-repeat;
       display: flex;
       align-items: center;
       justify-content: center;
-      height: 60vh; /* or any height you prefer */
+      height: 65vh; /* or any height you prefer */
     }
     .font-size{
       font-size: 57px;
     }
   </style>
-<div class="container col-md-11 shadow p-3">
-  <div class="background-image">
+ <!-- <div style="margin-top: 80px;"></div>  -->
+<div class="container col-md-11 mt-3">
+  <div class="background-image shadow col-md-12">
     <h1 class="text-center text-light font-size">Contact Us</h1>
   </div>
 
@@ -48,7 +49,7 @@
       <h1 class="">Get in Touch</h1>
           <form id="contact-form" method="post">
               <div class="form-row">
-                <div class="col-md-6 mb-1" data-aos="fade-left">
+                <div class="col-md-6 mb-1">
                   <label for="validationServer01">Name</label>
                   <input type="text" class="form-control edit-input " id="validationServer01" placeholder="First name" name="name" required>
                   
@@ -75,7 +76,7 @@
               <button name="submit_form" class="btn btn-primary default-button-color" type="submit">Send Message</button>
             </form>
     </div>
-    <div class="col-md-4 sm-mt-4" style="border: 8px; opacity: 23px; border-radius: 8px;" data-aos="fade-right">
+    <div class="col-md-4 mt-4" style="border: 8px; opacity: 23px; border-radius: 8px;" >
         <h1 class="mb-3">Company Contact</h1>
        <div>
           <h5>Email: <a href="mailto:info@armely.com">info@armely.com</a></h5>

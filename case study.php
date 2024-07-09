@@ -45,7 +45,7 @@
           </div>
         </div>
         <div class="carousel-item">
-          <img src="images/case-study/case3.png" class="bd-placeholder-img bd-placeholder-img-lg d-block w-100 " width="800" alt="First slide">
+          <img src="images/case-study/case3.png" class="bd-placeholder-img bd-placeholder-img-lg d-block w-100 " alt="First slide">
 
           <div class="carousel-caption d-none d-md-block shadow bg-dark rounded"  style="margin-bottom: 100px;">
             <h2>Industry: Real Estate</h2>
@@ -58,7 +58,7 @@
          </div>
         </div>
         <div class="carousel-item">
-           <img src="images/case-study/case4.png" class="bd-placeholder-img bd-placeholder-img-lg d-block w-100 " width="800"  alt="First slide">
+           <img src="images/case-study/case4.png" class="bd-placeholder-img bd-placeholder-img-lg d-block w-100"  alt="First slide">
           <div class="carousel-caption d-none d-md-block shadow bg-dark rounded"  style="margin-bottom: 100px; ">
             <h2>Industry: Health</h2>
             <p>Accurate, high-quality data from test and production fleets is critical to the development of safe automated driving functions. DXC Mobile Ingest Box optimizes that data.Automating data sharing with Health
@@ -88,7 +88,7 @@
       <div class="row"> <?php displayIndustryListings(); ?>
         
         <div class="col-md-4 mb-4 p-1">
-          <div class="customer-story-card shadow m-1" data-aos="fade-left" >
+          <div class="customer-story-card shadow m-1">
               <img style="min-height: 300px;" src="images/case-study/ai.png" class="d-block img-fluid" alt="">
               <div class="p-3">
                  <strong> <p id="'.$row['id'].'" class="text-muted">Industry: Artificial Intelligence</p></strong>
@@ -102,7 +102,7 @@
           </div>
       </div>
       <div class="col-md-4 mb-4 p-1">
-          <div class="customer-story-card shadow m-1" data-aos="fade-left" >
+          <div class="customer-story-card shadow m-1" >
               <img style="min-height: 300px;" src="images/case-study/education.png" class="d-block img-fluid" alt="">
               <div class="p-3">
                  <strong> <p id="" class="text-muted">Industry: Education</p></strong>

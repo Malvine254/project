@@ -24,11 +24,11 @@
   <div class="container mt-1 mb-5 p-4 col-md-11 shadow">
     <div class="container content-container">
       <div class="row">
-          <div class="col-md-6"  data-aos="fade-left">
+          <div class="col-md-6">
               <h1 class="mt-5">Hear it straight from our thrilled clients</h1>
               <p>Our success stories are a testament to our dedication to delivering the highest quality solutions, getting it right on the first try.</p>
           </div>
-          <div class="col-md-6"  data-aos="fade-right">
+          <div class="col-md-6">
               <img src="images/customer-stories/1.png" alt="" class="img-fluid">
           </div>
       </div>
@@ -36,21 +36,21 @@
   </div>
   <div class="container col-md-11 shadow p-4">
     <div class="row d-flex justify-content-center">
-      <div class="col-md-10 col-xl-8 text-center"  data-aos="fade-in">
+      <div class="col-md-10 col-xl-8 text-center" >
         <h3 class="fw-bold mb-1">Testimonials</h3>
         <p class="mb-4 pb-2 mb-md-5 pb-md-0">
           Here, you'll find the voices of our satisfied customers sharing their experiences with our products/services. Dive into these authentic reviews to get a glimpse of the quality, reliability, and exceptional service we strive to deliver. Discover why our customers trust us and why you should too
         </p>
       </div>
     </div>
-    <div data-aos="fade-left">
+    <div>
         <div class="row text-center" >
        
       <?php displayCustomerStoriesTestimonials(); ?>
     </div>
     </div>
   
-    <div class="container mt-3">
+    <div class="container col-md-11 mt-3">
          <nav aria-label="Page navigation example">
             <ul class="pagination justify-content-center" id="pagination">
                 <li class="page-item disabled" id="prev-page">
@@ -71,11 +71,11 @@
       <div class="row" >
         <h3 class="mb-3">Key Projects</h3>
         <hr>
-        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div id="carouselExampleControls" class="carousel slide">
           <div class="carousel-inner">
             <div class="carousel-item active">
               <div class="row">
-                <div class="col-12 col-md-4"  data-aos="fade-left">
+                <div class="col-12 col-md-4">
                   <img src="images/services/service1.jpg" class="d-block img-fluid" alt="Service 1">
                   <div class="mt-2">
                     <h5>Executive Reports Development</h5>
@@ -83,7 +83,7 @@
                       our Executive Reports Development ensures informed decision-making at every level of your organization.</p>
                   </div>
                 </div>
-                <div class="col-md-4 d-none d-md-block"  data-aos="fade-right">
+                <div class="col-md-4 d-none d-md-block">
                   <img src="images/services/service2.jpg" class="d-block img-fluid" alt="Service 1" >
                   <div class="mt-2">
                     <h5>Sybase to SQL Server Migration</h5>
@@ -92,7 +92,7 @@
                       performance and scalability.</p>
                   </div>
                 </div>
-                <div class="col-md-4 d-none d-md-block"  data-aos="fade-left">
+                <div class="col-md-4 d-none d-md-block" >
                   <img src="images/services/service3.jpg" class="d-block img-fluid" alt="Service 1">
                   <div class="mt-2">
                     <h5>Healthcare Productivity Reports</h5>
@@ -105,7 +105,7 @@
             <!-- Add more carousel-items here if needed -->
             <div class="carousel-item">
               <div class="row">
-                <div class="col-12 col-md-4"  data-aos="fade-left">
+                <div class="col-12 col-md-4">
                   <img src="images/services/service2.jpg" class="d-block img-fluid" alt="Service 1">
                   <div class="mt-2">
                     <h5>Sybase to SQL Server Migration</h5>
@@ -114,7 +114,7 @@
                       performance and scalability.</p>
                   </div>
                 </div>
-                <div class="col-md-4 d-none d-md-block"  data-aos="fade-left">
+                <div class="col-md-4 d-none d-md-block">
                   <img src="images/services/service5.jpg" class="d-block img-fluid" alt="Service 1">
                   <div class="mt-2">
                     <h5>Managed Services</h5>
@@ -122,7 +122,7 @@
                        ensuring seamless operations and peace of mind.</p>
                   </div>
                 </div>
-                <div class="col-md-4 d-none d-md-block"  data-aos="fade-left">
+                <div class="col-md-4 d-none d-md-block" >
                   <img src="images/services/service4.jpg" class="d-block img-fluid" alt="Service 1">
                   <div class="mt-2">
                     <h5>Custom Application development</h5>
@@ -150,14 +150,14 @@
 
 <!-- start of    form -->
 <div class="container container-fluid content-container col-md-11 shadow p-5">
-    <div class="text-center" data-aos="fade-right">
+    <div class="text-center">
         <h2 class="fw-bold">Optimize Your Business with Armely Services</h2>
         <p class="mt-2">Maximize your business potential with Armely's range of industry-leading solutions. Whether it's Data Services, Web Development, Business Intelligence, Managed Services, or Advisory Services, we provide the utmost value to your operations and applications.</p>
     </div>
     <div class="form-container">
         <h3 class="text-center mb-4">Schedule a consultation today</h3>
         <div class="row mb-3">
-            <div class="col-md-12" data-aos="fade-right">
+            <div class="col-md-12">
                 <form id="consultation-form" method="post">
                     <div class="form-row">
                       <div class="col-md-6 mb-1">
