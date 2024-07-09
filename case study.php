@@ -84,7 +84,35 @@
     <div class="d-flex justify-content-between align-items-center mt-4">
       <h2 class="m-1">Case Studies</h2>
      </div>
-      <div class="row"> <?php displayIndustryListings(); ?></div>
+      <div class="row"> <?php displayIndustryListings(); ?>
+        
+        <div class="col-md-4 mb-4 p-1">
+          <div class="customer-story-card shadow m-1" data-aos="fade-left" >
+              <img style="min-height: 300px;" src="images/case-study/ai.png" class="d-block img-fluid" alt="">
+              <div class="p-3">
+                 <strong> <p id="'.$row['id'].'" class="text-muted">Industry: Artificial Intelligence</p></strong>
+                  <p>
+                    <?php echo substr("Discover how a multinational corporation improved internal communication by partnering with Armely to develop a Retrieval Augmented Generation (RAG) system for their private ChatGPT. This integration increased productivity by 40% and reduced time spent searching for information.", 0,200) ?>
+                   </p>
+                    <div class="col" style="display: none;">
+                       <h6><a target="_blank" href="#">Read More <i class="fa fa-angle-right"></i><i class="fa fa-angle-right"></i> </a></h6>
+                     </div>
+              </div>
+          </div>
+      </div>
+      <div class="col-md-4 mb-4 p-1">
+          <div class="customer-story-card shadow m-1" data-aos="fade-left" >
+              <img style="min-height: 300px;" src="images/case-study/education.png" class="d-block img-fluid" alt="">
+              <div class="p-3">
+                 <strong> <p id="" class="text-muted">Industry: Education</p></strong>
+                  <p> <?php echo substr(" Discover how an online learning platform partnered with Armely to utilize data analytics and machine learning to enhance student engagement and success. By analyzing student interactions and performance data, the platform implemented personalized learning paths and early intervention strategies, resulting in a 25% increase in course completion rates.", 0,200) ?> </p>
+                    <div class="col" style="display: none;">
+                       <h6><a target="_blank" href="#">Read More <i class="fa fa-angle-right"></i><i class="fa fa-angle-right"></i> </a></h6>
+                     </div>
+              </div>
+          </div>
+      </div>
+      </div>
     </div>
 
 

@@ -370,6 +370,24 @@ function displayIndustryListings(){
         echo "No records found!";
     }
 
+    // function placeholderImages($count){
+	// 	// Check if the count is divisible by 3
+	// 	if ($count % 3 != 0) {
+	// 	    // Calculate the number of records to add
+	// 	    $remainder = $count % 3;
+	// 	    $recordsToAdd = 3 - $remainder;
+
+	// 	   for ($i = 0; $i < $recordsToAdd; $i++) {
+	// 	   	return '';
+           
+    // }
+	// 	} else {
+	// 	    echo "The count is already divisible by 3.";
+	// 	}
+
+
+    // }
+
 }
 
 function displayIndustryListingsSlider(){
