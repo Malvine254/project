@@ -36,7 +36,7 @@
              
   } ?>
   <div class="margin-top"></div>
-  <div class="container col-sm-11  p-4">
+  <div class="container col-sm-11 shadow p-4">
   <div class="mt-2">
     <div class="row">
     <div class="col-md-6 order-md-2">
@@ -67,7 +67,7 @@
   </div>
   </div>
 <section>
-  <div class="container col-md-11 mt-4  p-5">
+  <div class="container col-md-11 mt-4 shadow p-5">
     <div class="">
         <h4>Optimize Your Business with Armely Services</h4>
         <p class="mt-2">Maximize your business potential with Armely's range of industry-leading solutions. Whether it's Data Services, Web Development, Business Intelligence, Managed Services, or Advisory Services, we provide the utmost value to your operations and applications.</p>
@@ -130,7 +130,7 @@
 
 
 <section class="mt-4">
-  <div class="container py-5 col-md-11 mt-1 p-4 col-sm-12 ">
+  <div class="container py-5 col-md-11 mt-1 p-4 col-sm-12 shadow">
     <div class="row d-flex justify-content-start">
       <div class=" col-xl-12">
         <h3 class="fw-bold mb-2">Explore More Services</h3>
