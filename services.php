@@ -34,7 +34,7 @@
   </div>
   </div>
 <section >
-  <div class="container py-5 col-md-11 mt-5 p-4 col-sm-12">
+  <div class="container py-5 col-md-11 mt-2 p-4 col-sm-12 shadow">
     <div class="row d-flex justify-content-start">
       <div class=" col-xl-12">
         <h3 class="fw-bold mb-3">Our Services Lead the Way</h3>

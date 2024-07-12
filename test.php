@@ -1,93 +1,142 @@
+<?php include 'php/actions.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Slider Example</title>
-    <!-- Swiper CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
-    <style>
-        /* Slider Container Style */
-        .swiper {
-            width: 100%;
-            height: 100vh; /* Full height */
-            position: relative;
-        }
-        .swiper-slide {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            color: white;
-            text-align: center;
-            background-size: cover;
-            background-position: center;
-        }
-        .swiper-slide h1 {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-        }
-        .swiper-slide p {
-            font-size: 1.2rem;
-            margin-bottom: 2rem;
-        }
-        .discover-button {
-            padding: 10px 20px;
-            font-size: 1rem;
-            color: white;
-            background-color: #007bff;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>armely</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- main csss -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- font awesome  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="icon" href="images/logo/logo1.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lobster&family=Dancing+Script&family=Cinzel:wght@400;700&family=Great+Vibes&family=Roboto+Slab:wght@400;700&family=Sacramento&family=Merriweather:wght@400;700&family=PT+Serif:wght@400;700&family=Zilla+Slab:wght@400;700&family=Poppins:wght@400;600&family=Lato:wght@100;300;400;700;900&display=swap">
 </head>
 <body>
+  
+  <!-- Navbar -->
 
-    <!-- Slider Container -->
-    <div class="swiper">
-        <div class="swiper-wrapper">
-            <!-- Slide 1 -->
-            <div class="swiper-slide" style="background-image: url('https://via.placeholder.com/1920x1080?text=Slide+1');">
-                <h1>Title 1</h1>
-                <p>Body text for the first slide.</p>
-                <button class="discover-button">Discover More</button>
-            </div>
-            <!-- Slide 2 -->
-            <div class="swiper-slide" style="background-image: url('https://via.placeholder.com/1920x1080?text=Slide+2');">
-                <h1>Title 2</h1>
-                <p>Body text for the second slide.</p>
-                <button class="discover-button">Discover More</button>
-            </div>
-            <!-- Slide 3 -->
-            <div class="swiper-slide" style="background-image: url('https://via.placeholder.com/1920x1080?text=Slide+3');">
-                <h1>Title 3</h1>
-                <p>Body text for the third slide.</p>
-                <button class="discover-button">Discover More</button>
-            </div>
+  <nav class='navbar navbar-expand-lg navbar-dark fixed-top'>
+    <div class='container col-md-12'>
+        <a class='navbar-brand link' href='index'>
+            <img class='img-fluid' style='max-width: 170px; width: auto;' height='auto' src='images/logo/logo.svg'/>
+        </a>
+        <button style='background-color:rgb(47,85,151)' class='navbar-toggler' type='button' data-toggle='collapse' data-target='#navbarNav' aria-controls='navbarNav' aria-expanded='false' aria-label='Toggle navigation'>
+            <span class='navbar-toggler-icon'></span>
+        </button>
+        <div class='collapse navbar-collapse justify-content-center text-center' id='navbarNav'>
+            <ul class='navbar-nav mx-auto'>
+                <li class='nav-item dropdown'>
+                    <a class='nav-link text-dark link remove-floating dropdown-toggle' href='#' id='whyArmelyDropdown' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false'>
+                        WHY ARMELY?
+                    </a>
+                    <div class='dropdown-menu' aria-labelledby='whyArmelyDropdown'>
+                        <a class='dropdown-item' href='company'>Company Overview</a>
+                        <a class='dropdown-item' href='career'>Career Opportunities</a>
+                       
+                    </div>
+                </li>
+                <li class='nav-item active dropdown'>
+                    <span>
+                        <a href='services' class='nav-link text-dark link myButton dropdown-toggle' id='servicesDropdown' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false'>
+                            SERVICES <span class='sr-only'>(current)</span>
+                        </a>
+                        <div class='dropdown-menu' aria-labelledby='servicesDropdown'>
+                            <a class='dropdown-item' href='services'>All Services</a>
+                            <a class='dropdown-item' href='cloud'>Cloud Services</a>
+                            <a class='dropdown-item' href='data'>Data Services</a>
+                            <a class='dropdown-item' href='ai'>AI Services</a>
+                            <a class='dropdown-item' href='managed-services'>Managed Services</a>
+                            <a class='dropdown-item' href='professional-services'>Professional Services</a>
+                            <a class='dropdown-item' href='enterprise-services'>Enterprise Services</a>
+                            <a class='dropdown-item' href='advisory services'>Advisory Services</a>
+                        </div>
+                    </span>
+                </li>
+                               
+                <li class='nav-item'>
+                    <a class='nav-link text-dark link remove-floating' href='industries'>INDUSTRIES</a>
+                </li>
+            <li class='nav-item dropdown'>
+                    <a class='nav-link text-dark link remove-floating dropdown-toggle' href='#' id='whyArmelyDropdown' role='button' data-toggle='dropdown' aria-haspopup='true' aria               expanded='false'>
+                       INSIGHTS
+                    </a>
+                    <div class='dropdown-menu' aria-labelledby='Case Study'>
+                        <a class='dropdown-item' href='blog'>Blog Articles</a>
+                        <a class='dropdown-item' href='customer-stories'>Customer Stories</a>
+            <a class='dropdown-item' href='case study'>Case Studies</a>
+
+                   </div>
+                </li>
+
+
+               <!--  <li class='nav-item'>
+                    <a class='nav-link text-dark link remove-floating' href='#'>PROJECTS</a>
+                </li> -->
+                <li class='nav-item'>
+                    <a class='nav-link text-dark link' href='contact-us'>CONTACT US</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle  text-dark" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    SERVICES
+                  </a>
+                  <ul class="flyout-menu dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li class="dropdown-submenu">
+                      <a class="dropdown-item dropdown-toggle" href="#">Action</a>
+                      <ul class="dropdown-menu col-md-12">
+                        <li><a class="dropdown-item" href="#">Sub-action 1</a></li>
+                        <li><a class="dropdown-item" href="#">Sub-action 2</a></li>
+                        <li><a class="dropdown-item" href="#">Sub-action 3</a></li>
+                      </ul>
+                    </li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </li>
+            </ul>
+            <form class='form-inline my-2 my-lg-0'>
+                <div class='input-group' style='width: auto;'>
+                    <input style='width: auto;' class='form-control py-2 border-right-0 border col-md-12 bg-transparent' type='search' placeholder='Search...' id='searchInput'>
+                    <span class='input-group-append'>
+                        <button class='btn btn-outline-secondary border-left-0 border' type='button' style='outline: none;'>
+                            <i class='fa fa-search'></i>
+                        </button>
+                    </span>
+                </div>
+            </form>
+            <a id='toggleDarkMode' class='nav-link link'><i class='icon fa fa-moon icon'></i></a>
         </div>
-        <!-- Add Pagination -->
-        <div class="swiper-pagination"></div>
-        <!-- Add Navigation -->
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
     </div>
+</nav>
 
-    <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-    <script>
-        // Initialize Swiper
-        const swiper = new Swiper('.swiper', {
-            loop: true,
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-            },
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-        });
-    </script>
+   
+
+  
+
+  <!--Bootrap and jQuery Scripts -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- sweet alerts -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.4/dist/sweetalert2.all.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" async></script>
+  <script src="js/form-actions.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="js/main3.js"></script>
+ <script type="text/javascript">
+      $(document).ready(function() {
+      $('.dropdown-submenu a.dropdown-toggle').on("click", function(e) {
+        $(this).next('ul').toggle();
+        e.stopPropagation();
+        e.preventDefault();
+      });
+    });
+ </script>
+
+
 </body>
 </html>

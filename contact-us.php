@@ -36,13 +36,8 @@
       font-size: 57px;
     }
   </style>
-<<<<<<< HEAD
  <!-- <div style="margin-top: 80px;"></div>  -->
 <div class="container col-md-11 mt-3">
-=======
- <div style="margin-top: 80px;"></div> 
-<div class="container col-md-11">
->>>>>>> b39ef6fd36c028fa568fb3859268dc7c54b3771e
   <div class="background-image shadow col-md-12">
     <h1 class="text-center text-light font-size">Contact Us</h1>
   </div>

@@ -304,15 +304,52 @@ function displayServicesList(){
         while ($row=$select->fetch_assoc()) {
 
         	echo ' <div class="col-md-4 mb-4 card-item">
-				        <div style="min-height: 450px;max-height: 450px;" class="card transparent-card shadow">
-				          <div class="card-body py-4 mt-2">
+				        <div style="min-height: 450px;height: auto;" class="card transparent-card">
+				          <div class="card-body py-4 mt-1">
 				            <div class="d-flex justify-content-start mb-4">
 				              <img src="images/services/'.$row['image'].'"
 				                class=" shadow-1-strong" width="100%" height="240"/>
 				            </div>
 				            <h5 class="font-weight-bold my-3">'.$row['title'].'</h5>
 				            <p class="mb-2">
-				              <i class="fas fa-quote-left pe-2"></i>'.readMoreText($row['body']).' <a href="'.$row['url'].'">Learn More</a>
+				              <i class="fas fa-quote-left pe-2"></i>'.readMoreText($row['body']).' <a href="service_details?service_name='.$row['title'].'">Learn More</a>
+				            </p>
+				          </div>
+				        </div>
+				      </div>';
+      
+        }
+    }else{
+        echo "No records found!";
+    }
+
+    
+
+}
+
+function displayMoreServicesList(){
+    include 'config.php';
+    function readMoreText($text){
+    	if (strlen($text)>=50) {
+    		return substr($text, 0,100)."...";
+    	}else{
+    		return $text;
+    	}
+    }
+     $select = $conn->query("SELECT * FROM services_lists ORDER BY id DESC LIMIT 3");
+     if ($select->num_rows>0) {
+        while ($row=$select->fetch_assoc()) {
+
+        	echo ' <div class="col-md-4 mb-4 card-item">
+				        <div style="min-height: 450px;height: auto;" class="card transparent-card">
+				          <div class="card-body py-4 mt-1">
+				            <div class="d-flex justify-content-start mb-4">
+				              <img src="images/services/'.$row['image'].'"
+				                class=" shadow-1-strong" width="100%" height="240"/>
+				            </div>
+				            <h5 class="font-weight-bold my-3">'.$row['title'].'</h5>
+				            <p class="mb-2">
+				              <i class="fas fa-quote-left pe-2"></i>'.readMoreText($row['body']).' <a href="service_details?service_name='.$row['title'].'">Learn More</a>
 				            </p>
 				          </div>
 				        </div>
