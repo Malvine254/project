@@ -9,7 +9,7 @@ $('#addBlogTable').submit(function(event) {
     // Perform an AJAX request to submit the form data
     $.ajax({
       type: 'POST',
-      url: '../php/uploads', // Replace with your actual server-side endpoint
+      url: 'php/uploads', // Replace with your actual server-side endpoint
       data: formData,
       contentType: false, // Required for FormData
       processData: false, // Required for FormData
