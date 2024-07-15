@@ -659,3 +659,8 @@ This marks the end of paging
 =============================================================================================================================================
 */    
 
+$('.dropdown-submenu a.dropdown-toggle').on("click", function(e) {
+$(this).next('ul').toggle();
+e.stopPropagation();
+e.preventDefault();
+});

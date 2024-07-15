@@ -38,22 +38,38 @@
                        
                     </div>
                 </li>
-                <li class='nav-item active dropdown'>
-                    <span>
-                        <a href='services' class='nav-link text-dark link myButton dropdown-toggle' id='servicesDropdown' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false'>
-                            SERVICES <span class='sr-only'>(current)</span>
-                        </a>
-                        <div class='dropdown-menu' aria-labelledby='servicesDropdown'>
-                            <a class='dropdown-item' href='services'>All Services</a>
-                            <a class='dropdown-item' href='cloud'>Cloud Services</a>
-                            <a class='dropdown-item' href='data'>Data Services</a>
-                            <a class='dropdown-item' href='ai'>AI Services</a>
-                            <a class='dropdown-item' href='managed-services'>Managed Services</a>
-                            <a class='dropdown-item' href='professional-services'>Professional Services</a>
-                            <a class='dropdown-item' href='enterprise-services'>Enterprise Services</a>
-                            <a class='dropdown-item' href='advisory services'>Advisory Services</a>
-                        </div>
-                    </span>
+                 <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle  text-dark" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    SERVICES
+                  </a>
+                  <ul class="flyout-menu dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li> <a class='dropdown-item' href='services'>All Services</a></li>
+                    <li class="dropdown-submenu">
+                      <a class="dropdown-item dropdown-toggle" href="#">AI Services</a>
+                      <ul class="dropdown-menu">
+                         <li><a class="dropdown-item" href="service_details?service_name=Artificial Intelligence#aiconsulting">AI Consulting</a></li>
+                        <li><a class="dropdown-item" href="service_details?service_name=Artificial Intelligence#aiadvisory">AI Advisory</a></li>
+                        <li><a class="dropdown-item" href="service_details?service_name=Artificial Intelligence#generativeai">Generative AI</a></li>
+                      </ul>
+                    </li>
+                     <li class="dropdown-submenu">
+                      <a class="dropdown-item dropdown-toggle" href="#">Data Services</a>
+                      <ul class="dropdown-menu">
+                         <li><a class="dropdown-item" href="service_details?service_name=Artificial Intelligence#fabric">Fabric</a></li>
+                        <li><a class="dropdown-item" href="service_details?service_name=Artificial Intelligence#datascience">Data Science & Analytics </a></li>
+                        <li><a class="dropdown-item" href="service_details?service_name=Artificial Intelligence#datastrategy">Data Strategy</a></li>
+                      </ul>
+                    </li>  
+                      <li class="dropdown-submenu">
+                      <a class="dropdown-item dropdown-toggle" href="#">Armely Freemiums</a>
+                      <ul class="dropdown-menu">
+                         <li><a class="dropdown-item" href="service_details?service_name=Artificial Intelligence#sqlserver">SQL Server Health Checks</a></li>
+                        <li><a class="dropdown-item" href="service_details?service_name=Artificial Intelligence#powerplatform">Power Platform CoE </a></li>
+                       
+                      </ul>
+                    </li>                                 
+                  </ul>
+                 
                 </li>
                                
                 <li class='nav-item'>
@@ -78,23 +94,8 @@
                 <li class='nav-item'>
                     <a class='nav-link text-dark link' href='contact-us'>CONTACT US</a>
                 </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle  text-dark" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    SERVICES
-                  </a>
-                  <ul class="flyout-menu dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li class="dropdown-submenu">
-                      <a class="dropdown-item dropdown-toggle" href="#">Action</a>
-                      <ul class="dropdown-menu col-md-12">
-                        <li><a class="dropdown-item" href="#">Sub-action 1</a></li>
-                        <li><a class="dropdown-item" href="#">Sub-action 2</a></li>
-                        <li><a class="dropdown-item" href="#">Sub-action 3</a></li>
-                      </ul>
-                    </li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                  </ul>
-                </li>
+               
+
             </ul>
             <form class='form-inline my-2 my-lg-0'>
                 <div class='input-group' style='width: auto;'>

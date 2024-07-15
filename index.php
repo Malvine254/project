@@ -22,8 +22,6 @@
   
   <!-- Navbar -->
   <?php echo displayHeader(); ?>
-
-
   
 <!-- Your HTML structure -->
 <div class="container col-md-11 col-sm-12 mt-4" id="video-background">
@@ -67,10 +65,7 @@
     </div>
   </div>
 </div>
-
-
-
-  <!-- see our works section -->
+<!-- see our works section -->
 <section>
   <div class="container mt-5 col-md-11 col-sm-12">
     <div class="d-flex justify-content-between align-items-center mb-4">
