@@ -201,7 +201,7 @@ function displayRecentBlogs(){
 		while ($row=$select->fetch_assoc()) {
 			echo "<div class='col-md-4'>
 	        <div class='card bg-primary mb-3 transparent-card shadow'>
-	          <img style='max-height: 300px; min-height: 300px;' class='card-img-top img-fluid' src='".$row['image_path']."' alt='Card image cap'>
+	          <img style='max-height: 300px; min-height: 300px;' class='card-img-top img-fluid lazyload' src='".$row['image_path']."' alt='Card image cap'>
 	          <div class='card-body'>
 	              <h6 class='text-muted'>".$row['title']."</h6>
 	             <p style='font-size: 14px;' class='mt-0 text-sm'>".$row['author']."
@@ -247,7 +247,7 @@ function displayCustomerStoriesTestimonials(){
           <div class="card-body py-4 mt-2">
             <div class="d-flex justify-content-center mb-4">
               <img src="images/customer-stories/'.$row['profile'].'"
-                class="rounded-circle shadow-1-strong" width="150" height="150" />
+                class="rounded-circle shadow-1-strong lazyload" width="150" height="150" />
             </div>
             <h6 class="font-weight-bold">'.$row['name'].'</h6>
             <p class="font-weight-bold my-3">'.$row['position'].'</p>
@@ -275,7 +275,7 @@ function displayCoreValues(){
 
         	echo '<div class="col-md-4 column card-item">
             <div class=" p-4" style="min-height: 320px !important;">
-                <img width="100" height="100" src="images/company/'.$row['icon'].' " alt="" class="img-fluid rounded-circle  bg-light p-1 mt-2 mb-1 p-2">
+                <img width="100" height="100" src="images/company/'.$row['icon'].' " alt="" class="img-fluid rounded-circle  lazyload bg-light p-1 mt-2 mb-1 p-2">
                 <h5>'.$row['title'].'</h5>
                 <p class="mb-4 truncated-text">'.$row['body'].'</p>
                  <button class="btn btn-outline-primary read-more-btn">Read More</button>
@@ -308,7 +308,7 @@ function displayServicesList(){
 				          <div class="card-body py-4 mt-1">
 				            <div class="d-flex justify-content-start mb-4">
 				              <img src="images/services/'.$row['image'].'"
-				                class=" shadow-1-strong" width="100%" height="240"/>
+				                class=" shadow-1-strong lazyload" width="100%" height="240"/>
 				            </div>
 				            <h5 class="font-weight-bold my-3">'.$row['title'].'</h5>
 				            <p class="mb-2">
@@ -345,7 +345,7 @@ function displayMoreServicesList(){
 				          <div class="card-body py-4 mt-1">
 				            <div class="d-flex justify-content-start mb-4">
 				              <img src="images/services/'.$row['image'].'"
-				                class=" shadow-1-strong" width="100%" height="240"/>
+				                class=" shadow-1-strong lazyload" width="100%" height="240"/>
 				            </div>
 				            <h5 class="font-weight-bold my-3">'.$row['title'].'</h5>
 				            <p class="mb-2">
@@ -400,7 +400,7 @@ function displayIndustryListings(){
 
         	echo '<div class="col-md-4 mb-4 p-1">
                 <div class="customer-story-card shadow m-1" data-aos="fade-right">
-                    <img style="min-height: 300px;" src="images/case-study/'.$row['listing_image'].'" class="d-block img-fluid" alt="">
+                    <img style="min-height: 300px;" src="images/case-study/'.$row['listing_image'].'" class="d-block img-fluid lazyload" alt="">
                     <div class="p-3">
                        <strong> <p id="'.$row['id'].'" class="text-muted">Industry: '.$row['category'].'</p></strong>
                         <p>'.substr($row['body'], 0,120) .'...</p>
@@ -443,7 +443,7 @@ function displayIndustryListingsSlider(){
         while ($row=$select->fetch_assoc()) {
 
         	echo '   <div class="carousel-item active">
-         <img src="https://images.pexels.com/photos/3025005/pexels-photo-3025005.jpeg" class="bd-placeholder-img bd-placeholder-img-lg d-block w-100 bg-danger" width="800" height="500" alt="First slide">
+         <img src="https://images.pexels.com/photos/3025005/pexels-photo-3025005.jpeg" class="bd-placeholder-img bd-placeholder-img-lg d-block w-100 bg-danger lazyload" width="800" height="500" alt="First slide">
          <img src="https://images.pexels.com/photos/1642770/pexels-photo-1642770.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="bd-placeholder-img bd-placeholder-img-lg d-block w-100 bg-danger" width="800" height="500" alt="First slide">
 
           <div class="carousel-caption d-none d-md-block">
@@ -468,7 +468,7 @@ function displayRecentIndustryListings(){
 
         	echo '<div class="col-md-4 mb-4 p-1">
                 <div class="customer-story-card shadow m-1" >
-                    <img  src="images/case-study/'.$row['listing_image'].'" class="d-block img-fluid" alt="">
+                    <img  src="images/case-study/'.$row['listing_image'].'" class="d-block img-fluid lazyload" alt="">
                     <div class="p-3">
                        <strong> <p id="'.$row['id'].'" class="text-muted">Industry: '.$row['category'].'</p></strong>
                         <p>'.substr($row['body'], 0,120) .'...</p>
@@ -493,7 +493,7 @@ function displayPartnersLogo(){
      if ($select->num_rows>0) {
         while ($row=$select->fetch_assoc()) {
 
-        	echo '<a href="'.$row['site_url'].'" class="ml-5"><img class="svg-img" src="'.$row['logo_url'].'" alt=""></a>';
+        	echo '<a href="'.$row['site_url'].'" class="ml-5"><img class="svg-img lazyload" src="'.$row['logo_url'].'" alt=""></a>';
       
         }
     }else{

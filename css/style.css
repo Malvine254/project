@@ -2,7 +2,7 @@
   color: black !important;
   font-size: 18px !important;
 }
- p,a,div,span{
+ p,div,span{
   font-family: 'Verdana', serif !important;
 }
 .nav{
@@ -657,3 +657,13 @@ overflow: none; /* Ensure the container appears above other elements */
       opacity: 0;
     }
   }
+/*  lazy loading*/
+
+.lazyloading {
+    display: block;
+    background: url('https://www.msha.gov/sites/default/files/images/loading2.gif') center center no-repeat;
+    min-height: 100px; /* Adjust this as needed */
+}
+.lazyloaded {
+    background: none;
+}
