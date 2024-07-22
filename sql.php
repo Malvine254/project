@@ -199,7 +199,23 @@
         });
 
       </script>
+      <script src="js/jquery-3.3.1.min.js"></script>
+
+      <!-- sweet alerts -->
+      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.4/dist/sweetalert2.all.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" async></script>
+      <script src="js/form-actions.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+      
+       <script src="js/jquery.sticky.js"></script>
+      <script src="js/popper.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <!-- <script src="js/nav.js"></script> -->
       <script src="js/main3.js"></script>
+
+      <script src="js/form-actions.js"></script>
+      <script src="js/nav.js"></script>
+      <script src="js/nav.js"></script>
 
 
     </body>

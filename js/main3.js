@@ -142,6 +142,8 @@ This marks the end of Show or hide hide model
 This marks the start of Check if user preference for dark mode is stored in local storage
 =============================================================================================================================================
 */
+$(".site-navbar").css("background", "#fff");
+
  const isDarkMode = localStorage.getItem('darkMode') === 'enabled';
 
  // Apply dark mode if user preference is enabled
@@ -155,7 +157,9 @@ This marks the start of Check if user preference for dark mode is stored in loca
      $(".link").addClass("text-light")
      $("#floatingItem").css({"background":"#121212"})
      $("#floatingItemTwo").css({"background":"#121212"})
-      $(".snackbar").removeClass("bg-light");
+     $(".snackbar").removeClass("bg-light");
+     $(".site-navbar").css({"background":"#121212"})
+    
         
     
  }else{
@@ -168,6 +172,8 @@ This marks the start of Check if user preference for dark mode is stored in loca
     $("#floatingItem").css({"background":"#fff"})
     $("#floatingItemTwo").css({"background":"#fff"})
     $(".snackbar").addClass("bg-light");
+    $(".site-navbar").css({"background":"#fff"})
+  
     
     
  }
@@ -189,6 +195,8 @@ This marks the start of Check if user preference for dark mode is stored in loca
         $("#floatingItem").css({"background":"#121212"})
         $("#floatingItemTwo").css({"background":"#121212"})
         $(".snackbar").removeClass("bg-light")
+        $(".site-navbar").css({"background":"#121212"})
+        $(".sticky-wrapper .is-sticky .site-navbar").css({"background":"#121212 "})
            
     }else{
        $('.icon').removeClass('fa fa-sun')
@@ -200,6 +208,8 @@ This marks the start of Check if user preference for dark mode is stored in loca
        $("#floatingItem").css({"background":"#fff"})  
        $("#floatingItemTwo").css({"color":"#fff"})
        $(".snackbar").addClass("bg-light")
+       $(".site-navbar").css({"background":"#fff"})
+       $(".sticky-wrapper .is-sticky .site-navbar").css({"background":"#fff"})
     }
    
      // Store user preference in local storage
@@ -344,6 +354,8 @@ $(document).ready(function() {
         // }
     });
 });
+
+
 
 // Function to get snippets of content surrounding the matched search term
 function getSnippets(content, searchText) {
@@ -663,4 +675,130 @@ $('.dropdown-submenu a.dropdown-toggle').on("click", function(e) {
 $(this).next('ul').toggle();
 e.stopPropagation();
 e.preventDefault();
+});
+
+
+$(function() {
+
+var siteSticky = function() {
+    $(".js-sticky-header").sticky({topSpacing:0});
+};
+siteSticky();
+
+var siteMenuClone = function() {
+
+    $('.js-clone-nav').each(function() {
+        var $this = $(this);
+        $this.clone().attr('class', 'site-nav-wrap').appendTo('.site-mobile-menu-body');
+    });
+
+
+    setTimeout(function() {
+        
+        var counter = 0;
+  $('.site-mobile-menu .has-children').each(function(){
+    var $this = $(this);
+    
+    $this.prepend('<span class="arrow-collapse collapsed">');
+
+    $this.find('.arrow-collapse').attr({
+      'data-toggle' : 'collapse',
+      'data-target' : '#collapseItem' + counter,
+    });
+
+    $this.find('> ul').attr({
+      'class' : 'collapse',
+      'id' : 'collapseItem' + counter,
+    });
+
+    counter++;
+
+  });
+
+}, 1000);
+
+    $('body').on('click', '.arrow-collapse', function(e) {
+  var $this = $(this);
+  if ( $this.closest('li').find('.collapse').hasClass('show') ) {
+    $this.removeClass('active');
+  } else {
+    $this.addClass('active');
+  }
+  e.preventDefault();  
+  
+});
+
+    $(window).resize(function() {
+        var $this = $(this),
+            w = $this.width();
+
+        if ( w > 768 ) {
+            if ( $('body').hasClass('offcanvas-menu') ) {
+                $('body').removeClass('offcanvas-menu');
+            }
+        }
+    })
+
+    $('body').on('click', '.js-menu-toggle', function(e) {
+        var $this = $(this);
+        e.preventDefault();
+
+        if ( $('body').hasClass('offcanvas-menu') ) {
+            $('body').removeClass('offcanvas-menu');
+            $this.removeClass('active');
+        } else {
+            $('body').addClass('offcanvas-menu');
+            $this.addClass('active');
+        }
+    }) 
+
+    // click outisde offcanvas
+    $(document).mouseup(function(e) {
+    var container = $(".site-mobile-menu");
+    if (!container.is(e.target) && container.has(e.target).length === 0) {
+      if ( $('body').hasClass('offcanvas-menu') ) {
+                $('body').removeClass('offcanvas-menu');
+            }
+    }
+    });
+}; 
+siteMenuClone();
+
+});
+
+
+
+$(document).ready(function() {
+// Open the modal
+$('#searchResultsIcon').click(function() {
+    alert("here")
+    $('#search-modal').show();
+});
+
+// Close the modal
+$('.close-button').click(function() {
+    $('#search-modal').hide();
+});
+
+// Close the modal if the user clicks outside of the modal content
+$(window).click(function(event) {
+    if ($(event.target).is('#search-modal')) {
+        $('#search-modal').hide();
+    }
+});
+
+// Handle the search functionality
+$('#search-field').on('input', function() {
+    let query = $(this).val().toLowerCase();
+    $('#search-results').empty();
+
+    if (query) {
+        // Simulate search results
+        let results = ['Apple', 'Banana', 'Cherry', 'Date', 'Elderberry', 'Fig', 'Grape'].filter(item => item.toLowerCase().includes(query));
+        
+        results.forEach(result => {
+            $('#search-results').append(`<p>${result}</p>`);
+        });
+    }
+});
 });

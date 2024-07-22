@@ -5,23 +5,28 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>armely</title>
-   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-   
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <!-- main csss -->
-  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet"><link rel="stylesheet" href="fonts/icomoon/style.css">
+
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
   <!-- font awesome  -->
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <link rel="icon" href="images/logo/logo1.png" type="image/x-icon">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lobster&family=Dancing+Script&family=Cinzel:wght@400;700&family=Great+Vibes&family=Roboto+Slab:wght@400;700&family=Sacramento&family=Merriweather:wght@400;700&family=PT+Serif:wght@400;700&family=Zilla+Slab:wght@400;700&family=Poppins:wght@400;600&family=Lato:wght@100;300;400;700;900&display=swap">
+  
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.css">
-
+  <!-- main styles -->
+  <link rel="stylesheet" href="css/nav.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lobster&family=Dancing+Script&family=Cinzel:wght@400;700&family=Great+Vibes&family=Roboto+Slab:wght@400;700&family=Sacramento&family=Merriweather:wght@400;700&family=PT+Serif:wght@400;700&family=Zilla+Slab:wght@400;700&family=Poppins:wght@400;600&family=Lato:wght@100;300;400;700;900&display=swap">
 </head>
 <body>
   
-  <!-- Navbar -->
-  <?php echo displayHeader(); ?>
+<!-- Navbar -->
+
+  <?php echo displayHeader(); echo displayFloatingButton();?>
+  
   
 <!-- Your HTML structure -->
 <div class="container col-md-11 col-sm-12 mt-4" id="video-background">
@@ -70,7 +75,7 @@
   <div class="container mt-5 col-md-11 col-sm-12">
     <div class="d-flex justify-content-between align-items-center mb-4">
         <h2 class="mb-0">Case Studies</h2>
-          <h5><a href="case study" class="default-color">Explore More Case Studies <i class="fa fa-angle-right"></i><i class="fa fa-angle-right"></i> </a></h5>
+          <h5><a href="case-study" class="default-color">Explore More Case Studies <i class="fa fa-angle-right"></i><i class="fa fa-angle-right"></i> </a></h5>
     </div>
     <div class="row">
       <?php displayRecentIndustryListings(); ?>
@@ -198,74 +203,7 @@
       
     </div>
 </div>
-<style type="text/css">
-  .badged-container {
-    position: fixed;
-    left: 20px; /* Adjust as needed */
-    top: 80%;
-    transform: translateY(-50%);
-    z-index: 999; /* Ensure it appears on top of other content */
-  }
 
-  .badged {
-    position: relative;
-    padding: 20px;
-    border-radius: 50%;
-    text-align: center;
-    width: 200px; /* Adjust as needed */
-    height: 200px; /* Adjust as needed */
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Optional: Add shadow effect */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-/*    animation: blinker 3s linear infinite;*/
-    background: #2f5597 !important;
-  
-  }
-
-  .badged p {
-    margin: 0;
-    font-size: 14px;
-    font-family: comic Sans ;
-
-  }
-
-  .dismiss-icon {
-    position: absolute;
-    top: -10px;
-    right: -10px;
-    cursor: pointer;
-    color: #2f5597;
-
-  }
-
-  .new-badge {
-    background-color: red;
-    color: #fff;
-    padding: 10px;
-    border-radius: 50%;
-    font-size: 12px;
-    animation: blinker 1s linear infinite;
-  }
-
-  @keyframes blinker {
-    50% {
-      opacity: 0;
-    }
-  }
-
-</style>
-<!-- <div class="badged-container">
-  <div class="badged text-white">
-    <p class="new-badge">NEW</</p>
-    <a href="sql" class="text-light">
-        <h5>SQL Server 2014<br> End-of-Life</h5>
-    <p>Contact us today for a <br> free migration analysis.</p>
-    </a>
-    <i class="fas fa-times dismiss-icon"></i>
-  </div>
-</div> -->
   
 <!-- start of Footer -->
   <?php  echo displayFooter(); ?>
@@ -285,7 +223,32 @@
 </div>
 
 <!-- Modal Trigger Button -->
-   
+  <!-- Search Modal Trigger -->
+ 
+
+  <!-- Custom Search Modal -->
+  <div class="custom-modal" id="customSearchModal">
+    <div class="custom-modal-dialog">
+      <div class="custom-modal-content">
+        <div class="custom-modal-header">
+          <h5 class="custom-modal-title">Search</h5>
+          <button type="button" class="close custom-modal-close" id="closeSearchModal">&times;</button>
+        </div>
+        <div class="custom-modal-body">
+          <form id="customSearchForm">
+            <div class="form-group">
+              <input type="text" class="form-control" id="customSearchInput" placeholder="Search...">
+            </div>
+          </form>
+        </div>
+        <div class="custom-modal-footer">
+          <button type="button" class="btn btn-secondary" id="closeSearchModalFooter">Close</button>
+          <button type="submit" class="btn btn-primary" form="customSearchForm">Search</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
 
 
 <div id="myModal4" class="modal4 ">
@@ -322,18 +285,29 @@
 </div>
 
   <!--Bootrap and jQuery Scripts -->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script src="js/jquery-3.3.1.min.js"></script>
+
   <!-- sweet alerts -->
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.4/dist/sweetalert2.all.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" async></script>
   <script src="js/form-actions.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  
+   <script src="js/jquery.sticky.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <!-- <script src="js/nav.js"></script> -->
+  <script src="js/main3.js"></script>
+
+  <script src="js/form-actions.js"></script>
+  <script src="js/nav.js"></script>
+  <script src="js/nav.js"></script>
+ 
   <script>
 
+
+  
     $(document).ready(function(){
  // Get the element to animate
       var typingText = document.querySelector('.typing-text');
@@ -365,8 +339,11 @@
       
 })
 
-  </script>
-  <script src="js/main3.js"></script>
+
+
+
+</script>
+
 
 
 </body>
