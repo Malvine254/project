@@ -5,22 +5,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>armely</title>
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet"><link rel="stylesheet" href="fonts/icomoon/style.css">
-
-  <link rel="stylesheet" href="css/owl.carousel.min.css">
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- main csss -->
+  <link rel="stylesheet" href="css/style.css">
   <!-- font awesome  -->
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <link rel="icon" href="images/logo/logo1.png" type="image/x-icon">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
-  
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.css">
-  <!-- main styles -->
-  <link rel="stylesheet" href="css/nav.css">
-  <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lobster&family=Dancing+Script&family=Cinzel:wght@400;700&family=Great+Vibes&family=Roboto+Slab:wght@400;700&family=Sacramento&family=Merriweather:wght@400;700&family=PT+Serif:wght@400;700&family=Zilla+Slab:wght@400;700&family=Poppins:wght@400;600&family=Lato:wght@100;300;400;700;900&display=swap">
-</head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.css">
   
 </head>
 <body>
@@ -28,22 +21,67 @@
   <!-- Navbar -->
    <?php echo displayHeader(); echo displayFloatingButton();?>
   <!-- Content -->
-  <?php if (isset($_GET['service_name'])) {
+  <?php if (isset($_GET['service_name']) && isset($_GET['type'])) {
     include 'php/config.php';
-     $title = strtolower(mysqli_real_escape_string($conn, $_GET['service_name']));
-     $select = $conn->query("SELECT * FROM services_lists WHERE LOWER(title)='$title'");
-     if ($select->num_rows>0) {
-       while ($row=$select->fetch_assoc()) {
-        $intro_content = $row['intro_content'];
-        $other_contents = $row['other_contents'];
-        $image = $row['image'];
-         
-       }
+    if($_GET['type']=="freemiums"){
+         $title = strtolower(mysqli_real_escape_string($conn, $_GET['service_name']));
+          $title = strtolower(mysqli_real_escape_string($conn, $_GET['service_name']));
+         $select = $conn->query("SELECT * FROM services_lists WHERE LOWER(title)='$title'");
+         if ($select->num_rows>0) {
+           while ($row=$select->fetch_assoc()) {
+            $intro_content = $row['intro_content'];
+            $other_contents = $row['other_contents'];
+            $cat_1 = $row['CAT_1'];
+            $cat_2 = $row['CAT_2'];
+            $image = $row['image'];
+             
+           }
      }else{
       echo "No record";
      }
              
-  } ?>
+  }else  if($_GET['type']=="datastrategy"){
+       $title = strtolower(mysqli_real_escape_string($conn, $_GET['service_name']));
+         $select = $conn->query("SELECT * FROM services_lists WHERE LOWER(title)='$title'");
+         if ($select->num_rows>0) {
+           while ($row=$select->fetch_assoc()) {
+           $intro_content = $row['intro_content'];
+            $cat_2 = $row['CAT_2'];
+            $image = $row['image'];
+             
+           }
+         }else{
+          echo "No record";
+         }
+             
+  } else  if($_GET['type']=="ai"){
+       $title = strtolower(mysqli_real_escape_string($conn, $_GET['service_name']));
+         $select = $conn->query("SELECT * FROM services_lists WHERE LOWER(title)='$title'");
+         if ($select->num_rows>0) {
+           while ($row=$select->fetch_assoc()) {
+             $intro_content = $row['intro_content'];
+            $other_contents = $row['other_contents'];
+            $image = $row['image'];
+             
+           }
+         }else{
+          echo "No record";
+         }
+             
+  }
+  
+  
+  
+  
+  }
+    
+      
+
+
+    
+    
+  
+  ?>
   <div class="margin-top"></div>
   <div class="container col-sm-11 p-4">
   <div class="mt-2">
@@ -67,9 +105,19 @@
     </div>
   </div>
    <div class="mt-4">
-     <?php if (isset($_GET['service_name'])) {
-       echo $other_contents;
+     <?php if (isset($_GET['service_name']) && isset($_GET['type'])) {
+         if($_GET['type']=="datastrategy"){
+             echo $cat_2;
+         }else if($_GET['type']=="freemiums"){
+             echo $cat_1;
+         }else if($_GET['type']=="ai"){
+             echo $other_contents;
+         }
+         
+         
+       
       } ?>
+      
    </div>
 
 
@@ -185,23 +233,14 @@
 </div>
 
   <!--Bootrap and jQuery Scripts -->
-  <script src="js/jquery-3.3.1.min.js"></script>
-
-  <!-- sweet alerts -->
-  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.4/dist/sweetalert2.all.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" async></script>
-  <script src="js/form-actions.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-  
-   <script src="js/jquery.sticky.js"></script>
-  <script src="js/popper.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <!-- <script src="js/nav.js"></script> -->
   <script src="js/main3.js"></script>
-
-  <script src="js/form-actions.js"></script>
-  <script src="js/nav.js"></script>
-  <script src="js/nav.js"></script>
   <script type="text/javascript">
     $(document).ready(()=>{
       $("table").addClass("table table-bordered table-responsive");
